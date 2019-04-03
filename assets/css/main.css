@@ -10,7 +10,8 @@ body {
   }
   
 .navLogo {
-    height:20px;;
+    height:20px;
+    transform: translateY(-4px);
 }
 
 .navLogo:hover {
