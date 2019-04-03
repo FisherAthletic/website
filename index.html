@@ -5,10 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fisher Athletic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800" rel="stylesheet">
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css">
 </head>
 <body>
+    <div class="landingContainer">
+
+        <div class="navbar" id="topNavbar">
+            <a href="#" class="navLogo">
+                <img class="fisherNavLogo" src="./assets/images/navbar/fisher_logo_nav-01.svg" alt="fisher athletic">
+            </a>
+            
+            <a href="#" class="active">Home</a>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Products</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Football</a>
+                    <a href="#">Baseball</a>
+                    <a href="#">Track</a>
+                    <a href="#">Chairs</a>
+                    <a href="#">Padding</a>
+                    <a href="#">Windscreen</a>
+                </div>
+            </div>
+
+            <a href="#catalogs">Catalogs</a>
+            <a href="#contact-us">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="addResponsive()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+    </div>
     
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
