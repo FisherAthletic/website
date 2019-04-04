@@ -2,13 +2,19 @@ body {
     margin: 0;
 }
 
+/* NAVBAR-------------------------------------------------------------- */
 /* Navbar container */
 .navbar {
     overflow: hidden;
     background-color: #1A1D22;
     font-family: 'Montserrat', sans-serif;
   }
-  
+
+.nav {
+  width: fit-content;
+  margin: auto;
+}
+
 .navLogo {
     height:20px;
     transform: translateY(-4px);
@@ -93,9 +99,81 @@ body {
     display: block;
   }
 
+/* LANDING DIV-------------------------------------------------------------- */
+  .landingDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 50vh;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+
+  .landingDiv img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+/* IMAGE TRAIN--------------------------------------------------------------- */
+  .imageTrainContainer {
+    background-color: white;
+    height: 50vh;
+  }
+
+  .imageTrainTitle {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #1A1D22;
+  }
+
+  .imageTrain, .imageTrain2 {
+    background-color: white;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  
+  .imageTrain .slide {
+    background-color: white;
+    animation: slideLeft 5s infinite alternate;
+}
+
+.imageTrain2 .slide2 {
+  background-color: white;
+  animation: slideLeft 10s infinite alternate;
+}
+
+.imageTrain .slide img {
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.imageTrain2 .slide2 img {
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+/* ANIMATIONS ------------------------------------------------------------------- */
+@keyframes slideLeft {
+  from {
+    margin-left: 0%;
+    width: 300%
+  }
+  to {
+    margin-left: 100%;
+    width: 100%
+  }
+}
+
   /* MEDIA QUERIES */
 
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  /* When the screen is less than 840 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
     @media screen and (max-width: 840px) {
     .navbar a:not(:first-child), .dropdown .dropbtn  {
         display: none;
@@ -107,6 +185,10 @@ body {
     .active {
         color: rgb(199, 199, 199) !important;
         border-bottom: none !important;
+      }
+      .nav {
+        width: unset;
+        margin: none;
       }
   }
   
