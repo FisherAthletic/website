@@ -118,58 +118,65 @@ body {
 
 /* IMAGE TRAIN--------------------------------------------------------------- */
   .imageTrainContainer {
-    background-color: white;
-    height: 50vh;
+    background-color: #1A1D22;
+    height: 80vh;
+    overflow: hidden;
   }
 
   .imageTrainTitle {
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    color: #1A1D22;
+    color: white;
   }
 
-  .imageTrain, .imageTrain2 {
-    background-color: white;
-    width: 100%;
-    height: 170px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow: hidden;
-  }
+ .imageTrain, .imageTrain2 {
+  width: 6500px;
+  margin-bottom: 10px;
+ }
+
+ .imageTrain img, .imageTrain2 img {
+   border-radius: 10px;
+   margin-right: 10px;
+   overflow: hidden;
+   width: 600px;
+   height: 300px;
+ }
+
+ .first {
+  -webkit-animation: slideLeft 45s linear infinite;
+     -moz-animation: slideLeft 45s linear infinite;
+      -ms-animation: slideLeft 45s linear infinite;
+       -o-animation: slideLeft 45s linear infinite;
+          animation: slideLeft 45s linear infinite;
+ }
+
+ .first2 {
+  -webkit-animation: slideRight 45s linear infinite;
+  -moz-animation: slideRight 45s linear infinite;
+   -ms-animation: slideRight 45s linear infinite;
+    -o-animation: slideRight 45s linear infinite;
+       animation: slideRight 45s linear infinite;
+ }
   
-  .imageTrain .slide {
-    background-color: white;
-    animation: slideLeft 5s infinite alternate;
-}
-
-.imageTrain2 .slide2 {
-  background-color: white;
-  animation: slideLeft 10s infinite alternate;
-}
-
-.imageTrain .slide img {
-  border-radius: 10px;
-  margin-right: 10px;
-}
-
-.imageTrain2 .slide2 img {
-  border-radius: 10px;
-  margin-right: 10px;
-}
-
-/* ANIMATIONS ------------------------------------------------------------------- */
-@keyframes slideLeft {
-  from {
-    margin-left: 0%;
-    width: 300%
+ /* ANIMATIONS ------------------------------------------------------------------- */
+   @keyframes slideLeft {
+    0% {
+       margin-left: 0px;
+    }
+    100% {
+       margin-left: -3660px;
+    }
   }
-  to {
-    margin-left: 100%;
-    width: 100%
+
+  @keyframes slideRight {
+    0% {
+      margin-left: -3660px;
+    }
+    100% {
+      margin-left: 0px;
+    }
   }
-}
 
   /* MEDIA QUERIES */
 
