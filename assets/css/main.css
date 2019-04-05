@@ -2,6 +2,27 @@ body {
     margin: 0;
 }
 
+/* SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #5f5f5f; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1A1D22; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: red; 
+}
+
 /* NAVBAR-------------------------------------------------------------- */
 /* Navbar container */
 .navbar {
@@ -128,6 +149,7 @@ body {
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    cursor: default;
   }
 
  .imageTrain, .imageTrain2 {
