@@ -119,7 +119,7 @@ body {
 /* IMAGE TRAIN--------------------------------------------------------------- */
   .imageTrainContainer {
     background-color: #1A1D22;
-    height: 80vh;
+    height: 750px;
     overflow: hidden;
   }
 
@@ -178,7 +178,100 @@ body {
     }
   }
 
+  /* Used for screen sizes smaller than 1440px wide (Laptops) */
+  @keyframes slideLeft1440 {
+    0% {
+       margin-left: 0px;
+    }
+    100% {
+       margin-left: -2760px;
+    }
+  }
+
+  @keyframes slideRight1440 {
+    0% {
+      margin-left: -2760px;
+    }
+    100% {
+      margin-left: 0px;
+    }
+  }
+
+  /* Used for screen sizes smaller than 1024px wide (Ipads) */
+  @keyframes slideLeft1024 {
+    0% {
+       margin-left: 0px;
+    }
+    100% {
+       margin-left: -1860px;
+    }
+  }
+
+  @keyframes slideRight1024 {
+    0% {
+      margin-left: -1860px;
+    }
+    100% {
+      margin-left: 0px;
+    }
+  }
+
   /* MEDIA QUERIES */
+  /* Responsive for laptop screens */
+  @media screen and (max-width: 1440px) {
+    .imageTrainContainer {
+      height: 600px;
+    }
+    .imageTrain, .imageTrain2 {
+      width: 5000px;
+     }
+    .imageTrain img, .imageTrain2 img {
+      width: 450px;
+      height: 225px;
+    }
+    .first {
+      -webkit-animation: slideLeft1440 45s linear infinite;
+         -moz-animation: slideLeft1440 45s linear infinite;
+          -ms-animation: slideLeft1440 45s linear infinite;
+           -o-animation: slideLeft1440 45s linear infinite;
+              animation: slideLeft1440 45s linear infinite;
+     }
+     .first2 {
+      -webkit-animation: slideRight1440 45s linear infinite;
+      -moz-animation: slideRight1440 45s linear infinite;
+       -ms-animation: slideRight1440 45s linear infinite;
+        -o-animation: slideRight1440 45s linear infinite;
+           animation: slideRight1440 45s linear infinite;
+     }
+  }
+
+  /* Responsive for Ipad screens */
+  @media screen and (max-width: 1024px) {
+    .imageTrainContainer {
+      height: 450px;
+    }
+    .imageTrain, .imageTrain2 {
+      width: 3400px;
+     }
+    .imageTrain img, .imageTrain2 img {
+      width: 300px;
+      height: 150px;
+    }
+    .first {
+      -webkit-animation: slideLeft1024 45s linear infinite;
+         -moz-animation: slideLeft1024 45s linear infinite;
+          -ms-animation: slideLeft1024 45s linear infinite;
+           -o-animation: slideLeft1024 45s linear infinite;
+              animation: slideLeft1024 45s linear infinite;
+     }
+     .first2 {
+      -webkit-animation: slideRight1024 45s linear infinite;
+      -moz-animation: slideRight1024 45s linear infinite;
+       -ms-animation: slideRight1024 45s linear infinite;
+        -o-animation: slideRight1024 45s linear infinite;
+           animation: slideRight1024 45s linear infinite;
+     }
+  }
 
   /* When the screen is less than 840 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
     @media screen and (max-width: 840px) {
