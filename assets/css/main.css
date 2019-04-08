@@ -204,7 +204,7 @@ body {
 .categoryGrid {
   display: flex;
   overflow: hidden;
-  background-color: rgb(48, 51, 56);
+  background-color: #1A1D22;
   flex: calc(50% - 40px);
   height: 500px;
   margin: 20px;
@@ -224,10 +224,6 @@ body {
   filter: opacity(30%);
 }
 
-.categoryGrid img:hover {
-  filter: opacity(100%);
-}
-
 .categoryGrid :any-link {
   color: white;
   text-decoration: none;
@@ -240,7 +236,7 @@ body {
 
 .categoryGrid:hover {
   background-image: none;
-  background-color: #1A1D22;
+  background-color: black;
   color: rgb(48, 51, 56);
   filter: none;
   transform: translateY(-2px);
