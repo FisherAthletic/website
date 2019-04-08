@@ -6,7 +6,7 @@
     <title>Fisher Athletic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
     <!-- Icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Main CSS -->
@@ -25,12 +25,12 @@
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Products</button>
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Football</a>
-                    <a href="#">Baseball</a>
-                    <a href="#">Track</a>
-                    <a href="#">Chairs</a>
-                    <a href="#">Padding</a>
-                    <a href="#">Windscreen</a>
+                    <a href="./pages/football.html">Football</a>
+                    <a href="./pages/baseball.html">Baseball</a>
+                    <a href="./pages/track.html">Track</a>
+                    <a href="./pages/chairs.html">Chairs</a>
+                    <a href="./pages/padding.html">Padding</a>
+                    <a href="./pages/windscreen.html">Windscreen</a>
                 </div>
             </div>
             <a href="#catalogs">Catalogs</a>
@@ -46,11 +46,39 @@
             <img src="./assets/images/landing/baseball_stadium_landing.jpg" alt="baseball stadium">
         </div>
 
-        <!-- Image train -->
-        <div class="imageTrainContainer">
-            <div class="imageTrainTitle">
-                <h1>#GET EQUIPPED</h1>
+            <!-- Category grid -->
+            <div class="categoryGridContainer">
+                <div class="categoryGrid" id="footballGrid">
+                    <img src="./assets/images/categoryGrid/football_grid.jpg">
+                    <a href="./pages/football.html"><h3>Football</h3></a>
+                </div>
+                <div class="categoryGrid" id="baseballGrid">
+                    <img src="./assets/images/categoryGrid/baseball_grid.jpg">
+                    <a href="./pages/baseball.html"><h3>Baseball</h3></a>
+                </div>
+                <div class="categoryGrid" id="trackGrid">
+                    <img src="./assets/images/categoryGrid/track_grid.jpg">
+                    <a href="./pages/track.html"><h3>Track</h3></a>
+                </div>
+                <div class="categoryGrid" id="chairsGrid">
+                    <img src="./assets/images/categoryGrid/chair_grid.jpg">
+                    <a href="./pages/chairs.html"><h3>Chairs</h3></a>
+                </div>
+                <div class="categoryGrid" id="paddingGrid">
+                    <img src="./assets/images/categoryGrid/padding_grid.jpg">
+                    <a href="./pages/padding.html"><h3>Padding</h3></a>
+                </div>
+                <div class="categoryGrid" id="windscreenGrid">
+                    <img src="./assets/images/categoryGrid/windscreen_grid.jpg">
+                    <a href="./pages/windscreen.html"><h3>Windscreen</h3></a>
+                </div>
             </div>
+
+        <!-- Image train -->
+        <div class="imageTrainTitle">
+            <h3>The #1 source for all your athletic equipment needs!</h3>
+        </div>
+        <div class="imageTrainContainer">
             <div class="imageTrain">
                 <img class="first" src="./assets/images/imageTrain/image1.jpg"/>
                 <img src="./assets/images/imageTrain/image2.jpg"/>
@@ -75,6 +103,10 @@
                 <img src="./assets/images/imageTrain/image9.jpg"/>
                 <img src="./assets/images/imageTrain/image10.jpg"/>
                 </div>
+        </div>
+
+        <div class="footer">
+            <p>This is the footer...</p>
         </div>
 
     </div>

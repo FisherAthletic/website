@@ -1,8 +1,13 @@
 body {
     margin: 0;
+    background-color: #1A1D22;
 }
 
-/* SCROLL BAR */
+.landingContainer {
+  margin: none;
+}
+
+/* SCROLLBAR ---------------------------------------------------------- */
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -20,7 +25,7 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: red; 
+  background: rgb(17, 19, 22);
 }
 
 /* NAVBAR-------------------------------------------------------------- */
@@ -126,7 +131,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 50vh;
+    height: 70vh;
     font-family: 'Montserrat', sans-serif;
     color: white;
   }
@@ -140,60 +145,131 @@ body {
 /* IMAGE TRAIN--------------------------------------------------------------- */
   .imageTrainContainer {
     background-color: #1A1D22;
-    height: 750px;
+    height: 680px;
     overflow: hidden;
+    margin-bottom: 20px;
   }
 
   .imageTrainTitle {
+    background-color: #1A1D22;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
     color: white;
     cursor: default;
+    height: 150px;
+    padding: 5px;
   }
 
  .imageTrain, .imageTrain2 {
-  width: 6500px;
-  margin-bottom: 10px;
+  width: 6800px;
+  margin-bottom: 40px;
  }
 
  .imageTrain img, .imageTrain2 img {
    border-radius: 10px;
-   margin-right: 10px;
+   margin-right: 40px;
    overflow: hidden;
    width: 600px;
    height: 300px;
  }
 
  .first {
-  -webkit-animation: slideLeft 45s linear infinite;
-     -moz-animation: slideLeft 45s linear infinite;
-      -ms-animation: slideLeft 45s linear infinite;
-       -o-animation: slideLeft 45s linear infinite;
-          animation: slideLeft 45s linear infinite;
+  -webkit-animation: slideLeft 80s linear infinite;
+     -moz-animation: slideLeft 80s linear infinite;
+      -ms-animation: slideLeft 80s linear infinite;
+       -o-animation: slideLeft 80s linear infinite;
+          animation: slideLeft 80s linear infinite;
  }
 
  .first2 {
-  -webkit-animation: slideRight 45s linear infinite;
-  -moz-animation: slideRight 45s linear infinite;
-   -ms-animation: slideRight 45s linear infinite;
-    -o-animation: slideRight 45s linear infinite;
-       animation: slideRight 45s linear infinite;
+  -webkit-animation: slideRight 80s linear infinite;
+  -moz-animation: slideRight 80s linear infinite;
+   -ms-animation: slideRight 80s linear infinite;
+    -o-animation: slideRight 80s linear infinite;
+       animation: slideRight 80s linear infinite;
  }
-  
+
+ /* CATEGORY GRID ---------------------------------------------------------------- */
+ .categoryGridContainer {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: 20px;
+ }
+
+.categoryGrid {
+  display: flex;
+  overflow: hidden;
+  background-color: rgb(48, 51, 56);
+  flex: calc(50% - 40px);
+  height: 500px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.categoryGrid img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: opacity(30%);
+}
+
+.categoryGrid img:hover {
+  filter: opacity(100%);
+}
+
+.categoryGrid :any-link {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.categoryGrid:hover {
+  background-image: none;
+  background-color: #1A1D22;
+  color: rgb(48, 51, 56);
+  filter: none;
+  transform: translateY(-2px);
+}
+/* FOOTER ------------------------------------------------------------------------ */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(48, 51, 56);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  height: 150px;
+}
+
  /* ANIMATIONS ------------------------------------------------------------------- */
    @keyframes slideLeft {
     0% {
        margin-left: 0px;
     }
     100% {
-       margin-left: -3660px;
+       margin-left: -3840px;
     }
   }
 
   @keyframes slideRight {
     0% {
-      margin-left: -3660px;
+      margin-left: -3840px;
     }
     100% {
       margin-left: 0px;
@@ -206,13 +282,13 @@ body {
        margin-left: 0px;
     }
     100% {
-       margin-left: -2760px;
+       margin-left: -2940px;
     }
   }
 
   @keyframes slideRight1440 {
     0% {
-      margin-left: -2760px;
+      margin-left: -2940px;
     }
     100% {
       margin-left: 0px;
@@ -225,74 +301,119 @@ body {
        margin-left: 0px;
     }
     100% {
-       margin-left: -1860px;
+       margin-left: -2040px;
     }
   }
 
   @keyframes slideRight1024 {
     0% {
-      margin-left: -1860px;
+      margin-left: -2040px;
     }
     100% {
       margin-left: 0px;
     }
   }
 
-  /* MEDIA QUERIES */
+  /* MEDIA QUERIES -------------------------------------------------------------- */
   /* Responsive for laptop screens */
   @media screen and (max-width: 1440px) {
     .imageTrainContainer {
-      height: 600px;
+      height: 530px;
     }
     .imageTrain, .imageTrain2 {
-      width: 5000px;
+      width: 5300px;
      }
     .imageTrain img, .imageTrain2 img {
       width: 450px;
       height: 225px;
     }
     .first {
-      -webkit-animation: slideLeft1440 45s linear infinite;
-         -moz-animation: slideLeft1440 45s linear infinite;
-          -ms-animation: slideLeft1440 45s linear infinite;
-           -o-animation: slideLeft1440 45s linear infinite;
-              animation: slideLeft1440 45s linear infinite;
+      -webkit-animation: slideLeft1440 80s linear infinite;
+         -moz-animation: slideLeft1440 80s linear infinite;
+          -ms-animation: slideLeft1440 80s linear infinite;
+           -o-animation: slideLeft1440 80s linear infinite;
+              animation: slideLeft1440 80s linear infinite;
      }
      .first2 {
-      -webkit-animation: slideRight1440 45s linear infinite;
-      -moz-animation: slideRight1440 45s linear infinite;
-       -ms-animation: slideRight1440 45s linear infinite;
-        -o-animation: slideRight1440 45s linear infinite;
-           animation: slideRight1440 45s linear infinite;
+      -webkit-animation: slideRight1440 80s linear infinite;
+      -moz-animation: slideRight1440 80s linear infinite;
+       -ms-animation: slideRight1440 80s linear infinite;
+        -o-animation: slideRight1440 80s linear infinite;
+           animation: slideRight1440 80s linear infinite;
      }
+     .categoryGridContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+   .categoryGrid {
+     overflow: hidden;
+     height: 400px;
+   }
   }
 
   /* Responsive for Ipad screens */
   @media screen and (max-width: 1024px) {
     .imageTrainContainer {
-      height: 450px;
+      height: 380px;
     }
     .imageTrain, .imageTrain2 {
-      width: 3400px;
+      width: 3800px;
      }
     .imageTrain img, .imageTrain2 img {
       width: 300px;
       height: 150px;
     }
     .first {
-      -webkit-animation: slideLeft1024 45s linear infinite;
-         -moz-animation: slideLeft1024 45s linear infinite;
-          -ms-animation: slideLeft1024 45s linear infinite;
-           -o-animation: slideLeft1024 45s linear infinite;
-              animation: slideLeft1024 45s linear infinite;
+      -webkit-animation: slideLeft1024 80s linear infinite;
+         -moz-animation: slideLeft1024 80s linear infinite;
+          -ms-animation: slideLeft1024 80s linear infinite;
+           -o-animation: slideLeft1024 80s linear infinite;
+              animation: slideLeft1024 80s linear infinite;
      }
      .first2 {
-      -webkit-animation: slideRight1024 45s linear infinite;
-      -moz-animation: slideRight1024 45s linear infinite;
-       -ms-animation: slideRight1024 45s linear infinite;
-        -o-animation: slideRight1024 45s linear infinite;
-           animation: slideRight1024 45s linear infinite;
+      -webkit-animation: slideRight1024 80s linear infinite;
+      -moz-animation: slideRight1024 80s linear infinite;
+       -ms-animation: slideRight1024 80s linear infinite;
+        -o-animation: slideRight1024 80s linear infinite;
+           animation: slideRight1024 80s linear infinite;
      }
+     .categoryGridContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+   .categoryGrid {
+     overflow: hidden;
+     height: 300px;
+   }
+  }
+
+  @media screen and (max-width: 840px) {
+    .categoryGridContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 20px;
+    }
+   .categoryGrid {
+     overflow: hidden;
+     flex: calc(100% - 40px);
+     height: 400px;
+     margin: 20px;
+   }
+  }
+
+  @media screen and (max-width: 550px) {
+    .categoryGridContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+   .categoryGrid {
+     overflow: hidden;
+     height: 350px;
+   }
   }
 
   /* When the screen is less than 840 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
