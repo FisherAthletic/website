@@ -3,10 +3,6 @@ body {
     background-color: #1A1D22;
 }
 
-.landingContainer {
-  margin: none;
-}
-
 /* SCROLLBAR ---------------------------------------------------------- */
 /* width */
 ::-webkit-scrollbar {
@@ -142,57 +138,6 @@ body {
     min-height: 100%;
   }
 
-/* IMAGE TRAIN--------------------------------------------------------------- */
-  .imageTrainContainer {
-    background-color: #1A1D22;
-    height: 680px;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-
-  .imageTrainTitle {
-    background-color: #1A1D22;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    color: white;
-    cursor: default;
-    height: 150px;
-    padding: 5px;
-  }
-
- .imageTrain, .imageTrain2 {
-  width: 6800px;
-  margin-bottom: 40px;
- }
-
- .imageTrain img, .imageTrain2 img {
-   border-radius: 10px;
-   margin-right: 40px;
-   overflow: hidden;
-   width: 600px;
-   height: 300px;
- }
-
- .first {
-  -webkit-animation: slideLeft 80s linear infinite;
-     -moz-animation: slideLeft 80s linear infinite;
-      -ms-animation: slideLeft 80s linear infinite;
-       -o-animation: slideLeft 80s linear infinite;
-          animation: slideLeft 80s linear infinite;
- }
-
- .first2 {
-  -webkit-animation: slideRight 80s linear infinite;
-  -moz-animation: slideRight 80s linear infinite;
-   -ms-animation: slideRight 80s linear infinite;
-    -o-animation: slideRight 80s linear infinite;
-       animation: slideRight 80s linear infinite;
- }
-
  /* CATEGORY GRID ---------------------------------------------------------------- */
  .categoryGridContainer {
    display: flex;
@@ -241,6 +186,10 @@ body {
   filter: none;
   transform: translateY(-2px);
 }
+
+.categoryGrid a:hover {
+  font-size: 48px;
+}
 /* FOOTER ------------------------------------------------------------------------ */
 .footer {
   display: flex;
@@ -253,90 +202,9 @@ body {
   height: 150px;
 }
 
- /* ANIMATIONS ------------------------------------------------------------------- */
-   @keyframes slideLeft {
-    0% {
-       margin-left: 0px;
-    }
-    100% {
-       margin-left: -3840px;
-    }
-  }
-
-  @keyframes slideRight {
-    0% {
-      margin-left: -3840px;
-    }
-    100% {
-      margin-left: 0px;
-    }
-  }
-
-  /* Used for screen sizes smaller than 1440px wide (Laptops) */
-  @keyframes slideLeft1440 {
-    0% {
-       margin-left: 0px;
-    }
-    100% {
-       margin-left: -2940px;
-    }
-  }
-
-  @keyframes slideRight1440 {
-    0% {
-      margin-left: -2940px;
-    }
-    100% {
-      margin-left: 0px;
-    }
-  }
-
-  /* Used for screen sizes smaller than 1024px wide (Ipads) */
-  @keyframes slideLeft1024 {
-    0% {
-       margin-left: 0px;
-    }
-    100% {
-       margin-left: -2040px;
-    }
-  }
-
-  @keyframes slideRight1024 {
-    0% {
-      margin-left: -2040px;
-    }
-    100% {
-      margin-left: 0px;
-    }
-  }
-
   /* MEDIA QUERIES -------------------------------------------------------------- */
   /* Responsive for laptop screens */
   @media screen and (max-width: 1440px) {
-    .imageTrainContainer {
-      height: 530px;
-    }
-    .imageTrain, .imageTrain2 {
-      width: 5300px;
-     }
-    .imageTrain img, .imageTrain2 img {
-      width: 450px;
-      height: 225px;
-    }
-    .first {
-      -webkit-animation: slideLeft1440 80s linear infinite;
-         -moz-animation: slideLeft1440 80s linear infinite;
-          -ms-animation: slideLeft1440 80s linear infinite;
-           -o-animation: slideLeft1440 80s linear infinite;
-              animation: slideLeft1440 80s linear infinite;
-     }
-     .first2 {
-      -webkit-animation: slideRight1440 80s linear infinite;
-      -moz-animation: slideRight1440 80s linear infinite;
-       -ms-animation: slideRight1440 80s linear infinite;
-        -o-animation: slideRight1440 80s linear infinite;
-           animation: slideRight1440 80s linear infinite;
-     }
      .categoryGridContainer {
       display: flex;
       flex-wrap: wrap;
@@ -350,30 +218,6 @@ body {
 
   /* Responsive for Ipad screens */
   @media screen and (max-width: 1024px) {
-    .imageTrainContainer {
-      height: 380px;
-    }
-    .imageTrain, .imageTrain2 {
-      width: 3800px;
-     }
-    .imageTrain img, .imageTrain2 img {
-      width: 300px;
-      height: 150px;
-    }
-    .first {
-      -webkit-animation: slideLeft1024 80s linear infinite;
-         -moz-animation: slideLeft1024 80s linear infinite;
-          -ms-animation: slideLeft1024 80s linear infinite;
-           -o-animation: slideLeft1024 80s linear infinite;
-              animation: slideLeft1024 80s linear infinite;
-     }
-     .first2 {
-      -webkit-animation: slideRight1024 80s linear infinite;
-      -moz-animation: slideRight1024 80s linear infinite;
-       -ms-animation: slideRight1024 80s linear infinite;
-        -o-animation: slideRight1024 80s linear infinite;
-           animation: slideRight1024 80s linear infinite;
-     }
      .categoryGridContainer {
       display: flex;
       flex-wrap: wrap;
