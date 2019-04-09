@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
     <!-- Icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css">
 </head>
@@ -16,30 +18,38 @@
     <div class="landingContainer">
 
         <!-- Top navbar -->
-        <div class="navbar" id="topNavbar">
-            <div class="nav">
-            <a href="#" class="navLogo">
-                <img class="fisherNavLogo" src="./assets/images/navbar/fisher_logo_nav-01.svg" alt="fisher athletic">
-            </a>           
-            <a href="#" class="active">Home</a>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Products</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="./pages/football.html">Football</a>
-                    <a href="./pages/baseball.html">Baseball</a>
-                    <a href="./pages/track.html">Track</a>
-                    <a href="./pages/chairs.html">Chairs</a>
-                    <a href="./pages/padding.html">Padding</a>
-                    <a href="./pages/windscreen.html">Windscreen</a>
-                </div>
-            </div>
-            <a href="#catalogs">Catalogs</a>
-            <a href="#contact-us">Contact Us</a>
-            <a href="javascript:void(0);" class="icon" onclick="addResponsive()">
-                <i class="fa fa-bars"></i>
-            </a>
-            </div>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="./index.html">Fisher Athletic</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./pages/football.html">Football</a>
+                        <a class="dropdown-item" href="./pages/baseball.html">Baseball</a>
+                        <a class="dropdown-item" href="./pages/track.html">Track</a>
+                        <a class="dropdown-item" href="./pages/chairs.html">Chairs</a>
+                        <a class="dropdown-item" href="./pages/padding.html">Padding</a>
+                        <a class="dropdown-item" href="./pages/windscreen.html">Windscreen</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Catalogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                  </ul>
+              </nav>
 
         <!-- Landing div -->
         <div class="landingDiv">
@@ -80,7 +90,11 @@
 
     </div>
     
-
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
