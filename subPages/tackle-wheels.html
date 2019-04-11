@@ -43,63 +43,48 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Catalogs</a>
+                  <a class="nav-link" href="../pages/catalogs.html">Catalogs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact us</a>
+                    <a class="nav-link" href="../pages/contact-us.html">Contact us</a>
                 </li>
               </ul>
           </nav>
 
-        <!-- Landing div -->
-        <div class="footballHeader">
-            <h1>This is the football page... With football items...</h1>
-        </div>
-
-        <!-- Football products -->
-        <div class="productSelectContainer">
-            
-        <div class="card productSelect" style="width: 18rem;">
-            <img src="../assets/images/football/tackle_wheels.jpg" class="card-img-top" alt="...">
-                <div class="card-body productSelectBody">
-                  <h5 class="card-title">Tackle Wheels</h5>
-                  <h6>These are tackle wheels.</h6>
-                  <p class="card-text">$152.00 - $425.00</p> 
-                  <a href="../subPages/tackle-wheels.html" class="btn btn-danger">See more</a>
-                </div>
-        </div>
-
-        <div class="card productSelect" style="width: 18rem;">
-                <img src="../assets/images/football/bull_sled.jpg" class="card-img-top" alt="...">
-                    <div class="card-body productSelectBody">
-                      <h5 class="card-title">Bull Sled</h5>
-                      <h6 class="card-text">This is a Bull Sled.</h6>
-                      <p class="card-text">$100.00</p>
-                      <a href="#" class="btn btn-danger">See more</a>
-                    </div>
+      <!-- Tackle wheel details -->
+      <div class="productDetailsContainer">
+      <div class="card text-white bg-dark productDetails">
+          <div class="row no-gutters">
+            <div class="col-md-5">
+              <img src="../assets/images/football/tackle_wheels.jpg" class="card-img" id="productDetailsImage" alt="tackle wheels">
             </div>
-        
-        <div class="card productSelect" style="width: 18rem;">
-                <img src="../assets/images/football/shiver_sled.jpg" class="card-img-top" alt="...">
-                    <div class="card-body productSelectBody">
-                      <h5 class="card-title">Shiver Sled</h5>
-                      <h6 class="card-text">This is a Shiver Sled.</h6>
-                      <p class="card-text">$100.00</p>
-                      <a href="#" class="btn btn-danger">See more</a>
-                    </div>
+            <div class="col-md-7">
+              <div class="card-body productDetailsBody">
+                <h5 class="card-title tackleWheelTitle" id="tackleWheelTitle">Tackle Wheels</h5>
+                <p class="card-text">Tackle wheel teaches players to adjust their angle in pursuit. Teach open field tackling without bodies. Reduce injuries by eliminating repetitions. Teaches players to wrap up in open field. Made of 9lb. re-bond foam. 22 oz. coated vinyl in center and outside. 19 oz coated vinyl on faces of wheel.</p>
+                <p class="card-text tackleWheelSpecs" id="tackleWheelSpecs"></p>
+                <p class="card-text" id="tackleWheelPrice">$152.00 - $425.00</p>
+                  <div class="productDetailsBtnRow">
+                  <a href="#" class="btn btn-danger productDetailsBtn">Order now</a>
+                      <div class="dropdown productDetailsOptions">
+                          <button class="btn btn-secondary dropdown-toggle productDetailsBtn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Options
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" onclick="tackleWheelOption28()">28" Outside Diameter</a>
+                            <a class="dropdown-item" href="#" onclick="tackleWheelOption36()">36" Outside Diameter</a>
+                            <a class="dropdown-item" href="#" onclick="tackleWheelOption42()">42" Outside Diameter</a>
+                            <a class="dropdown-item" href="#" onclick="tackleWheelOption48()">48" Outside Diameter</a>
+                            <a class="dropdown-item" href="#" onclick="tackleWheelOption54()">54" Outside Diameter</a>
+                            <a class="dropdown-item" href="#" onclick="tackleWheelOption60()">60" Outside Diameter</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
             </div>
-            
-        <div class="card productSelect" style="width: 18rem;">
-                <img src="../assets/images/football/step_overs.jpg" class="card-img-top" alt="...">
-                    <div class="card-body productSelectBody">
-                      <h5 class="card-title">Agility Dummies</h5>
-                      <h6 class="card-text">These are Agility Dummies.</h6>
-                      <p class="card-text">$100.00</p>
-                      <a href="#" class="btn btn-danger">See more</a>
-                    </div>
-            </div>
-
+          </div>
         </div>
+      </div>
 
         <!-- Footer -->
         <div class="footer">

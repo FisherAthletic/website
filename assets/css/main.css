@@ -28,6 +28,8 @@ body {
 /* NAVBAR-------------------------------------------------------------- */
   .navbar {
     background-color: #1A1D22 !important;
+    border-bottom: #ED1C24 solid 4px;
+    margin: auto;
   }
 
 /* LANDING DIV-------------------------------------------------------------- */
@@ -80,6 +82,8 @@ body {
 
 .categoryGrid :any-link {
   color: white;
+  font-size: 36px !important;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   position: absolute;
   top: 50%;
@@ -96,6 +100,10 @@ body {
   transform: translateY(-2px);
 }
 
+.categoryGrid :any-link :hover {
+  font-size: 38px;
+}
+
 .categoryGrid a:hover {
   font-size: 38px;
 }
@@ -105,11 +113,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: rgb(48, 51, 56);
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  height: 150px;
+  font-size: 14px;
+  height: 100px;
 }
 
 /* FOOTBALL PAGE ///////////////////////////////////////////////////////////////// */
@@ -118,9 +127,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   overflow: hidden;
   background-color: rgb(48, 51, 56);
-  height: 70vh;
+  height: 100vh;
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
@@ -129,6 +139,50 @@ body {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
+}
+
+/* PRODUCT CARDS */
+.productSelectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.productSelect {
+  border: none;
+  margin: 20px;
+}
+
+.productSelect:hover {
+  transform: translateY(2px);
+  box-shadow: 5px 5px 5px black;
+}
+
+.productSelectBody {
+  background-color: rgb(48, 51, 56);
+  color: white;
+}
+
+/* TACKLE WHEEL PAGE ///////////////////////////////////////////////////////////////// */
+/* PRODUCT INFO CARD */
+.productDetailsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.productDetails {
+  width: 80vw;
+  margin: 100px 0 40px 0;
+}
+
+.productDetailsBtnRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productDetailsBtn {
+  margin-right: 20px;
 }
 
 /* MEDIA QUERIES -------------------------------------------------------------- */
