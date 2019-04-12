@@ -49,6 +49,16 @@ body {
     min-height: 100%;
   }
 
+  /* FEATURED CAROUSAL ----------------------------------------------------------- */
+  .featuredContainer {
+    display: block;
+    background-color: red;
+    width: 50vw;
+    max-width: 1000px;
+    margin-top: 40px;
+    margin: auto;
+  }
+
  /* CATEGORY GRID ---------------------------------------------------------------- */
  .categoryGridContainer {
    display: flex;
@@ -122,7 +132,8 @@ body {
 }
 
 /* FOOTBALL PAGE ///////////////////////////////////////////////////////////////// */
-/* HEADER */
+
+/* HEADER ------------------------------------------------------------------------ */
 .footballHeader {
   display: flex;
   justify-content: center;
@@ -141,32 +152,36 @@ body {
   min-height: 100%;
 }
 
-/* PRODUCT CARDS */
+/* PRODUCT CARDS ----------------------------------------------------------------- */
 .productCardContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 40px 10vw 40px 10vw;
+  padding: 20px 10vw 40px 10vw;
 }
 
 .productCard {
   border: none;
   margin: 0 5px 20px 5px;
+  border-radius: 15px;
+  transition: transform 1s, box-shadow 1s;
 }
 
 .productCard:hover {
-  transform: translateY(2px);
+  transform: scale(1.05);
+  transition: 0.5s;
   box-shadow: 5px 5px 5px black;
 }
 
 .productCardBody {
   background-color: rgb(48, 51, 56);
   color: white;
+  border-radius: 0 0 10px 10px;
 }
 
 /* TACKLE WHEEL PAGE ///////////////////////////////////////////////////////////////// */
 
-/* BACK BUTTON */
+/* BACK BUTTON ----------------------------------------------------------------------- */
 .backBtnContainer {
   display: flex;
   justify-content: center;
@@ -175,15 +190,16 @@ body {
 
 .backBtnSubContainer {
   width: 80vw;
-
+  max-width: 1400px;
 }
+
 .backBtn {
   justify-content: left;
   background-color: rgb(48, 51, 56);
   border: none;
 }
 
-/* PRODUCT DETAILS CARD */
+/* PRODUCT DETAILS CARD --------------------------------------------------------------- */
 .productDetailsContainer {
   display: flex;
   justify-content: center;
@@ -191,11 +207,14 @@ body {
 
 .productDetails {
   width: 80vw;
+  max-width: 1400px;
   margin: 20px 0 40px 0;
+  border: none;
+  background: none !important;
 }
 
 .productDetailsImage {
-  object-fit: fill !important;
+  border-radius: 10px;
 }
 
 .productDetailsBtnRow {
@@ -207,14 +226,18 @@ body {
   margin-right: 20px;
 }
 
-/* RECOMMENDED PRODUCTS TITLE */
+/* RECOMMENDED PRODUCTS TITLE ----------------------------------------------------------- */
 .recommendedProductsTitle {
   color: white;
-  display: flex;
-  justify-content: center;
+  border-top: rgb(48, 51, 56) solid 2px;
+  padding-top: 20px;
+  width: 80vw;
+  margin: auto;
+  text-align: center;
 }
 
-/* MEDIA QUERIES -------------------------------------------------------------- */
+/* MEDIA QUERIES //////////////////////////////////////////////////////////////////////// */
+
 /* Responsive for laptop screens */
 @media screen and (max-width: 1440px) {
   .categoryGridContainer {
@@ -263,4 +286,4 @@ body {
     overflow: hidden;
     height: 350px;
   }
-}
+}}
