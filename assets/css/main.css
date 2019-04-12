@@ -142,30 +142,48 @@ body {
 }
 
 /* PRODUCT CARDS */
-.productSelectContainer {
+.productCardContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
+  padding: 40px 10vw 40px 10vw;
 }
 
-.productSelect {
+.productCard {
   border: none;
-  margin: 20px;
+  margin: 0 5px 20px 5px;
 }
 
-.productSelect:hover {
+.productCard:hover {
   transform: translateY(2px);
   box-shadow: 5px 5px 5px black;
 }
 
-.productSelectBody {
+.productCardBody {
   background-color: rgb(48, 51, 56);
   color: white;
 }
 
 /* TACKLE WHEEL PAGE ///////////////////////////////////////////////////////////////// */
-/* PRODUCT INFO CARD */
+
+/* BACK BUTTON */
+.backBtnContainer {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0 0 0;
+}
+
+.backBtnSubContainer {
+  width: 80vw;
+
+}
+.backBtn {
+  justify-content: left;
+  background-color: rgb(48, 51, 56);
+  border: none;
+}
+
+/* PRODUCT DETAILS CARD */
 .productDetailsContainer {
   display: flex;
   justify-content: center;
@@ -173,7 +191,11 @@ body {
 
 .productDetails {
   width: 80vw;
-  margin: 100px 0 40px 0;
+  margin: 20px 0 40px 0;
+}
+
+.productDetailsImage {
+  object-fit: fill !important;
 }
 
 .productDetailsBtnRow {
@@ -183,6 +205,13 @@ body {
 
 .productDetailsBtn {
   margin-right: 20px;
+}
+
+/* RECOMMENDED PRODUCTS TITLE */
+.recommendedProductsTitle {
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
 /* MEDIA QUERIES -------------------------------------------------------------- */
