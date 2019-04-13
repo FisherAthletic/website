@@ -40,13 +40,40 @@ body {
     overflow: hidden;
     height: 70vh;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
     color: white;
+    position: relative;
+    -moz-user-select: none;
+-webkit-user-select: none;
+  }
+
+  .landingTextContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .landingTextContainer h1 {
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
   }
 
   .landingDiv img {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
+    animation: landingZoomOut 8s linear forwards;
+  }
+
+  @keyframes landingZoomOut {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.7);
+    }
   }
 
   /* FEATURED CAROUSAL ----------------------------------------------------------- */
@@ -80,7 +107,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   position: relative;
-  border-radius: 10px;
 }
 
 .categoryGrid img {
@@ -286,4 +312,4 @@ body {
     overflow: hidden;
     height: 350px;
   }
-}}
+}
