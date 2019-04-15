@@ -33,10 +33,6 @@ body {
   margin: auto;
 }
 
-.navbar a:hover {
-  font-weight: 600;
-}
-
 #navDropdown {
   position: static;
 }
@@ -45,14 +41,14 @@ body {
   width: 100%;
 }
 
-/* FILTERBAR */
+/* FILTERBAR ---------------------------------------------------------- */
 .filterBar {
   border-bottom: none;
   justify-content: center;
   padding: 0 10vw 0 10vw;
 }
 
-/* DROPDOWNS */
+/* DROPDOWNS ---------------------------------------------------------- */
 .dropdown-menu.show {
   background-color: #2d323a;
 }
@@ -67,7 +63,7 @@ body {
   font-weight: 600;
 }
 
-/* BUTTONS */
+/* BUTTONS ------------------------------------------------------------ */
 .btn-danger {
   background-color: #3c414b;
   border: none;
@@ -78,10 +74,28 @@ body {
   border: none;
 }
 
-/* ACTIVE */
+/* ACTIVE ------------------------------------------------------------- */
 .active {
   background-color: none !important;
 }
+
+/* FOOTER ------------------------------------------------------------- */
+.footer {
+  color: white;
+}
+
+.footer :any-link {
+  color: #e0eebd;
+}
+
+.fbIcon {
+  color: white;
+}
+
+.twIcon {
+  color: white;
+}
+
 
 /* LANDING PAGE /////////////////////////////////////////////////////// */
 /* LANDING DIV--------------------------------------------------------- */
@@ -182,19 +196,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-}
-
-/* FOOTER ------------------------------------------------------------- */
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #2d323a;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  height: 100px;
 }
 
 /* FOOTBALL PAGE ////////////////////////////////////////////////////// */
