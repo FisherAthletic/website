@@ -12,7 +12,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #5f5f5f; 
+  background: #3c414b; 
 }
  
 /* Handle */
@@ -25,14 +25,54 @@ body {
   background: rgb(17, 19, 22);
 }
 
+/* GENERAL //////////////////////////////////////////////////////////// */
 /* NAVBAR-------------------------------------------------------------- */
-  .navbar {
-    background-color: #1A1D22 !important;
-    border-bottom: #ED1C24 solid 4px;
-    margin: auto;
-  }
+.navbar {
+  background-color: #1A1D22 !important;
+  border-bottom: #ED1C24 solid 4px;
+  margin: auto;
+}
 
-/* LANDING DIV-------------------------------------------------------------- */
+.navbar a:hover {
+  font-weight: 600;
+}
+
+#navDropdown {
+  position: static;
+}
+
+#navDropdownMenu {
+  width: 100%;
+}
+
+/* DROPDOWNS */
+.dropdown-menu.show {
+  background-color: rgba(20, 20, 20, 0.9);
+}
+
+.dropdown-menu a {
+  color: white;
+}
+
+.dropdown-menu a.dropdown-item:hover {
+  background-color: rgba(20, 20, 20, 0.9);
+  color: white;
+  font-weight: 600;
+}
+
+/* BUTTONS */
+.btn-danger {
+  background-color: #3c414b;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #505a64;
+  border: none;
+}
+
+/* LANDING PAGE /////////////////////////////////////////////////////// */
+/* LANDING DIV--------------------------------------------------------- */
   .landingDiv {
     display: flex;
     justify-content: center;
@@ -76,7 +116,7 @@ body {
     }
   }
 
- /* CATEGORY GRID ---------------------------------------------------------------- */
+ /* CATEGORY GRID ----------------------------------------------------- */
  .categoryGridContainer {
    display: flex;
    flex-wrap: wrap;
@@ -104,7 +144,7 @@ body {
 .categoryGrid:hover {
   background-image: none;
   background-color: black;
-  color: rgb(48, 51, 56);
+  color: #2d323a;
   filter: none;
   transform: translateY(-2px);
 }
@@ -129,29 +169,29 @@ body {
   cursor: pointer;
 }
 
-/* FOOTER ------------------------------------------------------------------------ */
+/* FOOTER ------------------------------------------------------------- */
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(48, 51, 56);
+  background-color: #2d323a;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   height: 100px;
 }
 
-/* FOOTBALL PAGE ///////////////////////////////////////////////////////////////// */
+/* FOOTBALL PAGE ////////////////////////////////////////////////////// */
 
-/* HEADER ------------------------------------------------------------------------ */
+/* HEADER ------------------------------------------------------------- */
 .footballHeader {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   overflow: hidden;
-  background-color: rgb(48, 51, 56);
+  background-color: #2d323a;
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -163,7 +203,7 @@ body {
   min-height: 100%;
 }
 
-/* PRODUCT CARDS ----------------------------------------------------------------- */
+/* PRODUCT CARDS ------------------------------------------------------ */
 .productCardContainer {
   display: flex;
   flex-wrap: wrap;
@@ -185,14 +225,14 @@ body {
 }
 
 .productCardBody {
-  background-color: rgb(48, 51, 56);
+  background-color: #2d323a;
   color: white;
   border-radius: 0 0 10px 10px;
 }
 
-/* TACKLE WHEEL PAGE ///////////////////////////////////////////////////////////////// */
+/* TACKLE WHEEL PAGE ////////////////////////////////////////////////// */
 
-/* BACK BUTTON ----------------------------------------------------------------------- */
+/* BACK BUTTON -------------------------------------------------------- */
 .backBtnContainer {
   display: flex;
   justify-content: center;
@@ -206,11 +246,10 @@ body {
 
 .backBtn {
   justify-content: left;
-  background-color: rgb(48, 51, 56);
   border: none;
 }
 
-/* PRODUCT DETAILS CARD --------------------------------------------------------------- */
+/* PRODUCT DETAILS CARD ----------------------------------------------- */
 .productDetailsContainer {
   display: flex;
   justify-content: center;
@@ -237,17 +276,17 @@ body {
   margin-right: 20px;
 }
 
-/* RECOMMENDED PRODUCTS TITLE ----------------------------------------------------------- */
+/* RECOMMENDED PRODUCTS TITLE ----------------------------------------- */
 .recommendedProductsTitle {
   color: white;
-  border-top: rgb(48, 51, 56) solid 2px;
+  border-top: #2d323a solid 2px;
   padding-top: 20px;
   width: 80vw;
   margin: auto;
   text-align: center;
 }
 
-/* MEDIA QUERIES //////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES ////////////////////////////////////////////////////// */
 
 /* Responsive for laptop screens */
 @media screen and (max-width: 1440px) {
