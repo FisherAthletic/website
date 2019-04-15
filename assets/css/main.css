@@ -45,9 +45,16 @@ body {
   width: 100%;
 }
 
+/* FILTERBAR */
+.filterBar {
+  border-bottom: none;
+  justify-content: center;
+  padding: 0 10vw 0 10vw;
+}
+
 /* DROPDOWNS */
 .dropdown-menu.show {
-  background-color: rgba(20, 20, 20, 0.9);
+  background-color: #2d323a;
 }
 
 .dropdown-menu a {
@@ -55,7 +62,7 @@ body {
 }
 
 .dropdown-menu a.dropdown-item:hover {
-  background-color: rgba(20, 20, 20, 0.9);
+  background-color: #2d323a;
   color: white;
   font-weight: 600;
 }
@@ -69,6 +76,11 @@ body {
 .btn-secondary {
   background-color: #505a64;
   border: none;
+}
+
+/* ACTIVE */
+.active {
+  background-color: none !important;
 }
 
 /* LANDING PAGE /////////////////////////////////////////////////////// */
@@ -129,7 +141,7 @@ body {
 .categoryGrid {
   display: flex;
   overflow: hidden;
-  background-color: #1A1D22;
+  background-color: #2d323a;
   flex: calc(50% - 40px);
   height: 300px;
   margin: 20px;
@@ -139,14 +151,17 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   position: relative;
+  transition: transform 1s, box-shadow 1s;
 }
 
 .categoryGrid:hover {
   background-image: none;
-  background-color: black;
+  background-color: #1A1D22;
   color: #2d323a;
   filter: none;
-  transform: translateY(-2px);
+  transform: scale(1.05);
+  transition: 0.5s;
+  box-shadow: 5px 5px 5px black;
 }
 
 .categoryGrid img {
@@ -189,18 +204,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   overflow: hidden;
-  background-color: #2d323a;
-  height: 100vh;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
+  background-color: #1A1D22;
+  padding: 85px 0 20px 0;
 }
 
-.footballHeader img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
+.footballHeader h2 {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
 /* PRODUCT CARDS ------------------------------------------------------ */
