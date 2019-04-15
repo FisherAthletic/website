@@ -44,7 +44,7 @@ body {
     color: white;
     position: relative;
     -moz-user-select: none;
--webkit-user-select: none;
+    -webkit-user-select: none;
   }
 
   .landingTextContainer {
@@ -64,7 +64,7 @@ body {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
-    animation: landingZoomOut 8s linear forwards;
+    animation: landingZoomOut 10s linear forwards;
   }
 
   @keyframes landingZoomOut {
@@ -72,18 +72,8 @@ body {
       transform: scale(1);
     }
     100% {
-      transform: scale(0.7);
+      transform: scale(0.8);
     }
-  }
-
-  /* FEATURED CAROUSAL ----------------------------------------------------------- */
-  .featuredContainer {
-    display: block;
-    background-color: red;
-    width: 50vw;
-    max-width: 1000px;
-    margin-top: 40px;
-    margin: auto;
   }
 
  /* CATEGORY GRID ---------------------------------------------------------------- */
@@ -92,6 +82,8 @@ body {
    flex-wrap: wrap;
    justify-content: space-around;
    margin: 20px;
+   -moz-user-select: none;
+   -webkit-user-select: none;
  }
 
 .categoryGrid {
@@ -99,7 +91,7 @@ body {
   overflow: hidden;
   background-color: #1A1D22;
   flex: calc(50% - 40px);
-  height: 500px;
+  height: 300px;
   margin: 20px;
   justify-content: center;
   align-items: center;
@@ -107,25 +99,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   position: relative;
-}
-
-.categoryGrid img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
-  filter: opacity(30%);
-}
-
-.categoryGrid :any-link {
-  color: white;
-  font-size: 36px !important;
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
 }
 
 .categoryGrid:hover {
@@ -136,12 +109,24 @@ body {
   transform: translateY(-2px);
 }
 
-.categoryGrid :any-link :hover {
-  font-size: 38px;
+.categoryGrid img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: opacity(30%);
 }
 
-.categoryGrid a:hover {
-  font-size: 38px;
+.categoryGrid h3 {
+  color: white;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 /* FOOTER ------------------------------------------------------------------------ */
@@ -273,7 +258,7 @@ body {
   }
  .categoryGrid {
     overflow: hidden;
-    height: 400px;
+    height: 200px;
  }
 }
 /* Responsive for Ipad screens */
@@ -285,7 +270,7 @@ body {
   }
   .categoryGrid {
     overflow: hidden;
-    height: 300px;
+    height: 150px;
  }
 }
 @media screen and (max-width: 840px) {
@@ -298,7 +283,7 @@ body {
  .categoryGrid {
     overflow: hidden;
     flex: calc(100% - 40px);
-    height: 400px;
+    height: 300px;
     margin: 20px;
  }
 }
@@ -310,6 +295,6 @@ body {
   }
  .categoryGrid {
     overflow: hidden;
-    height: 350px;
+    height: 200px;
   }
 }

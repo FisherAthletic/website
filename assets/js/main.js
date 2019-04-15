@@ -39,3 +39,9 @@ function tackleWheelOption60 () {
     document.getElementById("tackleWheelSpecs").innerHTML = '60" Outside Diam. x 30" Inside Diam. 12" thick | 27 lbs | PolyFoam';
     document.getElementById("tackleWheelPrice").innerHTML = "$425.00";
 }
+
+function footballGridClick () {
+    document.getElementById("footballGrid").addEventListener('click', function() {
+        location.href = "./pages/football.html"
+    }, false);
+}
