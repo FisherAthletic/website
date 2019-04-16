@@ -41,6 +41,10 @@ body {
   width: 100%;
 }
 
+.navbar-toggler {
+  border: none;
+}
+
 /* FILTERBAR ---------------------------------------------------------- */
 .filterBar {
   border-bottom: none;
