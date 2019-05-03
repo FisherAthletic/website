@@ -96,7 +96,7 @@ body {
 
 .productCard:hover {
   transform: scale(1.05);
-  transition: 0.5s;
+  transition: 0.25s;
   box-shadow: 5px 5px 5px black;
 }
 
@@ -201,7 +201,7 @@ body {
   color: #2d323a;
   filter: none;
   transform: scale(1.05);
-  transition: 0.5s;
+  transition: 0.25s;
   box-shadow: 5px 5px 5px black;
 }
 
@@ -347,16 +347,14 @@ body {
  font-size: 36px;
  position: relative;
  transition: transform 1s, box-shadow 1s;
- cursor: pointer;
 }
 
 .catalogCard:hover {
  background-image: none;
  background-color: #1A1D22;
- color: #2d323a;
  filter: none;
  transform: scale(1.05);
- transition: 0.5s;
+ transition: 0.25s;
  box-shadow: 5px 5px 5px black;
 }
 
