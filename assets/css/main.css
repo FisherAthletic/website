@@ -26,6 +26,7 @@ body {
 }
 
 /* GENERAL //////////////////////////////////////////////////////////// */
+
 /* NAVBAR-------------------------------------------------------------- */
 .navbar {
   background-color: #1A1D22 !important;
@@ -48,7 +49,7 @@ body {
 /* FILTERBAR ---------------------------------------------------------- */
 .filterBar {
   border-bottom: none;
-  justify-content: center;
+  justify-content: center !important;
   padding: 0 10vw 0 10vw;
 }
 
@@ -78,9 +79,31 @@ body {
   border: none;
 }
 
-/* ACTIVE ------------------------------------------------------------- */
-.active {
-  background-color: none !important;
+/* PRODUCT CARDS ------------------------------------------------------ */
+.productCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 10vw 20px 10vw;
+}
+
+.productCard {
+  border: none;
+  margin: 0 10px 20px 10px;
+  border-radius: 15px;
+  transition: transform 1s, box-shadow 1s;
+}
+
+.productCard:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  box-shadow: 5px 5px 5px black;
+}
+
+.productCardBody {
+  background-color: #2d323a;
+  color: white;
+  border-radius: 0 0 10px 10px;
 }
 
 /* FOOTER ------------------------------------------------------------- */
@@ -89,7 +112,7 @@ body {
 }
 
 .footer :any-link {
-  color: #e0eebd;
+  color: #007bff;
 }
 
 .fbIcon {
@@ -100,8 +123,8 @@ body {
   color: white;
 }
 
-
 /* LANDING PAGE /////////////////////////////////////////////////////// */
+
 /* LANDING DIV--------------------------------------------------------- */
   .landingDiv {
     display: flex;
@@ -220,31 +243,25 @@ body {
   color: white;
 }
 
-/* PRODUCT CARDS ------------------------------------------------------ */
-.productCardContainer {
+/* FOOTBALL PAGINATION -------------------------------------------------------- */
+.footballPagination {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px 10vw 40px 10vw;
+  justify-content: center;
+  margin: 0 0 20px 0;
 }
 
-.productCard {
-  border: none;
-  margin: 0 5px 20px 5px;
-  border-radius: 15px;
-  transition: transform 1s, box-shadow 1s;
+.footballPagination a {
+  background-color: #3c414b;
+  border: #1A1D22 solid 1px;
 }
 
-.productCard:hover {
-  transform: scale(1.05);
-  transition: 0.5s;
-  box-shadow: 5px 5px 5px black;
+.footballPagination a:hover {
+  background-color: #007bff;
+  border: #1A1D22 solid 1px;
 }
 
-.productCardBody {
-  background-color: #2d323a;
+.footballPagination :any-link {
   color: white;
-  border-radius: 0 0 10px 10px;
 }
 
 /* TACKLE WHEEL PAGE ////////////////////////////////////////////////// */

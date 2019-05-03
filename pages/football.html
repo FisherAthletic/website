@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fisher Athletic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/navbar/fisher_logo_nav-01.svg">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
     <!-- Icon library -->
@@ -58,33 +60,26 @@
             <h2>Football</h2>
         </div>
 
-        <!-- Football filterbar -->
-        <nav class="navbar mx-auto navbar-expand-lg navbar-dark bg-dark filterBar">
-
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Filter by category
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="../pages/football.html">Gameday</a>
-                  <a class="dropdown-item" href="../pages/baseball.html">Practice</a>
-                  <a class="dropdown-item" href="../pages/track.html">Youth</a>
-                  <a class="dropdown-item" href="../pages/football.html">All</a>
-                </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  price range
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="../pages/football.html">Less than $100</a>
-                  <a class="dropdown-item" href="../pages/baseball.html">$100 - $200</a>
-                  <a class="dropdown-item" href="../pages/track.html">$200 - $300</a>
-                  <a class="dropdown-item" href="../pages/football.html">$300 - $400</a>
-                </li>
-            </ul>
+        <!-- Pagination -->
+        <div class="footballPagination">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
         </nav>
+      </div>
 
         <!-- Football products -->
         <div class="productCardContainer">
@@ -200,7 +195,7 @@
                 </div>
     
             <div class="card productCard" style="width: 18rem;">
-                    <img src="../assets/images/football/step_overs.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="...">
                         <div class="card-body productCardBody">
                           <h5 class="card-title">Agility Dummies</h5>
                           <h6 class="card-text">These are Agility Dummies.</h6>
@@ -210,6 +205,27 @@
                 </div>
 
         </div>
+
+        <!-- Pagination -->
+        <div class="footballPagination">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -255,19 +271,19 @@
   
             <!-- Links -->
             <h6 class="text-uppercase font-weight-bold">Support</h6>
-            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-            <p>
-              <a href="#!">Contact us</a>
-            </p>
-            <p>
-              <a href="#!">Form center</a>
-            </p>
-            <p>
-              <a href="#!">About us</a>
-            </p>
-            <p>
-              <a href="#!">FAQ</a>
-            </p>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="./pages/contact-us.html">Contact us</a>
+          </p>
+          <p>
+            <a href="./pages/forms.html">Form center</a>
+          </p>
+          <p>
+            <a href="./pages/about-us.html">About us</a>
+          </p>
+          <p>
+            <a href="./pages/faq.html">FAQ</a>
+          </p>
   
           </div>
   
@@ -276,19 +292,19 @@
 
             <!-- Links -->
             <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-            <p>
-              <a href="#!">Your Account</a>
-            </p>
-            <p>
-              <a href="#!">Become a dealer</a>
-            </p>
-            <p>
-              <a href="#!">Shipping Rates</a>
-            </p>
-            <p>
-              <a href="#!">Help</a>
-            </p>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">International Orders</a>
+          </p>
+          <p>
+            <a href="./pages/shipping-policy">Shipping Policy</a>
+          </p>
+          <p>
+            <a href="./pages/return-policy.html">Return Policy</a>
+          </p>
+          <p>
+            <a href="./pages/privacy-policy.html">Privacy Policy</a>
+          </p>
   
           </div>
   
