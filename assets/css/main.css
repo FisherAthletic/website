@@ -228,7 +228,7 @@ body {
 /* FOOTBALL PAGE ////////////////////////////////////////////////////// */
 
 /* HEADER ------------------------------------------------------------- */
-.footballHeader {
+.pageTitle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,7 +237,7 @@ body {
   padding: 85px 0 20px 0;
 }
 
-.footballHeader h2 {
+.pageTitle h2 {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -318,6 +318,66 @@ body {
   width: 80vw;
   margin: auto;
   text-align: center;
+}
+
+/* CATALOG PAGE ////////////////////////////////////////////////////// */
+/* CATALOG GRID ------------------------------------------------------ */
+
+.catalogCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10vw 20px 10vw;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.catalogCard {
+ display: flex;
+ overflow: hidden;
+ background-color: #2d323a;
+ width: 200px;
+ height: 300px;
+ margin: 20px;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ color: white;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 36px;
+ position: relative;
+ transition: transform 1s, box-shadow 1s;
+ cursor: pointer;
+}
+
+.catalogCard:hover {
+ background-image: none;
+ background-color: #1A1D22;
+ color: #2d323a;
+ filter: none;
+ transform: scale(1.05);
+ transition: 0.5s;
+ box-shadow: 5px 5px 5px black;
+}
+
+.catalogCard img {
+ flex-shrink: 0;
+ min-width: 100%;
+ min-height: 100%;
+ filter: opacity(30%);
+}
+
+.catalogCard p {
+  color: white;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 /* MEDIA QUERIES ////////////////////////////////////////////////////// */
