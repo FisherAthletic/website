@@ -70,6 +70,26 @@ body {
   font-weight: 600;
 }
 
+/* ACCORDIAN ---------------------------------------------------------- */
+.accordianBody {
+  background-color: #3c414b;
+  color: white;
+ font-family: 'Montserrat', sans-serif;
+ border: #1A1D22 solid 3px;;
+}
+
+.accordianBodyBg {
+  background-color: #2d323a;
+}
+
+.accordianLink {
+  color: white;
+  text-decoration: none !important;
+}
+.accordianLink:hover {
+  color: #ED1C24;
+}
+
 /* BUTTONS ------------------------------------------------------------ */
 .btn {
  font-family: 'Montserrat', sans-serif;
@@ -119,7 +139,15 @@ body {
 }
 
 .footer :any-link {
-  color: #007bff;
+  color: #75828f;
+}
+
+.footer :any-link:hover {
+  color: white;
+}
+
+.footerSocial {
+  background-color: #2d323a !important;
 }
 
 .fbIcon {
@@ -358,7 +386,7 @@ body {
 
 .catalogCard:hover {
  background-image: none;
- background-color: #1A1D22;
+ background-color: #3c414b;
  filter: none;
  transform: scale(1.05);
  transition: 0.25s;
@@ -390,65 +418,67 @@ body {
 .contactFormDiv {
   color: white;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 1rem;
  font-family: 'Montserrat', sans-serif;
 }
 
-.contactUsLocation {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.contactUsLocation h3 {
-  color: gray;
-  font-weight: bold;
-}
-
-.contactUsCall {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.contactUsCall h3 {
-  color: gray;
-  font-weight: bold;
-}
-
-.contactUsHours {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.contactUsHours h3 {
-  color: gray;
-  font-weight: bold;
-}
-
 .contactUsForm {
   grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-end: 11;
   grid-row-start: 1;
   grid-row-end: 4;
   padding: 1.5rem;
 }
 
 .contactUsForm h3 {
-  color: gray;
+  color: #75828f;
   font-weight: bold;
+}
+
+/* FORM DIV ---------------------------------------------------------- */
+.contactUsInfoDiv {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 1rem;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.contactUsLocation {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.contactUsCall {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.contactUsHours {
+  grid-column-start: 9;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* CONTACT INFO ACCORDIAN -------------------------------------------- */
+.contactInfoAccordian {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 30px 0;
 }
 
 /* MEDIA QUERIES ////////////////////////////////////////////////////// */
