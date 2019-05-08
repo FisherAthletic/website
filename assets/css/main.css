@@ -105,6 +105,13 @@ body {
   border: none;
 }
 
+/* PARAGRAPHS ---------------------------------------------------------*/
+
+.defaultParagraph {
+  color: white;
+ font-family: 'Montserrat', sans-serif; 
+}
+
 /* PRODUCT CARDS ------------------------------------------------------ */
 .productCardContainer {
   display: flex;
@@ -497,7 +504,17 @@ body {
   margin: 0 0 10px 0;
 }
 
-/* MEDIA QUERIES ////////////////////////////////////////////////////// */
+/* RETURN POLICY PAGE //////////////////////////////////////////////// */
+
+/* POLICY PARAGRAPHS -------------------------------------------------------- */
+#returnPolicy {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+/* MEDIA QUERIES ///////////////////////////////////////////////////// */
 
 /* Responsive for laptop screens */
 @media screen and (max-width: 1440px) {
