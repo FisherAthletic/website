@@ -86,6 +86,7 @@ body {
   color: white;
   text-decoration: none !important;
 }
+
 .accordionLink:hover {
   color: #ED1C24;
 }
@@ -162,6 +163,10 @@ body {
 }
 
 .twIcon {
+  color: white;
+}
+
+.activeFooterLink :any-link {
   color: white;
 }
 
