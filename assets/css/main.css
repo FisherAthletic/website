@@ -298,13 +298,17 @@ body {
 }
 
 .footballPagination a {
-  background-color: #3c414b;
+  background-color: #2d323a;
   border: #1A1D22 solid 1px;
 }
 
 .footballPagination a:hover {
-  background-color: #007bff;
+  background-color: #505a64;
   border: #1A1D22 solid 1px;
+}
+
+.footballPaginationActive a {
+  background-color: #505a64;
 }
 
 .footballPagination :any-link {
