@@ -40,8 +40,39 @@ function tackleWheelOption60 () {
     document.getElementById("tackleWheelPrice").innerHTML = "$425.00";
 }
 
+// Click functions that link to pages //
 function footballGridClick () {
     document.getElementById("footballGrid").addEventListener('click', function() {
         location.href = "./pages/football.html"
+    }, false);
+}
+
+function baseballGridClick () {
+    document.getElementById("baseballGrid").addEventListener('click', function() {
+        location.href = "./pages/baseball.html"
+    }, false);
+}
+
+function trackGridClick () {
+    document.getElementById("trackGrid").addEventListener('click', function() {
+        location.href = "./pages/track.html"
+    }, false);
+}
+
+function chairsGridClick () {
+    document.getElementById("chairsGrid").addEventListener('click', function() {
+        location.href = "./pages/chairs.html"
+    }, false);
+}
+
+function paddingGridClick () {
+    document.getElementById("paddingGrid").addEventListener('click', function() {
+        location.href = "./pages/padding.html"
+    }, false);
+}
+
+function windscreenGridClick () {
+    document.getElementById("windscreenGrid").addEventListener('click', function() {
+        location.href = "./pages/windscreen.html"
     }, false);
 }

@@ -221,7 +221,7 @@ body {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
-   margin: 20px;
+   margin: 20px 5vw 20px 5vw;
    -moz-user-select: none;
    -webkit-user-select: none;
  }
@@ -230,14 +230,14 @@ body {
   display: flex;
   overflow: hidden;
   background-color: #2d323a;
-  flex: calc(50% - 40px);
-  height: 275px;
+  flex: calc(30% - 40px);
+  height: 225px;
   margin: 20px;
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 36px;
   position: relative;
   transition: transform 1s, box-shadow 1s;
 }
@@ -261,14 +261,13 @@ body {
 
 .categoryGrid h3 {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-decoration: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 10%;
   cursor: pointer;
 }
 
@@ -528,23 +527,36 @@ body {
 /* Responsive for laptop screens */
 @media screen and (max-width: 1440px) {
  .categoryGrid {
-    height: 200px;
+    height: 175px;
  }
+ .categoryGrid h3 {
+  font-size: 24px;
+}
 }
 /* Responsive for Ipad screens */
 @media screen and (max-width: 1024px) {
   .categoryGrid {
     height: 150px;
  }
+ .categoryGrid h3 {
+  font-size: 20px;
+}
 }
 @media screen and (max-width: 840px) {
  .categoryGrid {
-    flex: calc(100% - 40px);
-    height: 250px;
+    flex: calc(40% - 40px);
+    height: 140px;
  }
+ .categoryGrid h3 {
+  font-size: 20px;
+}
 }
 @media screen and (max-width: 550px) {
  .categoryGrid {
-    height: 200px;
+    flex: calc(100% - 40px);
+    height: 150px;
+  }
+  .categoryGrid h3 {
+    font-size: 24px;
   }
 }
