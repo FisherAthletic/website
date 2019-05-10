@@ -4,7 +4,7 @@ body {
     background-color: #1A1D22;
 }
 
-/* SCROLLBAR ---------------------------------------------------------- */
+/* SCROLLBAR --------------------------------------------------------- */
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -25,9 +25,9 @@ body {
   background: rgb(17, 19, 22);
 }
 
-/* GENERAL //////////////////////////////////////////////////////////// */
+/* GENERAL /////////////////////////////////////////////////////////// */
 
-/* NAVBAR-------------------------------------------------------------- */
+/* NAVBAR------------------------------------------------------------- */
 .navbar {
   background-color: #1A1D22 !important;
   border-bottom: #ED1C24 solid 4px;
@@ -47,14 +47,14 @@ body {
   border: none;
 }
 
-/* FILTERBAR ---------------------------------------------------------- */
+/* FILTERBAR --------------------------------------------------------- */
 .filterBar {
   border-bottom: none;
   justify-content: center !important;
   padding: 0 10vw 0 10vw;
 }
 
-/* DROPDOWNS ---------------------------------------------------------- */
+/* DROPDOWNS --------------------------------------------------------- */
 .dropdown-menu.show {
   background-color: #2d323a;
  font-family: 'Montserrat', sans-serif;
@@ -70,7 +70,7 @@ body {
   font-weight: 600;
 }
 
-/* ACCORDION ---------------------------------------------------------- */
+/* ACCORDION --------------------------------------------------------- */
 .accordionBody {
   background-color: #2d323a;
   color: white;
@@ -91,7 +91,7 @@ body {
   color: #ED1C24;
 }
 
-/* BUTTONS ------------------------------------------------------------ */
+/* BUTTONS ----------------------------------------------------------- */
 .btn {
  font-family: 'Montserrat', sans-serif;
 }
@@ -113,7 +113,7 @@ body {
  font-family: 'Montserrat', sans-serif; 
 }
 
-/* PRODUCT CARDS ------------------------------------------------------ */
+/* PRODUCT CARDS ----------------------------------------------------- */
 .productCardContainer {
   display: flex;
   flex-wrap: wrap;
@@ -140,7 +140,7 @@ body {
   border-radius: 0 0 10px 10px;
 }
 
-/* FOOTER ------------------------------------------------------------- */
+/* FOOTER ------------------------------------------------------------ */
 .footer {
   color: white;
  font-family: 'Montserrat', sans-serif;
@@ -170,9 +170,9 @@ body {
   color: white;
 }
 
-/* LANDING PAGE /////////////////////////////////////////////////////// */
+/* LANDING PAGE ////////////////////////////////////////////////////// */
 
-/* LANDING DIV--------------------------------------------------------- */
+/* LANDING DIV-------------------------------------------------------- */
   .landingDiv {
     display: flex;
     justify-content: center;
@@ -216,7 +216,7 @@ body {
     }
   }
 
- /* CATEGORY GRID ----------------------------------------------------- */
+ /* CATEGORY GRID ---------------------------------------------------- */
  .categoryGridContainer {
    display: flex;
    flex-wrap: wrap;
@@ -231,7 +231,7 @@ body {
   overflow: hidden;
   background-color: #2d323a;
   flex: calc(50% - 40px);
-  height: 300px;
+  height: 275px;
   margin: 20px;
   justify-content: center;
   align-items: center;
@@ -272,9 +272,9 @@ body {
   cursor: pointer;
 }
 
-/* FOOTBALL PAGE ////////////////////////////////////////////////////// */
+/* FOOTBALL PAGE ///////////////////////////////////////////////////// */
 
-/* HEADER ------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------ */
 .pageTitle {
   display: flex;
   justify-content: center;
@@ -290,7 +290,7 @@ body {
   color: white;
 }
 
-/* FOOTBALL PAGINATION -------------------------------------------------------- */
+/* FOOTBALL PAGINATION ----------------------------------------------- */
 .footballPagination {
   display: flex;
   justify-content: center;
@@ -315,9 +315,9 @@ body {
   color: white;
 }
 
-/* TACKLE WHEEL PAGE ////////////////////////////////////////////////// */
+/* TACKLE WHEEL PAGE ///////////////////////////////////////////////// */
 
-/* BACK BUTTON -------------------------------------------------------- */
+/* BACK BUTTON ------------------------------------------------------- */
 .backBtnContainer {
   display: flex;
   justify-content: center;
@@ -334,7 +334,7 @@ body {
   border: none;
 }
 
-/* PRODUCT DETAILS CARD ----------------------------------------------- */
+/* PRODUCT DETAILS CARD ---------------------------------------------- */
 .productDetailsContainer {
   display: flex;
   justify-content: center;
@@ -361,7 +361,7 @@ body {
   margin-right: 20px;
 }
 
-/* RECOMMENDED PRODUCTS TITLE ----------------------------------------- */
+/* RECOMMENDED PRODUCTS TITLE ---------------------------------------- */
 .recommendedProductsTitle {
   color: white;
   border-top: #2d323a solid 2px;
@@ -527,50 +527,24 @@ body {
 
 /* Responsive for laptop screens */
 @media screen and (max-width: 1440px) {
-  .categoryGridContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
  .categoryGrid {
-    overflow: hidden;
     height: 200px;
  }
 }
 /* Responsive for Ipad screens */
 @media screen and (max-width: 1024px) {
-  .categoryGridContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
   .categoryGrid {
-    overflow: hidden;
     height: 150px;
  }
 }
 @media screen and (max-width: 840px) {
-  .categoryGridContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px;
-  }
  .categoryGrid {
-    overflow: hidden;
     flex: calc(100% - 40px);
-    height: 300px;
-    margin: 20px;
+    height: 250px;
  }
 }
 @media screen and (max-width: 550px) {
-  .categoryGridContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
  .categoryGrid {
-    overflow: hidden;
     height: 200px;
   }
 }
