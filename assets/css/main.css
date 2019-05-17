@@ -106,8 +106,49 @@ body {
   border: none;
 }
 
-/* PARAGRAPHS ---------------------------------------------------------*/
+/* MODALS ---------------------------------------------------------*/
+.modal-content {
+  background-color: #2d323a !important;
+  color: white;
+}
 
+.modal-content :any-link {
+  color: white;
+}
+
+.modal-header {
+  border-bottom: #3c414b solid 1px;
+}
+
+.modal-footer {
+  border-top: #3c414b solid 1px;
+}
+
+.card-img-top {
+  cursor: pointer;
+}
+
+.modalExpandImage img {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 5px;
+}
+
+#printedWindscreenCaption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  height: 150px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* PARAGRAPHS ---------------------------------------------------------*/
 .defaultParagraph {
   color: white;
  font-family: 'Montserrat', sans-serif; 
@@ -138,6 +179,11 @@ body {
   background-color: #2d323a;
   color: white;
   border-radius: 0 0 10px 10px;
+}
+
+.productCardDescription {
+  background-color: #1A1D22;
+  color: white;
 }
 
 /* FOOTER ------------------------------------------------------------ */
@@ -301,7 +347,6 @@ body {
   padding: 10px;
   max-width: 500px;
 }
-
 /* FOOTBALL PAGE ///////////////////////////////////////////////////// */
 
 /* HEADER ------------------------------------------------------------ */
@@ -519,6 +564,10 @@ body {
   grid-row-end: 2;
   padding: 1.5rem;
   text-align: center;
+}
+
+.with-errors {
+  color: #ED1C24;
 }
 
 /* CONTACT INFO ACCORDION -------------------------------------------- */

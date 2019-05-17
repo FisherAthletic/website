@@ -67,7 +67,12 @@
             <h3>Have a question?</h3>
 
           <!-- Form -->
-          <form id="contact-form" method="post" action="contact.php" role="form">
+          <form id="contact-form" method="post" action="../php/contact.php" role="form">
+            
+            <div class="messages"></div>
+
+            <div class="controls">
+
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="form_name">First Name</label>
@@ -92,10 +97,11 @@
             </div>
             <div class="form-group">
                 <label for="form_message">Message</label>
-                <textarea class="form-control" id="form_message" rows="3" placeholder="Type your message here" required="required" data-error="Please, leave us a message."></textarea>
+                <textarea class="form-control" id="form_message" rows="3" placeholder="Type your message here" required="required" data-error="Message is required."></textarea>
                 <div class="help-block with-errors"></div>
               </div>
-            <button type="submit" class="btn btn-danger">Submit</button>
+            <input type="submit" class="btn btn-danger btn-send" value="Send message">
+            </div>
           </form>
           <!-- Form end -->
 
@@ -264,9 +270,12 @@
 
     </div>
 
-
+    <!-- Jquery -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>

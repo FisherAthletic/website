@@ -76,3 +76,11 @@ function windscreenGridClick () {
         location.href = "./pages/windscreen.html"
     }, false);
 }
+
+// 
+var captionText = document.getElementById("printedWindscreenCaption");
+var imgClickExpand = document.getElementById("printedWindscreenImage");
+
+imgClickExpand.onclick = function(){
+  captionText.innerHTML = this.alt;
+}
