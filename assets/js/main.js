@@ -77,7 +77,7 @@ function windscreenGridClick () {
     }, false);
 }
 
-// Caption inserts //
+// Baseball captions p1 //
 var msdpCaption = document.getElementById("msdpCaption");
 var msdpImage = document.getElementById("msdpImage");
 msdpImage.onclick = function(){
