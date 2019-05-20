@@ -128,7 +128,7 @@ body {
   cursor: pointer;
 }
 
-.modalExpandImage img {
+.imageModal img {
   margin: auto;
   display: block;
   width: 80%;
@@ -136,7 +136,7 @@ body {
   border-radius: 5px;
 }
 
-#printedWindscreenCaption {
+.imageModalCaption {
   margin: auto;
   display: block;
   width: 80%;

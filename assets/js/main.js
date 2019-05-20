@@ -77,10 +77,75 @@ function windscreenGridClick () {
     }, false);
 }
 
-// 
-var captionText = document.getElementById("printedWindscreenCaption");
-var imgClickExpand = document.getElementById("printedWindscreenImage");
+// Caption inserts //
+var msdpCaption = document.getElementById("msdpCaption");
+var msdpImage = document.getElementById("msdpImage");
+msdpImage.onclick = function(){
+  msdpCaption.innerHTML = this.alt;
+}
 
-imgClickExpand.onclick = function(){
-  captionText.innerHTML = this.alt;
+var tmwsxxCaption = document.getElementById("tmwsxxCaption");
+var tmwsxxImage = document.getElementById("tmwsxxImage");
+tmwsxxImage.onclick = function(){
+  tmwsxxCaption.innerHTML = this.alt;
+}
+
+var dmwsCaption = document.getElementById("dmwsCaption");
+var dmwsImage = document.getElementById("dmwsImage");
+dmwsImage.onclick = function(){
+  dmwsCaption.innerHTML = this.alt;
+}
+
+var dbpsoCaption = document.getElementById("dbpsoCaption");
+var dbpsoImage = document.getElementById("dbpsoImage");
+dbpsoImage.onclick = function(){
+  dbpsoCaption.innerHTML = this.alt;
+}
+
+var pcaps223Caption = document.getElementById("pcaps223Caption");
+var pcaps223Image = document.getElementById("pcaps223Image");
+pcaps223Image.onclick = function(){
+  pcaps223Caption.innerHTML = this.alt;
+}
+
+var rpg184Caption = document.getElementById("rpg184Caption");
+var rpg184Image = document.getElementById("rpg184Image");
+rpg184Image.onclick = function(){
+  rpg184Caption.innerHTML = this.alt;
+}
+
+var rpsg184Caption = document.getElementById("rpsg184Caption");
+var rpsg184Image = document.getElementById("rpsg184Image");
+rpsg184Image.onclick = function(){
+  rpsg184Caption.innerHTML = this.alt;
+}
+
+var bspCaption = document.getElementById("bspCaption");
+var bspImage = document.getElementById("bspImage");
+bspImage.onclick = function(){
+  bspCaption.innerHTML = this.alt;
+}
+
+var bsp46Caption = document.getElementById("bsp46Caption");
+var bsp46Image = document.getElementById("bsp46Image");
+bsp46Image.onclick = function(){
+  bsp46Caption.innerHTML = this.alt;
+}
+
+var bbc100Caption = document.getElementById("bbc100Caption");
+var bbc100Image = document.getElementById("bbc100Image");
+bbc100Image.onclick = function(){
+  bbc100Caption.innerHTML = this.alt;
+}
+
+var bfc250Caption = document.getElementById("bfc250Caption");
+var bfc250Image = document.getElementById("bfc250Image");
+bfc250Image.onclick = function(){
+  bfc250Caption.innerHTML = this.alt;
+}
+
+var trpg10Caption = document.getElementById("trpg10Caption");
+var trpg10Image = document.getElementById("trpg10Image");
+trpg10Image.onclick = function(){
+  trpg10Caption.innerHTML = this.alt;
 }
