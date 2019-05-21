@@ -41,111 +41,174 @@ function tackleWheelOption60 () {
 }
 
 // Click functions that link to pages //
+
 function footballGridClick () {
-    document.getElementById("footballGrid").addEventListener('click', function() {
-        location.href = "./pages/football.html"
-    }, false);
+  location.href = "./pages/football.html";
 }
 
 function baseballGridClick () {
-    document.getElementById("baseballGrid").addEventListener('click', function() {
-        location.href = "./pages/baseball.html"
-    }, false);
+        location.href = "./pages/baseball.html";
 }
 
 function trackGridClick () {
-    document.getElementById("trackGrid").addEventListener('click', function() {
-        location.href = "./pages/track.html"
-    }, false);
+        location.href = "./pages/track.html";
 }
 
 function chairsGridClick () {
-    document.getElementById("chairsGrid").addEventListener('click', function() {
-        location.href = "./pages/chairs.html"
-    }, false);
+        location.href = "./pages/chairs.html";
 }
 
 function paddingGridClick () {
-    document.getElementById("paddingGrid").addEventListener('click', function() {
-        location.href = "./pages/padding.html"
-    }, false);
+        location.href = "./pages/padding.html";
 }
 
 function windscreenGridClick () {
-    document.getElementById("windscreenGrid").addEventListener('click', function() {
-        location.href = "./pages/windscreen.html"
-    }, false);
+        location.href = "./pages/windscreen.html";
 }
 
 // Baseball captions p1 //
-var msdpCaption = document.getElementById("msdpCaption");
-var msdpImage = document.getElementById("msdpImage");
-msdpImage.onclick = function(){
-  msdpCaption.innerHTML = this.alt;
-}
+function msdpCaption () {
+  var msdpImage = document.getElementById("msdpImage");
+  var msdpCaption = document.getElementById("msdpCaption");
+    msdpCaption.innerHTML = msdpImage.alt;
+};
 
-var tmwsxxCaption = document.getElementById("tmwsxxCaption");
-var tmwsxxImage = document.getElementById("tmwsxxImage");
-tmwsxxImage.onclick = function(){
-  tmwsxxCaption.innerHTML = this.alt;
-}
+function tmwsxxCaption () {
+  var tmwsxxImage = document.getElementById("tmwsxxImage");
+  var tmwsxxCaption = document.getElementById("tmwsxxCaption");
+    tmwsxxCaption.innerHTML = tmwsxxImage.alt;
+};
 
-var dmwsCaption = document.getElementById("dmwsCaption");
-var dmwsImage = document.getElementById("dmwsImage");
-dmwsImage.onclick = function(){
-  dmwsCaption.innerHTML = this.alt;
-}
+function dmwsCaption () {
+  var dmwsImage = document.getElementById("dmwsImage");
+  var dmwsCaption = document.getElementById("dmwsCaption");
+    dmwsCaption.innerHTML = dmwsImage.alt;
+};
 
-var dbpsoCaption = document.getElementById("dbpsoCaption");
-var dbpsoImage = document.getElementById("dbpsoImage");
-dbpsoImage.onclick = function(){
-  dbpsoCaption.innerHTML = this.alt;
-}
+function dbpsoCaption () {
+  var dbpsoImage = document.getElementById("dbpsoImage");
+  var dbpsoCaption = document.getElementById("dbpsoCaption");
+    dbpsoCaption.innerHTML = dbpsoImage.alt;
+};
 
-var pcaps223Caption = document.getElementById("pcaps223Caption");
-var pcaps223Image = document.getElementById("pcaps223Image");
-pcaps223Image.onclick = function(){
-  pcaps223Caption.innerHTML = this.alt;
-}
+function pcaps223Caption () {
+  var pcaps223Image = document.getElementById("pcaps223Image");
+  var pcaps223Caption = document.getElementById("pcaps223Caption");
+    pcaps223Caption.innerHTML = pcaps223Image.alt;
+};
 
-var rpg184Caption = document.getElementById("rpg184Caption");
-var rpg184Image = document.getElementById("rpg184Image");
-rpg184Image.onclick = function(){
-  rpg184Caption.innerHTML = this.alt;
-}
+function rpg184Caption () {
+  var rpg184Image = document.getElementById("rpg184Image");
+  var rpg184Caption = document.getElementById("rpg184Caption");
+    rpg184Caption.innerHTML = rpg184Image.alt;
+};
 
-var rpsg184Caption = document.getElementById("rpsg184Caption");
-var rpsg184Image = document.getElementById("rpsg184Image");
-rpsg184Image.onclick = function(){
-  rpsg184Caption.innerHTML = this.alt;
-}
+function rpsg184Caption () {
+  var rpsg184Image = document.getElementById("rpsg184Image");
+  var rpsg184Caption = document.getElementById("rpsg184Caption");
+    rpsg184Caption.innerHTML = rpsg184Image.alt;
+};
 
-var bspCaption = document.getElementById("bspCaption");
-var bspImage = document.getElementById("bspImage");
-bspImage.onclick = function(){
-  bspCaption.innerHTML = this.alt;
-}
+function bspCaption () {
+  var bspImage = document.getElementById("bspImage");
+  var bspCaption = document.getElementById("bspCaption");
+    bspCaption.innerHTML = bspImage.alt;
+};
 
-var bsp46Caption = document.getElementById("bsp46Caption");
-var bsp46Image = document.getElementById("bsp46Image");
-bsp46Image.onclick = function(){
-  bsp46Caption.innerHTML = this.alt;
-}
+function bsp46Caption () {
+  var bsp46Image = document.getElementById("bsp46Image");
+  var bsp46Caption = document.getElementById("bsp46Caption");
+    bsp46Caption.innerHTML = bsp46Image.alt;
+};
 
-var bbc100Caption = document.getElementById("bbc100Caption");
-var bbc100Image = document.getElementById("bbc100Image");
-bbc100Image.onclick = function(){
-  bbc100Caption.innerHTML = this.alt;
-}
+function bbc100Caption () {
+  var bbc100Image = document.getElementById("bbc100Image");
+  var bbc100Caption = document.getElementById("bbc100Caption");
+    bbc100Caption.innerHTML = bbc100Image.alt;
+};
 
-var bfc250Caption = document.getElementById("bfc250Caption");
-var bfc250Image = document.getElementById("bfc250Image");
-bfc250Image.onclick = function(){
-  bfc250Caption.innerHTML = this.alt;
-}
+function bfc250Caption () {
+  var bfc250Image = document.getElementById("bfc250Image");
+  var bfc250Caption = document.getElementById("bfc250Caption");
+    bfc250Caption.innerHTML = bfc250Image.alt;
+};
 
-var trpg10Caption = document.getElementById("trpg10Caption");
-var trpg10Image = document.getElementById("trpg10Image");
-trpg10Image.onclick = function(){
-  trpg10Caption.innerHTML = this.alt;
-}
+function trpg10Caption () {
+  var trpg10Image = document.getElementById("trpg10Image");
+  var trpg10Caption = document.getElementById("trpg10Caption");
+    trpg10Caption.innerHTML = trpg10Image.alt;
+};
+
+
+// Baseball captions p2 //
+function bbc100gCaption () {
+  var bbc100gImage = document.getElementById("bbc100gImage");
+  var bbc100gCaption = document.getElementById("bbc100gCaption");
+    bbc100gCaption.innerHTML = bbc100gImage.alt;
+};
+
+function pc1Caption () {
+  var pc1Image = document.getElementById("pc1Image");
+  var pc1Caption = document.getElementById("pc1Caption");
+    pc1Caption.innerHTML = pc1Image.alt;
+};
+
+function tpt201550Caption () {
+  var tpt201550Image = document.getElementById("tpt201550Image");
+  var tpt201550Caption = document.getElementById("tpt201550Caption");
+    tpt201550Caption.innerHTML = tpt201550Image.alt;
+};
+
+function hpm712Caption () {
+  var hpm712Image = document.getElementById("hpm712Image");
+  var hpm712Caption = document.getElementById("hpm712Caption");
+    hpm712Caption.innerHTML = hpm712Image.alt;
+};
+
+function odc4Caption () {
+  var odc4Image = document.getElementById("odc4Image");
+  var odc4Caption = document.getElementById("odc4Caption");
+    odc4Caption.innerHTML = odc4Image.alt;
+};
+
+function odc6Caption () {
+  var odc6Image = document.getElementById("odc6Image");
+  var odc6Caption = document.getElementById("odc6Caption");
+    odc6Caption.innerHTML = odc6Image.alt;
+};
+
+function mp36Caption () {
+  var mp36Image = document.getElementById("mp36Image");
+  var mp36Caption = document.getElementById("mp36Caption");
+    mp36Caption.innerHTML = mp36Image.alt;
+};
+
+function pm412Caption () {
+  var pm412Image = document.getElementById("pm412Image");
+  var pm412Caption = document.getElementById("pm412Caption");
+    pm412Caption.innerHTML = pm412Image.alt;
+};
+
+function pm612Caption () {
+  var pm612Image = document.getElementById("pm612Image");
+  var pm612Caption = document.getElementById("pm612Caption");
+    pm612Caption.innerHTML = pm612Image.alt;
+};
+
+function hpm612Caption () {
+  var hpm612Image = document.getElementById("hpm612Image");
+  var hpm612Caption = document.getElementById("hpm612Caption");
+    hpm612Caption.innerHTML = hpm612Image.alt;
+};
+
+function ic1006Caption () {
+  var ic1006Image = document.getElementById("ic1006Image");
+  var ic1006Caption = document.getElementById("ic1006Caption");
+    ic1006Caption.innerHTML = ic1006Image.alt;
+};
+
+function ic101018Caption () {
+  var ic101018Image = document.getElementById("ic101018Image");
+  var ic101018Caption = document.getElementById("ic101018Caption");
+    ic101018Caption.innerHTML = ic101018Image.alt;
+};
