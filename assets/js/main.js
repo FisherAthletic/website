@@ -213,3 +213,52 @@ function ip88Caption () {
 function ip88pCaption () {
   document.getElementById("ip88pCaption").innerHTML = document.getElementById("ip88pImage").alt;
 };
+
+// Baseball captions p4 //
+function pp88Caption () {
+  document.getElementById("pp88Caption").innerHTML = document.getElementById("pp88Image").alt;
+};
+
+function pp88nCaption () {
+  document.getElementById("pp88nCaption").innerHTML = document.getElementById("pp88nImage").alt;
+};
+
+function pp88pCaption () {
+  document.getElementById("pp88pCaption").innerHTML = document.getElementById("pp88pImage").alt;
+};
+
+function sku7006Caption () {
+  document.getElementById("sku7006Caption").innerHTML = document.getElementById("sku7006Image").alt;
+};
+
+function fp1010nCaption () {
+  document.getElementById("fp1010nCaption").innerHTML = document.getElementById("fp1010nImage").alt;
+};
+
+function fp1010Caption () {
+  document.getElementById("fp1010Caption").innerHTML = document.getElementById("fp1010Image").alt;
+};
+
+function sfp67nCaption () {
+  document.getElementById("sfp67nCaption").innerHTML = document.getElementById("sfp67nImage").alt;
+};
+
+function sfp67pdCaption () {
+  document.getElementById("sfp67pdCaption").innerHTML = document.getElementById("sfp67pdImage").alt;
+};
+
+function sfp67Caption () {
+  document.getElementById("sfp67Caption").innerHTML = document.getElementById("sfp67Image").alt;
+};
+
+function pp67nCaption () {
+  document.getElementById("pp67nCaption").innerHTML = document.getElementById("pp67nImage").alt;
+};
+
+function pp67pdCaption () {
+  document.getElementById("pp67pdCaption").innerHTML = document.getElementById("pp67pdImage").alt;
+};
+
+function pp67Caption () {
+  document.getElementById("pp67Caption").innerHTML = document.getElementById("pp67Image").alt;
+};
