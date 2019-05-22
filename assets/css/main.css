@@ -159,7 +159,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px 10vw 20px 10vw;
+  padding: 20px 5vw 20px 5vw;
 }
 
 .productCard {
