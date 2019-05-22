@@ -360,3 +360,32 @@ function dmsoCaption () {
 function dmsomCaption () {
   document.getElementById("dmsomCaption").innerHTML = document.getElementById("dmsomImage").alt;
 };
+
+// Baseball captions p6 //
+function fpbsoCaption () {
+  document.getElementById("fpbsoCaption").innerHTML = document.getElementById("fpbsoImage").alt;
+};
+
+function sku360pt1Caption () {
+  document.getElementById("sku360pt1Caption").innerHTML = document.getElementById("sku360pt1Image").alt;
+};
+
+function sku360pt2Caption () {
+  document.getElementById("sku360pt2Caption").innerHTML = document.getElementById("sku360pt2Image").alt;
+};
+
+function ab75Caption () {
+  document.getElementById("ab75Caption").innerHTML = document.getElementById("ab75Image").alt;
+};
+
+function ab75pcCaption () {
+  document.getElementById("ab75pcCaption").innerHTML = document.getElementById("ab75pcImage").alt;
+};
+
+function ab75bCaption () {
+  document.getElementById("ab75bCaption").innerHTML = document.getElementById("ab75bImage").alt;
+};
+
+function ab75bpcCaption () {
+  document.getElementById("ab75bpcCaption").innerHTML = document.getElementById("ab75bpcImage").alt;
+};
