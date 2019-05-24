@@ -683,3 +683,52 @@ function hj112228Caption () {
 function hj112232Caption () {
   document.getElementById("hj112232Caption").innerHTML = document.getElementById("hj112232Image").alt;
 };
+
+// Track & field captions p7 //
+function wc112224Caption () {
+  document.getElementById("wc112224Caption").innerHTML = document.getElementById("wc112224Image").alt;
+};
+
+function wc112226Caption () {
+  document.getElementById("wc112226Caption").innerHTML = document.getElementById("wc112226Image").alt;
+};
+
+function wc112228Caption () {
+  document.getElementById("wc112228Caption").innerHTML = document.getElementById("wc112228Image").alt;
+};
+
+function hj112232Caption () {
+  document.getElementById("hj112232Caption").innerHTML = document.getElementById("hj112232Image").alt;
+};
+
+function gc1122Caption () {
+  document.getElementById("gc1122Caption").innerHTML = document.getElementById("gc1122Image").alt;
+};
+
+function jr61218Caption () {
+  document.getElementById("jr61218Caption").innerHTML = document.getElementById("jr61218Image").alt;
+};
+
+function wc61218Caption () {
+  document.getElementById("wc61218Caption").innerHTML = document.getElementById("wc61218Image").alt;
+};
+
+function gc612Caption () {
+  document.getElementById("gc612Caption").innerHTML = document.getElementById("gc612Image").alt;
+};
+
+function jr61224Caption () {
+  document.getElementById("jr61224Caption").innerHTML = document.getElementById("jr61224Image").alt;
+};
+
+function wc61224Caption () {
+  document.getElementById("wc61224Caption").innerHTML = document.getElementById("wc61224Image").alt;
+};
+
+function gc1018Caption () {
+  document.getElementById("gc1018Caption").innerHTML = document.getElementById("gc1018Image").alt;
+};
+
+function wc101832Caption () {
+  document.getElementById("wc101832Caption").innerHTML = document.getElementById("wc101832Image").alt;
+};
