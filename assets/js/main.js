@@ -634,3 +634,52 @@ function tpolytbCaption () {
 function tchampCaption () {
   document.getElementById("tchampCaption").innerHTML = document.getElementById("tchampImage").alt;
 };
+
+// Track & field captions p6 //
+function tcebCaption () {
+  document.getElementById("tcebCaption").innerHTML = document.getElementById("tcebImage").alt;
+};
+
+function tolyCaption () {
+  document.getElementById("tolyCaption").innerHTML = document.getElementById("tolyImage").alt;
+};
+
+function tstarCaption () {
+  document.getElementById("tstarCaption").innerHTML = document.getElementById("tstarImage").alt;
+};
+
+function ttrackCaption () {
+  document.getElementById("ttrackCaption").innerHTML = document.getElementById("ttrackImage").alt;
+};
+
+function sstCaption () {
+  document.getElementById("sstCaption").innerHTML = document.getElementById("sstImage").alt;
+};
+
+function ts38Caption () {
+  document.getElementById("ts38Caption").innerHTML = document.getElementById("ts38Image").alt;
+};
+
+function tisbCaption () {
+  document.getElementById("tisbCaption").innerHTML = document.getElementById("tisbImage").alt;
+};
+
+function pv202326Caption () {
+  document.getElementById("pv202326Caption").innerHTML = document.getElementById("pv202326Image").alt;
+};
+
+function hj112224Caption () {
+  document.getElementById("hj112224Caption").innerHTML = document.getElementById("hj112224Image").alt;
+};
+
+function hj112226Caption () {
+  document.getElementById("hj112226Caption").innerHTML = document.getElementById("hj112226Image").alt;
+};
+
+function hj112228Caption () {
+  document.getElementById("hj112228Caption").innerHTML = document.getElementById("hj112228Image").alt;
+};
+
+function hj112232Caption () {
+  document.getElementById("hj112232Caption").innerHTML = document.getElementById("hj112232Image").alt;
+};
