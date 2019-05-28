@@ -697,8 +697,8 @@ function wc112228Caption () {
   document.getElementById("wc112228Caption").innerHTML = document.getElementById("wc112228Image").alt;
 };
 
-function hj112232Caption () {
-  document.getElementById("hj112232Caption").innerHTML = document.getElementById("hj112232Image").alt;
+function wc112232Caption () {
+  document.getElementById("wc112232Caption").innerHTML = document.getElementById("wc112232Image").alt;
 };
 
 function gc1122Caption () {
@@ -731,4 +731,53 @@ function gc1018Caption () {
 
 function wc101832Caption () {
   document.getElementById("wc101832Caption").innerHTML = document.getElementById("wc101832Image").alt;
+};
+
+// Track & field captions p8 //
+function hj81620Caption () {
+  document.getElementById("hj81620Caption").innerHTML = document.getElementById("hj81620Image").alt;
+};
+
+function hj81624Caption () {
+  document.getElementById("hj81624Caption").innerHTML = document.getElementById("hj81624Image").alt;
+};
+
+function hj81626Caption () {
+  document.getElementById("hj81626Caption").innerHTML = document.getElementById("hj81626Image").alt;
+};
+
+function hj81628Caption () {
+  document.getElementById("hj81628Caption").innerHTML = document.getElementById("hj81628Image").alt;
+};
+
+function wc81620Caption () {
+  document.getElementById("wc81620Caption").innerHTML = document.getElementById("wc81620Image").alt;
+};
+
+function wc81624Caption () {
+  document.getElementById("wc81624Caption").innerHTML = document.getElementById("wc81624Image").alt;
+};
+
+function wc81626Caption () {
+  document.getElementById("wc81626Caption").innerHTML = document.getElementById("wc81626Image").alt;
+};
+
+function wc81628Caption () {
+  document.getElementById("wc81628Caption").innerHTML = document.getElementById("wc81628Image").alt;
+};
+
+function gc816Caption () {
+  document.getElementById("gc816Caption").innerHTML = document.getElementById("gc816Image").alt;
+};
+
+function hj101824Caption () {
+  document.getElementById("hj101824Caption").innerHTML = document.getElementById("hj101824Image").alt;
+};
+
+function hj101826Caption () {
+  document.getElementById("hj101826Caption").innerHTML = document.getElementById("hj101826Image").alt;
+};
+
+function hj101828Caption () {
+  document.getElementById("hj101828Caption").innerHTML = document.getElementById("hj101828Image").alt;
 };
