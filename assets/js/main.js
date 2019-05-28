@@ -892,3 +892,40 @@ function pv202126pkCaption () {
 function pvhj2624cCaption () {
   document.getElementById("pvhj2624cCaption").innerHTML = document.getElementById("pvhj2624cImage").alt;
 };
+
+// Chairs and stools page1 //
+function ch100Caption () {
+  document.getElementById("ch100Caption").innerHTML = document.getElementById("ch100Image").alt;
+};
+
+function ch100dpCaption () {
+  document.getElementById("ch100dpCaption").innerHTML = document.getElementById("ch100dpImage").alt;
+};
+
+function chbdCaption () {
+  document.getElementById("chbdCaption").innerHTML = document.getElementById("chbdImage").alt;
+};
+
+function chccoverCaption () {
+  document.getElementById("chccoverCaption").innerHTML = document.getElementById("chccoverImage").alt;
+};
+
+function chc100Caption () {
+  document.getElementById("chc100Caption").innerHTML = document.getElementById("chc100Image").alt;
+};
+
+function chc150Caption () {
+  document.getElementById("chc150Caption").innerHTML = document.getElementById("chc150Image").alt;
+};
+
+function chc300Caption () {
+  document.getElementById("chc300Caption").innerHTML = document.getElementById("chc300Image").alt;
+};
+
+function chbcoCaption () {
+  document.getElementById("chbcoCaption").innerHTML = document.getElementById("chbcoImage").alt;
+};
+
+function stl1000dpCaption () {
+  document.getElementById("stl1000dpCaption").innerHTML = document.getElementById("stl1000dpImage").alt;
+};
