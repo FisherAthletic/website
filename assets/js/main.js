@@ -879,3 +879,16 @@ function tavblCaption () {
 function cbl100Caption () {
   document.getElementById("cbl100Caption").innerHTML = document.getElementById("cbl100Image").alt;
 };
+
+// Track & field captions p11 //
+function hj81624pkCaption () {
+  document.getElementById("hj81624pkCaption").innerHTML = document.getElementById("hj81624pkImage").alt;
+};
+
+function pv202126pkCaption () {
+  document.getElementById("pv202126pkCaption").innerHTML = document.getElementById("pv202126pkImage").alt;
+};
+
+function pvhj2624cCaption () {
+  document.getElementById("pvhj2624cCaption").innerHTML = document.getElementById("pvhj2624cImage").alt;
+};
