@@ -1076,3 +1076,12 @@ function pmv72262Caption () {
 function pmv72123Caption () {
   document.getElementById("pmv72123Caption").innerHTML = document.getElementById("pmv72123Image").alt;
 };
+
+// Padding captions p4 //
+function pmv72163Caption () {
+  document.getElementById("pmv72163Caption").innerHTML = document.getElementById("pmv72163Image").alt;
+};
+
+function pmv72263Caption () {
+  document.getElementById("pmv72263Caption").innerHTML = document.getElementById("pmv72263Image").alt;
+};
