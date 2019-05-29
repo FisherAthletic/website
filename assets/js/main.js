@@ -1027,3 +1027,52 @@ function bp3Caption () {
 function bp4Caption () {
   document.getElementById("bp4Caption").innerHTML = document.getElementById("bp4Image").alt;
 };
+
+// Padding captions p3 //
+function pccCaption () {
+  document.getElementById("pccCaption").innerHTML = document.getElementById("pccImage").alt;
+};
+
+function pbcCaption () {
+  document.getElementById("pbcCaption").innerHTML = document.getElementById("pbcImage").alt;
+};
+
+function pbtCaption () {
+  document.getElementById("pbtCaption").innerHTML = document.getElementById("pbtImage").alt;
+};
+
+function bspCaption () {
+  document.getElementById("bspCaption").innerHTML = document.getElementById("bspImage").alt;
+};
+
+function bsp46Caption () {
+  document.getElementById("bsp46Caption").innerHTML = document.getElementById("bsp46Image").alt;
+};
+
+function bsp36Caption () {
+  document.getElementById("bsp36Caption").innerHTML = document.getElementById("bsp36Image").alt;
+};
+
+function dbpsoCaption () {
+  document.getElementById("dbpsoCaption").innerHTML = document.getElementById("dbpsoImage").alt;
+};
+
+function pmv72122Caption () {
+  document.getElementById("pmv72122Caption").innerHTML = document.getElementById("pmv72122Image").alt;
+};
+
+function pcaps223Caption () {
+  document.getElementById("pcaps223Caption").innerHTML = document.getElementById("pcaps223Image").alt;
+};
+
+function pmv72162Caption () {
+  document.getElementById("pmv72162Caption").innerHTML = document.getElementById("pmv72162Image").alt;
+};
+
+function pmv72262Caption () {
+  document.getElementById("pmv72262Caption").innerHTML = document.getElementById("pmv72262Image").alt;
+};
+
+function pmv72123Caption () {
+  document.getElementById("pmv72123Caption").innerHTML = document.getElementById("pmv72123Image").alt;
+};
