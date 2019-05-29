@@ -978,3 +978,52 @@ function rwp226103Caption () {
 function rwp225123Caption () {
   document.getElementById("rwp225123Caption").innerHTML = document.getElementById("rwp225123Image").alt;
 };
+
+// Padding captions p2 //
+function rwp225103Caption () {
+  document.getElementById("rwp225103Caption").innerHTML = document.getElementById("rwp225103Image").alt;
+};
+
+function rwp224083Caption () {
+  document.getElementById("rwp224083Caption").innerHTML = document.getElementById("rwp224083Image").alt;
+};
+
+function rwp224063Caption () {
+  document.getElementById("rwp224063Caption").innerHTML = document.getElementById("rwp224063Image").alt;
+};
+
+function rwp226122Caption () {
+  document.getElementById("rwp226122Caption").innerHTML = document.getElementById("rwp226122Image").alt;
+};
+
+function rwp225122Caption () {
+  document.getElementById("rwp225122Caption").innerHTML = document.getElementById("rwp225122Image").alt;
+};
+
+function rwp225102Caption () {
+  document.getElementById("rwp225102Caption").innerHTML = document.getElementById("rwp225102Image").alt;
+};
+
+function rwp224082Caption () {
+  document.getElementById("rwp224082Caption").innerHTML = document.getElementById("rwp224082Image").alt;
+};
+
+function co2Caption () {
+  document.getElementById("co2Caption").innerHTML = document.getElementById("co2Image").alt;
+};
+
+function ibpCaption () {
+  document.getElementById("ibpCaption").innerHTML = document.getElementById("ibpImage").alt;
+};
+
+function rccCaption () {
+  document.getElementById("rccCaption").innerHTML = document.getElementById("rccImage").alt;
+};
+
+function bp3Caption () {
+  document.getElementById("bp3Caption").innerHTML = document.getElementById("bp3Image").alt;
+};
+
+function bp4Caption () {
+  document.getElementById("bp4Caption").innerHTML = document.getElementById("bp4Image").alt;
+};
