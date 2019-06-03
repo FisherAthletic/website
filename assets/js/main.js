@@ -1085,3 +1085,52 @@ function pmv72163Caption () {
 function pmv72263Caption () {
   document.getElementById("pmv72263Caption").innerHTML = document.getElementById("pmv72263Image").alt;
 };
+
+// Track and field captions p1 //
+function ssr5Caption () {
+  document.getElementById("ssr5Caption").innerHTML = document.getElementById("ssr5Image").alt;
+};
+
+function ssr2Caption () {
+  document.getElementById("ssr2Caption").innerHTML = document.getElementById("ssr2Image").alt;
+};
+
+function ssr125Caption () {
+  document.getElementById("ssr125Caption").innerHTML = document.getElementById("ssr125Image").alt;
+};
+
+function ssr25Caption () {
+  document.getElementById("ssr25Caption").innerHTML = document.getElementById("ssr25Image").alt;
+};
+
+function agbeltsmCaption () {
+  document.getElementById("agbeltsmCaption").innerHTML = document.getElementById("agbeltsmImage").alt;
+};
+
+function agbeltmedCaption () {
+  document.getElementById("agbeltmedCaption").innerHTML = document.getElementById("agbeltmedImage").alt;
+};
+
+function agbeltlgCaption () {
+  document.getElementById("agbeltlgCaption").innerHTML = document.getElementById("agbeltlgImage").alt;
+};
+
+function agbeltxlCaption () {
+  document.getElementById("agbeltxlCaption").innerHTML = document.getElementById("agbeltxlImage").alt;
+};
+
+function bb06Caption () {
+  document.getElementById("bb06Caption").innerHTML = document.getElementById("bb06Image").alt;
+};
+
+function bbrCaption () {
+  document.getElementById("bbrCaption").innerHTML = document.getElementById("bbrImage").alt;
+};
+
+function cone3Caption () {
+  document.getElementById("cone3Caption").innerHTML = document.getElementById("cone3Image").alt;
+};
+
+function cone6Caption () {
+  document.getElementById("cone6Caption").innerHTML = document.getElementById("cone6Image").alt;
+};
