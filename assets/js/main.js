@@ -1134,3 +1134,52 @@ function cone3Caption () {
 function cone6Caption () {
   document.getElementById("cone6Caption").innerHTML = document.getElementById("cone6Image").alt;
 };
+
+// Track and field captions p2 //
+function cone18Caption () {
+  document.getElementById("cone18Caption").innerHTML = document.getElementById("cone18Image").alt;
+};
+
+function cone28Caption () {
+  document.getElementById("cone28Caption").innerHTML = document.getElementById("cone28Image").alt;
+};
+
+function agscore50Caption () {
+  document.getElementById("agscore50Caption").innerHTML = document.getElementById("agscore50Image").alt;
+};
+
+function ps3000padCaption () {
+  document.getElementById("ps3000padCaption").innerHTML = document.getElementById("ps3000padImage").alt;
+};
+
+function har06Caption () {
+  document.getElementById("har06Caption").innerHTML = document.getElementById("har06Image").alt;
+};
+
+function har05Caption () {
+  document.getElementById("har05Caption").innerHTML = document.getElementById("har05Image").alt;
+};
+
+function har04Caption () {
+  document.getElementById("har04Caption").innerHTML = document.getElementById("har04Image").alt;
+};
+
+function har02Caption () {
+  document.getElementById("har02Caption").innerHTML = document.getElementById("har02Image").alt;
+};
+
+function har01Caption () {
+  document.getElementById("har01Caption").innerHTML = document.getElementById("har01Image").alt;
+};
+
+function ps3000Caption () {
+  document.getElementById("ps3000Caption").innerHTML = document.getElementById("ps3000Image").alt;
+};
+
+function ps2500Caption () {
+  document.getElementById("ps2500Caption").innerHTML = document.getElementById("ps2500Image").alt;
+};
+
+function ps1500Caption () {
+  document.getElementById("ps1500Caption").innerHTML = document.getElementById("ps1500Image").alt;
+};
