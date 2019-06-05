@@ -1183,3 +1183,52 @@ function ps2500Caption () {
 function ps1500Caption () {
   document.getElementById("ps1500Caption").innerHTML = document.getElementById("ps1500Image").alt;
 };
+
+// Track and field captions p3 //
+function ps4000Caption () {
+  document.getElementById("ps4000Caption").innerHTML = document.getElementById("ps4000Image").alt;
+};
+
+function aggluteCaption () {
+  document.getElementById("aggluteCaption").innerHTML = document.getElementById("aggluteImage").alt;
+};
+
+function ply36306Caption () {
+  document.getElementById("ply36306Caption").innerHTML = document.getElementById("ply36306Image").alt;
+};
+
+function ply363012Caption () {
+  document.getElementById("ply363012Caption").innerHTML = document.getElementById("ply363012Image").alt;
+};
+
+function ply363024Caption () {
+  document.getElementById("ply363024Caption").innerHTML = document.getElementById("ply363024Image").alt;
+};
+
+function ply363018Caption () {
+  document.getElementById("ply363018Caption").innerHTML = document.getElementById("ply363018Image").alt;
+};
+
+function ply3630Caption () {
+  document.getElementById("ply3630Caption").innerHTML = document.getElementById("ply3630Image").alt;
+};
+
+function agbox24Caption () {
+  document.getElementById("agbox24Caption").innerHTML = document.getElementById("agbox24Image").alt;
+};
+
+function agbox18Caption () {
+  document.getElementById("agbox18Caption").innerHTML = document.getElementById("agbox18Image").alt;
+};
+
+function disc12orCaption () {
+  document.getElementById("disc12orCaption").innerHTML = document.getElementById("disc12orImage").alt;
+};
+
+function disc19orCaption () {
+  document.getElementById("disc19orCaption").innerHTML = document.getElementById("disc19orImage").alt;
+};
+
+function wrp30Caption () {
+  document.getElementById("wrp30Caption").innerHTML = document.getElementById("wrp30Image").alt;
+};
