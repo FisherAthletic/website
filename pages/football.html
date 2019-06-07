@@ -66,16 +66,11 @@
         <div class="footballPagination">
         <nav aria-label="Page navigation example">
           <ul class="pagination">
+            <li class="page-item footballPaginationActive"><a class="page-link" href="./football.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="./football-two.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="./football-three.html">3</a></li>
             <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li class="page-item footballPaginationActive"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
+              <a class="page-link" href="./football-four.html" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
               </a>
             </li>
@@ -86,123 +81,255 @@
         <!-- Football products -->
         <div class="productCardContainer">
 
-        <div class="card productCard" id="footballPractice" style="width: 18rem;">
-            <img src="../assets/images/football/tackle_wheels.jpg" class="card-img-top" alt="...">
+        <div class="card productCard" style="width: 24rem;">
+            <img id="sku9708ssImage" src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="Shiver Sled" data-toggle="modal" data-target=".sku9708ssImageModal" onclick="sku9708ssCaption()">
                 <div class="card-body productCardBody">
-                  <h5 class="card-title">Tackle Wheels</h5>
-                  <h6>These are tackle wheels.</h6>
-                  <p class="card-text">$152.00 - $425.00</p> 
-                  <a href="./tackle-wheels.html" class="btn btn-danger">See more</a>
+                  <h5 class="card-title">Shiver Sled</h5>
+                  <h6 class="card-text">SKU: 9708SS</h6>
+                  <p>
+                    <a class="btn btn-danger" data-toggle="collapse" href="#shiverSled" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Description
+                    </a>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                      Get quote
+                    </button>
+                  </p>
+                  <div class="collapse" id="shiverSled">
+                    <div class="card card-body productCardDescription">
+                      Allows players to work on footwork while shuffling across pad. Players progress down the pad to repeat blows, gaining maximum repetitions. Teaches proper punch technique while using proper body position and footwork. Pad is 12" high x 8" long x 8" thick. Adjust from 32" to 44" tall.
+                    </div>
+                  </div>
                 </div>
         </div>
 
-        <div class="card productCard" style="width: 18rem;">
-                <img src="../assets/images/football/bull_sled.jpg" class="card-img-top" alt="...">
+        <div class="card productCard" style="width: 24rem;">
+                <img id="sku9802sjrImage" src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="9800 Sled" data-toggle="modal" data-target=".sku9802sjrImageModal" onclick="sku9802sjrCaption()">
                     <div class="card-body productCardBody">
-                      <h5 class="card-title">Bull Sled</h5>
-                      <h6 class="card-text">This is a Bull Sled.</h6>
-                      <p class="card-text">$100.00</p>
-                      <a href="#" class="btn btn-danger">See more</a>
+                      <h5 class="card-title">9800 Sled</h5>
+                      <h6 class="card-text">SKU: 9802SJR</h6>
+                      <p>
+                        <a class="btn btn-danger" data-toggle="collapse" href="#sled9800" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Description
+                        </a>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                          Get quote
+                        </button>
+                      </p>
+                      <div class="collapse" id="sled9800">
+                        <div class="card card-body productCardDescription">
+                          Wrap around padded wings on each pad protect your players. Choice of standard or "T" pad. Safely teaches a young player how to gain leverage on an opponent. Main Frame: Sturdy, tough steel construction. Guaranteed for 5 years. All metal surfaces are powder coated to prevent rust. Expandable: Individual components allow stations to be added as the need arises. Basic sleds can start with 2 man capability and expanded as you desire. A 5 man sled can be easily broken down to a 2 and a 3 man sled. Tite-Lock Chassis: New, improved interlocking modular design. Overlapped channel steel construction provides the rigidity needed in a multi-unit sled. Skids: Sled skids are formed, not cut and welded. A 30 degree angle assures you of a smooth transition over your grass without chewing up the turf. Safe for artificial turf. Pad construction and options: Each 9800 series sled pad's core is built from high density, 100 lb. impact resistant foam. Durable, 18 ox. vinyl covers are then double and triple stitched to withstand harsh weather and years of hard use. Standard and "T" pad styles are available for the 9800 series sleds.
+                        </div>
+                      </div>
                     </div>
             </div>
 
-        <div class="card productCard" style="width: 18rem;">
-                <img src="../assets/images/football/shiver_sled.jpg" class="card-img-top" alt="...">
+        <div class="card productCard" style="width: 24rem;">
+                <img id="sku9712Image" src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="Brute Sled" data-toggle="modal" data-target=".sku9712ImageModal" onclick="sku9712Caption()">
                     <div class="card-body productCardBody">
-                      <h5 class="card-title">Shiver Sled</h5>
-                      <h6 class="card-text">This is a Shiver Sled.</h6>
-                      <p class="card-text">$100.00</p>
-                      <a href="#" class="btn btn-danger">See more</a>
+                      <h5 class="card-title">Brute Sled</h5>
+                      <h6 class="card-text">SKU: 9712</h6>
+                      <p>
+                        <a class="btn btn-danger" data-toggle="collapse" href="#bruteSled" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Description
+                        </a>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                          Get quote
+                        </button>
+                      </p>
+                      <div class="collapse" id="bruteSled">
+                        <div class="card card-body productCardDescription">
+                          Individual components allow stations to be added as the need arises. Basic sleds can start with man capability and expanded as you desire. A 5 man sled can be easily be broken down to a 2 and a 3 man sled. Sled skids are formed, not cut and welded. A 30 degree angle assures you of a smooth transition over your grass without chewing up the turf. Safe for artificial turf. Each brute sled pad's core is built from high density, 100 lb., impact resistant foam. Durable, 18 oz. vinyl covers are then double and triple stitched to withstand harsh weather and years of hard use. Choose from 6 pad styles and 11 colors for the brute sled. COACHES PLATFORM NOT INCLUDED.
+                        </div>
+                      </div>
                     </div>
             </div>
 
-        <div class="card productCard" style="width: 18rem;">
-                <img src="../assets/images/football/step_overs.jpg" class="card-img-top" alt="...">
+        <div class="card productCard" style="width: 24rem;">
+                <img id="ssr25Image" src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="Ultra Band" data-toggle="modal" data-target=".ssr25ImageModal" onclick="ssr25Caption()">
                     <div class="card-body productCardBody">
-                      <h5 class="card-title">Agility Dummies</h5>
-                      <h6 class="card-text">These are Agility Dummies.</h6>
-                      <p class="card-text">$100.00</p>
-                      <a href="#" class="btn btn-danger">See more</a>
+                      <h5 class="card-title">Ultra Band</h5>
+                      <h6 class="card-text">SKU: SSR25</h6>
+                      <p>
+                        <a class="btn btn-danger" data-toggle="collapse" href="#ultraBand" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Description
+                        </a>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                          Get quote
+                        </button>
+                      </p>
+                      <div class="collapse" id="ultraBand">
+                        <div class="card card-body productCardDescription">
+                            Variable resistance: the resistance increases throughout the range of motion, with the greatest resistance at the top of the life. Enhanced performance: documented improvement in vertical jump, speed, foot quickness and flexibility. Stretching: Injury reduction: benefits include reduced incidence of sprains, strains and pulls. Rehabilitation: Faster recovery: many patients have achieved faster recovery times than with conventional methods.
+                        </div>
+                      </div>
                     </div>
             </div>
 
-            <div class="card productCard" style="width: 18rem;">
-              <img src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="...">
+            <div class="card productCard" style="width: 24rem;">
+              <img id="agbeltsmImage" src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="30&quot;-36&quot; Belt" data-toggle="modal" data-target=".agbeltsmImageModal" onclick="agbeltsmCaption()">
                   <div class="card-body productCardBody">
-                    <h5 class="card-title">Item name</h5>
-                    <h6>Item number</h6>
-                    <p class="card-text">Item description</p> 
-                    <a href="#" class="btn btn-danger">See more</a>
+                    <h5 class="card-title">30"-36" Belt</h5>
+                    <h6 class="card-text">SKU: AGBELTSM</h6>
+                    <p>
+                      <a class="btn btn-danger" data-toggle="collapse" href="#belt3036" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Description
+                      </a>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                        Get quote
+                      </button>
+                    </p>
+                    <div class="collapse" id="belt3036">
+                      <div class="card card-body productCardDescription">
+                          Padded waist belt available in small, medium, large and extra large sizes. Belt contains three 2" heavy "D" rings; two on each side and one on the back. Three 1" vertical "D" hook-ups. 2" Duraflex adjustable belt provides a comfortable form fit. Use with a sled, bands, stretch, cord or a pull harness.
+                      </div>
+                    </div>
                   </div>
           </div>
   
-          <div class="card productCard" style="width: 18rem;">
-                  <img src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="...">
+          <div class="card productCard" style="width: 24rem;">
+                  <img id="agbeltmedImage" src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="35&quot;-44&quot; Belt" data-toggle="modal" data-target=".agbeltmedImageModal" onclick="agbeltmedCaption()">
                       <div class="card-body productCardBody">
-                          <h5 class="card-title">Item name</h5>
-                          <h6>Item number</h6>
-                          <p class="card-text">Item description</p>
-                        <a href="#" class="btn btn-danger">See more</a>
+                        <h5 class="card-title">35"-44" Belt</h5>
+                        <h6 class="card-text">SKU: AGBELTMED</h6>
+                        <p>
+                          <a class="btn btn-danger" data-toggle="collapse" href="#belt3544" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Description
+                          </a>
+                          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                            Get quote
+                          </button>
+                        </p>
+                        <div class="collapse" id="belt3544">
+                          <div class="card card-body productCardDescription">
+                              Padded waist belt available in small, medium, large and extra large sizes. Belt contains three 2" heavy "D" rings; two on each side and one on the back. Three 1" vertical "D" hook-ups. 2" Duraflex adjustable belt provides a comfortable form fit. Use with a sled, bands, stretch, cord or a pull harness.
+                          </div>
+                        </div>
                       </div>
               </div>
   
-          <div class="card productCard" style="width: 18rem;">
-                  <img src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="...">
+          <div class="card productCard" style="width: 24rem;">
+                  <img id="agbeltlgImage" src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="43&quot;-54&quot; Belt" data-toggle="modal" data-target=".agbeltlgImageModal" onclick="agbeltlgCaption()">
                       <div class="card-body productCardBody">
-                          <h5 class="card-title">Item name</h5>
-                          <h6>Item number</h6>
-                          <p class="card-text">Item description</p>
-                        <a href="#" class="btn btn-danger">See more</a>
+                          <h5 class="card-title">43"-54" Belt</h5>
+                          <h6 class="card-text">SKU: AGBELTLG</h6>
+                          <p>
+                            <a class="btn btn-danger" data-toggle="collapse" href="#belt4354" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Description
+                            </a>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                              Get quote
+                            </button>
+                          </p>
+                          <div class="collapse" id="belt4354">
+                            <div class="card card-body productCardDescription">
+                              Padded waist belt available in small, medium, large and extra large sizes. Belt contains three 2" heavy "D" rings; two on each side and one on the back. Three 1" vertical "D" hook-ups. 2" Duraflex adjustable belt provides a comfortable form fit. Use with a sled, bands, stretch, cord or a pull harness.
+                            </div>
+                          </div>
                       </div>
               </div>
   
-          <div class="card productCard" style="width: 18rem;">
-                  <img src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="...">
+          <div class="card productCard" style="width: 24rem;">
+                  <img id="agbeltxlImage" src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="54&quot;-60&quot; Belt" data-toggle="modal" data-target=".agbeltxlImageModal" onclick="agbeltxlCaption()">
                       <div class="card-body productCardBody">
-                          <h5 class="card-title">Item name</h5>
-                          <h6>Item number</h6>
-                          <p class="card-text">Item description</p>
-                        <a href="#" class="btn btn-danger">See more</a>
+                          <h5 class="card-title">54"-60" Belt</h5>
+                          <h6 class="card-text">SKU: AGBELTXL</h6>
+                          <p>
+                            <a class="btn btn-danger" data-toggle="collapse" href="#belt5460" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Description
+                            </a>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                              Get quote
+                            </button>
+                          </p>
+                          <div class="collapse" id="belt5460">
+                            <div class="card card-body productCardDescription">
+                              Padded waist belt available in small, medium, large and extra large sizes. Belt contains three 2" heavy "D" rings; two on each side and one on the back. Three 1" vertical "D" hook-ups. 2" Duraflex adjustable belt provides a comfortable form fit. Use with a sled, bands, stretch, cord or a pull harness.
+                            </div>
+                          </div>
                       </div>
               </div>
 
-              <div class="card productCard" style="width: 18rem;">
-                <img src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="...">
+              <div class="card productCard" style="width: 24rem;">
+                <img id="bb06Image" src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="Boulder Ball" data-toggle="modal" data-target=".bb06ImageModal" onclick="bb06Caption()">
                     <div class="card-body productCardBody">
-                        <h5 class="card-title">Item name</h5>
-                        <h6>Item number</h6>
-                        <p class="card-text">Item description</p> 
-                      <a href="#" class="btn btn-danger">See more</a>
+                        <h5 class="card-title">Boulder Ball</h5>
+                        <h6 class="card-text">SKU: BB06</h6>
+                        <p>
+                          <a class="btn btn-danger" data-toggle="collapse" href="#boulderBall" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Description
+                          </a>
+                          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                            Get quote
+                          </button>
+                        </p>
+                        <div class="collapse" id="boulderBall">
+                          <div class="card card-body productCardDescription">
+                            Fisher Athletic Boulder Balls are manufactured to the highest quality and promise to provide an intense and quality workout. Each weighted ball is the same size the only difference is the weight. 45 inch circumference. 14 inch diameter. Allows the athlete to increase the weight without changing their movement. Our Boulder Balls have a solid, durable feel and are designed to take plenty of punishment.
+                          </div>
+                        </div>
                     </div>
             </div>
     
-            <div class="card productCard" style="width: 18rem;">
-                    <img src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="...">
+            <div class="card productCard" style="width: 24rem;">
+                    <img id="bbrImage" src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="Boulder Ball Rack" data-toggle="modal" data-target=".bbrImageModal" onclick="bbrCaption()">
                         <div class="card-body productCardBody">
-                            <h5 class="card-title">Item name</h5>
-                            <h6>Item number</h6>
-                            <p class="card-text">Item description</p>
-                          <a href="#" class="btn btn-danger">See more</a>
+                            <h5 class="card-title">Boulder Ball Rack</h5>
+                            <h6 class="card-text">SKU: BBR</h6>
+                            <p>
+                              <a class="btn btn-danger" data-toggle="collapse" href="#boulderBallRack" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Description
+                              </a>
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                Get quote
+                              </button>
+                            </p>
+                            <div class="collapse" id="boulderBallRack">
+                              <div class="card card-body productCardDescription">
+                                Boulder ball racks are the perfect way to store your Fisher Boulder Balls. Both style racks have 15 inch spacing between tiers.
+                              </div>
+                            </div>
                         </div>
                 </div>
     
-            <div class="card productCard" style="width: 18rem;">
-                    <img src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="...">
+            <div class="card productCard" style="width: 24rem;">
+                    <img id="cone3Image" src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="Cone 3" data-toggle="modal" data-target=".cone3ImageModal" onclick="cone3Caption()">
                         <div class="card-body productCardBody">
-                            <h5 class="card-title">Item name</h5>
-                            <h6>Item number</h6>
-                            <p class="card-text">Item description</p>
-                          <a href="#" class="btn btn-danger">See more</a>
+                            <h5 class="card-title">Cone 3</h5>
+                            <h6 class="card-text">SKU: CONE3</h6>
+                            <p>
+                              <a class="btn btn-danger" data-toggle="collapse" href="#cone3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Description
+                              </a>
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                Get quote
+                              </button>
+                            </p>
+                            <div class="collapse" id="cone3">
+                              <div class="card card-body productCardDescription">
+                                3" Tall, Bright, fluorescent orange PVC cone resist heat and fading. Great for obstacle courses and marking player positions. Comes in a pack of 12.
+                              </div>
+                            </div>
                         </div>
                 </div>
     
-            <div class="card productCard" style="width: 18rem;">
-                    <img src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="...">
+            <div class="card productCard" style="width: 24rem;">
+                    <img id="cone6Image" src="../assets/images/card_placeholder.jpg" class="card-img-top" alt="Cone 6" data-toggle="modal" data-target=".cone6ImageModal" onclick="cone6Caption()">
                         <div class="card-body productCardBody">
-                            <h5 class="card-title">Item name</h5>
-                            <h6>Item number</h6>
-                            <p class="card-text">Item description</p>
-                          <a href="#" class="btn btn-danger">See more</a>
+                            <h5 class="card-title">Cone 6</h5>
+                            <h6 class="card-text">SKU: CONE6</h6>
+                            <p>
+                              <a class="btn btn-danger" data-toggle="collapse" href="#cone6" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Description
+                              </a>
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                Get quote
+                              </button>
+                            </p>
+                            <div class="collapse" id="cone6">
+                              <div class="card card-body productCardDescription">
+                                6" Tall, Bright, fluorescent orange PVC cone resist heat and fading. Great for obstacle courses and marking player positions.
+                              </div>
+                            </div>
                         </div>
                 </div>
 
@@ -212,16 +339,11 @@
         <div class="footballPagination">
         <nav aria-label="Page navigation example">
           <ul class="pagination">
+            <li class="page-item footballPaginationActive"><a class="page-link" href="./football.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="./football-two.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="./football-three.html">3</a></li>
             <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li class="page-item footballPaginationActive"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
+              <a class="page-link" href="./football-four.html" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
               </a>
             </li>
@@ -334,6 +456,110 @@
     </footer>
 
     </div>
+
+    <!-- Get Quote Modal -->
+    <div class="modal fade" id="getQuoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Get a quick quote</h5>
+            
+            </div>
+            <div class="modal-body">
+              <a href="tel:+1-800-438-6028" class="btn btn-danger">Call +1 (800) 438-6028 </a> or
+              <a href="mailto:customerservice@fisherathletic.com" class="btn btn-danger">Send an email</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Image Modals -->
+    <div class="modal fade imageModal ssr5ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="ssr5Image" src="../assets/images/card_placeholder.jpg">
+              <div id="ssr5Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+    
+    <div class="modal fade imageModal ssr2ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="ssr2Image" src="../assets/images/card_placeholder.jpg">
+              <div id="ssr2Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal ssr125ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="ssr125Image" src="../assets/images/card_placeholder.jpg">
+              <div id="ssr125Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal ssr25ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="ssr25Image" src="../assets/images/card_placeholder.jpg">
+              <div id="ssr25Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal agbeltsmImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="agbeltsmImage" src="../assets/images/card_placeholder.jpg">
+              <div id="agbeltsmCaption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal agbeltmedImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="agbeltmedImage" src="../assets/images/card_placeholder.jpg">
+              <div id="agbeltmedCaption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal agbeltlgImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="agbeltlgImage" src="../assets/images/card_placeholder.jpg">
+              <div id="agbeltlgCaption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal agbeltxlImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="agbeltxlImage" src="../assets/images/card_placeholder.jpg">
+              <div id="agbeltxlCaption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal bb06ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="bb06Image" src="../assets/images/card_placeholder.jpg">
+              <div id="bb06Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal bbrImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="bbrImage" src="../assets/images/card_placeholder.jpg">
+              <div id="bbrCaption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal cone3ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="cone3Image" src="../assets/images/card_placeholder.jpg">
+              <div id="cone3Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal cone6ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="cone6Image" src="../assets/images/card_placeholder.jpg">
+              <div id="cone6Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
 
 
     <!-- Bootstrap JS -->
