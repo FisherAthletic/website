@@ -1612,3 +1612,52 @@ function ab75pcCaption () {
 function ab75bCaption () {
   document.getElementById("ab75bCaption").innerHTML = document.getElementById("ab75bImage").alt;
 };
+
+// Football captions p8 //
+function ab75bpcCaption () {
+  document.getElementById("ab75bpcCaption").innerHTML = document.getElementById("ab75bpcImage").alt;
+};
+
+function thsCaption () {
+  document.getElementById("thsCaption").innerHTML = document.getElementById("thsImage").alt;
+};
+
+function slc01Caption () {
+  document.getElementById("slc01Caption").innerHTML = document.getElementById("slc01Image").alt;
+};
+
+function slc02Caption () {
+  document.getElementById("slc02Caption").innerHTML = document.getElementById("slc02Image").alt;
+};
+
+function slc11Caption () {
+  document.getElementById("slc11Caption").innerHTML = document.getElementById("slc11Image").alt;
+};
+
+function slc12Caption () {
+  document.getElementById("slc12Caption").innerHTML = document.getElementById("slc12Image").alt;
+};
+
+function slc21Caption () {
+  document.getElementById("slc21Caption").innerHTML = document.getElementById("slc21Image").alt;
+};
+
+function slc22Caption () {
+  document.getElementById("slc22Caption").innerHTML = document.getElementById("slc22Image").alt;
+};
+
+function sku3600bgCaption () {
+  document.getElementById("sku3600bgCaption").innerHTML = document.getElementById("sku3600bgImage").alt;
+};
+
+function tb1515263Caption () {
+  document.getElementById("tb1515263Caption").innerHTML = document.getElementById("tb1515263Image").alt;
+};
+
+function gbd151532Caption () {
+  document.getElementById("gbd151532Caption").innerHTML = document.getElementById("gbd151532Image").alt;
+};
+
+function gb1515263Caption () {
+  document.getElementById("gb1515263Caption").innerHTML = document.getElementById("gb1515263Image").alt;
+};
