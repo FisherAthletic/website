@@ -2143,3 +2143,40 @@ function agl1612Caption () {
 function amadjrr20Caption () {
   document.getElementById("amadjrr20Caption").innerHTML = document.getElementById("amadjrr20Image").alt;
 };
+
+function tscb475Caption () {
+  document.getElementById("tscb475Caption").innerHTML = document.getElementById("tscb475Image").alt;
+};
+
+function tscb4120Caption () {
+  document.getElementById("tscb4120Caption").innerHTML = document.getElementById("tscb4120Image").alt;
+};
+
+// Football captions p19 //
+function tscb4150Caption () {
+  document.getElementById("tscb4150Caption").innerHTML = document.getElementById("tscb4150Image").alt;
+};
+
+function tscb4soCaption () {
+  document.getElementById("tscb4soCaption").innerHTML = document.getElementById("tscb4soImage").alt;
+};
+
+function sttCaption () {
+  document.getElementById("sttCaption").innerHTML = document.getElementById("sttImage").alt;
+};
+
+function tssoCaption () {
+  document.getElementById("tssoCaption").innerHTML = document.getElementById("tssoImage").alt;
+};
+
+function ts1575Caption () {
+  document.getElementById("ts1575Caption").innerHTML = document.getElementById("ts1575Image").alt;
+};
+
+function sttcCaption () {
+  document.getElementById("sttcCaption").innerHTML = document.getElementById("sttcImage").alt;
+};
+
+function sttsoCaption () {
+  document.getElementById("sttsoCaption").innerHTML = document.getElementById("sttsoImage").alt;
+};
