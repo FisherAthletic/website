@@ -1759,3 +1759,101 @@ function sku9631hdCaption () {
 function sku9680Caption () {
   document.getElementById("sku9680Caption").innerHTML = document.getElementById("sku9680Image").alt;
 };
+
+// Football captions p11 //
+function sku96510Caption () {
+  document.getElementById("sku96510Caption").innerHTML = document.getElementById("sku96510Image").alt;
+};
+
+function ocwkCaption () {
+  document.getElementById("ocwkCaption").innerHTML = document.getElementById("ocwkImage").alt;
+};
+
+function oc1010Caption () {
+  document.getElementById("oc1010Caption").innerHTML = document.getElementById("oc1010Image").alt;
+};
+
+function fxcwkCaption () {
+  document.getElementById("fxcwkCaption").innerHTML = document.getElementById("fxcwkImage").alt;
+};
+
+function fxc186Caption () {
+  document.getElementById("fxc186Caption").innerHTML = document.getElementById("fxc186Image").alt;
+};
+
+function sku9672Caption () {
+  document.getElementById("sku9672Caption").innerHTML = document.getElementById("sku9672Image").alt;
+};
+
+function sku9671Caption () {
+  document.getElementById("sku9671Caption").innerHTML = document.getElementById("sku9671Image").alt;
+};
+
+function sku9670Caption () {
+  document.getElementById("sku9670Caption").innerHTML = document.getElementById("sku9670Image").alt;
+};
+
+function sku9675Caption () {
+  document.getElementById("sku9675Caption").innerHTML = document.getElementById("sku9675Image").alt;
+};
+
+function sku9674Caption () {
+  document.getElementById("sku9674Caption").innerHTML = document.getElementById("sku9674Image").alt;
+};
+
+function sku9673Caption () {
+  document.getElementById("sku9673Caption").innerHTML = document.getElementById("sku9673Image").alt;
+};
+
+function sku9669Caption () {
+  document.getElementById("sku9669Caption").innerHTML = document.getElementById("sku9669Image").alt;
+};
+
+// Football captions p12 //
+function sku9601Caption () {
+  document.getElementById("sku9601Caption").innerHTML = document.getElementById("sku9601Image").alt;
+};
+
+function hd100Caption () {
+  document.getElementById("hd100Caption").innerHTML = document.getElementById("hd100Image").alt;
+};
+
+function hd800Caption () {
+  document.getElementById("hd800Caption").innerHTML = document.getElementById("hd800Image").alt;
+};
+
+function hd700Caption () {
+  document.getElementById("hd700Caption").innerHTML = document.getElementById("hd700Image").alt;
+};
+
+function hd600Caption () {
+  document.getElementById("hd600Caption").innerHTML = document.getElementById("hd600Image").alt;
+};
+
+function hd5053Caption () {
+  document.getElementById("hd5053Caption").innerHTML = document.getElementById("hd5053Image").alt;
+};
+
+function hd505Caption () {
+  document.getElementById("hd505Caption").innerHTML = document.getElementById("hd505Image").alt;
+};
+
+function hd500Caption () {
+  document.getElementById("hd500Caption").innerHTML = document.getElementById("hd500Image").alt;
+};
+
+function hd400jrCaption () {
+  document.getElementById("hd400jrCaption").innerHTML = document.getElementById("hd400jrImage").alt;
+};
+
+function hd400Caption () {
+  document.getElementById("hd400Caption").innerHTML = document.getElementById("hd400Image").alt;
+};
+
+function hd320Caption () {
+  document.getElementById("hd320Caption").innerHTML = document.getElementById("hd320Image").alt;
+};
+
+function hd306Caption () {
+  document.getElementById("hd306Caption").innerHTML = document.getElementById("hd306Image").alt;
+};
