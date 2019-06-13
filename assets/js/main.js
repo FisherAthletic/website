@@ -41,7 +41,6 @@
 // }
 
 // Click functions that link to pages //
-
 function footballGridClick () {
   location.href = "./pages/football.html";
 }
@@ -64,6 +63,11 @@ function paddingGridClick () {
 
 function windscreenGridClick () {
         location.href = "./pages/windscreen.html";
+}
+
+// Click functions that link to catalogs //
+function masterCatalogClick () {
+  location.href = "https://e.issuu.com/anonymous-embed.html?u=fisherathleticequipment&d=2020mastercatalogforweb";
 }
 
 // Baseball captions p1 //
