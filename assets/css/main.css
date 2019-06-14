@@ -26,7 +26,6 @@ body {
 }
 
 /* GENERAL /////////////////////////////////////////////////////////// */
-
 /* NAVBAR------------------------------------------------------------- */
 .navbar {
   background-color: #1A1D22 !important;
@@ -45,13 +44,6 @@ body {
 
 .navbar-toggler {
   border: none;
-}
-
-/* FILTERBAR --------------------------------------------------------- */
-.filterBar {
-  border-bottom: none;
-  justify-content: center !important;
-  padding: 0 10vw 0 10vw;
 }
 
 /* DROPDOWNS --------------------------------------------------------- */
@@ -166,13 +158,12 @@ body {
   border: none;
   margin: 0 10px 20px 10px;
   border-radius: 15px;
-  transition: transform 1s, box-shadow 1s;
+  transition: transform .5s;
 }
 
 .productCard:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition: 0.25s;
-  box-shadow: 5px 5px 5px black;
 }
 
 .productCardBody {
@@ -217,7 +208,6 @@ body {
 }
 
 /* LANDING PAGE ////////////////////////////////////////////////////// */
-
 /* LANDING DIV-------------------------------------------------------- */
   .landingDiv {
     display: flex;
@@ -250,17 +240,17 @@ body {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
-    animation: landingZoomOut 10s linear forwards;
+    /* animation: landingZoomOut 10s linear forwards; */
   }
 
-  @keyframes landingZoomOut {
+  /* @keyframes landingZoomOut {
     0% {
       transform: scale(1);
     }
     100% {
       transform: scale(0.8);
     }
-  }
+  } */
 
  /* CATEGORY GRID ---------------------------------------------------- */
  .categoryGridContainer {
@@ -279,13 +269,12 @@ body {
   flex: calc(30% - 40px);
   height: 225px;
   margin: 20px;
-  border-radius: 10px;
   justify-content: center;
   align-items: center;
   color: white;
   font-family: 'Montserrat', sans-serif;
   position: relative;
-  transition: transform 1s, box-shadow 1s;
+  transition: transform .5s;
   max-width: 500px;
   cursor: pointer;
 }
@@ -295,9 +284,8 @@ body {
   background-color: #1A1D22;
   color: #2d323a;
   filter: none;
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition: 0.25s;
-  box-shadow: 5px 5px 5px black;
 }
 
 .categoryGrid img {
@@ -329,6 +317,7 @@ body {
   text-align: center;
   margin: 0 5vw 0 5vw;
 }
+
 .trendingDiv {
   display: flex;
   flex-wrap: wrap;
@@ -336,20 +325,18 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: white;
   text-align: center;
-  margin: 0 5vw 20px 5vw;
 }
 
 .trendingCard {
-  flex: calc(30% - 40px);
   margin: 20px;
-  border-radius: 10px;
   height: 300px;
   background-color: #2d323a;
   padding: 10px;
   max-width: 500px;
+  cursor: pointer;
 }
-/* FOOTBALL PAGE ///////////////////////////////////////////////////// */
 
+/* FOOTBALL PAGE ///////////////////////////////////////////////////// */
 /* HEADER ------------------------------------------------------------ */
 .pageTitle {
   display: flex;
@@ -391,52 +378,6 @@ body {
   color: white;
 }
 
-/* TACKLE WHEEL PAGE ///////////////////////////////////////////////// */
-
-/* BACK BUTTON ------------------------------------------------------- */
-.backBtnContainer {
-  display: flex;
-  justify-content: center;
-  margin: 80px 0 0 0;
-}
-
-.backBtnSubContainer {
-  width: 80vw;
-  max-width: 1400px;
-}
-
-.backBtn {
-  justify-content: left;
-  border: none;
-}
-
-/* PRODUCT DETAILS CARD ---------------------------------------------- */
-.productDetailsContainer {
-  display: flex;
-  justify-content: center;
-}
-
-.productDetails {
-  width: 80vw;
-  max-width: 1400px;
-  margin: 20px 0 40px 0;
-  border: none;
-  background: none !important;
-}
-
-.productDetailsImage {
-  border-radius: 10px;
-}
-
-.productDetailsBtnRow {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.productDetailsBtn {
-  margin-right: 20px;
-}
-
 /* RECOMMENDED PRODUCTS TITLE ---------------------------------------- */
 .recommendedProductsTitle {
   color: white;
@@ -448,7 +389,6 @@ body {
 }
 
 /* CATALOG PAGE ////////////////////////////////////////////////////// */
-
 /* CATALOG GRID ------------------------------------------------------ */
 .catalogCardContainer {
   display: flex;
@@ -462,8 +402,8 @@ body {
 .catalogCard {
  display: flex;
  overflow: hidden;
- background-color: #2d323a;
- width: 200px;
+ background-color: #1A1D22;
+ width: 230px;
  height: 300px;
  margin: 20px;
  justify-content: center;
@@ -477,9 +417,6 @@ body {
 }
 
 .catalogCard:hover {
- background-image: none;
- background-color: #3c414b;
- filter: none;
  transform: scale(1.05);
  transition: 0.25s;
  box-shadow: 5px 5px 5px black;
@@ -505,7 +442,6 @@ body {
 }
 
 /* CONTACT PAGE ////////////////////////////////////////////////////// */
-
 /* FORM DIV ---------------------------------------------------------- */
 .contactFormDiv {
   color: white;
@@ -578,7 +514,6 @@ body {
 }
 
 /* FAQ PAGE ////////////////////////////////////////////////////////// */
-
 /* FAQ ACCORDION ----------------------------------------------------- */
 .faqAccordion {
   display: flex;
@@ -593,8 +528,7 @@ body {
 }
 
 /* RETURN POLICY PAGE //////////////////////////////////////////////// */
-
-/* POLICY PARAGRAPHS -------------------------------------------------------- */
+/* POLICY PARAGRAPHS ------------------------------------------------- */
 #returnPolicy {
   display: flex;
   flex-wrap: wrap;
@@ -603,7 +537,6 @@ body {
 }
 
 /* MEDIA QUERIES ///////////////////////////////////////////////////// */
-
 /* Responsive for laptop screens */
 @media screen and (max-width: 1440px) {
  .categoryGrid {
