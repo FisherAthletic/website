@@ -65,10 +65,60 @@ function windscreenGridClick () {
         location.href = "./pages/windscreen.html";
 }
 
-// Click functions that link to catalogs //
-function masterCatalogClick () {
-  location.href = "https://e.issuu.com/anonymous-embed.html?u=fisherathleticequipment&d=2020mastercatalogforweb";
-}
+// Map function //
+function initMap() {
+
+	// pick center coordinates for your map
+	var myMapCenter = {lat: 35.727733, lng: -80.482386};
+
+	// create map and say which HTML element it should appear in
+	var map = new google.maps.Map(document.getElementById('map'), {
+		center: myMapCenter,
+		zoom: 5
+  });
+
+  // object that holds rep data
+  var salesReps = [
+    {
+      name: 'Zeb Link',
+      location: {lat: 35.727733, lng: -80.482386},
+      hours: '8AM to 5PM'
+    },
+    {
+      name: 'Yobany Perez',
+      location: {lat: 40.790091, lng: -73.968285},
+      hours: '8AM to 5PM'
+    }
+  ];
+
+  function markRep(repInfo){
+    // Create a marker and set its position.
+    var marker = new google.maps.Marker({
+      map: map,
+      position: repInfo.location,
+      title: repInfo.name
+    });
+  
+    // show rep info when marker is clicked
+    marker.addListener('click', function(){
+      showRepInfo(repInfo);
+      });
+    }
+  
+  // show rep info in text box
+  function showRepInfo(repInfo){
+    var info_div = document.getElementById('info_div');
+    info_div.innerHTML = 'Rep name: '
+      + repInfo.name
+      + '<br>Hours: ' + repInfo.hours;
+    }
+
+  salesReps.forEach(function(salesRep){
+    markRep(salesRep);
+    });
+
+      
+    }
 
 // Baseball captions p1 //
 function msdpCaption () {

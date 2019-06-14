@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Fisher Athletic | Contact us</title>
+    <title>Fisher Athletic | Catalogs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
     <link rel="icon" href="../assets/images/navbar/fisher_logo_nav-01.svg">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css">
 </head>
 <body>
-    <div class="contactContainer">
+    <div class="landingContainer">
 
         <!-- Top navbar -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -38,12 +38,12 @@
                     Products
                   </a>
                   <div class="dropdown-menu" id="navDropdownMenu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./football.html">Football</a>
-                    <a class="dropdown-item" href="./baseball.html">Baseball</a>
-                    <a class="dropdown-item" href="./track-field.html">Track & Field</a>
-                    <a class="dropdown-item" href="./chairs-stools.html">Chairs & Stools</a>
-                    <a class="dropdown-item" href="./padding.html">Padding</a>
-                    <a class="dropdown-item" href="./windscreen.html">Windscreen</a>
+                    <a class="dropdown-item" href="../pages/football.html">Football</a>
+                    <a class="dropdown-item" href="../pages/baseball.html">Baseball</a>
+                    <a class="dropdown-item" href="../pages/track-field.html">Track & Field</a>
+                    <a class="dropdown-item" href="../pages/chairs-stools.html">Chairs & Stools</a>
+                    <a class="dropdown-item" href="../pages/padding.html">Padding</a>
+                    <a class="dropdown-item" href="../pages/windscreen.html">Windscreen</a>
                     <a class="dropdown-item" href="../pages/strength-conditioning.html">Strength & Conditioning</a>
                     <a class="dropdown-item" href="../pages/gym.html">Gym</a>
                   </div>
@@ -52,121 +52,153 @@
                   <a class="nav-link" href="../pages/catalogs.html">Catalogs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="../pages/contact-us.html">Contact us</a>
+                    <a class="nav-link" href="../pages/contact-us.html">Contact us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../pages/rep-locator.html">Rep Locator</a>
+                    <a class="nav-link active" href="../pages/rep-locator.html">Rep Locator</a>
                 </li>
               </ul>
           </nav>
 
-        <!-- Contact us header -->
-        <div class="pageTitle" id="footballPageTitle">
-            <h2>Contact us</h2>
+        <!-- Rep locator header -->
+        <div class="pageTitle" id="catalogsPageTitle">
+            <h2>Rep Locator</h2>
         </div>
 
-        <!-- Form div -->
-        <div class="contactFormDiv">
+        <!-- This div will hold your map -->
+        <div id="map"></div>
 
-          <div class="contactUsForm">
-            <h3>Have a question?</h3>
+        <!-- Populated with rep info when a map marker is clicked -->
+        <div id="info_div"></div>
 
-          <!-- Form -->
-          <form id="contact-form" method="post" action="../php/contact.php" role="form">
-            
-            <div class="messages"></div>
-
-            <div class="controls">
-
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="form_name">First Name</label>
-                <input type="text" class="form-control" id="form_name" name="name" placeholder="John" required="required" data-error="First name is required.">
-                <div class="help-block with-errors"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="form_lastname">Last Name</label>
-                <input type="text" class="form-control" id="form_lastname" name="surname" placeholder="Doe" required="required" data-error="Last name is required.">
-                <div class="help-block with-errors"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="form_email">Email</label>
-                <input type="email" class="form-control" id="form_email" name="email" placeholder="customer@email.com" required="required" data-error="Valid email is required.">
-                <div class="help-block with-errors"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip" name="zip" placeholder="28144" required="required" data-error="Zip code is required.">
-                <div class="help-block with-errors"></div>
-              </div>
-            </div>
-            <div class="form-group">
-                <label for="form_message">Message</label>
-                <textarea class="form-control" id="form_message" rows="3" placeholder="Type your message here" required="required" data-error="Message is required."></textarea>
-                <div class="help-block with-errors"></div>
-              </div>
-            <input type="submit" class="btn btn-danger btn-send" value="Send message">
-            </div>
-          </form>
-          <!-- Form end -->
-
-        </div>
-        </div>
-
-        <!-- Contact info accordion -->
-        <div class="contactInfoAccordion">
-        <div class="accordion col-lg-8 col-md-8" id="accordionExample">
-          <div class="card accordionBody">
-            <div class="card-header" id="headingOne">
-              <h2 class="mb-0">
-                <button class="btn btn-link accordionLink" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Location
-                </button>
-              </h2>
-            </div>
-        
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-              <div class="card-body accordionBodyBg">
-                <p>Fisher Athletic Equipment <br>
-                  2060 Cauble Rd, Salisbury, NC 28144 <br>
-                </p>
-                <a href="https://goo.gl/maps/C5sHUdoPT55SfMYr6" class="btn btn-danger" target="_blank">Open in Google Maps</a>
-              </div>
-            </div>
-          </div>
-          <div class="card accordionBody">
-            <div class="card-header" id="headingTwo">
-              <h2 class="mb-0">
-                <button class="btn btn-link collapsed accordionLink" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Call us
-                </button>
-              </h2>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-              <div class="card-body accordionBodyBg">
-                <p>Phone: 1-800-438-6028<br>
-                  Fax: 1-800-272-4448<br>
-                  </p>
-              </div>
-            </div>
-          </div>
-          <div class="card accordionBody">
-            <div class="card-header" id="headingThree">
-              <h2 class="mb-0">
-                <button class="btn btn-link collapsed accordionLink" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Hours
-                </button>
-              </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body accordionBodyBg">
-                <p>Monday - Friday <br>
-                  8am - 5pm <br>
-                  </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Table with rep info -->
+        <div class="table-responsive repTableContainer">
+        <table class="table table-hover table-dark repTable">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Territory</th>
+                <th scope="col">Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Don Leonard</td>
+                <td>NC, SC, Manager</td>
+                <td><a href="mailto:dsleonard@aol.com">dsleonard@aol.com</a></td>
+              </tr>
+              <tr>
+                <td>Mike O'Neal</td>
+                <td>FL</td>
+                <td><a href="mailto:fmo98@aol.com">fmo98@aol.com</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Mike Sallie</td>
+                <td>KY, TN</td>
+                <td><a href="mailto:mikesallie59@gmail.com">mikesallie59@gmail.com</a></td>
+              </tr>
+              <tr>
+                <td>Allan M. Dick</td>
+                <td>NY(130-32, 144-49), PA(150-169)</td>
+                <td><a href="mailto:aldick@comcast.net">aldick@comcast.net</a></td>
+              </tr>
+              <tr>
+                <td>Barry Smith</td>
+                <td>DE, MD, Washington DC</td>
+                <td><a href="mailto:bsmith27_99@yahoo.com">bsmith27_99@yahoo.com</a></td>
+              </tr>
+              <tr>
+                <td>Mike Robinson</td>
+                <td>NJ(070-089), NY(100-119), PA(170-197), NY(03528)</td>
+                <td><a href="mailto:mikerob@erols.com">mikerob@erols.com</a></td>
+              </tr>
+              <tr>
+                <td>Rich Boudreau</td>
+                <td>CT, RI, NY(120-129), NY(133-139), ME, NH, VT, MA</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+              <tr>
+                <td>Dave Newton</td>
+                <td>VA, WV</td>
+                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
     <!-- Footer -->
@@ -214,7 +246,7 @@
             <!-- Links -->
             <h6 class="text-uppercase font-weight-bold">Support</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p class="activeFooterLink">
+          <p>
             <a href="./contact-us.html">Contact us</a>
           </p>
           <p>
@@ -275,17 +307,14 @@
 
     </div>
 
-    <!-- Jquery -->
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+
     <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=MYKEYGOESHERE&callback=initMap" async defer></script>
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/contact.js"></script>
 </body>
 </html>
