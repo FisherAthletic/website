@@ -65,60 +65,138 @@ function windscreenGridClick () {
         location.href = "./pages/windscreen.html";
 }
 
-// Map function //
-function initMap() {
+// // Map function //
+// function initMap() {
 
-	// pick center coordinates for your map
-	var myMapCenter = {lat: 35.727733, lng: -80.482386};
+// 	// pick center coordinates for your map
+// 	var myMapCenter = {lat: 39.8283, lng: -98.5795};
 
-	// create map and say which HTML element it should appear in
-	var map = new google.maps.Map(document.getElementById('map'), {
-		center: myMapCenter,
-		zoom: 5
-  });
+// 	// create map and say which HTML element it should appear in
+// 	var map = new google.maps.Map(document.getElementById('map'), {
+// 		center: myMapCenter,
+// 		zoom: 4
+//   });
 
-  // object that holds rep data
-  var salesReps = [
-    {
-      name: 'Zeb Link',
-      location: {lat: 35.727733, lng: -80.482386},
-      hours: '8AM to 5PM'
-    },
-    {
-      name: 'Yobany Perez',
-      location: {lat: 40.790091, lng: -73.968285},
-      hours: '8AM to 5PM'
-    }
-  ];
+//   // object that holds rep data
+//   var salesReps = [
+//     {
+//       name: 'Don Leonard',
+//       location: {lat: 35.727733, lng: -80.482386},
+//       hours: '8AM to 5PM'
+//     },
+//     {
+//       name: 'Yobany Perez',
+//       location: {lat: 40.790091, lng: -73.968285},
+//       hours: '8AM to 5PM'
+//     }
+//   ];
 
-  function markRep(repInfo){
-    // Create a marker and set its position.
-    var marker = new google.maps.Marker({
-      map: map,
-      position: repInfo.location,
-      title: repInfo.name
-    });
+//   function markRep(repInfo){
+//     // Create a marker and set its position.
+//     var marker = new google.maps.Marker({
+//       map: map,
+//       position: repInfo.location,
+//       title: repInfo.name
+//     });
   
-    // show rep info when marker is clicked
-    marker.addListener('click', function(){
-      showRepInfo(repInfo);
-      });
-    }
+//     // show rep info when marker is clicked
+//     marker.addListener('click', function(){
+//       showRepInfo(repInfo);
+//       });
+//     }
   
-  // show rep info in text box
-  function showRepInfo(repInfo){
-    var info_div = document.getElementById('info_div');
-    info_div.innerHTML = 'Rep name: '
-      + repInfo.name
-      + '<br>Hours: ' + repInfo.hours;
-    }
+//   // show rep info in text box
+//   function showRepInfo(repInfo){
+//     var info_div = document.getElementById('info_div');
+//     info_div.innerHTML = 'Rep name: '
+//       + repInfo.name
+//       + '<br>Hours: ' + repInfo.hours;
+//     }
 
-  salesReps.forEach(function(salesRep){
-    markRep(salesRep);
-    });
+//   salesReps.forEach(function(salesRep){
+//     markRep(salesRep);
+//     });
 
       
-    }
+//     }
+
+// Geo chart map //
+  google.charts.load('current', {
+    'packages':['geochart'],
+    'mapsApiKey': ''
+  });
+  google.charts.setOnLoadCallback(drawRegionsMap);
+
+  function drawRegionsMap() {
+    var data = google.visualization.arrayToDataTable([
+      ['Territory', 'Rep'],
+      ['US-NC', "NC | Don Leonard (manager)"],
+      ['US-SC', "SC | Don Leonard (manager)"],
+      ['US-FL', "FL | Mike O'Neal (managed by Don Leonard), Joey Forelito (FL panhandle)"],
+      ['US-VA', "VA | Dave Newton (managed by Don Leonard)"],
+      ['US-WV', "WV | Dave Newton (managed by Don Leonard)"],
+      ['US-KY', "KY | Mike Sallie (managed by Don Leonard)"],
+      ['US-TN', "TN | Mike Sallie (managed by Don Leonard)"],
+      ['US-NY', "NY | Alan M. Dick, Mike Robinson, Rich Boudreau"],
+      ['US-PA', "PA | Alan M. Dick, Mike Robinson"],
+      ['US-DE', "DE | Barry Smith"],
+      ['US-MD', "MD | Barry Smith"],
+      ['US-NJ', "NJ | Mike Robinson"],
+      ['US-CT', "CT | Rich Boudreau"],
+      ['US-RI', "RI | Rich Boudreau"],
+      ['US-ME', "ME | Rich Boudreau"],
+      ['US-NH', "NH | Rich Boudreau"],
+      ['US-VT', "VT | Rich Boudreau"],
+      ['US-MA', "MA | Rich Boudreau"],
+      ['US-WI', "WI | Dennis Anderson"],
+      ['US-MN', "MN | Dennis Anderson"],
+      ['US-SD', "SD | Dennis Anderson"],
+      ['US-ND', "ND | Dennis Anderson"],
+      ['US-OH', "OH | Brian Makela, David Worst"],
+      ['US-IN', "IN | Brian Makela, David Worst"],
+      ['US-IL', "IL | Steve DeCastecker"],
+      ['US-MI', "MI | David Worst"],
+      ['US-AR', "AR | Beau Brumfield (managed by Tracy Saul)"],
+      ['US-OK', "OK | Beau Brumfield (managed by Tracy Saul)"],
+      ['US-TX', "TX | Beau Brumfield, Doug Gollahon, Cody Parker, Derran Barrows (managed by Tracy Saul)"],
+      ['US-LA', "LA | Scott McMullin (managed by Tracy Saul)"],
+      ['US-MS', "MS | Scott McMullin (managed by Tracy Saul)"],
+      ['US-AL', "AL | Joey Ferolito (managed by Tracy Saul)"],
+      ['US-GA', "GA | Joey Ferolito (managed by Tracy Saul)"],
+      ['US-AL', "AL | Joey Ferolito (managed by Tracy Saul)"],
+      ['US-KS', "KS | Todd Bradney (managed by Tracy Saul)"],
+      ['US-MO', "MO | Todd Bradney (managed by Tracy Saul)"],
+      ['US-IA', "IA | Todd Bradney (managed by Tracy Saul)"],
+      ['US-NE', "NE | Todd Bradney (managed by Tracy Saul)"],
+      ['US-KS', "KS | Todd Bradney (managed by Tracy Saul)"],
+      ['US-CA', "CA | Aaron Maloney, Mark Griewahn (managed by Tim Maloney)"],
+      ['US-AK', "AK | Bill Mills (managed by Tim Maloney)"],
+      ['US-OR', "OR | Bill Mills (managed by Tim Maloney)"],
+      ['US-WA', "WA | Bill Mills, Ben Peters (managed by Tim Maloney)"],
+      ['US-CO', "CO | Brant Alley (managed by Tim Maloney)"],
+      ['US-NM', "NM | Brant Alley (managed by Tim Maloney)"],
+      ['US-AZ', "AZ | Brant Alley (managed by Tim Maloney)"],
+      ['US-WY', "WY | Brant Alley, Ben Peters (managed by Tim Maloney)"],
+      ['US-NV', "NV | Mark Griewahn (managed by Tim Maloney)"],
+      ['US-ID', "ID | Ben Peters (managed by Tim Maloney)"],
+      ['US-MT', "MT | Ben Peters (managed by Tim Maloney)"],
+      ['US-UT', "UT | Ben Peters (managed by Tim Maloney)"],
+    ]);
+
+    var options = {
+    region: 'US',
+    // resolution: 'metros',
+    resolution: 'provinces',
+    backgroundColor: '#1A1D22',
+    datalessRegionColor: 'white',
+    defaultColor: '#90EE90',
+    colorAxis: {minValue: 1, maxValue:100,  colors: ['#abacad']}
+    };
+
+    var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+    chart.draw(data, options);
+  }
 
 // Baseball captions p1 //
 function msdpCaption () {

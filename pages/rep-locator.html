@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Fisher Athletic | Catalogs</title>
+    <title>Fisher Athletic | Rep Locator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
     <link rel="icon" href="../assets/images/navbar/fisher_logo_nav-01.svg">
@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google Geo Chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css">
 </head>
@@ -62,11 +64,13 @@
 
         <!-- Rep locator header -->
         <div class="pageTitle" id="catalogsPageTitle">
-            <h2>Rep Locator</h2>
+            <h2>Find a rep near you</h2>
         </div>
 
-        <!-- This div will hold your map -->
-        <div id="map"></div>
+        <!-- This div will hold your map
+        <div id="map"></div> -->
+
+        <div id="regions_div"></div>
 
         <!-- Populated with rep info when a map marker is clicked -->
         <div id="info_div"></div>
@@ -123,79 +127,94 @@
                 <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>Dennis Anderson</td>
+                <td>WI, MN, SD, ND</td>
+                <td><a href="mailto:dande43436@comcast.net">dande43436@comcast.net</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>Brian Makela</td>
+                <td>OH, IN</td>
+                <td><a href="mailto:bmakela@outlook.com">bmakela@outlook.com</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>Steve DeCastecker</td>
+                <td>IL</td>
+                <td><a href="mailto:stevedrep1@sbcglobal.net">stevedrep1@sbcglobal.net</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>David Worst</td>
+                <td>North IN, North OH, MI</td>
+                <td><a href="mailto:daworst1@msn.com">daworst1@msn.com</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>Tracy Saul</td>
+                <td>Manager</td>
+                <td><a href="mailto:tracysaul@fraziersports.com">tracysaul@fraziersports.com</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>Beau Brumfield</td>
+                <td>AR, OK, NE TX</td>
+                <td><a href="mailto:beaubrumfield@gmail.com">beaubrumfield@gmail.com</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>Scott McMullin</td>
+                <td>LA, MS</td>
+                <td><a href="mailto:scottmcmullin58@yahoo.com">scottmcmullin58@yahoo.com</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>Doug Gollahon</td>
+                <td>North, Central, & West Texas Team Express</td>
+                <td><a href="mailto:doug.gollahon@gmail.com">doug.gollahon@gmail.com</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>Joey Ferolito</td>
+                <td>AL, GA, FL Panhandle</td>
+                <td><a href="mailto:jrferolito@hotmail.com">jrferolito@hotmail.com</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>Cody Parker</td>
+                <td>South & SE Texas (Houstan Area)</td>
+                <td><a href="mailto:parker0225@msn.com">parker0225@msn.com</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>Todd Bradney</td>
+                <td>KS, MO, IA, NE</td>
+                <td><a href="mailto:tbradney@gmail.com">tbradney@gmail.com</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>Derran Barrows</td>
+                <td>El Paso</td>
+                <td><a href="mailto:derran.barrows@gmail.com">derran.barrows@gmail.com</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>Tim Maloney</td>
+                <td>Manager</td>
+                <td><a href="mailto:tim@tmsreps.com">tim@tmsreps.com</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>Aaron Maloney</td>
+                <td>Southern CA, Central CA</td>
+                <td><a href="mailto:aaron@tmsreps.com">aaron@tmsreps.com</a></td>
               </tr>
               <tr>
-                <td>Dave Newton</td>
-                <td>VA, WV</td>
-                <td><a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a></td>
+                <td>Bill Mills</td>
+                <td>AK, OR, Western WA</td>
+                <td><a href="mailto:bill@tmsreps.com">bill@tmsreps.com</a></td>
+              </tr>
+              <tr>
+                <td>Brant Alley</td>
+                <td>CO, NM, AZ, Eastern WY</td>
+                <td><a href="mailto:brant@tmsreps.com">brant@tmsreps.com</a></td>
+              </tr>
+              <tr>
+                <td>Mark Griewahn</td>
+                <td>Northern CA, Northern NV</td>
+                <td><a href="mailto:mark@tmsreps.com">mark@tmsreps.com</a></td>
+              </tr>
+              <tr>
+                <td>Ben Peters</td>
+                <td>ID, MT, UT, Western WY, Eastern WA</td>
+                <td><a href="mailto:ben@tmsreps.com">ben@tmsreps.com</a></td>
               </tr>
             </tbody>
           </table>
@@ -312,8 +331,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=MYKEYGOESHERE&callback=initMap" async defer></script>
+    <!-- Google Maps API
+    <script src="https://maps.googleapis.com/maps/api/js?key=KEYGOESHERE&callback=initMap" async defer></script> -->
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
 </body>
