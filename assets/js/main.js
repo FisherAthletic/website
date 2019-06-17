@@ -189,7 +189,7 @@ function windscreenGridClick () {
     resolution: 'provinces',
     backgroundColor: '#1A1D22',
     datalessRegionColor: 'white',
-    defaultColor: '#90EE90',
+    defaultColor: '#e5ffff',
     colorAxis: {minValue: 1, maxValue:100,  colors: ['#abacad']}
     };
 
