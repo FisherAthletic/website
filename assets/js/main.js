@@ -1411,20 +1411,20 @@ function sku9802sjrCaption () {
   document.getElementById("sku9802sjrCaption").innerHTML = document.getElementById("sku9802sjrImage").alt;
 };
 
-function sku9712Caption () {
-  document.getElementById("sku9712Caption").innerHTML = document.getElementById("sku9712Image").alt;
+function sku9715apCaption () {
+  document.getElementById("sku9715apCaption").innerHTML = document.getElementById("sku9715apImage").alt;
 };
 
 function sku9301rCaption () {
   document.getElementById("sku9301rCaption").innerHTML = document.getElementById("sku9301rImage").alt;
 };
 
-function sku9201rCaption () {
-  document.getElementById("sku9201rCaption").innerHTML = document.getElementById("sku9201rImage").alt;
+function sku9201cCaption () {
+  document.getElementById("sku9201cCaption").innerHTML = document.getElementById("sku9201cImage").alt;
 };
 
-function cl2sCaption () {
-  document.getElementById("cl2sCaption").innerHTML = document.getElementById("cl2sImage").alt;
+function cl5mCaption () {
+  document.getElementById("cl5mCaption").innerHTML = document.getElementById("cl5mImage").alt;
 };
 
 function sku9211rCaption () {
@@ -1443,8 +1443,8 @@ function sku9000cpCaption () {
   document.getElementById("sku9000cpCaption").innerHTML = document.getElementById("sku9000cpImage").alt;
 };
 
-function sku9002Caption () {
-  document.getElementById("sku9002Caption").innerHTML = document.getElementById("sku9002Image").alt;
+function sku9004mCaption () {
+  document.getElementById("sku9004mCaption").innerHTML = document.getElementById("sku9004mImage").alt;
 };
 
 function sku9902mCaption () {
