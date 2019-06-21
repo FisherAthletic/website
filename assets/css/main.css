@@ -120,22 +120,30 @@ body {
   cursor: pointer;
 }
 
+
+.modalExpandImageBody {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
 .imageModal img {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 1000px;
   border-radius: 5px;
+  margin-top: 10vh;
 }
 
 .imageModalCaption {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 1000px;
   text-align: center;
   color: white;
-  padding: 10px 0;
+  padding: 10px 0 0 0;
   height: 150px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -589,6 +597,15 @@ body {
 .trendingCard {
   flex: calc(50% - 40px);
 }
+.imageModal img {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.imageModalCaption {
+  width: 100%;
+  max-width: 1000px;
+}
 }
 /* Responsive for Ipad screens */
 @media screen and (max-width: 1024px) {
@@ -597,6 +614,15 @@ body {
  }
  .categoryGrid h3 {
   font-size: 20px;
+}
+.imageModal img {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.imageModalCaption {
+  width: 100%;
+  max-width: 1000px;
 }
 }
 @media screen and (max-width: 840px) {
@@ -607,6 +633,15 @@ body {
  .categoryGrid h3 {
   font-size: 20px;
 }
+.imageModal img {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.imageModalCaption {
+  width: 100%;
+  max-width: 1000px;
+}
 }
 @media screen and (max-width: 550px) {
  .categoryGrid {
@@ -615,5 +650,14 @@ body {
   }
   .categoryGrid h3 {
     font-size: 24px;
+  }
+  .imageModal img {
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .imageModalCaption {
+    width: 100%;
+    max-width: 1000px;
   }
 }
