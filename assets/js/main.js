@@ -1652,8 +1652,8 @@ function provestCaption () {
   document.getElementById("provestCaption").innerHTML = document.getElementById("provestImage").alt;
 };
 
-function fac100Caption () {
-  document.getElementById("fac100Caption").innerHTML = document.getElementById("fac100Image").alt;
+function vest2bCaption () {
+  document.getElementById("vest2bCaption").innerHTML = document.getElementById("vest2bImage").alt;
 };
 
 function cc100Caption () {
