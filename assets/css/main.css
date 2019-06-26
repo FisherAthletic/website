@@ -355,18 +355,17 @@ body {
 /* FOOTBALL PAGE ///////////////////////////////////////////////////// */
 /* HEADER ------------------------------------------------------------ */
 .pageTitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   overflow: hidden;
+  text-align: center;
   background-color: #1A1D22;
-  padding: 85px 0 20px 0;
+  padding: 85px 0 0 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .pageTitle h2 {
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
 }
 
 /* FOOTBALL PAGINATION ----------------------------------------------- */
