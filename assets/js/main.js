@@ -50,11 +50,11 @@ function baseballGridClick () {
 }
 
 function trackGridClick () {
-        location.href = "./pages/track.html";
+        location.href = "./pages/track-field.html";
 }
 
 function chairsGridClick () {
-        location.href = "./pages/chairs.html";
+        location.href = "./pages/chairs-stools.html";
 }
 
 function paddingGridClick () {
@@ -196,6 +196,11 @@ function windscreenGridClick () {
     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 
     chart.draw(data, options);
+  }
+
+  // onClick function for displaying chosen rep from map //
+  function mapSelection() {
+
   }
 
 // Baseball captions p1 //
