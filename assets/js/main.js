@@ -2175,8 +2175,8 @@ function blaster12Caption () {
   document.getElementById("blaster12Caption").innerHTML = document.getElementById("blaster12Image").alt;
 };
 
-function bla129002xCaption () {
-  document.getElementById("bla129002xCaption").innerHTML = document.getElementById("bla129002xImage").alt;
+function bla12hd9002mCaption () {
+  document.getElementById("bla12hd9002mCaption").innerHTML = document.getElementById("bla12hd9002mImage").alt;
 };
 
 function pf1011654Caption () {
