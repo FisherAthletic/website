@@ -1379,16 +1379,16 @@ function amadj20Caption () {
   document.getElementById("amadj20Caption").innerHTML = document.getElementById("amadj20Image").alt;
 };
 
-function am15Caption () {
-  document.getElementById("am15Caption").innerHTML = document.getElementById("am15Image").alt;
+function aglstl1913Caption () {
+  document.getElementById("aglstl1913Caption").innerHTML = document.getElementById("aglstl1913Image").alt;
 };
 
 function am20Caption () {
   document.getElementById("am20Caption").innerHTML = document.getElementById("am20Image").alt;
 };
 
-function am30Caption () {
-  document.getElementById("am30Caption").innerHTML = document.getElementById("am30Image").alt;
+function amrr20Caption () {
+  document.getElementById("amrr20Caption").innerHTML = document.getElementById("amrr20Image").alt;
 };
 
 function agl4815Caption () {
@@ -2253,16 +2253,16 @@ function amadj20Caption () {
   document.getElementById("amadj20Caption").innerHTML = document.getElementById("amadj20Image").alt;
 };
 
-function am15Caption () {
-  document.getElementById("am15Caption").innerHTML = document.getElementById("am15Image").alt;
+function aglstl1913Caption () {
+  document.getElementById("aglstl1913Caption").innerHTML = document.getElementById("aglstl1913Image").alt;
 };
 
 function am20Caption () {
   document.getElementById("am20Caption").innerHTML = document.getElementById("am20Image").alt;
 };
 
-function am30Caption () {
-  document.getElementById("am30Caption").innerHTML = document.getElementById("am30Image").alt;
+function amrr20Caption () {
+  document.getElementById("amrr20Caption").innerHTML = document.getElementById("amrr20Image").alt;
 };
 
 function agl4815Caption () {
