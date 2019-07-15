@@ -1689,8 +1689,8 @@ function sku3011pkCaption () {
   document.getElementById("sku3011pkCaption").innerHTML = document.getElementById("sku3011pkImage").alt;
 };
 
-function sku3004goCaption () {
-  document.getElementById("sku3004goCaption").innerHTML = document.getElementById("sku3004goImage").alt;
+function gl100Caption () {
+  document.getElementById("gl100Caption").innerHTML = document.getElementById("gl100Image").alt;
 };
 
 function sku3003orCaption () {

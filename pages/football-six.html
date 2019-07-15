@@ -111,6 +111,29 @@
         </div>
 
         <div class="card productCard" style="width: 24rem;">
+            <img id="gl100Image" src="../assets/images/products/grid-lids-gl100.jpg" class="card-img-top" alt="Grid Lids" data-toggle="modal" data-target=".gl100ImageModal" onclick="gl100Caption()">
+                <div class="card-body productCardBody">
+                  <h5 class="card-title">Grid Lids</h5>
+                  <h6 class="card-text">SKU: GL100</h6>
+                  <p>
+                    <a class="btn btn-danger" data-toggle="collapse" href="#gridLids" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Description
+                    </a>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                      Get quote
+                    </button>
+                  </p>
+                  <div class="collapse" id="gridLids">
+                    <div class="card card-body productCardDescription">
+                          This unique device will allow you to quickly and easily change the colors of your scout team's helmet to identify them. You can also simulate your opponents hemlet color with the Grid Lid. During practice sessions, painted helmets and helmet decals are protected from damage by using the Grid Lid.<br>
+                          Colors: Blue, Gold, Orange, Red, Kelly Green<br>
+                          Elastic, "one size fits all"
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+        <div class="card productCard" style="width: 24rem;">
                 <img id="vest2bImage" src="../assets/images/products/ball-vest-vest2b.jpg" class="card-img-top" alt="Ball Vest" data-toggle="modal" data-target=".vest2bImageModal" onclick="vest2bCaption()">
                     <div class="card-body productCardBody">
                       <h5 class="card-title">Ball Vest</h5>
@@ -277,27 +300,6 @@
                       </div>
                     </div>
             </div>
-
-            <div class="card productCard" style="width: 24rem;">
-              <img id="sku3004goImage" src="../assets/images/products/fisher-image-coming-soon.jpg" class="card-img-top" alt="8'H Pro Series Chain Set" data-toggle="modal" data-target=".sku3004goImageModal" onclick="sku3004goCaption()">
-                  <div class="card-body productCardBody">
-                    <h5 class="card-title">8'H Pro Series Chain Set (discontinued)</h5>
-                    <h6 class="card-text">SKU: 3004GO</h6>
-                    <p>
-                      <a class="btn btn-danger" data-toggle="collapse" href="#proSeriesChainSet3004go" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        Description
-                      </a>
-                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
-                        Get quote
-                      </button>
-                    </p>
-                    <div class="collapse" id="proSeriesChainSet3004go">
-                      <div class="card card-body productCardDescription">
-                            37'L x 17"H x 17" W.
-                      </div>
-                    </div>
-                  </div>
-          </div>
   
           <div class="card productCard" style="width: 24rem;">
                   <img id="sku3003orImage" src="../assets/images/products/chain-set-2003-3003.jpg" class="card-img-top" alt="7'H Varsity Series Chain Set" data-toggle="modal" data-target=".sku3003orImageModal" onclick="sku3003orCaption()">
@@ -496,6 +498,13 @@
               <div id="provestCaption" class="imageModalCaption"></div>
             </div>
       </div>
+
+    <div class="modal fade imageModal gl100ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="gl100Image" src="../assets/images/products/grid-lids-gl100.jpg">
+              <div id="gl100Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
     
     <div class="modal fade imageModal vest2bImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modalExpandImageBody">
@@ -550,13 +559,6 @@
         <div class="modal-dialog modal-xl modalExpandImageBody">
               <img id="sku3011pkImage" src="../assets/images/products/flip-indicator-package2-3011pk.jpg">
               <div id="sku3011pkCaption" class="imageModalCaption"></div>
-            </div>
-      </div>
-
-    <div class="modal fade imageModal sku3004goImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modalExpandImageBody">
-              <img id="sku3004goImage" src="../assets/images/products/fisher-image-coming-soon.jpg">
-              <div id="sku3004goCaption" class="imageModalCaption"></div>
             </div>
       </div>
 
