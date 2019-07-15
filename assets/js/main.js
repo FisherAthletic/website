@@ -1563,8 +1563,8 @@ function ws3Caption () {
   document.getElementById("ws3Caption").innerHTML = document.getElementById("ws3Image").alt;
 };
 
-function gp4Caption () {
-  document.getElementById("gp4Caption").innerHTML = document.getElementById("gp4Image").alt;
+function wksrwCaption () {
+  document.getElementById("wksrwCaption").innerHTML = document.getElementById("wksrwImage").alt;
 };
 
 function tw2814Caption () {
