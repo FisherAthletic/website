@@ -1518,16 +1518,16 @@ function sku6000hghCaption () {
   document.getElementById("sku6000hghCaption").innerHTML = document.getElementById("sku6000hghImage").alt;
 };
 
-function gp1eCaption () {
-  document.getElementById("gp1eCaption").innerHTML = document.getElementById("gp1eImage").alt;
+function gp1Caption () {
+  document.getElementById("gp1Caption").innerHTML = document.getElementById("gp1Image").alt;
 };
 
-function gp130Caption () {
-  document.getElementById("gp130Caption").innerHTML = document.getElementById("gp130Image").alt;
+function szfb4875Caption () {
+  document.getElementById("szfb4875Caption").innerHTML = document.getElementById("szfb4875Image").alt;
 };
 
-function gp3Caption () {
-  document.getElementById("gp3Caption").innerHTML = document.getElementById("gp3Image").alt;
+function szfb1010Caption () {
+  document.getElementById("szfb1010Caption").innerHTML = document.getElementById("szfb1010Image").alt;
 };
 
 function sku6000targetsCaption () {
