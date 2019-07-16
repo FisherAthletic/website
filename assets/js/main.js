@@ -1820,16 +1820,16 @@ function ap121426Caption () {
   document.getElementById("ap121426Caption").innerHTML = document.getElementById("ap121426Image").alt;
 };
 
-function punt2bagCaption () {
-  document.getElementById("punt2bagCaption").innerHTML = document.getElementById("punt2bagImage").alt;
+function punt2Caption () {
+  document.getElementById("punt2Caption").innerHTML = document.getElementById("punt2Image").alt;
 };
 
 function sku3400bgCaption () {
   document.getElementById("sku3400bgCaption").innerHTML = document.getElementById("sku3400bgImage").alt;
 };
 
-function punt3bagCaption () {
-  document.getElementById("punt3bagCaption").innerHTML = document.getElementById("punt3bagImage").alt;
+function punt3Caption () {
+  document.getElementById("punt3Caption").innerHTML = document.getElementById("punt3Image").alt;
 };
 
 function sku1050wCaption () {
