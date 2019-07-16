@@ -46,23 +46,23 @@ function footballGridClick () {
 }
 
 function baseballGridClick () {
-        location.href = "./pages/baseball.html";
+  location.href = "./pages/baseball.html";
 }
 
 function trackGridClick () {
-        location.href = "./pages/track-field.html";
+  location.href = "./pages/track-field.html";
 }
 
 function chairsGridClick () {
-        location.href = "./pages/chairs-stools.html";
+  location.href = "./pages/chairs-stools.html";
 }
 
 function paddingGridClick () {
-        location.href = "./pages/padding.html";
+  location.href = "./pages/padding.html";
 }
 
 function windscreenGridClick () {
-        location.href = "./pages/windscreen.html";
+  location.href = "./pages/windscreen.html";
 }
 
 // // Map function //
