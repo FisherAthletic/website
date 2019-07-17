@@ -208,8 +208,8 @@ function msdpCaption () {
   document.getElementById("msdpCaption").innerHTML = document.getElementById("msdpImage").alt;
 }
 
-function tmwsxxCaption () {
-  document.getElementById("tmwsxxCaption").innerHTML = document.getElementById("tmwsxxImage").alt;
+function tmwsCaption () {
+  document.getElementById("tmwsCaption").innerHTML = document.getElementById("tmwsImage").alt;
 };
 
 function dmwsCaption () {
@@ -240,12 +240,12 @@ function bsp46Caption () {
   document.getElementById("bsp46Caption").innerHTML = document.getElementById("bsp46Image").alt;
 };
 
-function bbc100Caption () {
-  document.getElementById("bbc100Caption").innerHTML = document.getElementById("bbc100Image").alt;
+function bbc100yCaption () {
+  document.getElementById("bbc100yCaption").innerHTML = document.getElementById("bbc100yImage").alt;
 };
 
-function bfc250Caption () {
-  document.getElementById("bfc250Caption").innerHTML = document.getElementById("bfc250Image").alt;
+function bfc250yCaption () {
+  document.getElementById("bfc250yCaption").innerHTML = document.getElementById("bfc250yImage").alt;
 };
 
 function trpg10Caption () {
