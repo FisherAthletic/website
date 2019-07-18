@@ -266,8 +266,8 @@ function tpt201550Caption () {
   document.getElementById("tpt201550Caption").innerHTML = document.getElementById("tpt201550Image").alt;
 };
 
-function hpm712Caption () {
-  document.getElementById("hpm712Caption").innerHTML = document.getElementById("hpm712Image").alt;
+function hpm612Caption () {
+  document.getElementById("hpm612Caption").innerHTML = document.getElementById("hpm612Image").alt;
 };
 
 function odc4Caption () {
@@ -298,8 +298,8 @@ function ic1006Caption () {
   document.getElementById("ic1006Caption").innerHTML = document.getElementById("ic1006Image").alt;
 };
 
-function ic101018Caption () {
-  document.getElementById("ic101018Caption").innerHTML = document.getElementById("ic101018Image").alt;
+function ic1018Caption () {
+  document.getElementById("ic1018Caption").innerHTML = document.getElementById("ic1018Image").alt;
 };
 
 // Baseball captions p3 //
