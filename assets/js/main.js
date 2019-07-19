@@ -298,49 +298,49 @@ function ic1006Caption () {
   document.getElementById("ic1006Caption").innerHTML = document.getElementById("ic1006Image").alt;
 };
 
-function ic1018Caption () {
-  document.getElementById("ic1018Caption").innerHTML = document.getElementById("ic1018Image").alt;
+function pp88wCaption () {
+  document.getElementById("pp88wCaption").innerHTML = document.getElementById("pp88wImage").alt;
 };
 
 // Baseball captions p3 //
-function ic2018Caption () {
-  document.getElementById("ic2018Caption").innerHTML = document.getElementById("ic2018Image").alt;
+function ip88wCaption () {
+  document.getElementById("ip88wCaption").innerHTML = document.getElementById("ip88wImage").alt;
 };
 
 function ic1018Caption () {
   document.getElementById("ic1018Caption").innerHTML = document.getElementById("ic1018Image").alt;
 };
 
-function ic101006Caption () {
-  document.getElementById("ic101006Caption").innerHTML = document.getElementById("ic101006Image").alt;
+function pp57Caption () {
+  document.getElementById("pp57Caption").innerHTML = document.getElementById("pp57Image").alt;
 };
 
-function ic2006Caption () {
-  document.getElementById("ic2006Caption").innerHTML = document.getElementById("ic2006Image").alt;
+function pp58stCaption () {
+  document.getElementById("pp58stCaption").innerHTML = document.getElementById("pp58stImage").alt;
 };
 
-function fc120Caption () {
-  document.getElementById("fc120Caption").innerHTML = document.getElementById("fc120Image").alt;
+function fc170Caption () {
+  document.getElementById("fc170Caption").innerHTML = document.getElementById("fc170Image").alt;
 };
 
-function fc90Caption () {
-  document.getElementById("fc90Caption").innerHTML = document.getElementById("fc90Image").alt;
+function pp67Caption () {
+  document.getElementById("pp67Caption").innerHTML = document.getElementById("pp67Image").alt;
 };
 
 function bcb48Caption () {
   document.getElementById("bcb48Caption").innerHTML = document.getElementById("bcb48Image").alt;
 };
 
-function fc160Caption () {
-  document.getElementById("fc160Caption").innerHTML = document.getElementById("fc160Image").alt;
+function fp1010Caption () {
+  document.getElementById("fp1010Caption").innerHTML = document.getElementById("fp1010Image").alt;
 };
 
 function ip67Caption () {
   document.getElementById("ip67Caption").innerHTML = document.getElementById("ip67Image").alt;
 };
 
-function ip88nCaption () {
-  document.getElementById("ip88nCaption").innerHTML = document.getElementById("ip88nImage").alt;
+function sfp67Caption () {
+  document.getElementById("sfp67Caption").innerHTML = document.getElementById("sfp67Image").alt;
 };
 
 function ip88Caption () {
