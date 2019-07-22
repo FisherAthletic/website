@@ -421,8 +421,8 @@ function pbs6072Caption () {
   document.getElementById("pbs6072Caption").innerHTML = document.getElementById("pbs6072Image").alt;
 };
 
-function szbb4875cCaption () {
-  document.getElementById("szbb4875cCaption").innerHTML = document.getElementById("szbb4875cImage").alt;
+function szbb4875aption () {
+  document.getElementById("szbb4875aption").innerHTML = document.getElementById("szbb4875Image").alt;
 };
 
 function bn121470Caption () {
@@ -437,8 +437,8 @@ function bn121455Caption () {
   document.getElementById("bn121455Caption").innerHTML = document.getElementById("bn121455Image").alt;
 };
 
-function szsblCaption () {
-  document.getElementById("szsblCaption").innerHTML = document.getElementById("szsblImage").alt;
+function szsbkCaption () {
+  document.getElementById("szsbkCaption").innerHTML = document.getElementById("szsbkImage").alt;
 };
 
 function sku67nCaption () {
