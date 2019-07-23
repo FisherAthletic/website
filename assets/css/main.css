@@ -356,18 +356,25 @@ body {
   -webkit-user-select: none;
 }
 
+.page-link:focus {
+  box-shadow: none;
+  border: none;
+}
+
 .footballPagination a {
-  background-color: #2d323a;
+  background-color: #1A1D22;
   border: #1A1D22 solid 1px;
 }
 
 .footballPagination a:hover {
-  background-color: #505a64;
+  background-color: #1A1D22;
   border: #1A1D22 solid 1px;
+  color: #ED1C24;
 }
 
 .footballPaginationActive a {
-  background-color: #505a64;
+  background-color: #1A1D22;
+  color: #ED1C24 !important;
 }
 
 .footballPagination :any-link {

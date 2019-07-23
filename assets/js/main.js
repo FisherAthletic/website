@@ -401,8 +401,8 @@ function pp67Caption () {
 };
 
 // Baseball captions p5 //
-function ip67pdCaption () {
-  document.getElementById("ip67pdCaption").innerHTML = document.getElementById("ip67pdImage").alt;
+function cnr42a178Caption () {
+  document.getElementById("cnr42a178Caption").innerHTML = document.getElementById("cnr42a178Image").alt;
 };
 
 function cbn67Caption () {
@@ -417,36 +417,40 @@ function pbssoCaption () {
   document.getElementById("pbssoCaption").innerHTML = document.getElementById("pbssoImage").alt;
 };
 
-function pbs6072Caption () {
-  document.getElementById("pbs6072Caption").innerHTML = document.getElementById("pbs6072Image").alt;
+function cnr24178bkCaption () {
+  document.getElementById("cnr24178bkCaption").innerHTML = document.getElementById("cnr24178bkImage").alt;
 };
 
-function szbb4875aption () {
-  document.getElementById("szbb4875aption").innerHTML = document.getElementById("szbb4875Image").alt;
+function szbb4875Caption () {
+  document.getElementById("szbb4875Caption").innerHTML = document.getElementById("szbb4875Image").alt;
 };
 
-function bn121470Caption () {
-  document.getElementById("bn121470Caption").innerHTML = document.getElementById("bn121470Image").alt;
+function cnr504178Caption () {
+  document.getElementById("cnr504178Caption").innerHTML = document.getElementById("cnr504178Image").alt;
 };
 
-function bt7012hCaption () {
-  document.getElementById("bt7012hCaption").innerHTML = document.getElementById("bt7012hImage").alt;
+function cnr504178Caption () {
+  document.getElementById("cnr504178Caption").innerHTML = document.getElementById("cnr504178Image").alt;
 };
 
-function bn121455Caption () {
-  document.getElementById("bn121455Caption").innerHTML = document.getElementById("bn121455Image").alt;
+function cnr42078Caption () {
+  document.getElementById("cnr42078Caption").innerHTML = document.getElementById("cnr42078Image").alt;
 };
 
 function szsbkCaption () {
   document.getElementById("szsbkCaption").innerHTML = document.getElementById("szsbkImage").alt;
 };
 
-function sku67nCaption () {
-  document.getElementById("sku67nCaption").innerHTML = document.getElementById("sku67nImage").alt;
+function cnr72178Caption () {
+  document.getElementById("cnr72178Caption").innerHTML = document.getElementById("cnr72178Image").alt;
 };
 
 function cnr5078Caption () {
   document.getElementById("cnr5078Caption").innerHTML = document.getElementById("cnr5078Image").alt;
+};
+
+function cnr5044Caption () {
+  document.getElementById("cnr5044Caption").innerHTML = document.getElementById("cnr5044Image").alt;
 };
 
 // Baseball captions p6 //
