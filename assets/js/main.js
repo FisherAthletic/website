@@ -454,16 +454,16 @@ function cnr5044Caption () {
 };
 
 // Baseball captions p6 //
-function cnr42078Caption () {
-  document.getElementById("cnr42078Caption").innerHTML = document.getElementById("cnr42078Image").alt;
+function cnr36178bkCaption () {
+  document.getElementById("cnr36178bkCaption").innerHTML = document.getElementById("cnr36178bkImage").alt;
 };
 
 function cnr42a178Caption () {
   document.getElementById("cnr42a178Caption").innerHTML = document.getElementById("cnr42a178Image").alt;
 };
 
-function cnr504178Caption () {
-  document.getElementById("cnr504178Caption").innerHTML = document.getElementById("cnr504178Image").alt;
+function dm1vCaption () {
+  document.getElementById("dm1vCaption").innerHTML = document.getElementById("dm1vImage").alt;
 };
 
 function fn4s1765Caption () {
