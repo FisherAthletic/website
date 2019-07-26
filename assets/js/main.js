@@ -532,32 +532,32 @@ function ab75bpcCaption () {
 };
 
 // Track & field captions p1 //
+function dc1300Caption () {
+  document.getElementById("dc1300Caption").innerHTML = document.getElementById("dc1300Image").alt;
+};
+
+function dc100pCaption () {
+  document.getElementById("dc100pCaption").innerHTML = document.getElementById("dc100pImage").alt;
+};
+
 function dc100Caption () {
   document.getElementById("dc100Caption").innerHTML = document.getElementById("dc100Image").alt;
 };
 
-function spc4kCaption () {
-  document.getElementById("spc4kCaption").innerHTML = document.getElementById("spc4kImage").alt;
-};
-
-function spc6Caption () {
-  document.getElementById("spc6Caption").innerHTML = document.getElementById("spc6Image").alt;
-};
-
-function dr578Caption () {
-  document.getElementById("dr578Caption").innerHTML = document.getElementById("dr578Image").alt;
-};
-
-function dr577Caption () {
-  document.getElementById("dr577Caption").innerHTML = document.getElementById("dr577Image").alt;
+function dw476Caption () {
+  document.getElementById("dw476Caption").innerHTML = document.getElementById("dw476Image").alt;
 };
 
 function dr576Caption () {
   document.getElementById("dr576Caption").innerHTML = document.getElementById("dr576Image").alt;
 };
 
-function spp4kCaption () {
-  document.getElementById("spp4kCaption").innerHTML = document.getElementById("spp4kImage").alt;
+function dr576Caption () {
+  document.getElementById("dr576Caption").innerHTML = document.getElementById("dr576Image").alt;
+};
+
+function spp8Caption () {
+  document.getElementById("spp8Caption").innerHTML = document.getElementById("spp8Image").alt;
 };
 
 function spp16Caption () {
