@@ -552,8 +552,8 @@ function dr576Caption () {
   document.getElementById("dr576Caption").innerHTML = document.getElementById("dr576Image").alt;
 };
 
-function dr576Caption () {
-  document.getElementById("dr576Caption").innerHTML = document.getElementById("dr576Image").alt;
+function spc6Caption () {
+  document.getElementById("spc6Caption").innerHTML = document.getElementById("spc6Image").alt;
 };
 
 function spp8Caption () {
@@ -581,8 +581,8 @@ function wc101824Caption () {
 };
 
 // Track & field captions p2 //
-function dw477Caption () {
-  document.getElementById("dw477Caption").innerHTML = document.getElementById("dw477Image").alt;
+function gc1018Caption () {
+  document.getElementById("gc1018Caption").innerHTML = document.getElementById("gc1018Image").alt;
 };
 
 function dw476Caption () {
