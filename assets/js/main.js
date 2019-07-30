@@ -715,8 +715,8 @@ function sr48bCaption () {
   document.getElementById("sr48bCaption").innerHTML = document.getElementById("sr48bImage").alt;
 };
 
-function ttp630Caption () {
-  document.getElementById("ttp630Caption").innerHTML = document.getElementById("ttp630Image").alt;
+function ttp630wCaption () {
+  document.getElementById("ttp630wCaption").innerHTML = document.getElementById("ttp630wImage").alt;
 };
 
 function ttp1230Caption () {
