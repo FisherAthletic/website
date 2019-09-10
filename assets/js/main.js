@@ -203,6 +203,13 @@ function windscreenGridClick () {
 
   }
 
+  // Click event function that displays caption
+  // function showCardImageCaption(event) {
+  //   var clickedImage = event.target;
+  //   document.getElementById("cardCaption").innerHTML = clickedImage.alt;
+  //   console.log(clickedImage.alt);
+  // }
+
 // Baseball captions p1 //
 function msdpCaption () {
   document.getElementById("msdpCaption").innerHTML = document.getElementById("msdpImage").alt;
