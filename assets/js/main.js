@@ -1263,8 +1263,8 @@ function agbeltlgCaption () {
   document.getElementById("agbeltlgCaption").innerHTML = document.getElementById("agbeltlgImage").alt;
 };
 
-function agbeltxlCaption () {
-  document.getElementById("agbeltxlCaption").innerHTML = document.getElementById("agbeltxlImage").alt;
+function cone12Caption () {
+  document.getElementById("cone12Caption").innerHTML = document.getElementById("cone12Image").alt;
 };
 
 function bb06Caption () {
