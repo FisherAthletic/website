@@ -2328,3 +2328,8 @@ function sttcCaption () {
 function sttsoCaption () {
   document.getElementById("sttsoCaption").innerHTML = document.getElementById("sttsoImage").alt;
 };
+
+// Gym captions p1 //
+function tscb4150Caption () {
+  document.getElementById("tscb4150Caption").innerHTML = document.getElementById("tscb4150Image").alt;
+};
