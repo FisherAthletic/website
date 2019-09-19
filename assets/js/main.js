@@ -1,45 +1,3 @@
-// function tackleWheelOption28 () {
-//     document.getElementById("productDetailsImage").src = "../assets/images/football/tw2814.jpg";
-//     document.getElementById("tackleWheelTitle").innerHTML = "Tackle Wheel TW2814";
-//     document.getElementById("tackleWheelSpecs").innerHTML = '28" Outside Diam. x 14" Inside Diam. 8" thick | 21 lbs | Rebond Foam';
-//     document.getElementById("tackleWheelPrice").innerHTML = "$152.00";
-// }
-
-// function tackleWheelOption36 () {
-//     document.getElementById("productDetailsImage").src = "../assets/images/football/tw3616.jpg";
-//     document.getElementById("tackleWheelTitle").innerHTML = "Tackle Wheel TW3616";
-//     document.getElementById("tackleWheelSpecs").innerHTML = '36" Outside Diam. x 16" Inside Diam. 8" thick | 32 lbs | Rebond Foam';
-//     document.getElementById("tackleWheelPrice").innerHTML = "$249.00";
-// }
-
-// function tackleWheelOption42 () {
-//     document.getElementById("productDetailsImage").src = "../assets/images/football/tw4220.jpg";
-//     document.getElementById("tackleWheelTitle").innerHTML = "Tackle Wheel TW4220";
-//     document.getElementById("tackleWheelSpecs").innerHTML = '42" Outside Diam. x 20" Inside Diam. 9" thick | 15 lbs | PolyFoam';
-//     document.getElementById("tackleWheelPrice").innerHTML = "$325.00";
-// }
-
-// function tackleWheelOption48 () {
-//     document.getElementById("productDetailsImage").src = "../assets/images/football/tw4825.jpg";
-//     document.getElementById("tackleWheelTitle").innerHTML = "Tackle Wheel TW4825";
-//     document.getElementById("tackleWheelSpecs").innerHTML = '48" Outside Diam. x 25" Inside Diam. 11" thick | 21 lbs | PolyFoam';
-//     document.getElementById("tackleWheelPrice").innerHTML = "$357.00";
-// }
-
-// function tackleWheelOption54 () {
-//     document.getElementById("productDetailsImage").src = "../assets/images/football/tw5428.jpg";
-//     document.getElementById("tackleWheelTitle").innerHTML = "Tackle Wheel TW5428";
-//     document.getElementById("tackleWheelSpecs").innerHTML = '54" Outside Diam. x 28" Inside Diam. 12" thick | 24 lbs | PolyFoam';
-//     document.getElementById("tackleWheelPrice").innerHTML = "$407.00";
-// }
-
-// function tackleWheelOption60 () {
-//     document.getElementById("productDetailsImage").src = "../assets/images/football/tw6030.jpg";
-//     document.getElementById("tackleWheelTitle").innerHTML = "Tackle Wheel TW6030";
-//     document.getElementById("tackleWheelSpecs").innerHTML = '60" Outside Diam. x 30" Inside Diam. 12" thick | 27 lbs | PolyFoam';
-//     document.getElementById("tackleWheelPrice").innerHTML = "$425.00";
-// }
-
 // Click functions that link to pages //
 function footballGridClick () {
   location.href = "./pages/football.html";
@@ -65,143 +23,147 @@ function windscreenGridClick () {
   location.href = "./pages/windscreen.html";
 }
 
-// // Map function //
-// function initMap() {
+// Rep locator selection and population
+// Rep info object that holds data for states
+var repInfo = {
+  ak: 'Rep: Bill Mills<br>Email: <a href="mailto:bill@tmsreps.com">bill@tmsreps.com</a>',
+  al: 'Rep: Joey Ferolito<br>Email: <a href="mailto:jrferolito@hotmail.com">jrferolito@hotmail.com</a>',
+  ar: 'Rep: Beau Brumfield<br>Email: <a href="mailto:beaubrumfield@gmail.com">beaubrumfield@gmail.com</a>',
+  az: 'Rep: Brant Alley<br>Email: <a href="mailto:brant@tmsreps.com">brant@tmsreps.com</a>',
+  ca: 'Rep: Aaron Maloney<br>Email: <a href="mailto:aaron@tmsreps.com">aaron@tmsreps.com</a><hr>Rep: Mark Griewahn<br>Email: <a href="mailto:mark@tmsreps.com">mark@tmsreps.com</a>',
+  co: 'Rep: Brant Alley<br>Email: <a href="mailto:brant@tmsreps.com">brant@tmsreps.com</a>',
+  ct: 'Rep: Rich Boudreau<br>Email: <a href="mailto:richboudreau@comcast.net">richboudreau@comcast.net</a>',
+  dc: 'Rep: Barry Smith<br>Email: <a href="mailto:bsmith27_99@yahoo.com">bsmith27_99@yahoo.com</a>',
+  de: 'Rep: Barry Smith<br>Email: <a href="mailto:bsmith27_99@yahoo.com">bsmith27_99@yahoo.com</a>',
+  fl: 'Rep: Mike O`neal<br>Email: <a href="mailto:fmo98@aol.com">fmo98@aol.com</a><hr>Rep: Joey Ferolito<br>Email: <a href="mailto:jrferolito@hotmail.com">jrferolito@hotmail.com</a>',
+  ga: 'Rep: Joey Ferolito<br>Email: <a href="mailto:jrferolito@hotmail.com">jrferolito@hotmail.com</a>',
+  ia: 'Rep: Todd Bradney<br>Email: <a href="mailto:tbradney@gmail.com">tbradney@gmail.com</a>',
+  id: 'Rep: Ben Peters<br>Email: <a href="mailto:ben@tmsreps.com">ben@tmsreps.com</a>',
+  il: 'Rep: Steve DeCastecker<br>Email: <a href="mailto:stevedrep1@sbcglobal.net">stevedrep1@sbcglobal.net</a>',
+  in: 'Rep: Brian Makela<br>Email: <a href="mailto:bmakela@outlook.com">bmakela@outlook.com</a><hr>Rep: David Worst<br>Email: <a href="mailto:daworst1@msn.com">daworst1@msn.com</a>',
+  ks: 'Rep: Todd Bradney<br>Email: <a href="mailto:tbradney@gmail.com">tbradney@gmail.com</a>',
+  ky: 'Rep: Mike Sallie<br>Email: <a href="mailto:mikesallie59@gmail.com">mikesallie59@gmail.com</a>',
+  la: 'Rep: Scott McMullin<br>Email: <a href="mailto:scottmcmullin58@yahoo.com">scottmcmullin58@yahoo.com</a>',
+  ma: 'Rep: Rich Boudreau<br>Email: <a href="mailto:richboudreau@comcast.net">richboudreau@comcast.net</a>',
+  md: 'Rep: Barry Smith<br>Email: <a href="mailto:bsmith27_99@yahoo.com">bsmith27_99@yahoo.com</a>',
+  me: 'Rep: Rich Boudreau<br>Email: <a href="mailto:richboudreau@comcast.net">richboudreau@comcast.net</a>',
+  mi: 'Rep: David Worst<br>Email: <a href="mailto:daworst1@msn.com">daworst1@msn.com</a>',
+  mn: 'Rep: Dennis Anderson<br>Email: <a href="mailto:dande43436@comcast.net">dande43436@comcast.net</a>',
+  mo: 'Rep: Todd Bradney<br>Email: <a href="mailto:tbradney@gmail.com">tbradney@gmail.com</a>',
+  ms: 'Rep: Scott McMullin<br>Email: <a href="mailto:scottmcmullin58@yahoo.com">scottmcmullin58@yahoo.com</a>',
+  mt: 'Rep: Ben Peters<br>Email: <a href="mailto:ben@tmsreps.com">ben@tmsreps.com</a>',
+  nc: 'Rep: Don Leonard<br>Email: <a href="mailto:dsleonard@aol.com">dsleonard@aol.com</a>',
+  nd: 'Rep: Dennis Anderson<br>Email: <a href="mailto:dande43436@comcast.net">dande43436@comcast.net</a>',
+  ne: 'Rep: Todd Bradney<br>Email: <a href="mailto:tbradney@gmail.com">tbradney@gmail.com</a>',
+  nh: 'Rep: Rich Boudreau<br>Email: <a href="mailto:richboudreau@comcast.net">richboudreau@comcast.net</a>',
+  nj: 'Rep: Mike Robinson<br>Email: <a href="mailto:mikerob@erols.com">mikerob@erols.com</a>',
+  nm: 'Rep: Brant Alley <br>Email: <a href="mailto:brant@tmsreps.com">brant@tmsreps.com</a>',
+  nv: 'Rep: Mark Griewahn <br>Email: <a href="mailto:mark@tmsreps.com">mark@tmsreps.com</a>',
+  ny: 'Rep: Allan M. Dick <br>Email: <a href="mailto:aldick@comcast.net">aldick@comcast.net</a><hr>Rep: Mike Robinson<br>Email: <a href="mailto:mikerob@erols.com">mikerob@erols.com</a><hr>Rep: Rich Boudreau<br>Email: <a href="mailto:richboudreau@comcast.net">richboudreau@comcast.net</a>',
+  oh: 'Rep: Brian Makela <br>Email: <a href="mailto:bmakela@outlook.com">bmakela@outlook.com</a><hr>Rep: David Worst<br>Email: <a href="mailto:daworst1@msn.com">daworst1@msn.com</a>',
+  ok: 'Rep: Beau Brumfield <br>Email: <a href="mailto:beaubrumfield@gmail.com">beaubrumfield@gmail.com</a>',
+  or: 'Rep: Bill Mills <br>Email: <a href="mailto:bill@tmsreps.com">bill@tmsreps.com</a>',
+  pa: 'Rep: Allan M. Dick <br>Email: <a href="mailto:aldick@comcast.net">aldick@comcast.net</a><hr>Rep: Mike Robinson<br>Email: <a href="mailto:mikerob@erols.com">mikerob@erols.com</a>',
+  ri: 'Rep: Rich Boudreau <br>Email: <a href="mailto:richboudreau@comcast.net">richboudreau@comcast.net</a>',
+  sc: 'Rep: Don Leonard <br>Email: <a href="mailto:dsleonard@aol.com">dsleonard@aol.com</a>',
+  sd: 'Rep: Dennis Anderson <br>Email: <a href="mailto:dande43436@comcast.net">dande43436@comcast.net</a>',
+  tn: 'Rep: Mike Sallie <br>Email: <a href="mailto:mikesallie59@gmail.com">mikesallie59@gmail.com</a>',
+  tx: 'Rep: Beau Brumfield <br>Email: <a href="mailto:beaubrumfield@gmail.com">beaubrumfield@gmail.com</a><hr>Rep: Doug Gollahon<br>Email: <a href="mailto:doug.gollahon@gmail.com">doug.gollahon@gmail.com</a><hr>Rep: Cody Parker<br>Email: <a href="mailto:parker0225@msn.com">parker0225@msn.com</a><hr>Rep: Derran Barrows<br>Email: <a href="mailto:derran.barrows@gmail.com">derran.barrows@gmail.com</a>',
+  ut: 'Rep: Ben Peters <br>Email: <a href="mailto:ben@tmsreps.com">ben@tmsreps.com</a>',
+  va: 'Rep: Dave Newton <br>Email: <a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a>',
+  vt: 'Rep: Rich Boudreau <br>Email: <a href="mailto:richboudreau@comcast.net">richboudreau@comcast.net</a>',
+  wa: 'Rep: Bill Mills <br>Email: <a href="mailto:bill@tmsreps.com">bill@tmsreps.com</a><hr>Rep: Ben Peters<br>Email: <a href="mailto:ben@tmsreps.com">ben@tmsreps.com</a>',
+  wi: 'Rep: Dennis Anderson <br>Email: <a href="mailto:dande43436@comcast.net">dande43436@comcast.net</a>',
+  wv: 'Rep: Dave Newton <br>Email: <a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a>',
+  wy: 'Rep: Brant Alley <br>Email: <a href="mailto:brant@tmsreps.com">brant@tmsreps.com</a><hr>Rep: Ben Peters<br>Email: <a href="mailto:ben@tmsreps.com">ben@tmsreps.com</a>',
+}
+// This function will hold 
+function stateRepInfo() {
+  var stateSelection = document.getElementById("state-selection").value;
+  stateSelection = stateSelection.replace(/['"]+/g, '');
+  console.log(stateSelection);
+  var repInfoDiv = document.getElementById("rep-info-div");
 
-// 	// pick center coordinates for your map
-// 	var myMapCenter = {lat: 39.8283, lng: -98.5795};
+  repInfoDiv.innerHTML = repInfo[stateSelection];
+}
 
-// 	// create map and say which HTML element it should appear in
-// 	var map = new google.maps.Map(document.getElementById('map'), {
-// 		center: myMapCenter,
-// 		zoom: 4
+// // Geo chart map //
+//   google.charts.load('current', {
+//     'packages':['geochart'],
+//     'mapsApiKey': ''
 //   });
+//   google.charts.setOnLoadCallback(drawRegionsMap);
 
-//   // object that holds rep data
-//   var salesReps = [
-//     {
-//       name: 'Don Leonard',
-//       location: {lat: 35.727733, lng: -80.482386},
-//       hours: '8AM to 5PM'
-//     },
-//     {
-//       name: 'Yobany Perez',
-//       location: {lat: 40.790091, lng: -73.968285},
-//       hours: '8AM to 5PM'
-//     }
-//   ];
+//   function drawRegionsMap() {
+//     var data = google.visualization.arrayToDataTable([
+//       ['Territory', 'Rep'],
+//       ['US-NC', "NC | Don Leonard (manager)"],
+//       ['US-SC', "SC | Don Leonard (manager)"],
+//       ['US-FL', "FL | Mike O'Neal (managed by Don Leonard), Joey Forelito (FL panhandle)"],
+//       ['US-VA', "VA | Dave Newton (managed by Don Leonard)"],
+//       ['US-WV', "WV | Dave Newton (managed by Don Leonard)"],
+//       ['US-KY', "KY | Mike Sallie (managed by Don Leonard)"],
+//       ['US-TN', "TN | Mike Sallie (managed by Don Leonard)"],
+//       ['US-NY', "NY | Alan M. Dick, Mike Robinson, Rich Boudreau"],
+//       ['US-PA', "PA | Alan M. Dick, Mike Robinson"],
+//       ['US-DE', "DE | Barry Smith"],
+//       ['US-MD', "MD | Barry Smith"],
+//       ['US-NJ', "NJ | Mike Robinson"],
+//       ['US-CT', "CT | Rich Boudreau"],
+//       ['US-RI', "RI | Rich Boudreau"],
+//       ['US-ME', "ME | Rich Boudreau"],
+//       ['US-NH', "NH | Rich Boudreau"],
+//       ['US-VT', "VT | Rich Boudreau"],
+//       ['US-MA', "MA | Rich Boudreau"],
+//       ['US-WI', "WI | Dennis Anderson"],
+//       ['US-MN', "MN | Dennis Anderson"],
+//       ['US-SD', "SD | Dennis Anderson"],
+//       ['US-ND', "ND | Dennis Anderson"],
+//       ['US-OH', "OH | Brian Makela, David Worst"],
+//       ['US-IN', "IN | Brian Makela, David Worst"],
+//       ['US-IL', "IL | Steve DeCastecker"],
+//       ['US-MI', "MI | David Worst"],
+//       ['US-AR', "AR | Beau Brumfield (managed by Tracy Saul)"],
+//       ['US-OK', "OK | Beau Brumfield (managed by Tracy Saul)"],
+//       ['US-TX', "TX | Beau Brumfield, Doug Gollahon, Cody Parker, Derran Barrows (managed by Tracy Saul)"],
+//       ['US-LA', "LA | Scott McMullin (managed by Tracy Saul)"],
+//       ['US-MS', "MS | Scott McMullin (managed by Tracy Saul)"],
+//       ['US-AL', "AL | Joey Ferolito (managed by Tracy Saul)"],
+//       ['US-GA', "GA | Joey Ferolito (managed by Tracy Saul)"],
+//       ['US-AL', "AL | Joey Ferolito (managed by Tracy Saul)"],
+//       ['US-KS', "KS | Todd Bradney (managed by Tracy Saul)"],
+//       ['US-MO', "MO | Todd Bradney (managed by Tracy Saul)"],
+//       ['US-IA', "IA | Todd Bradney (managed by Tracy Saul)"],
+//       ['US-NE', "NE | Todd Bradney (managed by Tracy Saul)"],
+//       ['US-KS', "KS | Todd Bradney (managed by Tracy Saul)"],
+//       ['US-CA', "CA | Aaron Maloney, Mark Griewahn (managed by Tim Maloney)"],
+//       ['US-AK', "AK | Bill Mills (managed by Tim Maloney)"],
+//       ['US-OR', "OR | Bill Mills (managed by Tim Maloney)"],
+//       ['US-WA', "WA | Bill Mills, Ben Peters (managed by Tim Maloney)"],
+//       ['US-CO', "CO | Brant Alley (managed by Tim Maloney)"],
+//       ['US-NM', "NM | Brant Alley (managed by Tim Maloney)"],
+//       ['US-AZ', "AZ | Brant Alley (managed by Tim Maloney)"],
+//       ['US-WY', "WY | Brant Alley, Ben Peters (managed by Tim Maloney)"],
+//       ['US-NV', "NV | Mark Griewahn (managed by Tim Maloney)"],
+//       ['US-ID', "ID | Ben Peters (managed by Tim Maloney)"],
+//       ['US-MT', "MT | Ben Peters (managed by Tim Maloney)"],
+//       ['US-UT', "UT | Ben Peters (managed by Tim Maloney)"],
+//     ]);
 
-//   function markRep(repInfo){
-//     // Create a marker and set its position.
-//     var marker = new google.maps.Marker({
-//       map: map,
-//       position: repInfo.location,
-//       title: repInfo.name
-//     });
-  
-//     // show rep info when marker is clicked
-//     marker.addListener('click', function(){
-//       showRepInfo(repInfo);
-//       });
-//     }
-  
-//   // show rep info in text box
-//   function showRepInfo(repInfo){
-//     var info_div = document.getElementById('info_div');
-//     info_div.innerHTML = 'Rep name: '
-//       + repInfo.name
-//       + '<br>Hours: ' + repInfo.hours;
-//     }
+//     var options = {
+//     region: 'US',
+//     // resolution: 'metros',
+//     resolution: 'provinces',
+//     backgroundColor: '#1A1D22',
+//     datalessRegionColor: 'white',
+//     defaultColor: '#e5ffff',
+//     colorAxis: {minValue: 1, maxValue:100,  colors: ['#abacad']}
+//     };
 
-//   salesReps.forEach(function(salesRep){
-//     markRep(salesRep);
-//     });
+//     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 
-      
-//     }
-
-// Geo chart map //
-  google.charts.load('current', {
-    'packages':['geochart'],
-    'mapsApiKey': ''
-  });
-  google.charts.setOnLoadCallback(drawRegionsMap);
-
-  function drawRegionsMap() {
-    var data = google.visualization.arrayToDataTable([
-      ['Territory', 'Rep'],
-      ['US-NC', "NC | Don Leonard (manager)"],
-      ['US-SC', "SC | Don Leonard (manager)"],
-      ['US-FL', "FL | Mike O'Neal (managed by Don Leonard), Joey Forelito (FL panhandle)"],
-      ['US-VA', "VA | Dave Newton (managed by Don Leonard)"],
-      ['US-WV', "WV | Dave Newton (managed by Don Leonard)"],
-      ['US-KY', "KY | Mike Sallie (managed by Don Leonard)"],
-      ['US-TN', "TN | Mike Sallie (managed by Don Leonard)"],
-      ['US-NY', "NY | Alan M. Dick, Mike Robinson, Rich Boudreau"],
-      ['US-PA', "PA | Alan M. Dick, Mike Robinson"],
-      ['US-DE', "DE | Barry Smith"],
-      ['US-MD', "MD | Barry Smith"],
-      ['US-NJ', "NJ | Mike Robinson"],
-      ['US-CT', "CT | Rich Boudreau"],
-      ['US-RI', "RI | Rich Boudreau"],
-      ['US-ME', "ME | Rich Boudreau"],
-      ['US-NH', "NH | Rich Boudreau"],
-      ['US-VT', "VT | Rich Boudreau"],
-      ['US-MA', "MA | Rich Boudreau"],
-      ['US-WI', "WI | Dennis Anderson"],
-      ['US-MN', "MN | Dennis Anderson"],
-      ['US-SD', "SD | Dennis Anderson"],
-      ['US-ND', "ND | Dennis Anderson"],
-      ['US-OH', "OH | Brian Makela, David Worst"],
-      ['US-IN', "IN | Brian Makela, David Worst"],
-      ['US-IL', "IL | Steve DeCastecker"],
-      ['US-MI', "MI | David Worst"],
-      ['US-AR', "AR | Beau Brumfield (managed by Tracy Saul)"],
-      ['US-OK', "OK | Beau Brumfield (managed by Tracy Saul)"],
-      ['US-TX', "TX | Beau Brumfield, Doug Gollahon, Cody Parker, Derran Barrows (managed by Tracy Saul)"],
-      ['US-LA', "LA | Scott McMullin (managed by Tracy Saul)"],
-      ['US-MS', "MS | Scott McMullin (managed by Tracy Saul)"],
-      ['US-AL', "AL | Joey Ferolito (managed by Tracy Saul)"],
-      ['US-GA', "GA | Joey Ferolito (managed by Tracy Saul)"],
-      ['US-AL', "AL | Joey Ferolito (managed by Tracy Saul)"],
-      ['US-KS', "KS | Todd Bradney (managed by Tracy Saul)"],
-      ['US-MO', "MO | Todd Bradney (managed by Tracy Saul)"],
-      ['US-IA', "IA | Todd Bradney (managed by Tracy Saul)"],
-      ['US-NE', "NE | Todd Bradney (managed by Tracy Saul)"],
-      ['US-KS', "KS | Todd Bradney (managed by Tracy Saul)"],
-      ['US-CA', "CA | Aaron Maloney, Mark Griewahn (managed by Tim Maloney)"],
-      ['US-AK', "AK | Bill Mills (managed by Tim Maloney)"],
-      ['US-OR', "OR | Bill Mills (managed by Tim Maloney)"],
-      ['US-WA', "WA | Bill Mills, Ben Peters (managed by Tim Maloney)"],
-      ['US-CO', "CO | Brant Alley (managed by Tim Maloney)"],
-      ['US-NM', "NM | Brant Alley (managed by Tim Maloney)"],
-      ['US-AZ', "AZ | Brant Alley (managed by Tim Maloney)"],
-      ['US-WY', "WY | Brant Alley, Ben Peters (managed by Tim Maloney)"],
-      ['US-NV', "NV | Mark Griewahn (managed by Tim Maloney)"],
-      ['US-ID', "ID | Ben Peters (managed by Tim Maloney)"],
-      ['US-MT', "MT | Ben Peters (managed by Tim Maloney)"],
-      ['US-UT', "UT | Ben Peters (managed by Tim Maloney)"],
-    ]);
-
-    var options = {
-    region: 'US',
-    // resolution: 'metros',
-    resolution: 'provinces',
-    backgroundColor: '#1A1D22',
-    datalessRegionColor: 'white',
-    defaultColor: '#e5ffff',
-    colorAxis: {minValue: 1, maxValue:100,  colors: ['#abacad']}
-    };
-
-    var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
-
-    chart.draw(data, options);
-  }
-
-  // onClick function for displaying chosen rep from map //
-  function mapSelection() {
-
-  }
+//     chart.draw(data, options);
+//   }
 
   // Click event function that displays caption
   // function showCardImageCaption(event) {

@@ -40,6 +40,7 @@ body {
 
 #navDropdownMenu {
   width: 100%;
+  background-color: rgba(17, 19, 22, .9);
 }
 
 .navbar-toggler {
@@ -557,6 +558,15 @@ body {
   background-color: #1A1D22 !important;
 }
 
+#rep-locator-dropdown {
+  color: white;
+  margin: auto;
+  width: 80vw;
+}
+
+#rep-info {
+  color: white;
+}
 /* FAQ PAGE ////////////////////////////////////////////////////////// */
 /* FAQ ACCORDION ----------------------------------------------------- */
 .faqAccordion {
