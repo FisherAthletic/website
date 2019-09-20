@@ -561,12 +561,24 @@ body {
 #rep-locator-dropdown {
   color: white;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 80vw;
+  max-width: 1000px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #rep-info {
   color: white;
 }
+
+#state-selection {
+  border: none;
+}
+#state-selection:focus {
+  outline: none;
+}
+
 /* FAQ PAGE ////////////////////////////////////////////////////////// */
 /* FAQ ACCORDION ----------------------------------------------------- */
 .faqAccordion {
