@@ -76,6 +76,7 @@ var repInfo = {
   wi: 'Rep: Dennis Anderson <br>Email: <a href="mailto:dande43436@comcast.net">dande43436@comcast.net</a>',
   wv: 'Rep: Dave Newton <br>Email: <a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a>',
   wy: 'Rep: Brant Alley <br>Email: <a href="mailto:brant@tmsreps.com">brant@tmsreps.com</a><hr>Rep: Ben Peters<br>Email: <a href="mailto:ben@tmsreps.com">ben@tmsreps.com</a>',
+  default: ''
 }
 // This function will hold 
 function stateRepInfo() {
