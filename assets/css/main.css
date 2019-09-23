@@ -187,10 +187,10 @@ body {
   /* transition: transform .5s; */
 }
 
-.productCard:hover {
-  /* transform: scale(1.03); */
-  /* transition: 0.25s; */
-}
+/* .productCard:hover {
+  transform: scale(1.03);
+  transition: 0.25s;
+} */
 
 .productCardBody {
   background-color: #2d323a;
@@ -292,7 +292,7 @@ body {
   display: flex;
   overflow: hidden;
   background-color: #2d323a;
-  flex: calc(25%);
+  flex: calc(50%);
   height: 425px;
   margin: 0px;
   justify-content: center;
@@ -330,6 +330,11 @@ body {
   top: 75%;
   left: 10%;
   cursor: pointer;
+}
+
+.collapse {
+  overflow-y: scroll !important;
+  max-height: 250px !important;
 }
 
 /* FOOTBALL PAGE ///////////////////////////////////////////////////// */
@@ -606,7 +611,8 @@ body {
 /* Responsive for laptop screens */
 @media screen and (max-width: 1440px) {
  .categoryGrid {
-    height: 175px;
+  height: 375px;
+  flex: calc(100%);
  }
  .categoryGrid h3 {
   font-size: 24px;
@@ -625,7 +631,8 @@ body {
 /* Responsive for Ipad screens */
 @media screen and (max-width: 1024px) {
   .categoryGrid {
-    height: 150px;
+  height: 350px;
+  flex: calc(100%);
  }
  .categoryGrid h3 {
   font-size: 20px;
@@ -642,8 +649,8 @@ body {
 }
 @media screen and (max-width: 840px) {
  .categoryGrid {
-    flex: calc(40% - 40px);
-    height: 140px;
+  flex: calc(100%);
+  height: 340px;
  }
  .categoryGrid h3 {
   font-size: 20px;
@@ -660,8 +667,8 @@ body {
 }
 @media screen and (max-width: 550px) {
  .categoryGrid {
-    flex: calc(100% - 40px);
-    height: 150px;
+    flex: calc(100%);
+    height: 300px;
   }
   .categoryGrid h3 {
     font-size: 24px;

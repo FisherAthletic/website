@@ -78,7 +78,7 @@ var repInfo = {
   wy: 'Rep: Brant Alley (Eastern WY)<br>Email: <a href="mailto:brant@tmsreps.com">brant@tmsreps.com</a><hr>Rep: Ben Peters (Western WY)<br>Email: <a href="mailto:ben@tmsreps.com">ben@tmsreps.com</a>',
   default: ''
 }
-// This function will hold 
+// This function will display rep information that it grabs from the repInfo object
 function stateRepInfo() {
   var stateSelection = document.getElementById("state-selection").value;
   stateSelection = stateSelection.replace(/['"]+/g, '');
