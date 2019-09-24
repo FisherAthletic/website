@@ -104,6 +104,17 @@ body {
   border: none;
 }
 
+.btn-outline-light {
+  border-color: #B5DCE2;
+  color: #B5DCE2;
+}
+
+.btn-outline-light:hover {
+  background-color: #B5DCE2;
+  color: #1A1D22;
+  border-color: #B5DCE2;
+}
+
 /* MODALS ---------------------------------------------------------*/
 .modal-content {
   background-color: #2d323a !important;
@@ -169,7 +180,7 @@ body {
 }
 
 #new-text-color1 {
-  color: rgb(255, 153, 0);
+  color: #00aced;
 }
 
 /* PRODUCT CARDS ----------------------------------------------------- */
@@ -260,6 +271,7 @@ body {
     color: white;
     font-size: 100px;
     font-weight: bold;
+    max-width: 90vw;
   }
 
   .landingDiv img {
@@ -522,6 +534,10 @@ body {
   padding: 0 0 30px 0;
 }
 
+#contact-us-call-btn {
+  margin: 0 0 10px 0;
+}
+
 /* REP LOCATOR PAGE ////////////////////////////////////////////////// */
 /* MAP --------------------------------------------------------------- */
 /* #map {
@@ -646,6 +662,9 @@ body {
   width: 100%;
   max-width: 1000px;
 }
+.landingTextContainer h1 {
+  font-size: 90px;
+}
 }
 @media screen and (max-width: 840px) {
  .categoryGrid {
@@ -659,10 +678,12 @@ body {
   width: 100%;
   max-width: 1000px;
 }
-
 .imageModalCaption {
   width: 100%;
   max-width: 1000px;
+}
+.landingTextContainer h1 {
+  font-size: 80px;
 }
 }
 @media screen and (max-width: 550px) {
@@ -681,5 +702,8 @@ body {
   .imageModalCaption {
     width: 100%;
     max-width: 1000px;
+  }
+  .landingTextContainer h1 {
+    font-size: 50px;
   }
 }
