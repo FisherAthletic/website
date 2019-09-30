@@ -137,7 +137,6 @@ body {
   cursor: pointer;
 }
 
-
 .modalExpandImageBody {
   margin: auto;
   display: block;
@@ -288,6 +287,14 @@ body {
     100% {
       transform: scale(0.8);
     }
+  } */
+
+  /* .rep-locator-landing-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1A1D22;
+    color: white;
   } */
 
  /* CATEGORY GRID ---------------------------------------------------- */
@@ -534,9 +541,9 @@ body {
   padding: 0 0 30px 0;
 }
 
-#contact-us-call-btn {
+/* #contact-us-call-btn {
   margin: 0 0 10px 0;
-}
+} */
 
 /* REP LOCATOR PAGE ////////////////////////////////////////////////// */
 /* MAP --------------------------------------------------------------- */
@@ -596,6 +603,11 @@ body {
 #state-selection {
   border: none;
 }
+
+#state-selection:hover {
+  cursor: pointer;
+}
+
 #state-selection:focus {
   outline: none;
 }
