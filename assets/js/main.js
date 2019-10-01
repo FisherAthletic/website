@@ -2,6 +2,9 @@
 function footballGridClick () {
   location.href = "./pages/football.html";
 }
+function footballGridClick2 () {
+  location.href = "./pages/football-two.html";
+}
 
 function baseballGridClick () {
   location.href = "./pages/baseball.html";
@@ -81,7 +84,7 @@ var repInfo = {
 // This function will display rep information that it grabs from the repInfo object
 function stateRepInfo() {
   var stateSelection = document.getElementById("state-selection").value;
-  stateSelection = stateSelection.replace(/['"]+/g, '');
+  // stateSelection = stateSelection.replace(/['"]+/g, '');
   console.log(stateSelection);
   var repInfoDiv = document.getElementById("rep-info-div");
 
