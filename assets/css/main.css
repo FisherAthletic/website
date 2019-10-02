@@ -62,7 +62,16 @@ body {
   color: white;
   font-weight: 600;
 }
-
+/* FILTER BAR --------------------------------------------------------- */
+.filter-bar {
+  color: white;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80vw;
+  max-width: 1000px;
+  font-family: 'Montserrat', sans-serif;
+}
 /* ACCORDION --------------------------------------------------------- */
 .accordionBody {
   background-color: #2d323a;
@@ -220,11 +229,11 @@ body {
 }
 
 .footer :any-link {
-  color: #B5DCE2;
+  color: white;
 }
 
 .footer :any-link:hover {
-  color: white;
+  color: #B5DCE2;
 }
 
 .footerSocial {
@@ -240,7 +249,7 @@ body {
 }
 
 .activeFooterLink :any-link {
-  color: white;
+  color: #ED1C24;
 }
 
 /* LANDING PAGE ////////////////////////////////////////////////////// */
@@ -296,6 +305,17 @@ body {
     background-color: #1A1D22;
     color: white;
   } */
+
+  /* Carousel 1 */
+  .carousel-control-next:hover, .carousel-control-prev:hover {
+    background-color: rgba(0, 0, 0, 0.2)
+  }
+
+  .carousel-item {
+  }
+  
+  .carousel-item img {
+  }
 
  /* CATEGORY GRID ---------------------------------------------------- */
  .categoryGridContainer {
