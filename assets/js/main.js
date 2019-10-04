@@ -97,8 +97,8 @@ function filterDownloads() {
 
   for(i = 0; i < downloadsList.length; i++) {
     var currentDownloadsList = downloadsList[i].attributes.value.value;
-    if(downloadFilterSelection == currentDownloadsList) {
-      downloadsList[i].style.display = " ";
+    if(downloadFilterSelection == currentDownloadsList || downloadFilterSelection == "All") {
+      downloadsList[i].style.display = "flex";
     } else {
       downloadsList[i].style.display = "none";
     }
