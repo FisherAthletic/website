@@ -60,10 +60,64 @@
               </ul>
           </nav>
 
-        <!-- Contact us header -->
+        <!-- Downloads header -->
         <div class="pageTitle" id="footballPageTitle">
             <h2>Downloads</h2>
         </div>
+
+        <!-- Filter Bar -->
+      <div class="filter-bar">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Filter by type</label>
+            <select class="form-control" id="download-filter-selection" onchange="return filterDownloads()">
+                <option value="default">All</option>
+                <option value="Catalogs">Catalogs</option>
+                <option value="Flyers">Flyers</option>
+                <option value="Forms">Forms</option>
+            </select>
+          </div>
+        </form>
+        </div>
+
+        <!-- Downloads media list -->
+        <ul id="downloads-media-list" class="list-unstyled">
+          <li value="Catalogs" class="media downloads-list">
+            <img src="../assets/images/catalogs/2020-master-catalog-front-web-sm.jpg" class="mr-3" alt="2020 Master Catalog">
+            <div class="media-body">
+              <h5 id="new-text-color2" class="mt-0 mb-1">2020 Master Catalog</h5>
+              <p>Our 2020 Master catalog contains our full line of products.</p>
+              <hr>
+              <a href="#" class="btn btn-outline-light btn-sm">Download</a>
+              or
+              <a href="https://e.issuu.com/anonymous-embed.html?u=fisherathleticequipment&d=2020mastercatalogforweb" class="btn btn-outline-light btn-sm" target="_blank">Preview</a>
+            </div>
+          </li>
+          <hr>
+          <li value="Flyers" class="media downloads-list my-4">
+            <img src="../assets/images/catalogs/2020-football-catalog-front-web-sm.jpg" class="mr-3" alt="2020 Football Catalog">
+            <div class="media-body">
+              <h5 id="new-text-color2" class="mt-0 mb-1">2020 Football Catalog</h5>
+              <p>Our 2020 Football catalog contains our football products.</p>
+              <hr>
+              <a href="#" class="btn btn-outline-light btn-sm">Download</a>
+              or
+              <a href="https://e.issuu.com/anonymous-embed.html?u=fisherathleticequipment&d=2020mastercatalogforweb" class="btn btn-outline-light btn-sm" target="_blank">Preview</a>
+            </div>
+          </li>
+          <hr>
+          <li value="Forms" class="media downloads-list">
+            <img src="../assets/images/catalogs/2019-baseball-dealer-front-web-sm.jpg" class="mr-3" alt="2019 Baseball Flyer">
+            <div class="media-body">
+              <h5 id="new-text-color2" class="mt-0 mb-1">2019 Baseball Flyer</h5>
+              <p>Our 2019 Baseball catalog contains our baseball products.</p>
+              <hr>
+              <a href="#" class="btn btn-outline-light btn-sm">Download</a>
+              or
+              <a href="https://e.issuu.com/anonymous-embed.html?u=fisherathleticequipment&d=2020mastercatalogforweb" class="btn btn-outline-light btn-sm" target="_blank">Preview</a>
+            </div>
+          </li>
+        </ul>
 
     <!-- Footer -->
     <footer class="footer">
@@ -182,6 +236,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/contact.js"></script>
 </body>
 </html>

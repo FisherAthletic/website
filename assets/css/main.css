@@ -190,6 +190,9 @@ body {
 #new-text-color1 {
   color: #00aced;
 }
+#new-text-color2 {
+  color: #B5DCE2;
+}
 
 /* PRODUCT CARDS ----------------------------------------------------- */
 .productCardContainer {
@@ -561,6 +564,12 @@ body {
   padding: 0 0 30px 0;
 }
 
+/* DOWNLOADS PAGE ////////////////////////////////////////////////// */
+#downloads-media-list {
+  color: white;
+  padding: 0 10vw 0 10vw;
+  margin: 40px 0 40px 0;;
+}
 /* #contact-us-call-btn {
   margin: 0 0 10px 0;
 } */

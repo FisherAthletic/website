@@ -87,8 +87,22 @@ function stateRepInfo() {
   // stateSelection = stateSelection.replace(/['"]+/g, '');
   console.log(stateSelection);
   var repInfoDiv = document.getElementById("rep-info-div");
-
   repInfoDiv.innerHTML = repInfo[stateSelection];
+}
+
+// This function will filter downloads that are displayed based on dropdown selection
+function filterDownloads() {
+  var downloadFilterSelection = document.getElementById("download-filter-selection").value;
+  var downloadsList = document.getElementsByClassName("downloads-list");
+
+  for(i = 0; i < downloadsList.length; i++) {
+    var currentDownloadsList = downloadsList[i].attributes.value.value;
+    if(downloadFilterSelection == currentDownloadsList) {
+      downloadsList[i].style.display = " ";
+    } else {
+      downloadsList[i].style.display = "none";
+    }
+  }
 }
 
 // // Geo chart map //
