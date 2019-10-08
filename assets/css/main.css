@@ -206,6 +206,7 @@ body {
   border: none;
   margin: 0 10px 20px 10px;
   border-radius: 15px;
+  background: #ED1C24;
   /* transition: transform .5s; */
 }
 
@@ -224,6 +225,10 @@ body {
   background-color: #1A1D22;
   color: white;
 }
+
+/* .productCard img {
+  opacity: 0.5 !important;
+} */
 
 /* FOOTER ------------------------------------------------------------ */
 .footer {
