@@ -26,6 +26,14 @@ function windscreenGridClick () {
   location.href = "./pages/windscreen.html";
 }
 
+function strengthGridClick () {
+  location.href = "./pages/strength-conditioning.html";
+}
+
+function gymGridClick () {
+  location.href = "./pages/gym.html";
+}
+
 // Rep locator selection and population
 // Rep info object that holds data for states
 var repInfo = {

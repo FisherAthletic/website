@@ -320,13 +320,64 @@ body {
   }
 
   .carousel-item {
-  }
-  
-  .carousel-item img {
+    max-height: 70vh;
   }
 
+ /* CATEGORIES GRID ---------------------------------------------------- */
+.categories-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 250px 250px 250px 250px;
+  grid-gap: 1rem;
+  text-align: center;
+  justify-content: center;
+  max-width: 2000px;
+  margin: auto;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.categories-grid-item {
+  background: #2d323a;
+  padding: 1.5rem;
+  color: white;
+  border-radius: 0.3rem;
+
+}
+
+.categories-grid-item:hover {
+  cursor: pointer;
+  background: #1A1D22;
+}
+
+.categories-heading {
+  display: grid;
+  padding: 1rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+/* SOCIAL MEDIA GRID ---------------------------------------------------- */
+.social-media-grid {
+  display: grid;
+  grid-template-columns: 33% auto 33%;
+  padding: 0 5vw 0 5vw;
+  margin: 0 0 40px 0;
+  max-width: 2000px;
+}
+
+.social-media-grid-item {
+  justify-self: left;
+}
+
  /* CATEGORY GRID ---------------------------------------------------- */
- .categoryGridContainer {
+ /* .categoryGridContainer {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
@@ -346,18 +397,18 @@ body {
   align-items: center;
   color: white;
   font-family: 'Montserrat', sans-serif;
-  position: relative;
+  position: relative; */
   /* transition: transform .5s; */
-  cursor: pointer;
+  /* cursor: pointer;
 }
 
 .categoryGrid:hover {
   background-image: none;
   background-color: #1A1D22;
   color: #2d323a;
-  filter: none;
+  filter: none; */
   /* transform: scale(1.03); */
-  transition: 0.25s;
+  /* transition: 0.25s;
 }
 
 .categoryGrid img {
@@ -377,7 +428,7 @@ body {
   top: 75%;
   left: 10%;
   cursor: pointer;
-}
+}*/
 
 .collapse {
   overflow-y: scroll !important;
