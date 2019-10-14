@@ -81,6 +81,23 @@
         </nav>
       </div>
 
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Filter Products</label>
+          <select class="form-control" id="state-selection" onChange="return stateRepInfo()">
+              <option value="default">All</option>
+              <option value="bands">Bands</option>
+              <option value="belts">Belts</option>
+              <option value="cones">Cones</option>
+              <option value="medicineBalls">Medicine Balls</option>
+              <option value="strSleds">Sleds</option>
+          </select>
+        </div>
+      </form>
+      </div>
+
         <!-- Strength & Conditioning products -->
         <div class="productCardContainer">
 

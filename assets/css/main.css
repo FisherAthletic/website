@@ -315,12 +315,31 @@ body {
   } */
 
   /* Carousel 1 */
+  .landing-carousel {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    /* overflow: hidden; */
+    /* position: relative !important; */
+    /* max-width: 1700px; */
+    margin: auto;
+    /* padding: 1.5rem; */
+  }
+
+  /* .landing-carousel img {
+    flex-shrink: 0 !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+  } */
+
   .carousel-control-next:hover, .carousel-control-prev:hover {
     background-color: rgba(0, 0, 0, 0.2)
   }
 
   .carousel-item {
     max-height: 70vh;
+    min-width: 100%;
+    min-height: 100%;
   }
 
  /* CATEGORIES GRID ---------------------------------------------------- */
@@ -370,8 +389,8 @@ body {
   grid-template-rows: 1fr;
   grid-template-areas: "twitter-feed featured-products";
   grid-gap: 1rem;
-  padding: 0 5vw 0 5vw;
-  margin: 0 0 40px 0;
+  padding: 0 5vw 40px 5vw;
+  margin: auto;
   max-width: 2000px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -406,6 +425,11 @@ body {
 
 #featured-product-grid-item-body:hover {
   background-color: rgba(25,30,35,.61);
+}
+
+#featured-product-grid-item-body li:hover {
+  cursor: pointer;
+  color: #B5DCE2
 }
 
  /* CATEGORY GRID ---------------------------------------------------- */
