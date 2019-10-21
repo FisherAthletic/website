@@ -385,7 +385,7 @@ body {
 /* SOCIAL MEDIA GRID ---------------------------------------------------- */
 .social-media-grid {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 2fr 4fr;
   grid-template-rows: 1fr;
   grid-template-areas: "twitter-feed featured-products";
   grid-gap: 1rem;
@@ -844,8 +844,8 @@ body {
 }
 .social-media-grid {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 2fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
   "twitter-feed"
   "featured-products";

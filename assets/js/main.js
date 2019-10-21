@@ -112,6 +112,46 @@ function filterDownloads() {
     }
   }
 }
+//---------------------------------------------------------------------------------------------------------------------
+// This function will filter strength and conditioning products based on dropdown selection
+function filterStrengthProductCards() {
+  var strengthProductsFilterSelection = document.getElementById("strength-products-filter-selection").value;
+  var productsList = document.getElementsByClassName("strength-products-list");
+
+  for(i = 0; i < productsList.length; i++) {
+    var currentProductValue = productsList[i].attributes.value.value;
+    if(strengthProductsFilterSelection == currentProductValue || strengthProductsFilterSelection == "All") {
+      productsList[i].style.display = "flex";
+    } else {
+      productsList[i].style.display = "none";
+    }
+  }
+}
+
+// Create groups for categories
+// var strengthBandsGroup = document.getElementsByClassName("bands");
+// var strengthBeltsGroup = document.getElementsByClassName("belts");
+// var strengthConesGroup = document.getElementsByClassName("cones");
+// var strengthMedicineBallsGroup = document.getElementsByClassName("medicineBalls");
+// var strengthTrainerGroup = document.getElementsByClassName("trainer");
+// var allStrengthGroup = document.getElementsByClassName("All");
+
+// Check what is selected from the filter bar
+function displayFilteredProducts () {
+  var strengthProductsFilterSelection = document.getElementById("strength-products-filter-selection").value;
+  var filteredProductsObject = document.getElementsByClassName(strengthProductsFilterSelection);
+  var filteredProductsAmount = filteredProductsObject.length;
+  var numberOfPagesNeeded = filteredProductsAmount / 12;
+  console.log(numberOfPagesNeeded);
+
+  // for(i = 0; i < filteredProductsObject.length; i++) {
+  //   if(i < numberOfPagesNeeded) {
+
+  //   }
+  // }
+  
+}
+
 
 // // Geo chart map //
 //   google.charts.load('current', {

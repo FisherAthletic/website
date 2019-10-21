@@ -18,7 +18,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css">
 </head>
-<body>
+<body onload="filterStrengthProductCards()">
     <div class="landingContainer">
 
         <!-- Top navbar -->
@@ -81,18 +81,31 @@
         </nav>
       </div>
 
+      <!-- Dynamic Pagination Testing -->
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-warning strength-page-list active" value="page1">
+          <input type="radio" name="options" id="page1" autocomplete="off"> 1
+        </label>
+        <label class="btn btn-warning strength-page-list" value="page2">
+          <input type="radio" name="options" id="page2" autocomplete="off"> 2
+        </label>
+        <label class="btn btn-warning strength-page-list" value="page3">
+          <input type="radio" name="options" id="page3" autocomplete="off"> 3
+        </label>
+      </div>
+
       <!-- Filter Bar -->
       <div class="filter-bar">
       <form>
         <div class="form-group">
           <label for="exampleFormControlSelect1">Filter Products</label>
-          <select class="form-control" id="state-selection" onChange="return stateRepInfo()">
-              <option value="default">All</option>
+          <select class="form-control" id="strength-products-filter-selection" onchange="return filterStrengthProductCards(), displayFilteredProducts()">
+              <option value="All">All</option>
               <option value="bands">Bands</option>
               <option value="belts">Belts</option>
               <option value="cones">Cones</option>
               <option value="medicineBalls">Medicine Balls</option>
-              <option value="strSleds">Sleds</option>
+              <option value="trainer">Trainers</option>
           </select>
         </div>
       </form>
@@ -101,7 +114,7 @@
         <!-- Strength & Conditioning products -->
         <div class="productCardContainer">
 
-        <div class="card productCard" style="width: 24rem;">
+        <div value="bands" class="card productCard strength-products-list page1 bands All" style="width: 24rem;">
             <img id="ssr5Image" src="../assets/images/products/mini-band-ssr5.jpg" class="card-img-top" alt="Mini Band" data-toggle="modal" data-target=".ssr5ImageModal" onclick="ssr5Caption()">
                 <div class="card-body productCardBody">
                   <h5 class="card-title">Mini Band</h5>
@@ -122,7 +135,7 @@
                 </div>
         </div>
 
-        <div class="card productCard" style="width: 24rem;">
+        <div value="bands" class="card productCard strength-products-list page1 bands All" style="width: 24rem;">
                 <img id="ssr125Image" src="../assets/images/products/medium-band-ssr125.jpg" class="card-img-top" alt="Medium Band" data-toggle="modal" data-target=".ssr125ImageModal" onclick="ssr125Caption()">
                     <div class="card-body productCardBody">
                       <h5 class="card-title">Medium Band</h5>
@@ -143,7 +156,7 @@
                     </div>
             </div>
 
-        <div class="card productCard" style="width: 24rem;">
+        <div value="bands" class="card productCard strength-products-list page1 bands All" style="width: 24rem;">
                 <img id="ssr2Image" src="../assets/images/products/strong-band-ssr2.jpg" class="card-img-top" alt="Strong Band" data-toggle="modal" data-target=".ssr2ImageModal" onclick="ssr2Caption()">
                     <div class="card-body productCardBody">
                       <h5 class="card-title">Strong Band</h5>
@@ -164,7 +177,7 @@
                     </div>
             </div>
 
-        <div class="card productCard" style="width: 24rem;">
+        <div value="bands" class="card productCard strength-products-list page1 bands All" style="width: 24rem;">
                 <img id="ssr25Image" src="../assets/images/products/ultra-band-ssr25.jpg" class="card-img-top" alt="Ultra Band" data-toggle="modal" data-target=".ssr25ImageModal" onclick="ssr25Caption()">
                     <div class="card-body productCardBody">
                       <h5 class="card-title">Ultra Band</h5>
@@ -185,7 +198,7 @@
                     </div>
             </div>
 
-            <div class="card productCard" style="width: 24rem;">
+            <div value="belts" class="card productCard strength-products-list page1 belts All" style="width: 24rem;">
               <img id="agbeltsmImage" src="../assets/images/products/agility-belt-agbeltsm.jpg" class="card-img-top" alt="30&quot;-36&quot; Belt" data-toggle="modal" data-target=".agbeltsmImageModal" onclick="agbeltsmCaption()">
                   <div class="card-body productCardBody">
                     <h5 class="card-title">30"-36" Belt</h5>
@@ -212,7 +225,7 @@
                   </div>
           </div>
 
-              <div class="card productCard" style="width: 24rem;">
+              <div value="medicineBalls" class="card productCard strength-products-list page1 medicineBalls All" style="width: 24rem;">
                 <img id="bb06Image" src="../assets/images/products/boulder-ball-bb06.jpg" class="card-img-top" alt="Boulder Ball" data-toggle="modal" data-target=".bb06ImageModal" onclick="bb06Caption()">
                     <div class="card-body productCardBody">
                         <h5 class="card-title">Boulder Ball</h5>
@@ -233,7 +246,7 @@
                     </div>
             </div>
     
-            <div class="card productCard" style="width: 24rem;">
+            <div value="medicineBalls" class="card productCard strength-products-list page1 medicineBalls All" style="width: 24rem;">
                     <img id="bbrImage" src="../assets/images/products/boulder-ball-rack-bbr.jpg" class="card-img-top" alt="Boulder Ball Rack" data-toggle="modal" data-target=".bbrImageModal" onclick="bbrCaption()">
                         <div class="card-body productCardBody">
                             <h5 class="card-title">Boulder Ball Rack</h5>
@@ -254,7 +267,7 @@
                         </div>
                 </div>
     
-            <div class="card productCard" style="width: 24rem;">
+            <div value="cones" class="card productCard strength-products-list page1 cones All" style="width: 24rem;">
                     <img id="cone3Image" src="../assets/images/products/cone3.jpg" class="card-img-top" alt="Cone 3" data-toggle="modal" data-target=".cone3ImageModal" onclick="cone3Caption()">
                         <div class="card-body productCardBody">
                             <h5 class="card-title">Cone 3</h5>
@@ -275,7 +288,7 @@
                         </div>
                 </div>
     
-            <div class="card productCard" style="width: 24rem;">
+            <div value="cones" class="card productCard strength-products-list page1 cones All" style="width: 24rem;">
                     <img id="cone6Image" src="../assets/images/products/cone6.jpg" class="card-img-top" alt="Cone 6" data-toggle="modal" data-target=".cone6ImageModal" onclick="cone6Caption()">
                         <div class="card-body productCardBody">
                             <h5 class="card-title">Cone 6</h5>
@@ -296,7 +309,7 @@
                         </div>
                 </div>
 
-                <div class="card productCard" style="width: 24rem;">
+                <div value="cones" class="card productCard strength-products-list page1 cones All" style="width: 24rem;">
                   <img id="cone12Image" src="../assets/images/products/cone12.jpg" class="card-img-top" alt="Cone 12" data-toggle="modal" data-target=".cone12ImageModal" onclick="cone12Caption()">
                       <div class="card-body productCardBody">
                           <h5 class="card-title">Cone 12</h5>
@@ -317,7 +330,7 @@
                       </div>
               </div>
 
-              <div class="card productCard" style="width: 24rem;">
+              <div value="cones" class="card productCard strength-products-list page1 cones All" style="width: 24rem;">
                 <img id="cone18Image" src="../assets/images/products/cone18.jpg" class="card-img-top" alt="Cone 18" data-toggle="modal" data-target=".cone18ImageModal" onclick="cone18Caption()">
                     <div class="card-body productCardBody">
                       <h5 class="card-title">Cone 18</h5>
@@ -338,7 +351,7 @@
                     </div>
             </div>
     
-            <div class="card productCard" style="width: 24rem;">
+            <div value="cones" class="card productCard strength-products-list page1 cones All" style="width: 24rem;">
                     <img id="cone28Image" src="../assets/images/products/cone28.jpg" class="card-img-top" alt="Cone 28" data-toggle="modal" data-target=".cone28ImageModal" onclick="cone28Caption()">
                         <div class="card-body productCardBody">
                           <h5 class="card-title">Cone 28</h5>
@@ -358,6 +371,32 @@
                           </div>
                         </div>
                 </div>
+
+                <div value="trainer" class="card productCard strength-products-list page2 trainer All" style="width: 24rem;">
+                  <img id="agscore50Image" src="../assets/images/products/s-core-trainer-agscore.jpg" class="card-img-top" alt="S-Core Trainer 50lb" data-toggle="modal" data-target=".agscore50ImageModal" onclick="agscore50Caption()">
+                      <div class="card-body productCardBody">
+                        <h5 class="card-title">S-Core Trainer 50lb</h5>
+                        <h6 class="card-text">SKU: AGSCORE50</h6>
+                        <p>
+                          <a class="btn btn-danger" data-toggle="collapse" href="#sCoreTrainer50" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Description
+                          </a>
+                          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                            Get quote
+                          </button>
+                        </p>
+                        <div class="collapse" id="sCoreTrainer50">
+                          <div class="card card-body productCardDescription">
+                              Develop an athletes critical core strength. Six handle locations for flexible workouts. Heavy bag simulates the Seal Team log drills on an individual basis. Safe solid rebond foam filled inner core. Dimensions: 48" Length x 14" Diameter. Available in Royal, Red, and Black.<br>
+                              <div id="new-text-color1">
+                                Also available:<br>
+                                AGSCORE75 (75lbs)<br>
+                                AGSCORE100 (100lbs)
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+              </div>
 
         </div>
 
@@ -584,6 +623,13 @@
         <div class="modal-dialog modal-xl modalExpandImageBody">
               <img id="cone6Image" src="../assets/images/products/cone6.jpg">
               <div id="cone6Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal agscore50ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="agscore50Image" src="../assets/images/products/s-core-trainer-agscore.jpg">
+              <div id="agscore50Caption" class="imageModalCaption"></div>
             </div>
       </div>
 
