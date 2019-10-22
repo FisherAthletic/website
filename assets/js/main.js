@@ -128,21 +128,25 @@ function filterStrengthProductCards() {
   }
 }
 
-// Create groups for categories
-// var strengthBandsGroup = document.getElementsByClassName("bands");
-// var strengthBeltsGroup = document.getElementsByClassName("belts");
-// var strengthConesGroup = document.getElementsByClassName("cones");
-// var strengthMedicineBallsGroup = document.getElementsByClassName("medicineBalls");
-// var strengthTrainerGroup = document.getElementsByClassName("trainer");
-// var allStrengthGroup = document.getElementsByClassName("All");
-
 // Check what is selected from the filter bar
 function displayFilteredProducts () {
   var strengthProductsFilterSelection = document.getElementById("strength-products-filter-selection").value;
   var filteredProductsObject = document.getElementsByClassName(strengthProductsFilterSelection);
   var filteredProductsAmount = filteredProductsObject.length;
-  var numberOfPagesNeeded = filteredProductsAmount / 12;
-  console.log(numberOfPagesNeeded);
+  var numberOfPagesNeeded = Math.ceil(filteredProductsAmount / 12);
+  var paginationObject = document.getElementsByClassName("strength-pagination");
+  console.log("for loop is going to run now....")
+
+  for(i = 0; i < (numberOfPagesNeeded + 1); i++) {
+    var loopCurrentPageValue = paginationObject[i].attributes.value.value;
+
+    if(loopCurrentPageValue <= numberOfPagesNeeded) {
+      paginationObject[i].style.display = "flex";
+    } else {
+      paginationObject[i].style.display = "none";
+    }
+  }
+
 
   // for(i = 0; i < filteredProductsObject.length; i++) {
   //   if(i < numberOfPagesNeeded) {

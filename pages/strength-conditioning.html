@@ -18,7 +18,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css">
 </head>
-<body onload="filterStrengthProductCards()">
+<body onload="filterStrengthProductCards(), displayFilteredProducts()">
     <div class="landingContainer">
 
         <!-- Top navbar -->
@@ -82,14 +82,14 @@
       </div>
 
       <!-- Dynamic Pagination Testing -->
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-warning strength-page-list active" value="page1">
+      <div class="btn-group btn-group-toggle pagination-testing" data-toggle="buttons">
+        <label class="btn btn-danger strength-pagination active page1" value="1">
           <input type="radio" name="options" id="page1" autocomplete="off"> 1
         </label>
-        <label class="btn btn-warning strength-page-list" value="page2">
+        <label class="btn btn-danger strength-pagination page2" value="2">
           <input type="radio" name="options" id="page2" autocomplete="off"> 2
         </label>
-        <label class="btn btn-warning strength-page-list" value="page3">
+        <label class="btn btn-danger strength-pagination page3" value="3">
           <input type="radio" name="options" id="page3" autocomplete="off"> 3
         </label>
       </div>
