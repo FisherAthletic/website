@@ -82,7 +82,7 @@
       </div>
 
       <!-- Dynamic Pagination Testing -->
-      <div class="btn-group btn-group-toggle pagination-testing" data-toggle="buttons">
+      <div class="btn-group btn-group-toggle pagination-testing" data-toggle="buttons" onclick= "displayFilteredProducts()">
         <label class="btn btn-danger strength-pagination active page1" value="1">
           <input type="radio" name="options" id="page1" autocomplete="off"> 1
         </label>
@@ -99,7 +99,7 @@
       <form>
         <div class="form-group">
           <label for="exampleFormControlSelect1">Filter Products</label>
-          <select class="form-control" id="strength-products-filter-selection" onchange="return filterStrengthProductCards(), displayFilteredProducts()">
+          <select class="form-control" id="strength-products-filter-selection" onchange="filterStrengthProductCards(), displayFilteredProducts()">
               <option value="All">All</option>
               <option value="bands">Bands</option>
               <option value="belts">Belts</option>

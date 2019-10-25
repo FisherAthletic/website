@@ -117,29 +117,40 @@ function filterDownloads() {
 function filterStrengthProductCards() {
   var strengthProductsFilterSelection = document.getElementById("strength-products-filter-selection").value;
   var productsList = document.getElementsByClassName("strength-products-list");
+  var paginationObject = document.getElementsByClassName("strength-pagination");
 
   for(i = 0; i < productsList.length; i++) {
     var currentProductValue = productsList[i].attributes.value.value;
-    if(strengthProductsFilterSelection == currentProductValue || strengthProductsFilterSelection == "All") {
+    if(strengthProductsFilterSelection == currentProductValue) {
       productsList[i].style.display = "flex";
     } else {
       productsList[i].style.display = "none";
     }
   }
+
+  for(i = 0; i < paginationObject.length; i++) {
+    if(paginationObject[i].classList.contains("page1")) {
+      paginationObject[i].classList.add("active");
+    } else {
+      paginationObject[i].classList.remove("active");
+    }
+  }
+
 }
 
-// Check what is selected from the filter bar
-function displayFilteredProducts () {
+// Runs whenever the filter selection is changed
+function displayFilteredProducts() {
   var strengthProductsFilterSelection = document.getElementById("strength-products-filter-selection").value;
   var filteredProductsObject = document.getElementsByClassName(strengthProductsFilterSelection);
   var filteredProductsAmount = filteredProductsObject.length;
   var numberOfPagesNeeded = Math.ceil(filteredProductsAmount / 12);
   var paginationObject = document.getElementsByClassName("strength-pagination");
-  console.log("for loop is going to run now....")
+  console.log("displayFilteredProducts is being run...")
 
+  // For loop will determine which page numbers need to be displayed
   for(i = 0; i < (numberOfPagesNeeded + 1); i++) {
     var loopCurrentPageValue = paginationObject[i].attributes.value.value;
-
+    // Loops through and checks if page number is within the needed range - then decides if it should be shown or hidden
     if(loopCurrentPageValue <= numberOfPagesNeeded) {
       paginationObject[i].style.display = "flex";
     } else {
@@ -147,13 +158,34 @@ function displayFilteredProducts () {
     }
   }
 
+  // For loop will check which page is active and choose which items should be displayed
+  for(i = 0; i < paginationObject.length; i++) {
+    if(paginationObject[i].classList.contains("active") && (paginationObject[i].attributes.value.value == 1)) {
+      
+      for(x = 0; x < filteredProductsObject.length; x++) {
+        if(x < 12) {
+          filteredProductsObject[x].style.display = "flex";
+          console.log("item " + x + " is loaded.");
+        } else {
+          filteredProductsObject[x].style.display = "none";
+        }
+      }
 
-  // for(i = 0; i < filteredProductsObject.length; i++) {
-  //   if(i < numberOfPagesNeeded) {
+    } else if (paginationObject[i].classList.contains("active") && (paginationObject[i].attributes.value.value == 2)) {
+      
+      for(x = 0; x < filteredProductsObject.length; x++) {
+        if(x > 11) {
+          filteredProductsObject[x].style.display = "flex";
+        } else {
+          filteredProductsObject[x].style.display = "none";
+        }
+      }
 
-  //   }
-  // }
-  
+  } else {
+    console.log("no conditional was met...");
+  }
+}
+
 }
 
 
