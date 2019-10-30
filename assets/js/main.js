@@ -118,16 +118,22 @@ function filterStrengthProductCards() {
   var strengthProductsFilterSelection = document.getElementById("strength-products-filter-selection").value;
   var productsList = document.getElementsByClassName("strength-products-list");
   var paginationObject = document.getElementsByClassName("strength-pagination");
-
+  console.log("filterStrengthProductCards is being run...")
+  console.log("Filter value: " + strengthProductsFilterSelection);
+  // Loop through and find products that match the dropdown selection
   for(i = 0; i < productsList.length; i++) {
     var currentProductValue = productsList[i].attributes.value.value;
+    console.log("Checking if product matches filter...")
     if(strengthProductsFilterSelection == currentProductValue) {
+      console.log(productsList[i]);
       productsList[i].style.display = "flex";
     } else {
+      console.log(productsList[i]);
       productsList[i].style.display = "none";
     }
   }
-
+  // Loop through and make page1 "active", the rest get the "active" class removed
+  console.log("Making page1 'active', removing 'active' from any other pagination options...")
   for(i = 0; i < paginationObject.length; i++) {
     if(paginationObject[i].classList.contains("page1")) {
       paginationObject[i].classList.add("active");
@@ -139,6 +145,7 @@ function filterStrengthProductCards() {
 }
 
 // Runs whenever the filter selection is changed
+// Shows and hides products and generates needed pages
 function displayFilteredProducts() {
   var strengthProductsFilterSelection = document.getElementById("strength-products-filter-selection").value;
   var filteredProductsObject = document.getElementsByClassName(strengthProductsFilterSelection);
@@ -148,13 +155,17 @@ function displayFilteredProducts() {
   console.log("displayFilteredProducts is being run...")
 
   // For loop will determine which page numbers need to be displayed
-  for(i = 0; i < (numberOfPagesNeeded + 1); i++) {
+  console.log("Checking which pages need to be displayed...");
+  console.log("Number of pages needed: " + numberOfPagesNeeded);
+  for(i = 0; i < (paginationObject.length); i++) {
     var loopCurrentPageValue = paginationObject[i].attributes.value.value;
     // Loops through and checks if page number is within the needed range - then decides if it should be shown or hidden
     if(loopCurrentPageValue <= numberOfPagesNeeded) {
       paginationObject[i].style.display = "flex";
+      console.log("Page: " + loopCurrentPageValue + "should be shown.")
     } else {
       paginationObject[i].style.display = "none";
+      console.log("Page: " + loopCurrentPageValue + "is not needed.")
     }
   }
 

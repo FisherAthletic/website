@@ -65,24 +65,8 @@
             <h2>Strength & Conditioning</h2>
         </div>
 
-        <!-- Pagination -->
-        <div class="footballPagination">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item footballPaginationActive"><a class="page-link" href="./strength-conditioning.html">1</a></li>
-            <li class="page-item"><a class="page-link" href="./strength-conditioning-two.html">2</a></li>
-            <li class="page-item"><a class="page-link" href="./strength-conditioning-three.html">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="./strength-conditioning-four.html" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <!-- Dynamic Pagination Testing -->
-      <div class="btn-group btn-group-toggle pagination-testing" data-toggle="buttons" onclick= "displayFilteredProducts()">
+      <!-- Dynamic Pagination -->
+      <div class="btn-group btn-group-toggle pagination-testing" id="strength-pagination" data-toggle="buttons" onclick= "displayFilteredProducts()">
         <label class="btn btn-danger strength-pagination active page1" value="1">
           <input type="radio" name="options" id="page1" autocomplete="off"> 1
         </label>
