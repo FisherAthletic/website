@@ -204,6 +204,10 @@ function strDisplayAmount() {
     strShowPageOne();
   } else if(strSelectedPageValue == 2) {
     strShowPageTwo();
+  } else if(strSelectedPageValue == 3) {
+    strShowPageThree();
+  } else if(strSelectedPageValue == 4) {
+    strShowPageFour();
   } else {
     console.log("error");
   }
@@ -222,6 +226,21 @@ function strShowPageTwo() {
   for(i = 0; i < pageTwoProducts.length; i++) {
     // Here we will only loop through the specified indeces for the products
     strFilteredProducts[pageTwoProducts[i]].style.display = "flex";
+  }
+}
+
+function strShowPageThree() {
+  var pageThreeProducts = [24,25,26,27,28,29,30,31,32,33,34,35];
+  for(i = 0; i < pageThreeProducts.length; i++) {
+    // Here we will only loop through the specified indeces for the products
+    strFilteredProducts[pageThreeProducts[i]].style.display = "flex";
+  }
+}
+
+function strShowPageFour() {
+  var pageFourProducts = [36,37,38,39,40,41,42,43,44,45,46,47];
+  for(i = 0; i < pageFourProducts.length; i++) {
+    strFilteredProducts[pageFourProducts[i]].style.display = "flex";
   }
 }
 
