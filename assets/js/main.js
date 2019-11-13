@@ -130,6 +130,7 @@ function strengthConditioningFiltering() {
   strUpdateSelectedPageValue();
   strDisplayPagesNeeded();
   strDisplayProducts();
+  strDisplayAmount();
   console.log(strFilteredProducts);
 };
 
@@ -193,6 +194,8 @@ function strDisplayProducts() {
   for(i = 0; i < strProducts.length; i++) {
     if(strProducts[i].attributes.value.value == strDropdownValue) {
       strProducts[i].style.display = "flex";
+    } else if(strProducts[i].classList.contains("All") && strDropdownValue == "All") {
+      strProducts[i].style.display = "flex";
     } else {
       strProducts[i].style.display = "none";
     }
@@ -202,6 +205,35 @@ function strDisplayProducts() {
 function strUpdateFilteredProducts() {
   strFilteredProducts = document.getElementsByClassName(strDropdownValue);
 };
+
+function strDisplayAmount() {
+  for(i = 0; i < strFilteredProducts.length; i++) {
+    strFilteredProducts[i].style.display = "none";
+  }
+  if(strSelectedPageValue == 1) {
+    strShowPageOne();
+  } else if(strSelectedPageValue == 2) {
+    strShowPageTwo();
+  } else {
+    console.log("error");
+  }
+}
+
+function strShowPageOne() {
+  var pageOneProducts = [0,1,2,3,4,5,6,7,8,9,10,11];
+  for(i = 0; i < pageOneProducts.length; i++) {
+    // Here we will only loop through the specified indeces for the products
+    strFilteredProducts[pageOneProducts[i]].style.display = "flex";
+  }
+}
+
+function strShowPageTwo() {
+  var pageTwoProducts = [12,13,14,15,16,17,18,19,20,21,22,23];
+  for(i = 0; i < pageTwoProducts.length; i++) {
+    // Here we will only loop through the specified indeces for the products
+    strFilteredProducts[pageTwoProducts[i]].style.display = "flex";
+  }
+}
 
 document.getElementById("strength-pagination").addEventListener("click", strengthConditioningFiltering);
 document.getElementById("strength-products-filter-selection").addEventListener("onchange", strengthConditioningFiltering);
