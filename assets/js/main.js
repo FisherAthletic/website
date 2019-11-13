@@ -131,7 +131,6 @@ function strengthConditioningFiltering() {
   strDisplayPagesNeeded();
   strDisplayProducts();
   strDisplayAmount();
-  console.log(strFilteredProducts);
 };
 
 function strUpdateNumberOfPagesNeeded() {
@@ -154,15 +153,6 @@ function strUpdateSelectedPageValue() {
     document.addEventListener("DOMContedLoaded", strResetPageSelection);
     console.log("Page selected: " + strSelectedPageValue);
   }
-  // if(document.getElementById("page1").checked) {
-  //   strSelectedPageValue = 1;
-  // } else if (document.getElementById("page2").checked) {
-  //     strSelectedPageValue = 2;
-  // } else if (document.getElementById("page3").checked) {
-  //     strSelectedPageValue = 3;
-  // } else {
-  //   strSelectedPageValue = 1;
-  // }
 };
 
 function strDisplayPagesNeeded() {
