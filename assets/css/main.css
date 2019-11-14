@@ -487,8 +487,8 @@ body {
 }*/
 
 .collapse {
-  overflow-y: scroll !important;
-  max-height: 250px !important;
+  /* overflow-y: scroll !important; */
+  /* max-height: 250px !important; */
 }
 
 /* FOOTBALL PAGE ///////////////////////////////////////////////////// */

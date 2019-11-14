@@ -114,9 +114,10 @@ function filterDownloads() {
 }
 
 //---------------------------------------------------------------------------------------------------------------------
+// Strength and Conditioning filter
 var strDropdownValue = document.getElementById("strength-products-filter-selection").value;
 var strPagination = document.getElementsByClassName("strength-pagination");
-var strSelectedPageValue = 1; //Remember to have this changed in the function
+var strSelectedPageValue = 1;
 var strProducts = document.getElementsByClassName("strength-products-list");
 var strFilteredProducts = document.getElementsByClassName(strDropdownValue);
 var strFilteredProductsAmount = strFilteredProducts.length;
@@ -211,43 +212,66 @@ function strDisplayAmount() {
   } else {
     console.log("error");
   }
-}
+};
 
 function strShowPageOne() {
   var pageOneProducts = [0,1,2,3,4,5,6,7,8,9,10,11];
-  for(i = 0; i < pageOneProducts.length; i++) {
-    // Here we will only loop through the specified indeces for the products
-    strFilteredProducts[pageOneProducts[i]].style.display = "flex";
+  try {
+    for(i = 0; i < pageOneProducts.length; i++) {
+      strFilteredProducts[pageOneProducts[i]].style.display = "flex";
+    }
+  } catch(err) {
+    console.log("Page1 has less than 12 products.");
+  } finally {
+    strCheckPageOne();
   }
 }
 
 function strShowPageTwo() {
   var pageTwoProducts = [12,13,14,15,16,17,18,19,20,21,22,23];
-  for(i = 0; i < pageTwoProducts.length; i++) {
-    // Here we will only loop through the specified indeces for the products
-    strFilteredProducts[pageTwoProducts[i]].style.display = "flex";
+  try {
+    for(i = 0; i < pageTwoProducts.length; i++) {
+      strFilteredProducts[pageTwoProducts[i]].style.display = "flex";
+    }
+  } catch(err) {
+    console.log("Page2 has less than 12 products.");
   }
-}
+};
 
 function strShowPageThree() {
   var pageThreeProducts = [24,25,26,27,28,29,30,31,32,33,34,35];
-  for(i = 0; i < pageThreeProducts.length; i++) {
-    // Here we will only loop through the specified indeces for the products
-    strFilteredProducts[pageThreeProducts[i]].style.display = "flex";
+  try {
+    for(i = 0; i < pageThreeProducts.length; i++) {
+      strFilteredProducts[pageThreeProducts[i]].style.display = "flex";
+    }
+  } catch(err) {
+    console.log("Page3 has less than 12 products.")
   }
-}
+};
 
 function strShowPageFour() {
   var pageFourProducts = [36,37,38,39,40,41,42,43,44,45,46,47];
-  for(i = 0; i < pageFourProducts.length; i++) {
-    strFilteredProducts[pageFourProducts[i]].style.display = "flex";
+  try {
+    for(i = 0; i < pageFourProducts.length; i++) {
+      strFilteredProducts[pageFourProducts[i]].style.display = "flex";
+    }
+  } catch(err) {
+    console.log("Page4 has less than 12 products.");
   }
-}
+};
+
+function strCheckPageOne() {
+  if(strPagination[1].style.display == "none") {
+    strPagination[0].style.display = "none";
+  } else {
+    strPagination[0].style.display = "flex";
+  }
+};
 
 document.getElementById("strength-pagination").addEventListener("click", strengthConditioningFiltering);
 document.getElementById("strength-products-filter-selection").addEventListener("onchange", strengthConditioningFiltering);
-// document.getElementById("strength-products-filter-selection").addEventListener("onchange", strResetPageSelection);
 
+// End Strength and Conditioning filter
 //---------------------------------------------------------------------------------------------------------------------
 
 // // This function will filter strength and conditioning products based on dropdown selection
@@ -345,85 +369,6 @@ document.getElementById("strength-products-filter-selection").addEventListener("
 
 
 //---------------------------------------------------------------------------------------------------------------------
-
-
-// // Geo chart map //
-//   google.charts.load('current', {
-//     'packages':['geochart'],
-//     'mapsApiKey': ''
-//   });
-//   google.charts.setOnLoadCallback(drawRegionsMap);
-
-//   function drawRegionsMap() {
-//     var data = google.visualization.arrayToDataTable([
-//       ['Territory', 'Rep'],
-//       ['US-NC', "NC | Don Leonard (manager)"],
-//       ['US-SC', "SC | Don Leonard (manager)"],
-//       ['US-FL', "FL | Mike O'Neal (managed by Don Leonard), Joey Forelito (FL panhandle)"],
-//       ['US-VA', "VA | Dave Newton (managed by Don Leonard)"],
-//       ['US-WV', "WV | Dave Newton (managed by Don Leonard)"],
-//       ['US-KY', "KY | Mike Sallie (managed by Don Leonard)"],
-//       ['US-TN', "TN | Mike Sallie (managed by Don Leonard)"],
-//       ['US-NY', "NY | Alan M. Dick, Mike Robinson, Rich Boudreau"],
-//       ['US-PA', "PA | Alan M. Dick, Mike Robinson"],
-//       ['US-DE', "DE | Barry Smith"],
-//       ['US-MD', "MD | Barry Smith"],
-//       ['US-NJ', "NJ | Mike Robinson"],
-//       ['US-CT', "CT | Rich Boudreau"],
-//       ['US-RI', "RI | Rich Boudreau"],
-//       ['US-ME', "ME | Rich Boudreau"],
-//       ['US-NH', "NH | Rich Boudreau"],
-//       ['US-VT', "VT | Rich Boudreau"],
-//       ['US-MA', "MA | Rich Boudreau"],
-//       ['US-WI', "WI | Dennis Anderson"],
-//       ['US-MN', "MN | Dennis Anderson"],
-//       ['US-SD', "SD | Dennis Anderson"],
-//       ['US-ND', "ND | Dennis Anderson"],
-//       ['US-OH', "OH | Brian Makela, David Worst"],
-//       ['US-IN', "IN | Brian Makela, David Worst"],
-//       ['US-IL', "IL | Steve DeCastecker"],
-//       ['US-MI', "MI | David Worst"],
-//       ['US-AR', "AR | Beau Brumfield (managed by Tracy Saul)"],
-//       ['US-OK', "OK | Beau Brumfield (managed by Tracy Saul)"],
-//       ['US-TX', "TX | Beau Brumfield, Doug Gollahon, Cody Parker, Derran Barrows (managed by Tracy Saul)"],
-//       ['US-LA', "LA | Scott McMullin (managed by Tracy Saul)"],
-//       ['US-MS', "MS | Scott McMullin (managed by Tracy Saul)"],
-//       ['US-AL', "AL | Joey Ferolito (managed by Tracy Saul)"],
-//       ['US-GA', "GA | Joey Ferolito (managed by Tracy Saul)"],
-//       ['US-AL', "AL | Joey Ferolito (managed by Tracy Saul)"],
-//       ['US-KS', "KS | Todd Bradney (managed by Tracy Saul)"],
-//       ['US-MO', "MO | Todd Bradney (managed by Tracy Saul)"],
-//       ['US-IA', "IA | Todd Bradney (managed by Tracy Saul)"],
-//       ['US-NE', "NE | Todd Bradney (managed by Tracy Saul)"],
-//       ['US-KS', "KS | Todd Bradney (managed by Tracy Saul)"],
-//       ['US-CA', "CA | Aaron Maloney, Mark Griewahn (managed by Tim Maloney)"],
-//       ['US-AK', "AK | Bill Mills (managed by Tim Maloney)"],
-//       ['US-OR', "OR | Bill Mills (managed by Tim Maloney)"],
-//       ['US-WA', "WA | Bill Mills, Ben Peters (managed by Tim Maloney)"],
-//       ['US-CO', "CO | Brant Alley (managed by Tim Maloney)"],
-//       ['US-NM', "NM | Brant Alley (managed by Tim Maloney)"],
-//       ['US-AZ', "AZ | Brant Alley (managed by Tim Maloney)"],
-//       ['US-WY', "WY | Brant Alley, Ben Peters (managed by Tim Maloney)"],
-//       ['US-NV', "NV | Mark Griewahn (managed by Tim Maloney)"],
-//       ['US-ID', "ID | Ben Peters (managed by Tim Maloney)"],
-//       ['US-MT', "MT | Ben Peters (managed by Tim Maloney)"],
-//       ['US-UT', "UT | Ben Peters (managed by Tim Maloney)"],
-//     ]);
-
-//     var options = {
-//     region: 'US',
-//     // resolution: 'metros',
-//     resolution: 'provinces',
-//     backgroundColor: '#1A1D22',
-//     datalessRegionColor: 'white',
-//     defaultColor: '#e5ffff',
-//     colorAxis: {minValue: 1, maxValue:100,  colors: ['#abacad']}
-//     };
-
-//     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
-
-//     chart.draw(data, options);
-//   }
 
   // Click event function that displays caption
   // function showCardImageCaption(event) {

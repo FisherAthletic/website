@@ -65,6 +65,28 @@
             <h2>Strength & Conditioning</h2>
         </div>
 
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Filter Products</label>
+            <select class="form-control" id="strength-products-filter-selection" onchange="strResetPageSelection(), strengthConditioningFiltering()">
+                <option value="All">All</option>
+                <option value="agBoxes">Agility Boxes</option>
+                <option value="bands">Bands</option>
+                <option value="belts">Belts</option>
+                <option value="cones">Cones</option>
+                <option value="gluteHams">Glute Hams</option>
+                <option value="ladders">Ladders</option>
+                <option value="medicineBalls">Medicine Balls</option>
+                <option value="ropes">Ropes</option>
+                <option value="sleds">Sleds</option>
+                <option value="trainer">Trainers</option>
+            </select>
+          </div>
+        </form>
+        </div>
+
       <!-- Dynamic Pagination -->
       <div id="product-pagination">
       <div class="btn-group btn-group-toggle" id="strength-pagination" data-toggle="buttons">
@@ -83,32 +105,10 @@
       </div>
       </div>
 
-      <!-- Filter Bar -->
-      <div class="filter-bar">
-      <form>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Filter Products</label>
-          <select class="form-control" id="strength-products-filter-selection" onchange="strResetPageSelection(), strengthConditioningFiltering()">
-              <option value="All">All</option>
-              <option value="agBoxes">Agility Boxes</option>
-              <option value="bands">Bands</option>
-              <option value="belts">Belts</option>
-              <option value="cones">Cones</option>
-              <option value="gluteHams">Glute Hams</option>
-              <option value="ladders">Ladders</option>
-              <option value="medicineBalls">Medicine Balls</option>
-              <option value="ropes">Ropes</option>
-              <option value="sleds">Sleds</option>
-              <option value="trainer">Trainers</option>
-          </select>
-        </div>
-      </form>
-      </div>
-
         <!-- Strength & Conditioning products -->
         <div class="productCardContainer">
 
-        <div value="bands" class="card productCard strength-products-list page1 bands All" style="width: 24rem;">
+        <div value="bands sleds" class="card productCard strength-products-list page1 bands All" style="width: 24rem;">
             <img id="ssr5Image" src="../assets/images/products/mini-band-ssr5.jpg" class="card-img-top" alt="Mini Band" data-toggle="modal" data-target=".ssr5ImageModal" onclick="ssr5Caption()">
                 <div class="card-body productCardBody">
                   <h5 class="card-title">Mini Band</h5>
