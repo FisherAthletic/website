@@ -88,7 +88,8 @@ var repInfo = {
   wv: 'Rep: Dave Newton <br>Email: <a href="mailto:david.newton9@verizon.net">david.newton9@verizon.net</a>',
   wy: 'Rep: Brant Alley (Eastern WY)<br>Email: <a href="mailto:brant@tmsreps.com">brant@tmsreps.com</a><hr>Rep: Ben Peters (Western WY)<br>Email: <a href="mailto:ben@tmsreps.com">ben@tmsreps.com</a>',
   default: ''
-}
+};
+
 // This function will display rep information that it grabs from the repInfo object
 function stateRepInfo() {
   var stateSelection = document.getElementById("state-selection").value;
@@ -96,7 +97,7 @@ function stateRepInfo() {
   console.log(stateSelection);
   var repInfoDiv = document.getElementById("rep-info-div");
   repInfoDiv.innerHTML = repInfo[stateSelection];
-}
+};
 
 // This function will filter downloads that are displayed based on dropdown selection
 function filterDownloads() {
@@ -111,7 +112,7 @@ function filterDownloads() {
       downloadsList[i].style.display = "none";
     }
   }
-}
+};
 
 //---------------------------------------------------------------------------------------------------------------------
 // Strength and Conditioning filter
