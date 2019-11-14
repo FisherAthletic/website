@@ -124,6 +124,7 @@ var strFilteredProductsAmount = strFilteredProducts.length;
 var strNumberOfPagesNeeded = Math.ceil(strFilteredProductsAmount / 12);
 var strFilteredProducts = document.getElementsByClassName(strDropdownValue);
 
+// main function that handles the filtering
 function strengthConditioningFiltering() {
   strDropdownValue = document.getElementById("strength-products-filter-selection").value;
   strUpdateDropdownValue();
@@ -134,6 +135,7 @@ function strengthConditioningFiltering() {
   strDisplayAmount();
 };
 
+// function checks how many pages are needed by checking the amount of products in the current filter selection and the product total by 12
 function strUpdateNumberOfPagesNeeded() {
   strFilteredProducts = document.getElementsByClassName(strDropdownValue);
   strFilteredProductsAmount = strFilteredProducts.length;
@@ -141,11 +143,13 @@ function strUpdateNumberOfPagesNeeded() {
   console.log("Number of pages needed: " + strNumberOfPagesNeeded);
 };
 
+// function updates the dropdown value state
 function strUpdateDropdownValue() {
   strDropdownValue = document.getElementById("strength-products-filter-selection").value;
   console.log("Dropdown selection: " + strDropdownValue);
 };
 
+// function updates the selected page value state
 function strUpdateSelectedPageValue() {
   try {
     strSelectedPageValue = event.target.attributes.value.value;
@@ -156,6 +160,7 @@ function strUpdateSelectedPageValue() {
   }
 };
 
+// function loops through pagination and displays any pages <= the number of pages needed
 function strDisplayPagesNeeded() {
   for(i = 0; i < (strPagination.length); i++) {
     var loopCurrentPageValue = strPagination[i].attributes.value.value;
@@ -167,8 +172,8 @@ function strDisplayPagesNeeded() {
   }
 };
 
-// have a function that changes the active page to 1 that only runs whenever the filter selection changes
-function strResetPageSelection() {
+// function that changes page1 to active and only runs whenever the filter selection changes
+function strResetPageSelection() { 
   console.log("Filter selection was changed. Reset function is now running...")
     for(i = 0; i < strPagination.length; i++) {
     if(strPagination[i].classList.contains("page1")) {
@@ -181,6 +186,7 @@ function strResetPageSelection() {
   strSelectedPageValue = 1;
 };
 
+// function decides if a product should be shown or hidden based on whether or not it matches the dropdown filter
 function strDisplayProducts() {
   for(i = 0; i < strProducts.length; i++) {
     if(strProducts[i].attributes.value.value == strDropdownValue) {
@@ -193,10 +199,12 @@ function strDisplayProducts() {
   }
 };
 
+// function updates the filtered products state
 function strUpdateFilteredProducts() {
   strFilteredProducts = document.getElementsByClassName(strDropdownValue);
 };
 
+// function decides which products to show based on page selection
 function strDisplayAmount() {
   for(i = 0; i < strFilteredProducts.length; i++) {
     strFilteredProducts[i].style.display = "none";
@@ -214,6 +222,7 @@ function strDisplayAmount() {
   }
 };
 
+// function used for strDisplayAmount function, will only show products 1-12
 function strShowPageOne() {
   var pageOneProducts = [0,1,2,3,4,5,6,7,8,9,10,11];
   try {
@@ -227,6 +236,7 @@ function strShowPageOne() {
   }
 }
 
+// function used for strDisplayAmount function, will only show products 13-24
 function strShowPageTwo() {
   var pageTwoProducts = [12,13,14,15,16,17,18,19,20,21,22,23];
   try {
@@ -238,6 +248,7 @@ function strShowPageTwo() {
   }
 };
 
+// function used for strDisplayAmount function, will only show products 25-36
 function strShowPageThree() {
   var pageThreeProducts = [24,25,26,27,28,29,30,31,32,33,34,35];
   try {
@@ -249,6 +260,7 @@ function strShowPageThree() {
   }
 };
 
+// function used for strDisplayAmount function, will only show products 37-48
 function strShowPageFour() {
   var pageFourProducts = [36,37,38,39,40,41,42,43,44,45,46,47];
   try {
@@ -260,6 +272,7 @@ function strShowPageFour() {
   }
 };
 
+// function used for strShowPageOne function, hides page 1 if it is the only page needed
 function strCheckPageOne() {
   if(strPagination[1].style.display == "none") {
     strPagination[0].style.display = "none";
