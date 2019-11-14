@@ -547,6 +547,10 @@ body {
   margin: 1rem 0 0 0;
 }
 
+.strength-pagination {
+  cursor: pointer;
+}
+
 /* RECOMMENDED PRODUCTS TITLE ---------------------------------------- */
 .recommendedProductsTitle {
   color: white;
