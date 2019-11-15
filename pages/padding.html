@@ -18,7 +18,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css">
 </head>
-<body>
+<body onload="paddingFiltering()">
     <div class="landingContainer">
 
         <!-- Top navbar -->
@@ -65,20 +65,39 @@
             <h2>Padding</h2>
         </div>
 
-        <!-- Pagination -->
-        <div class="footballPagination">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item footballPaginationActive"><a class="page-link" href="./padding.html">1</a></li>
-            <li class="page-item"><a class="page-link" href="./padding-two.html">2</a></li>
-          </ul>
-        </nav>
-      </div>
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Filter Products</label>
+            <select class="form-control" id="padding-products-filter-selection" onchange="paddingResetPageSelection(), paddingFiltering()">
+                <option value="All">All</option>
+                <option value="beamPadding">Beam Padding</option>
+                <option value="fieldPadding">Field Padding</option>
+                <option value="removablePadding">Removable Padding</option>
+                <option value="stagePadding">Stage Padding</option>
+                <option value="wallPadding">Wall Padding</option>
+            </select>
+          </div>
+        </form>
+        </div>
+
+      <!-- Dynamic Pagination -->
+      <div id="product-pagination">
+        <div class="btn-group btn-group-toggle" id="padding-pagination" data-toggle="buttons">
+          <label class="btn btn-danger padding-pagination active page1" value="1">
+            <input type="radio" name="options" id="page1" autocomplete="off"> 1
+          </label>
+          <label class="btn btn-danger padding-pagination page2" value="2">
+            <input type="radio" name="options" id="page2" autocomplete="off"> 2
+          </label>
+        </div>
+        </div>
 
         <!-- Track and field products -->
         <div class="productCardContainer">
 
-        <div class="card productCard" style="width: 24rem;">
+        <div value="wallPadding" class="card productCard padding-products-list page1 wallPadding All" style="width: 24rem;">
                 <img id="wp32622Image" src="../assets/images/products/interior-wall-padding-wp32622.jpg" class="card-img-top" alt="Interior Wall Padding" data-toggle="modal" data-target=".wp32622ImageModal" onclick="wp32622Caption()">
                     <div class="card-body productCardBody">
                       <h5 class="card-title">Interior Wall Padding</h5>
@@ -100,7 +119,7 @@
                     </div>
             </div>
 
-        <div class="card productCard" style="width: 24rem;">
+        <div value="wallPadding" class="card productCard padding-products-list page1 wallPadding All" style="width: 24rem;">
                 <img id="pc612Image" src="../assets/images/products/protective-cover-pc612.jpg" class="card-img-top" alt="Protective Cover for Wall Panel" data-toggle="modal" data-target=".pc612ImageModal" onclick="pc612Caption()">
                     <div class="card-body productCardBody">
                       <h5 class="card-title">Protective Cover for Wall Panel</h5>
@@ -125,7 +144,7 @@
                     </div>
             </div>
   
-          <div class="card productCard" style="width: 24rem;">
+          <div value="wallPadding" class="card productCard padding-products-list page1 wallPadding All" style="width: 24rem;">
                   <img id="cbktImage" src="../assets/images/products/keder-welt-bracket-cbkt.jpg" class="card-img-top" alt="Keder Welt Bracket" data-toggle="modal" data-target=".cbktImageModal" onclick="cbktCaption()">
                       <div class="card-body productCardBody">
                         <h5 class="card-title">Keder Welt Bracket</h5>
@@ -146,7 +165,7 @@
                       </div>
               </div>
   
-          <div class="card productCard" style="width: 24rem;">
+          <div value="wallPadding" class="card productCard padding-products-list page1 wallPadding All" style="width: 24rem;">
                   <img id="kw100Image" src="../assets/images/products/keder-welt-cord-kw100.jpg" class="card-img-top" alt="Keder Welt Cord" data-toggle="modal" data-target=".kw100ImageModal" onclick="kw100Caption()">
                       <div class="card-body productCardBody">
                           <h5 class="card-title">Keder Welt Cord</h5>
@@ -167,7 +186,7 @@
                       </div>
               </div>
   
-          <div class="card productCard" style="width: 24rem;">
+          <div value="removablePadding" class="card productCard padding-products-list page1 removablePadding All" style="width: 24rem;">
                   <img id="rwp224062Image" src="../assets/images/products/folding-removable-wall-padding-rwp224062.jpg" class="card-img-top" alt="Folding Removable Wall Padding" data-toggle="modal" data-target=".rwp224062ImageModal" onclick="rwp224062Caption()">
                       <div class="card-body productCardBody">
                           <h5 class="card-title">Folding Removable Wall Padding</h5>
@@ -189,7 +208,7 @@
                       </div>
               </div>
 
-              <div class="card productCard" style="width: 24rem;">
+              <div value="removablePadding" class="card productCard padding-products-list page1 removablePadding All" style="width: 24rem;">
                 <img id="wm224062Image" src="../assets/images/products/non-folding-removable-wall-pads-wm224062.jpg" class="card-img-top" alt="Non-Folding Removable Wall Pads" data-toggle="modal" data-target=".wm224062ImageModal" onclick="wm224062Caption()">
                     <div class="card-body productCardBody">
                         <h5 class="card-title">Non-Folding Removable Wall Pads</h5>
@@ -211,7 +230,7 @@
                     </div>
             </div>
 
-            <div class="card productCard" style="width: 24rem;">
+            <div value="wallPadding" class="card productCard padding-products-list page1 wallPadding All" style="width: 24rem;">
             <img id="co1Image" src="../assets/images/products/cutout-for-permanent-padding-co1.jpg" class="card-img-top" alt="Cutout for Permanent Padding" data-toggle="modal" data-target=".co1ImageModal" onclick="co1Caption()">
                 <div class="card-body productCardBody">
                   <h5 class="card-title">Cutout for Permanent Padding</h5>
@@ -232,7 +251,7 @@
                 </div>
         </div>
 
-            <div class="card productCard" style="width: 24rem;">
+            <div value="removablePadding" class="card productCard padding-products-list page1 removablePadding All" style="width: 24rem;">
               <img id="co2Image" src="../assets/images/products/cutout-for-removable-padding-co2.jpg" class="card-img-top" alt="Cutout for Removable Padding" data-toggle="modal" data-target=".co2ImageModal" onclick="co2Caption()">
                   <div class="card-body productCardBody">
                       <h5 class="card-title">Cutout for Removable Padding</h5>
@@ -253,7 +272,7 @@
                   </div>
           </div>
 
-          <div class="card productCard" style="width: 24rem;">
+          <div value="beamPadding" class="card productCard padding-products-list page1 beamPadding All" style="width: 24rem;">
             <img id="ibpImage" src="../assets/images/products/removable-i-beam-face-pad-ibp.jpg" class="card-img-top" alt="Removable I-Beam Face Pads" data-toggle="modal" data-target=".ibpImageModal" onclick="ibpCaption()">
                 <div class="card-body productCardBody">
                     <h5 class="card-title">Removable I-Beam Face Pads</h5>
@@ -274,7 +293,7 @@
                 </div>
         </div>
 
-        <div class="card productCard" style="width: 24rem;">
+        <div value="beamPadding" class="card productCard padding-products-list page1 beamPadding All" style="width: 24rem;">
                 <img id="rccImage" src="../assets/images/products/removable-2-sided-corner-cover-rcc.jpg" class="card-img-top" alt="Removable 2 Sided Corner Covers" data-toggle="modal" data-target=".rccImageModal" onclick="rccCaption()">
                     <div class="card-body productCardBody">
                         <h5 class="card-title">Removable 2 Sided Corner Covers</h5>
@@ -295,7 +314,7 @@
                     </div>
             </div>
 
-        <div class="card productCard" style="width: 24rem;">
+        <div value="beamPadding" class="card productCard padding-products-list page1 beamPadding All" style="width: 24rem;">
                 <img id="bp3Image" src="../assets/images/products/removable-3-sided-beam-pad-bp3.jpg" class="card-img-top" alt="Removable 3 Sided Beam Pads" data-toggle="modal" data-target=".bp3ImageModal" onclick="bp3Caption()">
                     <div class="card-body productCardBody">
                         <h5 class="card-title">Removable 3 Sided Beam Pads</h5>
@@ -316,7 +335,7 @@
                     </div>
             </div>
 
-        <div class="card productCard" style="width: 24rem;">
+        <div value="beamPadding" class="card productCard padding-products-list page1 beamPadding All" style="width: 24rem;">
                 <img id="bp4Image" src="../assets/images/products/removable-4-sided-square-post-pad-bp4.jpg" class="card-img-top" alt="Removable 4 Sided Square Post Pads" data-toggle="modal" data-target=".bp4ImageModal" onclick="bp4Caption()">
                     <div class="card-body productCardBody">
                         <h5 class="card-title">Removable 4 Sided Square Post Pads</h5>
@@ -337,17 +356,165 @@
                     </div>
             </div>
 
-        </div>
+            <div value="beamPadding" class="card productCard padding-products-list page1 beamPadding All" style="width: 24rem;">
+              <img id="pccImage" src="../assets/images/products/permanent-beam-pads-pcc.jpg" class="card-img-top" alt="Permanent Beam Pads" data-toggle="modal" data-target=".pccImageModal" onclick="pccCaption()">
+                  <div class="card-body productCardBody">
+                    <h5 class="card-title">Permanent Beam Pads</h5>
+                    <h6 class="card-text">SKU: PCC</h6>
+                    <p>
+                      <a class="btn btn-danger" data-toggle="collapse" href="#permanentBeamPads" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Description
+                      </a>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                        Get quote
+                      </button>
+                    </p>
+                    <div class="collapse" id="permanentBeamPads">
+                      <div class="card card-body productCardDescription">
+                          Custom made to fit any area, these specialty covers will protect your athletes from sharp, protruding corners and edges.<br>
+                          <a href="#" data-toggle="modal" data-target="#permanentBeamPadsModal">View all options</a>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+  
+              <div value="fieldPadding" class="card productCard padding-products-list page1 fieldPadding All" style="width: 24rem;">
+                <img id="bsp46Image" src="../assets/images/products/backstop-padding-bsp46.jpg" class="card-img-top" alt="4' Backstop Padding" data-toggle="modal" data-target=".bsp46ImageModal" onclick="bsp46Caption()">
+                    <div class="card-body productCardBody">
+                      <h5 class="card-title">4' Backstop Padding</h5>
+                      <h6 class="card-text">SKU: BSP46</h6>
+                      <p>
+                        <a class="btn btn-danger" data-toggle="collapse" href="#backstopPadding46" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Description
+                        </a>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                          Get quote
+                        </button>
+                      </p>
+                      <div class="collapse" id="backstopPadding46">
+                        <div class="card card-body productCardDescription">
+                          Our padding is made in 2' folding sections. Pads are made with 18oz vinyl and include vent holes at the bottom of all pads. Standard pad thickness is 2" but is also available in 3" thickness. Special sizes available upon request.<br>
+                              <a href="#" data-toggle="modal" data-target="#backstopPadding4Modal">View all sizes</a>
+                              <a href="#" data-toggle="modal" data-target="#backstopPaddingStylesModal">View all styles</a>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+    
+            <div value="fieldPadding" class="card productCard padding-products-list page1 fieldPadding All" style="width: 24rem;">
+                    <img id="bsp36Image" src="../assets/images/products/backstop-padding-bsp.jpg" class="card-img-top" alt="3' Backtop Padding" data-toggle="modal" data-target=".bsp36ImageModal" onclick="bsp36Caption()">
+                        <div class="card-body productCardBody">
+                          <h5 class="card-title">3' Backtop Padding</h5>
+                          <h6 class="card-text">SKU: BSP36</h6>
+                          <p>
+                            <a class="btn btn-danger" data-toggle="collapse" href="#backstopPadding36" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Description
+                            </a>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                              Get quote
+                            </button>
+                          </p>
+                          <div class="collapse" id="backstopPadding36">
+                            <div class="card card-body productCardDescription">
+                              Our padding is made in 2' folding sections. Pads are made with 18oz vinyl and include vent holes at the bottom of all pads. Standard pad thickness is 2" but is also available in 3" thickness. Special sizes available upon request.<br>
+                              <a href="#" data-toggle="modal" data-target="#backstopPadding3Modal">View all sizes</a>
+                              <a href="#" data-toggle="modal" data-target="#backstopPaddingStylesModal">View all styles</a>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+    
+            <div value="fieldPadding" class="card productCard padding-products-list page1 fieldPadding All" style="width: 24rem;">
+                    <img id="dbpsoImage" src="../assets/images/products/dugout-bench-padding-dbpso.jpg" class="card-img-top" alt="Dugout Bench Padding" data-toggle="modal" data-target=".dbpsoImageModal" onclick="dbpsoCaption()">
+                        <div class="card-body productCardBody">
+                            <h5 class="card-title">Dugout Bench Padding</h5>
+                            <h6 class="card-text">SKU: DBPSO</h6>
+                            <p>
+                              <a class="btn btn-danger" data-toggle="collapse" href="#dugoutBenchPadding" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Description
+                              </a>
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                Get quote
+                              </button>
+                            </p>
+                            <div class="collapse" id="dugoutBenchPadding">
+                              <div class="card card-body productCardDescription">
+                                  Custom built to fit your bench specifications. 18 oz vinyl. 2" rebond.
+                              </div>
+                            </div>
+                        </div>
+                </div>
+    
+            <div value="fieldPadding" class="card productCard padding-products-list page1 fieldPadding All" style="width: 24rem;">
+                    <img id="pmv72122Image" src="../assets/images/products/economy-post-pad-pmv72122.jpg" class="card-img-top" alt="Economy Post Pads" data-toggle="modal" data-target=".pmv72122ImageModal" onclick="pmv72122Caption()">
+                        <div class="card-body productCardBody">
+                            <h5 class="card-title">Economy Post Pads</h5>
+                            <h6 class="card-text">SKU: PMV72122</h6>
+                            <p>
+                              <a class="btn btn-danger" data-toggle="collapse" href="#economyPostPads72122" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Description
+                              </a>
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                Get quote
+                              </button>
+                            </p>
+                            <div class="collapse" id="economyPostPads72122">
+                              <div class="card card-body productCardDescription">
+                                  2" polyfoam, attaches with Velcro strap or grommets. 14 oz. laminated, fire retardant, mildew resistant vinyl.<br>
+                                  <a href="#" data-toggle="modal" data-target="#economyPostPadsModal">View all options</a>
+                              </div>
+                            </div>
+                        </div>
+                </div>
+  
+                <div value="fieldPadding" class="card productCard padding-products-list page1 fieldPadding All" style="width: 24rem;">
+                  <img id="pcaps223Image" src="../assets/images/products/vertical-post-pad-for-dugout-fence-pcaps223.jpg" class="card-img-top" alt="Vertical Post Pad for Dugout Fence" data-toggle="modal" data-target=".pcaps223ImageModal" onclick="pcaps223Caption()">
+                      <div class="card-body productCardBody">
+                          <h5 class="card-title">Vertical Post Pad for Dugout Fence</h5>
+                          <h6 class="card-text">SKU: PCAPS223</h6>
+                          <p>
+                            <a class="btn btn-danger" data-toggle="collapse" href="#verticalPostPadForDugoutFence" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Description
+                            </a>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                              Get quote
+                            </button>
+                          </p>
+                          <div class="collapse" id="verticalPostPadForDugoutFence">
+                            <div class="card card-body productCardDescription">
+                              Wood backed with grommets. Sealed 3-sided corner pad with padded top. Custom manufactured to your specifications. Covered in 18 oz coated vinyl.
+                            </div>
+                          </div>
+                      </div>
+              </div>
+  
+          <div value="wallPadding" class="card productCard padding-products-list page1 wallPadding All" style="width: 24rem;">
+                  <img id="wpzb2Image" src="../assets/images/products/z-bracket-wpzb2.jpg" class="card-img-top" alt="Z-Bracket 18&quot; Section" data-toggle="modal" data-target=".wpzb2ImageModal" onclick="wpzb2Caption()">
+                      <div class="card-body productCardBody">
+                        <h5 class="card-title">Z-Bracket 18" Section</h5>
+                        <h6 class="card-text">SKU: WPZB2</h6>
+                        <p>
+                          <a class="btn btn-danger" data-toggle="collapse" href="#zBracketSection18" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Description
+                          </a>
+                          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                            Get quote
+                          </button>
+                        </p>
+                        <div class="collapse" id="zBracketSection18">
+                          <div class="card card-body productCardDescription">
+                              Optional Wall Panel Mounting Systems. 4-WPZB2 required per 24" wide panel, 2 on the panel and 2 on the wall.<br>
+                              <div id="new-text-color1">
+                                Also available:<br>
+                                WPZB4 (36" Section)<br>
+                                WPZB6 (72" Section)
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+              </div>
 
-        <!-- Pagination -->
-        <div class="footballPagination">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item footballPaginationActive"><a class="page-link" href="./padding.html">1</a></li>
-            <li class="page-item"><a class="page-link" href="./padding-two.html">2</a></li>
-          </ul>
-        </nav>
-      </div>
+        </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -841,6 +1008,311 @@
       </div>
     </div>
 
+     <!-- Permanent Beam Pads Modal -->
+     <div class="modal fade" id="permanentBeamPadsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Permanent Beam Pads</h5>
+          
+          </div>
+          <div class="modal-body">
+            
+            <!-- Table with permanent beam pads info -->
+        <div class="table-responsive modalTableContainer">
+          <table class="table table-hover table-dark repTable">
+              <thead>
+                <tr>
+                  <th scope="col">Model</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>PCC</td>
+                  <td>Permanently mounted corner covers.</td>
+                </tr>
+                <td>PBC</td>
+                  <td>Permanent 3-sided beam covers.</td>
+                </tr>
+                <td>PBT</td>
+                  <td>Permanent 3-sided tapered beam pads.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backstop Padding 3' Modal -->
+    <div class="modal fade" id="backstopPadding3Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Backstop Padding Sizes</h5>
+          
+          </div>
+          <div class="modal-body">
+            
+            <!-- Table with backstop padding 3' info -->
+        <div class="table-responsive modalTableContainer">
+          <table class="table table-hover table-dark repTable">
+              <thead>
+                <tr>
+                  <th scope="col">Model</th>
+                  <th scope="col">Size</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>BSP36</td>
+                  <td>3'H x 6'W x 2"</td>
+                </tr>
+                <tr>
+                  <td>BSP38</td>
+                  <td>3'H x 8'W x 2"</td>
+                </tr>
+                <tr>
+                  <td>BSP310</td>
+                  <td>3'H x 10'W x 2"</td>
+                </tr>
+                <tr>
+                  <td>BSP312</td>
+                  <td>3'H x 12'W x 2"</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backstop Padding 4' Modal -->
+    <div class="modal fade" id="backstopPadding4Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Backstop Padding Sizes</h5>
+            
+            </div>
+            <div class="modal-body">
+              
+              <!-- Table with backstop padding 4' info -->
+          <div class="table-responsive modalTableContainer">
+            <table class="table table-hover table-dark repTable">
+                <thead>
+                  <tr>
+                    <th scope="col">Model</th>
+                    <th scope="col">Size</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>BSP46</td>
+                    <td>4'H x 6'W x 2"</td>
+                  </tr>
+                  <tr>
+                    <td>BSP48</td>
+                    <td>4'H x 8'W x 2"</td>
+                  </tr>
+                  <tr>
+                    <td>BSP410</td>
+                    <td>4'H x 10'W x 2"</td>
+                  </tr>
+                  <tr>
+                    <td>BSP412</td>
+                    <td>4'H x 12'W x 2"</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backstop Padding Styles Modal -->
+    <div class="modal fade" id="backstopPaddingStylesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Backstop Padding Sizes</h5>
+          
+          </div>
+          <div class="modal-body">
+            
+            <!-- Table with backstop padding styles info -->
+        <div class="table-responsive modalTableContainer">
+          <table class="table table-hover table-dark repTable">
+              <thead>
+                <tr>
+                  <th scope="col">Style Model</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>WPS</td>
+                  <td>Wood-backed padding.</td>
+                </tr>
+                <tr>
+                  <td>PSMS</td>
+                  <td>Wood-backed with "L" shaped top.</td>
+                </tr>
+                <tr>
+                  <td>EWM</td>
+                  <td>Non-wood back / grommets.</td>
+                </tr>
+                <tr>
+                  <td>BSP</td>
+                  <td>Non-wood back / grommets / 2' wide folding sections / 2" or 3" thick foam.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Economy Post Pads Modal -->
+    <div class="modal fade" id="economyPostPadsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Backstop Padding Sizes</h5>
+          
+          </div>
+          <div class="modal-body">
+            
+            <!-- Table with economy post pads info -->
+        <div class="table-responsive modalTableContainer">
+          <table class="table table-hover table-dark repTable">
+              <thead>
+                <tr>
+                  <th scope="col">Model</th>
+                  <th scope="col">Pad Size</th>
+                  <th scope="col">Pole Size</th>
+                  <th scope="col">Attachment</th>
+                  <th scope="col">Vinyl</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>PMV72122</td>
+                  <td>6'H x 12"W x 2"</td>
+                  <td>1"-2" Dia.</td>
+                  <td>Velcro</td>
+                  <td>14oz</td>
+                </tr>
+                <tr>
+                  <td>PMV72162</td>
+                  <td>6'H x 16"W x 2"</td>
+                  <td>2"-3" Dia.</td>
+                  <td>Velcro</td>
+                  <td>14oz</td>
+                </tr>
+                <tr>
+                  <td>PMV72262</td>
+                  <td>6'H x 26"W x 2"</td>
+                  <td>4"-6" Dia.</td>
+                  <td>Velcro</td>
+                  <td>14oz</td>
+                </tr>
+                <tr>
+                  <td>PMG72122</td>
+                  <td>6'H x 12"W x 2"</td>
+                  <td>1"-2" Dia.</td>
+                  <td>Grommet</td>
+                  <td>14oz</td>
+                </tr>
+                <tr>
+                  <td>PMG72162</td>
+                  <td>6'H x 16"W x 2"</td>
+                  <td>2"-3" Dia.</td>
+                  <td>Grommet</td>
+                  <td>14oz</td>
+                </tr>
+                <tr>
+                  <td>PMG72262</td>
+                  <td>6'H x 26"W x 2"</td>
+                  <td>4"-6" Dia.</td>
+                  <td>Grommet</td>
+                  <td>14oz</td>
+                </tr>
+                <tr>
+                  <td>PMV72123</td>
+                  <td>6'H x 12"W x 2"</td>
+                  <td>1"-2" Dia.</td>
+                  <td>Velcro</td>
+                  <td>18oz</td>
+                </tr>
+                <tr>
+                  <td>PMV72163</td>
+                  <td>6'H x 16"W x 2"</td>
+                  <td>2"-3" Dia.</td>
+                  <td>Velcro</td>
+                  <td>18oz</td>
+                </tr>
+                <tr>
+                  <td>PMV72263</td>
+                  <td>6'H x 26"W x 2"</td>
+                  <td>4"-6" Dia.</td>
+                  <td>Velcro</td>
+                  <td>18oz</td>
+                </tr>
+                <tr>
+                  <td>PMG72123</td>
+                  <td>6'H x 12"W x 2"</td>
+                  <td>1"-2" Dia.</td>
+                  <td>Grommet</td>
+                  <td>18oz</td>
+                </tr>
+                <tr>
+                  <td>PMG72163</td>
+                  <td>6'H x 16"W x 2"</td>
+                  <td>2"-3" Dia.</td>
+                  <td>Grommet</td>
+                  <td>18oz</td>
+                </tr>
+                <tr>
+                  <td>PMG72263</td>
+                  <td>6'H x 26"W x 2"</td>
+                  <td>4"-6" Dia.</td>
+                  <td>Grommet</td>
+                  <td>18oz</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Image Modals -->
     <div class="modal fade imageModal wp32622ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modalExpandImageBody">
@@ -926,6 +1398,55 @@
             </div>
       </div>
 
+      <div class="modal fade imageModal pccImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="pccImage" src="../assets/images/products/permanent-beam-pads-pcc.jpg">
+              <div id="pccCaption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal bsp46ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="bsp46Image" src="../assets/images/products/backstop-padding-bsp46.jpg">
+              <div id="bsp46Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal bsp36ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="bsp36Image" src="../assets/images/products/backstop-padding-bsp.jpg">
+              <div id="bsp36Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal dbpsoImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="dbpsoImage" src="../assets/images/products/dugout-bench-padding-dbpso.jpg">
+              <div id="dbpsoCaption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal pmv72122ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="pmv72122Image" src="../assets/images/products/economy-post-pad-pmv72122.jpg">
+              <div id="pmv72122Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal pcaps223ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="pcaps223Image" src="../assets/images/products/vertical-post-pad-for-dugout-fence-pcaps223.jpg">
+              <div id="pcaps223Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal wpzb2ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modalExpandImageBody">
+            <img id="wpzb2Image" src="../assets/images/products/z-bracket-wpzb2.jpg">
+            <div id="wpzb2Caption" class="imageModalCaption"></div>
+          </div>
+    </div>
+
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -933,5 +1454,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/paddingFilter.js"></script>
+
 </body>
 </html>
