@@ -99,7 +99,7 @@ function paddingDisplayAmount() {
   } else if(paddingSelectedPageValue == 2) {
     paddingShowPageTwo();
   } else {
-    console.log("error");
+    console.log("Unkown page selection.");
   }
 };
 
@@ -140,4 +140,3 @@ function paddingCheckPageOne() {
 
 document.getElementById("padding-pagination").addEventListener("click", paddingFiltering);
 document.getElementById("padding-products-filter-selection").addEventListener("onchange", paddingFiltering);
-

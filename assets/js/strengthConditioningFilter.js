@@ -103,7 +103,7 @@ function strDisplayAmount() {
   } else if(strSelectedPageValue == 4) {
     strShowPageFour();
   } else {
-    console.log("error");
+    console.log("Unknown page selection.");
   }
 };
 
@@ -168,6 +168,3 @@ function strCheckPageOne() {
 
 document.getElementById("strength-pagination").addEventListener("click", strengthConditioningFiltering);
 document.getElementById("strength-products-filter-selection").addEventListener("onchange", strengthConditioningFiltering);
-
-// End Strength and Conditioning filter
-//---------------------------------------------------------------------------------------------------------------------
