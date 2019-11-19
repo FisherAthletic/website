@@ -207,13 +207,13 @@ body {
   margin: 0 10px 20px 10px;
   border-radius: 15px;
   background: #1A1D22;
-  /* transition: transform .5s; */
+  transition: transform .5s;
 }
 
-/* .productCard:hover {
+.productCard:hover {
   transform: scale(1.03);
   transition: 0.25s;
-} */
+}
 
 .productCardBody {
   background-color: #2d323a;
