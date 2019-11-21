@@ -18,7 +18,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css">
 </head>
-<body>
+<body onload="baseballFiltering()">
     <div class="landingContainer">
 
         <!-- Top navbar -->
@@ -65,31 +65,53 @@
             <h2>Baseball</h2>
         </div>
 
-        <!-- Pagination -->
-        <div class="footballPagination">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="./baseball.html" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li class="page-item footballPaginationActive"><a class="page-link" href="./baseball.html">1</a></li>
-            <li class="page-item"><a class="page-link" href="./baseball-two.html">2</a></li>
-            <li class="page-item"><a class="page-link" href="./baseball-three.html">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="./baseball-four.html" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <!-- Filter Bar -->
+      <div class="filter-bar">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Filter Products</label>
+            <select class="form-control" id="baseball-products-filter-selection" onchange="baseballResetPageSelection(), baseballFiltering()">
+                <option value="All">All</option>
+                <option value="battingCages">Batting Cages</option>
+                <option value="benches">Benches</option>
+                <option value="distanceMarkers">Distance Markers</option>
+                <option value="fenceTops">Fence Tops</option>
+                <option value="fieldCoversMats">Field Covers & Mats</option>
+                <option value="foulPoles">Foul Poles</option>
+                <option value="infieldScreens">Infield Screens</option>
+                <option value="netting">Netting</option>
+                <option value="padding">Padding</option>
+                <option value="windScreen">Wind Screen</option>
+            </select>
+          </div>
+        </form>
+        </div>
+
+      <!-- Dynamic Pagination -->
+      <div id="product-pagination">
+      <div class="btn-group btn-group-toggle" id="baseball-pagination" data-toggle="buttons">
+        <label class="btn btn-danger baseball-pagination active page1" value="1">
+          <input type="radio" name="options" id="page1" autocomplete="off"> 1
+        </label>
+        <label class="btn btn-danger baseball-pagination page2" value="2">
+          <input type="radio" name="options" id="page2" autocomplete="off"> 2
+        </label>
+        <label class="btn btn-danger baseball-pagination page3" value="3">
+          <input type="radio" name="options" id="page3" autocomplete="off"> 3
+        </label>
+        <label class="btn btn-danger baseball-pagination page4" value="4">
+          <input type="radio" name="options" id="page4" autocomplete="off"> 4
+        </label>
+        <label class="btn btn-danger baseball-pagination page5" value="5">
+          <input type="radio" name="options" id="page5" autocomplete="off"> 5
+        </label>
+      </div>
       </div>
 
         <!-- Baseball products -->
         <div class="productCardContainer">
 
-        <div class="card productCard" style="width: 24rem;">
+        <div value="windscreen" class="card productCard baseball-products-list page1 windscreen All" style="width: 24rem;">
             <img id="msdpImage" src="../assets/images/products/printed-windscreen-msdp.jpg" class="card-img-top" alt="Printed Windscreen" data-toggle="modal" data-target=".msdpImageModal" onclick="msdpCaption()">
                 <div class="card-body productCardBody">
                   <h5 class="card-title">Printed Windscreen</h5>
@@ -110,7 +132,7 @@
                 </div>
         </div>
 
-        <div class="card productCard" style="width: 24rem;">
+        <div value="windscreen" class="card productCard baseball-products-list page1 windscreen All" style="width: 24rem;">
                 <img id="tmwsImage" src="../assets/images/products/titan-mesh-windscreen-tmws.jpg" class="card-img-top" alt="Titan Mesh Windscreen" data-toggle="modal" data-target=".tmwsImageModal" onclick="tmwsCaption()">
                     <div class="card-body productCardBody">
                       <h5 class="card-title">Titan Mesh Windscreen</h5>
@@ -131,7 +153,7 @@
                     </div>
             </div>
 
-        <div class="card productCard" style="width: 24rem;">
+        <div value="windscreen" class="card productCard baseball-products-list page1 windscreen All" style="width: 24rem;">
                 <img id="dmwsImage" src="../assets/images/products/deluxe-mesh-windscreen-dmws.jpg" class="card-img-top" alt="Deluxe Mesh Windscreen" data-toggle="modal" data-target=".dmwsImageModal" onclick="dmwsCaption()">
                     <div class="card-body productCardBody">
                       <h5 class="card-title">Deluxe Mesh Windscreen</h5>
@@ -152,7 +174,7 @@
                     </div>
             </div>
 
-        <div class="card productCard" style="width: 24rem;">
+        <div value="padding" class="card productCard baseball-products-list page1 padding All" style="width: 24rem;">
                 <img id="dbpsoImage" src="../assets/images/products/dugout-bench-padding-dbpso.jpg" class="card-img-top" alt="Dugout Bench Padding" data-toggle="modal" data-target=".dbpsoImageModal" onclick="dbpsoCaption()">
                     <div class="card-body productCardBody">
                       <h5 class="card-title">Dugout Bench Padding</h5>
@@ -173,7 +195,7 @@
                     </div>
             </div>
 
-            <div class="card productCard" style="width: 24rem;">
+            <div value="padding" class="card productCard baseball-products-list page1 padding All" style="width: 24rem;">
               <img id="pcaps223Image" src="../assets/images/products/vertical-post-pad-for-dugout-fence-pcaps223.jpg" class="card-img-top" alt="Vertical Post Pad for Dugout Fence" data-toggle="modal" data-target=".pcaps223ImageModal" onclick="pcaps223Caption()">
                   <div class="card-body productCardBody">
                     <h5 class="card-title">Vertical Post Pad for Dugout Fence</h5>
@@ -194,7 +216,7 @@
                   </div>
           </div>
   
-          <div class="card productCard" style="width: 24rem;">
+          <div value="padding" class="card productCard baseball-products-list page1 padding All" style="width: 24rem;">
                   <img id="rpg184Image" src="../assets/images/products/rail-padding-rpg184.jpg" class="card-img-top" alt="Rail Padding" data-toggle="modal" data-target=".rpg184ImageModal" onclick="rpg184Caption()">
                       <div class="card-body productCardBody">
                         <h5 class="card-title">Rail Padding</h5>
@@ -215,7 +237,7 @@
                       </div>
               </div>
   
-          <div class="card productCard" style="width: 24rem;">
+          <div value="padding" class="card productCard baseball-products-list page1 padding All" style="width: 24rem;">
                   <img id="rpsg184Image" src="../assets/images/products/square-rail-padding-rpsg184.jpg" class="card-img-top" alt="Square Rail Padding" data-toggle="modal" data-target=".rpsg184ImageModal" onclick="rpsg184Caption()">
                       <div class="card-body productCardBody">
                           <h5 class="card-title">Square Rail Padding</h5>
@@ -236,7 +258,7 @@
                       </div>
               </div>
   
-          <div class="card productCard" style="width: 24rem;">
+          <div value="padding" class="card productCard baseball-products-list page1 padding All" style="width: 24rem;">
                   <img id="bsp36Image" src="../assets/images/products/backstop-padding-bsp.jpg" class="card-img-top" alt="3' Backtop Padding" data-toggle="modal" data-target=".bsp36ImageModal" onclick="bsp36Caption()">
                       <div class="card-body productCardBody">
                         <h5 class="card-title">3' Backtop Padding</h5>
@@ -259,7 +281,7 @@
                       </div>
               </div>
 
-              <div class="card productCard" style="width: 24rem;">
+          <div value="padding" class="card productCard baseball-products-list page1 padding All" style="width: 24rem;">
               <img id="bsp46Image" src="../assets/images/products/backstop-padding-bsp46.jpg" class="card-img-top" alt="4' Backstop Padding" data-toggle="modal" data-target=".bsp46ImageModal" onclick="bsp46Caption()">
                   <div class="card-body productCardBody">
                     <h5 class="card-title">4' Backstop Padding</h5>
@@ -282,7 +304,7 @@
                   </div>
           </div>
     
-            <div class="card productCard" style="width: 24rem;">
+            <div value="fenceTops" class="card productCard  baseball-products-list page1 fenceTops All" style="width: 24rem;">
                     <img id="bbc100yImage" src="../assets/images/products/corrugated-fence-top-bbc100.jpg" class="card-img-top" alt="100' Corrugated Fence Top" data-toggle="modal" data-target=".bbc100yImageModal" onclick="bbc100yCaption()">
                         <div class="card-body productCardBody">
                             <h5 class="card-title">100' Corrugated Fence Top</h5>
@@ -307,7 +329,7 @@
                         </div>
                 </div>
     
-            <div class="card productCard" style="width: 24rem;">
+            <div value="fenceTops" class="card productCard baseball-products-list page1 fenceTops All" style="width: 24rem;">
                     <img id="bfc250Image" src="../assets/images/products/corrugated-fence-top-bfc250.jpg" class="card-img-top" alt="250' Corrugated Fence Top" data-toggle="modal" data-target=".bfc250ImageModal" onclick="bfc250Caption()">
                         <div class="card-body productCardBody">
                             <h5 class="card-title">250' Corrugated Fence Top</h5>
@@ -332,7 +354,7 @@
                         </div>
                 </div>
     
-            <div class="card productCard" style="width: 24rem;">
+            <div value="fenceTops" class="card productCard baseball-products-list page1 fenceTops All" style="width: 24rem;">
                     <img id="trpg10Image" src="../assets/images/products/chain-link-fence-top-pad-trpg10.jpg" class="card-img-top" alt="Chain Link Fence Top Pad" data-toggle="modal" data-target=".trpg10ImageModal" onclick="trpg10Caption()">
                         <div class="card-body productCardBody">
                             <h5 class="card-title">Chain Link Fence Top Pad</h5>
@@ -348,6 +370,606 @@
                             <div class="collapse" id="chainLinkFenceTopPad">
                               <div class="card card-body productCardDescription">
                                 Available in 15 colors / This specialty pad is 13" wide x 10, 12 or 14 feet long with grommets every 6". 1" closed cell, high density foam padding. 18 oz.
+                              </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div value="fenceTops" class="card productCard baseball-products-list page2 fenceTops All" style="width: 24rem;">
+                  <img id="pc1Image" src="../assets/images/products/fence-top-installer-pc1.jpg" class="card-img-top" alt="Fence Top Installer" data-toggle="modal" data-target=".pc1ImageModal" onclick="pc1Caption()">
+                      <div class="card-body productCardBody">
+                        <h5 class="card-title">Fence Top Installer</h5>
+                        <h6 class="card-text">SKU: PC1</h6>
+                        <p>
+                          <a class="btn btn-danger" data-toggle="collapse" href="#fenceTopInstaller" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Description
+                          </a>
+                          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                            Get quote
+                          </button>
+                        </p>
+                        <div class="collapse" id="fenceTopInstaller">
+                          <div class="card card-body productCardDescription">
+                            Fence top installer.
+                          </div>
+                        </div>
+                      </div>
+              </div>
+  
+          <div value="fieldCoversMats" class="card productCard baseball-products-list page2 fieldCoversMats All" style="width: 24rem;">
+                  <img id="tpt201550Image" src="../assets/images/products/titan-turf-protector-tpt201550.jpg" class="card-img-top" alt="Titan Turf Protector" data-toggle="modal" data-target=".tpt201550ImageModal" onclick="tpt201550Caption()">
+                      <div class="card-body productCardBody">
+                        <h5 class="card-title">Titan Turf Protector</h5>
+                        <h6 class="card-text">SKU: TPT201550</h6>
+                        <p>
+                          <a class="btn btn-danger" data-toggle="collapse" href="#titanTurfProtector" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Description
+                          </a>
+                          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                            Get quote
+                          </button>
+                        </p>
+                        <div class="collapse" id="titanTurfProtector">
+                          <div class="card card-body productCardDescription">
+                              Available in 7 colors / Protects your turf during batting practice. Manufactured with 12 oz. spike-proof Titan Mesh. Grommets every 36".
+                          </div>
+                        </div>
+                      </div>
+              </div>
+  
+          <div value="fieldCoversMats" class="card productCard baseball-products-list page2 fieldCoversMats All" style="width: 24rem;">
+                  <img id="hpm612Image" src="../assets/images/products/home-plate-mat-hpm612" class="card-img-top" alt="Baseball Home Plate Mat" data-toggle="modal" data-target=".hpm612ImageModal" onclick="hpm612Caption()">
+                      <div class="card-body productCardBody">
+                        <h5 class="card-title">Baseball Home Plate Mat</h5>
+                        <h6 class="card-text">SKU: HPM612</h6>
+                        <p>
+                          <a class="btn btn-danger" data-toggle="collapse" href="#baseballHomePlateMat" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Description
+                          </a>
+                          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                            Get quote
+                          </button>
+                        </p>
+                        <div class="collapse" id="baseballHomePlateMat">
+                          <div class="card card-body productCardDescription">
+                              Top quality artificial, spike proof turf, Movable home plate allows space for catcher. 5mm foam backing. Size: 6' wide x 12' long.<br>
+                              <div id="new-text-color1">
+                              Also available:<br>
+                              HPM712 (softball home plate 7'W x 12'L)
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+    
+            <div value="fieldCoversMats" class="card productCard baseball-products-list page2 fieldCoversMats All" style="width: 24rem;">
+                    <img id="odc6Image" src="../assets/images/products/on-deck-circle-odc6.jpg" class="card-img-top" alt="On-deck Circle 6' Diameter" data-toggle="modal" data-target=".odc6ImageModal" onclick="odc6Caption()">
+                        <div class="card-body productCardBody">
+                          <h5 class="card-title">On-deck Circle 6' Diameter</h5>
+                          <h6 class="card-text">SKU: ODC6</h6>
+                          <p>
+                            <a class="btn btn-danger" data-toggle="collapse" href="#onDeckCircle6ft" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Description
+                            </a>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                              Get quote
+                            </button>
+                          </p>
+                          <div class="collapse" id="onDeckCircle6ft">
+                            <div class="card card-body productCardDescription">
+                              Top quality artificial, spike proof turf. Size: 6' diameter.<br>
+                              <div id="new-text-color1">
+                                Also available:<br>
+                                ODC4 (4' diameter)
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+  
+                <div value="fieldCoversMats" class="card productCard baseball-products-list page2 fieldCoversMats All" style="width: 24rem;">
+                  <img id="pm612Image" src="../assets/images/products/pitchers-mat-pm612.jpg" class="card-img-top" alt="Pitchers Mat 6' x 12'" data-toggle="modal" data-target=".pm612ImageModal" onclick="pm612Caption()">
+                      <div class="card-body productCardBody">
+                          <h5 class="card-title">Pitchers Mat 6' x 12'</h5>
+                          <h6 class="card-text">SKU: PM612</h6>
+                          <p>
+                            <a class="btn btn-danger" data-toggle="collapse" href="#pitchersMat6x12" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Description
+                            </a>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                              Get quote
+                            </button>
+                          </p>
+                          <div class="collapse" id="pitchersMat6x12">
+                            <div class="card card-body productCardDescription">
+                              Top quality artificial, spike proof turf. 36 oz. 5mm foam backing.<br>
+                              Size: 6' x 12'
+                              <div id="new-text-color1">
+                                Also available:<br>
+                                PM36 (3' x 6')<br>
+                                PM412 (4' x 12')
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+              </div>
+      
+              <div value="fieldCoversMats" class="card productCard baseball-products-list page2 fieldCoversMats All" style="width: 24rem;">
+                      <img id="ic1006Image" src="../assets/images/products/6oz-field-protector-ic1006.jpg" class="card-img-top" alt="6oz Field Protector" data-toggle="modal" data-target=".ic1006ImageModal" onclick="ic1006Caption()">
+                          <div class="card-body productCardBody">
+                              <h5 class="card-title">6oz Field Protector</h5>
+                              <h6 class="card-text">SKU: IC1006</h6>
+                              <p>
+                                <a class="btn btn-danger" data-toggle="collapse" href="#fieldProtector6oz" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                  Description
+                                </a>
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                  Get quote
+                                </button>
+                              </p>
+                              <div class="collapse" id="fieldProtector6oz">
+                                <div class="card card-body productCardDescription">
+                                  Grommets every 36". Binding on all sides. 10' diameter. Available in black or silver.<br>
+                                  <div id="new-text-color1">
+                                    Also available:<br>
+                                    IC1206 (12' dia.)<br>
+                                    IC1806 (18' dia.)<br>
+                                    IC2006 (20' dia.)<br>
+                                    IC2606 (26' dia.)<br>
+                                    IC3006 (30' dia.)<br>
+                                    IC101006 (10' square)<br>
+                                    ICSO10 (custom size)
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                  </div>
+      
+              <div value="fieldCoversMats" class="card productCard baseball-products-list page2 fieldCoversMats All" style="width: 24rem;">
+                      <img id="ic1018Image" src="../assets/images/products/18oz-field-protector-ic1018.jpg" class="card-img-top" alt="18oz Base Field Protector" data-toggle="modal" data-target=".ic1018ImageModal" onclick="ic1018Caption()">
+                          <div class="card-body productCardBody">
+                              <h5 class="card-title">18oz Base Field Protector</h5>
+                              <h6 class="card-text">SKU: IC1018</h6>
+                              <p>
+                                <a class="btn btn-danger" data-toggle="collapse" href="#baseFieldProtector18oz" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                  Description
+                                </a>
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                  Get quote
+                                </button>
+                              </p>
+                              <div class="collapse" id="baseFieldProtector18oz">
+                                <div class="card card-body productCardDescription">
+                                  Grommets every 36". Binding on all sides. 10' diameter. Available in 13 colors.<br>
+                                  <div id="new-text-color1">
+                                    Also available:<br>
+                                    IC1218 (12' dia.)<br>
+                                    IC1818 (18' dia.)<br>
+                                    IC2018 (20' dia.)<br>
+                                    IC2618 (26' dia.)<br>
+                                    IC3018 (30' dia.)<br>
+                                    IC101018 (10' square)<br>
+                                    ICSO18 (custom size)
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                  </div>
+  
+                  <div value="fieldCoversMats" class="card productCard baseball-products-list page2 fieldCoversMats All" style="width: 24rem;">
+                    <img id="fc170Image" src="../assets/images/products/field-cover-fc170.jpg" class="card-img-top" alt="Field Cover" data-toggle="modal" data-target=".fc170ImageModal" onclick="fc170Caption()">
+                        <div class="card-body productCardBody">
+                          <h5 class="card-title">Field Cover</h5>
+                          <h6 class="card-text">SKU: FC170</h6>
+                          <p>
+                            <a class="btn btn-danger" data-toggle="collapse" href="#fieldCover" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Description
+                            </a>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                              Get quote
+                            </button>
+                          </p>
+                          <div class="collapse" id="fieldCover">
+                            <div class="card card-body productCardDescription">
+                              Protect your field from inclement weather and be ready to play within minutes. Handles on all four sides of the cover. 6.5 oz. woven polyethylene (white/black reversible)<br>
+                              <div id="new-text-color1">
+                                Also available:<br>
+                                FC90 (90' x 90')<br>
+                                FC100 (100' x 100')<br>
+                                FC120 (120' x 120')<br>
+                                FC160 (160' x 160')<br>
+                                FC170 (170' x 170')<br>
+                                FCSO (custom size)
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+      
+                <div value="fieldCoversMats" class="card productCard baseball-products-list page2 fieldCoversMats All" style="width: 24rem;">
+                    <img id="bcb48Image" src="../assets/images/products/sand-bag-bcb48.jpg" class="card-img-top" alt="Sand Bag" data-toggle="modal" data-target=".bcb48ImageModal" onclick="bcb48Caption()">
+                        <div class="card-body productCardBody">
+                            <h5 class="card-title">Sand Bag</h5>
+                            <h6 class="card-text">SKU: BCB48</h6>
+                            <p>
+                              <a class="btn btn-danger" data-toggle="collapse" href="#sandBag" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Description
+                              </a>
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                Get quote
+                              </button>
+                            </p>
+                            <div class="collapse" id="sandBag">
+                              <div class="card card-body productCardDescription">
+                                18 oz vinyl, use with field covers. Available in black.
+                              </div>
+                            </div>
+                        </div>
+                </div>
+      
+              <div value="infieldScreens" class="card productCard baseball-products-list page2 infieldScreens All" style="width: 24rem;">
+                  <img id="ip88wImage" src="../assets/images/products/pro-series-infield-protector-ip88w.jpg" class="card-img-top" alt="Pro Series Infield Protector" data-toggle="modal" data-target=".ip88wImageModal" onclick="ip88wCaption()">
+                      <div class="card-body productCardBody">
+                        <h5 class="card-title">Pro Series Infield Protector</h5>
+                        <h6 class="card-text">SKU: IP88W</h6>
+                        <p>
+                          <a class="btn btn-danger" data-toggle="collapse" href="#proSeriesInfieldProtector" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Description
+                          </a>
+                          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                            Get quote
+                          </button>
+                        </p>
+                        <div class="collapse" id="proSeriesInfieldProtector">
+                          <div class="card card-body productCardDescription">
+                            Pro Series screens are made with the heaviest gauge steel and nets in the industry. 10 year warranty on the frames and 2 year warranty on the nets. 1" tuffskin padding included on all models. 6" diameter, "no flat" wheels.<br>
+                            8' x 8' Infield Protector with wheels.
+                          </div>
+                        </div>
+                      </div>
+              </div>
+      
+              <div value="infieldScreens" class="card productCard baseball-products-list page2 infieldScreens All" style="width: 24rem;">
+                      <img id="pp88wImage" src="../assets/images/products/pro-series-l-screen-protector-pp88w.jpg" class="card-img-top" alt="Pro Series &quot;L&quot; Screen" data-toggle="modal" data-target=".pp88wImageModal" onclick="pp88wCaption()">
+                          <div class="card-body productCardBody">
+                            <h5 class="card-title">Pro Series "L" Screen</h5>
+                            <h6 class="card-text">SKU: PP88W</h6>
+                            <p>
+                              <a class="btn btn-danger" data-toggle="collapse" href="#proSeriesLscreenProtector" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Description
+                              </a>
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                Get quote
+                              </button>
+                            </p>
+                            <div class="collapse" id="proSeriesLscreenProtector">
+                              <div class="card card-body productCardDescription">
+                                  Pro Series screens are made with the heaviest gauge steel and nets in the industry. 10 year warranty on the frames and 2 year warranty on the nets. 1" tuffskin padding included on all models. 6" diameter, "no flat" wheels.<br>
+                                  8' x 8' "L" Screen Protector with wheels.
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+      
+              <div value="infieldScreens" class="card productCard baseball-products-list page2 infieldScreens All" style="width: 24rem;">
+                      <img id="pp57Image" src="../assets/images/products/pro-series-l-screen-pp57.jpg" class="card-img-top" alt="Pro Series &quot;L&quot; Screen" data-toggle="modal" data-target=".pp57ImageModal" onclick="pp57Caption()">
+                          <div class="card-body productCardBody">
+                            <h5 class="card-title">Pro Series "L" Screen</h5>
+                            <h6 class="card-text">SKU: PP57</h6>
+                            <p>
+                              <a class="btn btn-danger" data-toggle="collapse" href="#proSerieslScreenProtector57" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Description
+                              </a>
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                Get quote
+                              </button>
+                            </p>
+                            <div class="collapse" id="proSerieslScreenProtector57">
+                              <div class="card card-body productCardDescription">
+                                  Pro Series screens are made with the heaviest gauge steel and nets in the industry. 10 year warranty on the frames and 2 year warranty on the nets. 1" tuffskin padding included on all models. 6" diameter, "no flat" wheels.<br>
+                                  5' x 7' "L" Screen with padding.<br>
+                                  <div id="new-text-color1">
+                                    Also available:<br>
+                                    PP57W (with wheels)
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+
+                  <div value="infieldScreens" class="card productCard baseball-products-list page2 infieldScreens All" style="width: 24rem;">
+                    <img id="pp58stImage" src="../assets/images/products/pro-series-pitchers-protective-screen-pp58st.jpg" class="card-img-top" alt="Pitchers Protective Screen" data-toggle="modal" data-target=".pp58stImageModal" onclick="pp58stCaption()">
+                        <div class="card-body productCardBody">
+                          <h5 class="card-title">Pitchers Protective Screen</h5>
+                          <h6 class="card-text">SKU: PP58ST</h6>
+                          <p>
+                            <a class="btn btn-danger" data-toggle="collapse" href="#homePlateFieldProtector6oz" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Description
+                            </a>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                              Get quote
+                            </button>
+                          </p>
+                          <div class="collapse" id="homePlateFieldProtector6oz">
+                            <div class="card card-body productCardDescription">
+                                Pro Series screens are made with the heaviest gauge steel and nets in the industry. 10 year warranty on the frames and 2 year warranty on the nets. 1" tuffskin padding included on all models. 6" diameter, "no flat" wheels.<br>
+                                5' x 8' Pitcher Protector with padding.<br>
+                                <div id="new-text-color1">
+                                  Also available:<br>
+                                  PP58STW (with wheels)
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+      
+              <div value="infieldScreens" class="card productCard baseball-products-list page2 infieldScreens All" style="width: 24rem;">
+                      <img id="pp67Image" src="../assets/images/products/l-shaped-pitcher-protector-pp67.jpg" class="card-img-top" alt="L-Shaped Pitcher Protector" data-toggle="modal" data-target=".pp67ImageModal" onclick="pp67Caption()">
+                          <div class="card-body productCardBody">
+                            <h5 class="card-title">L-Shaped Pitcher Protector</h5>
+                            <h6 class="card-text">SKU: PP67</h6>
+                            <p>
+                              <a class="btn btn-danger" data-toggle="collapse" href="#lShapedPitcherProtector" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Description
+                              </a>
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                Get quote
+                              </button>
+                            </p>
+                            <div class="collapse" id="lShapedPitcherProtector">
+                              <div class="card card-body productCardDescription">
+                                6'W x 7'T and 3'6" "L" section. Swedged steel tubing. Frame held together with snap pins at connecting joints. Pillow case net - UV treated. Reversible.
+                                <div id="new-text-color1">
+                                  Also available:<br>
+                                  PP67PD (with padding)<br>
+                                  PP67N (pillow case net)<br>
+                                  67C (carrying case)
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+      
+              <div value="infieldScreens" class="card productCard baseball-products-list page2 infieldScreens All" style="width: 24rem;">
+                      <img id="ip67Image" src="../assets/images/products/infield-protector-ip67.jpg" class="card-img-top" alt="Infield Protector" data-toggle="modal" data-target=".ip67ImageModal" onclick="ip67Caption()">
+                          <div class="card-body productCardBody">
+                              <h5 class="card-title">Infield Protector</h5>
+                              <h6 class="card-text">SKU: IP67</h6>
+                              <p>
+                                <a class="btn btn-danger" data-toggle="collapse" href="#infieldProtector" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                  Description
+                                </a>
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                  Get quote
+                                </button>
+                              </p>
+                              <div class="collapse" id="infieldProtector">
+                                <div class="card card-body productCardDescription">
+                                  6'W x 7'T. Heavy duty swedged steel tubing. Frame held together with snap pins at connecting joints. Pillow case net - UV treated.
+                                  <div id="new-text-color1">
+                                    Also available:<br>
+                                    IP67PD (with padding)<br>
+                                    67N (pillow case net)<br>
+                                    67C (carrying case)
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                  </div>
+    
+                  <div value="infieldScreens" class="card productCard baseball-products-list page2 infieldScreens All" style="width: 24rem;">
+                    <img id="fp1010Image" src="../assets/images/products/combination-fungo-protector-and-portable-backstop-fp1010.jpg" class="card-img-top" alt="Combination Fungo Protector and Portable Backstop" data-toggle="modal" data-target=".fp1010ImageModal" onclick="fp1010Caption()">
+                        <div class="card-body productCardBody">
+                            <h5 class="card-title">Combination Fungo Protector and Portable Backstop</h5>
+                            <h6 class="card-text">SKU: FP1010</h6>
+                            <p>
+                              <a class="btn btn-danger" data-toggle="collapse" href="#combFungoProtectorAndPortableBackstop" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Description
+                              </a>
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                Get quote
+                              </button>
+                            </p>
+                            <div class="collapse" id="combFungoProtectorAndPortableBackstop">
+                              <div class="card card-body productCardDescription">
+                                10'W x 10'T. Heavy duty swedged steel tubing. Frame held together with snap pins at connecting joints. Pillow case net - UV treated.
+                                <div id="new-text-color1">
+                                  Also available:<br>
+                                  FP1010N (pillow case net)
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                </div>
+        
+                <div value="infieldScreens" class="card productCard baseball-products-list page2 infieldScreens All" style="width: 24rem;">
+                        <img id="sfp67Image" src="../assets/images/products/slow-fast-pitch-pitcher-protector-sfp67.jpg" class="card-img-top" alt="Slow/Fast Pitch Pitcher Protector" data-toggle="modal" data-target=".sfp67ImageModal" onclick="sfp67Caption()">
+                            <div class="card-body productCardBody">
+                                <h5 class="card-title">Slow/Fast Pitch Pitcher Protector</h5>
+                                <h6 class="card-text">SKU: SFP67</h6>
+                                <p>
+                                  <a class="btn btn-danger" data-toggle="collapse" href="#slowFastPitchPitcherProtector" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Description
+                                  </a>
+                                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                    Get quote
+                                  </button>
+                                </p>
+                                <div class="collapse" id="slowFastPitchPitcherProtector">
+                                  <div class="card card-body productCardDescription">
+                                    6'W x 7'T. Heavy duty swedged steel tubing. Frame held together with snap pins at connecting joints. Pillow case net with a hip level cutout for softball release.
+                                    <div id="new-text-color1">
+                                      Also available:<br>
+                                      SFP67PD (with padding)<br>
+                                      SFP67N (pillow case net w/ pocket)<br>
+                                      67C (carrying case)
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                    </div>
+    
+                <div value="infieldScreens" class="card productCard baseball-products-list page2 infieldScreens All" style="width: 24rem;">
+                    <img id="sku7006Image" src="../assets/images/products/batting-practice-platform-mound-70006.jpg" class="card-img-top" alt="Batting Practice Platform Mound" data-toggle="modal" data-target=".sku7006ImageModal" onclick="sku7006Caption()">
+                        <div class="card-body productCardBody">
+                          <h5 class="card-title">Batting Practice Platform Mound</h5>
+                          <h6 class="card-text">SKU: 7006</h6>
+                          <p>
+                            <a class="btn btn-danger" data-toggle="collapse" href="#battingPracticePlatformMound" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Description
+                            </a>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                              Get quote
+                            </button>
+                          </p>
+                          <div class="collapse" id="battingPracticePlatformMound">
+                            <div class="card card-body productCardDescription">
+                              Prevents unnecessary wear and tear on your field. Carrying handles for easy roll away. Steel powder coated frame with locking wheels. Covered with spike-resistant artificial turf.
+                            </div>
+                          </div>
+                        </div>
+                </div>
+    
+              <div value="infieldScreens" class="card productCard baseball-products-list page2 infieldScreens All" style="width: 24rem;">
+                    <img id="cbn67Image" src="../assets/images/products/the-collector-cbn67.jpg" class="card-img-top" alt="The Collector" data-toggle="modal" data-target=".cbn67ImageModal" onclick="cbn67Caption()">
+                        <div class="card-body productCardBody">
+                          <h5 class="card-title">The Collector</h5>
+                          <h6 class="card-text">SKU: CBN67</h6>
+                          <p>
+                            <a class="btn btn-danger" data-toggle="collapse" href="#theCollector" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Description
+                            </a>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                              Get quote
+                            </button>
+                          </p>
+                          <div class="collapse" id="theCollector">
+                            <div class="card card-body productCardDescription">
+                                Heavy duty swedged steel tubing. 18 oz. vinyl with collector netting. 36" x 28" round opening with an enclosed net to trap baseballs. Size: 6' wide x 7' tall.
+                            </div>
+                          </div>
+                        </div>
+                </div>
+    
+            <div value="battingCages" class="card productCard baseball-products-list page2 battingCages All" style="width: 24rem;">
+                    <img id="bt5512hImage" src="../assets/images/products/batting-cage-bt5512h.jpg" class="card-img-top" alt="Batting Cage" data-toggle="modal" data-target=".bt5512hImageModal" onclick="bt5512hCaption()">
+                        <div class="card-body productCardBody">
+                          <h5 class="card-title">Batting Cage</h5>
+                          <h6 class="card-text">SKU: BT5512H</h6>
+                          <p>
+                            <a class="btn btn-danger" data-toggle="collapse" href="#battingCage" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Description
+                            </a>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                              Get quote
+                            </button>
+                          </p>
+                          <div class="collapse" id="battingCage">
+                            <div class="card card-body productCardDescription">
+                                Clean, curved tube design with less structure for ball to ricochet off. 4" O.D. aluminum tubing for ease of removal and storage. Individual hoist lines simplify net removal and installation. Includes sleeves. Accommodates 12' and 14' wide nets (sold separately).<br>
+                                <div id="new-text-color1">
+                                  Also available:<br>
+                                  BN121455 (netting for BT5512H)<br>
+                                  BT7012H (batting cage 70'L x 12'H)<br>
+                                  BN121470 (netting for BT7012H)
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+    
+            <div value="battingCages" class="card productCard baseball-products-list page2 battingCages All" style="width: 24rem;">
+                    <img id="pbssoImage" src="../assets/images/products/portable-batting-shield-pbsso.jpg" class="card-img-top" alt="Special Size Portable Batting Shield" data-toggle="modal" data-target=".pbssoImageModal" onclick="pbssoCaption()">
+                        <div class="card-body productCardBody">
+                          <h5 class="card-title">Special Size Portable Batting Shield</h5>
+                          <h6 class="card-text">SKU: PBSSO</h6>
+                          <p>
+                            <a class="btn btn-danger" data-toggle="collapse" href="#specialSizePortableBattingSheild" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Description
+                            </a>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                              Get quote
+                            </button>
+                          </p>
+                          <div class="collapse" id="specialSizePortableBattingSheild">
+                            <div class="card card-body productCardDescription">
+                                18 oz royal blue vinyl. Large brass grommets. Mounts to chain link fence.<br>
+                                <div id="new-text-color1">
+                                  Also available:<br>
+                                  PBS6072 (60" x 72")
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+      
+              <div value="battingCages" class="card productCard baseball-products-list page2 battingCages All" style="width: 24rem;">
+                      <img id="szbb4875Image" src="../assets/images/products/skill-zone-szbb4875.jpg" class="card-img-top" alt="Skill Zone" data-toggle="modal" data-target=".szbb4875ImageModal" onclick="szbb4875Caption()">
+                          <div class="card-body productCardBody">
+                            <h5 class="card-title">Skill Zone</h5>
+                            <h6 class="card-text">SKU: SZBB4875</h6>
+                            <p>
+                              <a class="btn btn-danger" data-toggle="collapse" href="#skillZone" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Description
+                              </a>
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                Get quote
+                              </button>
+                            </p>
+                            <div class="collapse" id="skillZone">
+                              <div class="card card-body productCardDescription">
+                                18 oz. white (6' wide x 7' tall) Swedged steel tubing. Reinforced strike zone flap to slow down baseballs.<br>
+                                <div id="new-text-color1">
+                                  Also available:<br>
+                                  SZBB4875T (replacement target)
+                                  SZBB4875C (case)
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+    
+                  <div value="battingCages" class="card productCard baseball-products-list page2 battingCages All" style="width: 24rem;">
+                    <img id="szsbkImage" src="../assets/images/products/strike-zone-net-saver-szsbk.jpg" class="card-img-top" alt="Strike Zone Net Saver" data-toggle="modal" data-target=".szsbkImageModal" onclick="szsbkCaption()">
+                        <div class="card-body productCardBody">
+                            <h5 class="card-title">Strike Zone Net Saver</h5>
+                            <h6 class="card-text">SKU: SZSBK</h6>
+                            <p>
+                              <a class="btn btn-danger" data-toggle="collapse" href="#strikeZoneNetSaver" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Description
+                              </a>
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                Get quote
+                              </button>
+                            </p>
+                            <div class="collapse" id="strikeZoneNetSaver">
+                              <div class="card card-body productCardDescription">
+                                Provides a visible backdrop. Adjusts from 30' to 77'. Black with white strike zone.<br>
+                                <div id="new-text-color1">
+                                  Also available:<br>
+                                  SZSBL (strike zone net saver in blue)
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                </div>
+    
+                  <div value="netting" class="card productCard baseball-products-list page2 netting All" style="width: 24rem;">
+                    <img id="cnr5078Image" src="../assets/images/products/netting-504-cnr5078" class="card-img-top" alt="Netting #504 2.5mm 7/8" data-toggle="modal" data-target=".cnr5078ImageModal" onclick="cnr5078Caption()">
+                        <div class="card-body productCardBody">
+                            <h5 class="card-title">Netting #504 2.5mm 7/8"</h5>
+                            <h6 class="card-text">SKU: CNR5078</h6>
+                            <p>
+                              <a class="btn btn-danger" data-toggle="collapse" href="#netting50425mm" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Description
+                              </a>
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                                Get quote
+                              </button>
+                            </p>
+                            <div class="collapse" id="netting50425mm">
+                              <div class="card card-body productCardDescription">
+                                2.5 mm 7/8" black or white. 180# break strength.
                               </div>
                             </div>
                         </div>
@@ -682,6 +1304,174 @@
             </div>
       </div>
 
+      <div class="modal fade imageModal pc1ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="pc1Image" src="../assets/images/products/fence-top-installer-pc1.jpg">
+              <div id="pc1Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal tpt201550ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="tpt201550Image" src="../assets/images/products/titan-turf-protector-tpt201550.jpg">
+              <div id="tpt201550Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal hpm612ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="hpm612Image" src="../assets/images/products/home-plate-mat-hpm612">
+              <div id="hpm612Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal odc6ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="odc6Image" src="../assets/images/products/on-deck-circle-odc6.jpg">
+              <div id="odc6Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal pm612ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="pm612Image" src="../assets/images/products/pitchers-mat-pm612.jpg">
+              <div id="pm612Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal ic1006ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="ic1006Image" src="../assets/images/products/6oz-field-protector-ic1006.jpg">
+              <div id="ic1006Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal ic1018ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="ic1018Image" src="../assets/images/products/18oz-field-protector-ic1018.jpg">
+              <div id="ic1018Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+    
+      <div class="modal fade imageModal fc170ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="fc170Image" src="../assets/images/products/field-cover-fc170.jpg">
+              <div id="fc170Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal bcb48ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="bcb48Image" src="../assets/images/products/sand-bag-bcb48.jpg">
+              <div id="bcb48Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal ip88wImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="ip88wImage" src="../assets/images/products/pro-series-infield-protector-ip88w.jpg">
+              <div id="ip88wCaption" class="imageModalCaption"></div>
+            </div>
+      </div>
+    
+    <div class="modal fade imageModal pp88wImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="pp88wImage" src="../assets/images/products/pro-series-l-screen-protector-pp88w.jpg">
+              <div id="pp88wCaption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal pp57ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="pp57Image" src="../assets/images/products/pro-series-l-screen-pp57.jpg">
+              <div id="pp57Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+      <div class="modal fade imageModal pp58stImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="pp58stImage" src="../assets/images/products/pro-series-pitchers-protective-screen-pp58st.jpg">
+              <div id="pp58stCaption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal pp67ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="pp67Image" src="../assets/images/products/l-shaped-pitcher-protector-pp67.jpg">
+              <div id="pp67Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal ip67ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="ip67Image" src="../assets/images/products/infield-protector-ip67.jpg">
+              <div id="ip67Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+      <div class="modal fade imageModal fp1010ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="fp1010Image" src="../assets/images/products/combination-fungo-protector-and-portable-backstop-fp1010.jpg">
+              <div id="fp1010Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal sfp67ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="sfp67Image" src="../assets/images/products/slow-fast-pitch-pitcher-protector-sfp67.jpg">
+              <div id="sfp67Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal sku7006ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="sku7006Image" src="../assets/images/products/batting-practice-platform-mound-70006.jpg">
+              <div id="sku7006Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+    
+    <div class="modal fade imageModal cbn67ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="cbn67Image" src="../assets/images/products/the-collector-cbn67.jpg">
+              <div id="cbn67Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal bt5512hImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="bt5512hImage" src="../assets/images/products/batting-cage-bt5512h.jpg">
+              <div id="bt5512hCaption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal pbssoImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="pbssoImage" src="../assets/images/products/portable-batting-shield-pbsso.jpg">
+              <div id="pbssoCaption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal szsbkImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="szsbkImage" src="../assets/images/products/strike-zone-net-saver-szsbk.jpg">
+              <div id="szsbkCaption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal cnr5078ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="cnr5078Image" src="../assets/images/products/netting-504-cnr5078">
+              <div id="cnr5078Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
+    <div class="modal fade imageModal szbb4875ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modalExpandImageBody">
+              <img id="szbb4875Image" src="../assets/images/products/skill-zone-szbb4875.jpg">
+              <div id="szbb4875Caption" class="imageModalCaption"></div>
+            </div>
+      </div>
+
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -689,5 +1479,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/baseballFilter.js"></script>
 </body>
 </html>

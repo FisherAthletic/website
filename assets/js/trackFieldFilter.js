@@ -109,7 +109,7 @@ function trkDisplayAmount() {
   }
 };
 
-// function used for strDisplayAmount function, will only show products 1-12
+// function used for trkDisplayAmount function, will only show products 1-12
 function trkShowPageOne() {
   var pageOneProducts = [0,1,2,3,4,5,6,7,8,9,10,11];
   try {
@@ -123,7 +123,7 @@ function trkShowPageOne() {
   }
 }
 
-// function used for strDisplayAmount function, will only show products 13-24
+// function used for trkDisplayAmount function, will only show products 13-24
 function trkShowPageTwo() {
   var pageTwoProducts = [12,13,14,15,16,17,18,19,20,21,22,23];
   try {
@@ -135,7 +135,7 @@ function trkShowPageTwo() {
   }
 };
 
-// function used for strDisplayAmount function, will only show products 25-36
+// function used for trkDisplayAmount function, will only show products 25-36
 function trkShowPageThree() {
   var pageThreeProducts = [24,25,26,27,28,29,30,31,32,33,34,35];
   try {
@@ -147,7 +147,7 @@ function trkShowPageThree() {
   }
 };
 
-// function used for strDisplayAmount function, will only show products 37-48
+// function used for trkDisplayAmount function, will only show products 37-48
 function trkShowPageFour() {
   var pageFourProducts = [36,37,38,39,40,41,42,43,44,45,46,47];
   try {
@@ -159,7 +159,7 @@ function trkShowPageFour() {
   }
 };
 
-// function used for strDisplayAmount function, will only show products 37-48
+// function used for trkDisplayAmount function, will only show products 37-48
 function trkShowPageFive() {
     var pageFiveProducts = [48,49,50,51,52,53,54,55,56,57,58,59];
     try {
@@ -171,7 +171,7 @@ function trkShowPageFive() {
     }
   };
 
-// function used for strShowPageOne function, hides page 1 if it is the only page needed
+// function used for trkShowPageOne function, hides page 1 if it is the only page needed
 function trkCheckPageOne() {
   if(trkPagination[1].style.display == "none") {
     trkPagination[0].style.display = "none";
