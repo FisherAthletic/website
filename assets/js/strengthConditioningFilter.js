@@ -40,7 +40,7 @@ function strUpdateSelectedPageValue() {
     strSelectedPageValue = event.target.attributes.value.value;
     console.log("Page selected: " + strSelectedPageValue);
   } catch(err) {
-    document.addEventListener("DOMContedLoaded", strResetPageSelection);
+    document.addEventListener("DOMContentLoaded", strResetPageSelection);
     console.log("Page selected: " + strSelectedPageValue);
   }
 };

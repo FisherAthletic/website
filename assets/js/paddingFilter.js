@@ -40,7 +40,7 @@ function paddingUpdateSelectedPageValue() {
     paddingSelectedPageValue = event.target.attributes.value.value;
     console.log("Page selected: " + paddingSelectedPageValue);
   } catch(err) {
-    document.addEventListener("DOMContedLoaded", paddingResetPageSelection);
+    document.addEventListener("DOMContentLoaded", paddingResetPageSelection);
     console.log("Page selected: " + paddingSelectedPageValue);
   }
 };

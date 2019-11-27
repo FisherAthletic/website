@@ -40,7 +40,7 @@ function trkUpdateSelectedPageValue() {
     trkSelectedPageValue = event.target.attributes.value.value;
     console.log("Page selected: " + trkSelectedPageValue);
   } catch(err) {
-    document.addEventListener("DOMContedLoaded", trkResetPageSelection);
+    document.addEventListener("DOMContentLoaded", trkResetPageSelection);
     console.log("Page selected: " + trkSelectedPageValue);
   }
 };

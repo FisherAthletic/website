@@ -40,7 +40,7 @@ function baseballUpdateSelectedPageValue() {
     baseballSelectedPageValue = event.target.attributes.value.value;
     console.log("Page selected: " + baseballSelectedPageValue);
   } catch(err) {
-    document.addEventListener("DOMContedLoaded", baseballResetPageSelection);
+    document.addEventListener("DOMContentLoaded", baseballResetPageSelection);
     console.log("Page selected: " + baseballSelectedPageValue);
   }
 };
