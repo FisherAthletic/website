@@ -18,6 +18,262 @@ function footballFiltering() {
   footballDisplayPagesNeeded();
   footballDisplayProducts();
   footballDisplayAmount();
+  if(footballDropdownValue == "All") {
+    paginationFocus();
+  }
+};
+
+// function that only allows 5 pagination buttons to be shown at once
+function paginationFocus() {
+  var s = footballSelectedPageValue;
+  var focusOn1 = [0,1,2,3,4];
+  var focusOn2 = [0,1,2,3,4];
+  var focusOn3 = [0,1,2,3,4];
+  var focusOn4 = [1,2,3,4,5];
+  var focusOn5 = [2,3,4,5,6];
+  var focusOn6 = [3,4,5,6,7];
+  var focusOn7 = [4,5,6,7,8];
+  var focusOn8 = [5,6,7,8,9];
+  var focusOn9 = [6,7,8,9,10];
+  var focusOn10 = [7,8,9,10,11];
+  var focusOn11 = [8,9,10,11,12];
+  var focusOn12 = [9,10,11,12,13];
+  var focusOn13 = [10,11,12,13,14];
+  var focusOn14 = [11,12,13,14,15];
+  var focusOn15 = [12,13,14,15,16];
+  var focusOn16 = [13,14,15,16,17];
+  var focusOn17 = [14,15,16,17,18];  
+  var focusOn18 = [14,15,16,17,18];
+  var focusOn19 = [14,15,16,17,18];
+  var focusOnPageNum = [Number(s)-2, Number(s)-1, Number(s), Number(s)+1, Number(s)+2];
+  var allPages = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
+  console.log(focusOnPageNum);
+  if(s == 1) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn1.length; i++) {
+        footballPagination[focusOn1[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 2) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn2.length; i++) {
+        footballPagination[focusOn2[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 3) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn3.length; i++) {
+        footballPagination[focusOn3[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 4) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn4.length; i++) {
+        footballPagination[focusOn4[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 5) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn5.length; i++) {
+        footballPagination[focusOn5[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 6) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn6.length; i++) {
+        footballPagination[focusOn6[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 7) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn7.length; i++) {
+        footballPagination[focusOn7[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 8) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn8.length; i++) {
+        footballPagination[focusOn8[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 9) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn9.length; i++) {
+        footballPagination[focusOn9[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 10) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn10.length; i++) {
+        footballPagination[focusOn10[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 11) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn11.length; i++) {
+        footballPagination[focusOn11[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 12) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn12.length; i++) {
+        footballPagination[focusOn12[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 13) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn13.length; i++) {
+        footballPagination[focusOn13[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 14) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn14.length; i++) {
+        footballPagination[focusOn14[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 15) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn15.length; i++) {
+        footballPagination[focusOn15[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 16) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn16.length; i++) {
+        footballPagination[focusOn16[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 17) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn17.length; i++) {
+        footballPagination[focusOn17[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 18) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn18.length; i++) {
+        footballPagination[focusOn18[i]].style.display = "flex";
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s == 19) {
+    for(i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOn19.length; i++) {
+        footballPagination[focusOn19[i]].style.display = "flex;"
+      }
+    } catch(err) {
+      console.log("Something went wrong...");
+    }
+  } else if (s != 1 || 2 || 18 || 19) {
+    for (i = 0; i < allPages.length; i++) {
+      footballPagination[allPages[i]].style.display = "none";
+    }
+    try {
+      for(i = 0; i < focusOnPageNum.length; i++) {
+        footballPagination[focusOnPageNum[i]].style.display = "flex";
+        console.log("Showing page: " + focusOnPageNum[i]);
+        console.log(focusOnPageNum);
+      }
+    } catch(err) {
+      console.log(err);
+    }
+  } else {
+    console.log("Ooops! Something went wrong...");
+  }
+  console.log("Testing selected page value: " + footballSelectedPageValue);
 };
 
 // function checks how many pages are needed by checking the amount of products in the current filter selection and the product total by 12
