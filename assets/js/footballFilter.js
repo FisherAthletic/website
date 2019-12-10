@@ -45,9 +45,7 @@ function paginationFocus() {
   var focusOn17 = [14,15,16,17,18];  
   var focusOn18 = [14,15,16,17,18];
   var focusOn19 = [14,15,16,17,18];
-  var focusOnPageNum = [Number(s)-2, Number(s)-1, Number(s), Number(s)+1, Number(s)+2];
   var allPages = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
-  console.log(focusOnPageNum);
   if(s == 1) {
     for(i = 0; i < allPages.length; i++) {
       footballPagination[allPages[i]].style.display = "none";
@@ -242,6 +240,7 @@ function paginationFocus() {
     try {
       for(i = 0; i < focusOn18.length; i++) {
         footballPagination[focusOn18[i]].style.display = "flex";
+        console.log("Page being loaded: " + focusOn18[i]);
       }
     } catch(err) {
       console.log("Something went wrong...");
@@ -252,23 +251,11 @@ function paginationFocus() {
     }
     try {
       for(i = 0; i < focusOn19.length; i++) {
-        footballPagination[focusOn19[i]].style.display = "flex;"
+        footballPagination[focusOn19[i]].style.display = "flex";
+        console.log("Page being loaded: " + focusOn19[i]);
       }
     } catch(err) {
       console.log("Something went wrong...");
-    }
-  } else if (s != 1 || 2 || 18 || 19) {
-    for (i = 0; i < allPages.length; i++) {
-      footballPagination[allPages[i]].style.display = "none";
-    }
-    try {
-      for(i = 0; i < focusOnPageNum.length; i++) {
-        footballPagination[focusOnPageNum[i]].style.display = "flex";
-        console.log("Showing page: " + focusOnPageNum[i]);
-        console.log(focusOnPageNum);
-      }
-    } catch(err) {
-      console.log(err);
     }
   } else {
     console.log("Ooops! Something went wrong...");
