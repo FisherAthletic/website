@@ -23,6 +23,23 @@ function footballFiltering() {
   }
 };
 
+// function that checks if loading screen should continue being shown
+function loadScreenOnOff() {
+  console.log("If amount of products being displayed > 12 && (pagination.length > 2) THEN continue showing loading screen ELSE hide loading screen");
+}
+
+console.log(footballProducts.length);
+
+// function to block scrolling
+function noScroll() {
+  window.scrollTo(0, 0);
+}
+// add listener to disable scroll
+window.addEventListener("scroll", noScroll);
+
+// Remove listener to re-enable scroll
+// window.removeEventListener("scroll", noScroll);
+
 // function that only allows 5 pagination buttons to be shown at once
 function paginationFocus() {
   var s = footballSelectedPageValue;
