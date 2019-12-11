@@ -1,5 +1,12 @@
 //---------------------------------------------------------------------------------------------------------------------
 
+// function to block scrolling
+function noScroll() {
+  window.scrollTo(0, 0);
+};
+// add listener to disable scroll
+window.addEventListener("scroll", noScroll);
+
 var checkLoadingInt = setInterval(loadScreenOnOff, 300);
 
 // function that checks if loading screen should continue being shown
@@ -33,14 +40,6 @@ function checkDisplayedProductsAmount() {
     }
   }
 }
-// checkDisplayedProductsAmount();
-
-// function to block scrolling
-function noScroll() {
-  window.scrollTo(0, 0);
-};
-// add listener to disable scroll
-window.addEventListener("scroll", noScroll);
 
 // Football filter
 var footballDropdownValue = document.getElementById("football-products-filter-selection").value;
