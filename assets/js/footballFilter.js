@@ -1,4 +1,47 @@
 //---------------------------------------------------------------------------------------------------------------------
+
+var checkLoadingInt = setInterval(loadScreenOnOff, 300);
+
+// function that checks if loading screen should continue being shown
+function loadScreenOnOff() {
+  checkDisplayedProductsAmount();
+  if(displayedProductsAmount > 12) {
+    console.log("Loading products...");
+    console.log("Amount of products being displayed: " + displayedProductsAmount);
+  } else {
+    window.removeEventListener("scroll", noScroll);
+    document.getElementById("loading-page").style.display = "none";
+    console.log("Stopping the interval now...")
+    stopLoadingCheck();
+  }
+};
+
+// function to stop interval
+function stopLoadingCheck() {
+  clearInterval(checkLoadingInt);
+}
+
+// function that checks how many products are being displayed
+var displayedProductsAmount = 218;
+function checkDisplayedProductsAmount() {
+  displayedProductsAmount = 0;
+  for(i = 0; i < footballFilteredProducts.length; i++) {
+    if(footballFilteredProducts[i].style.display == "flex") {
+      displayedProductsAmount = displayedProductsAmount + 1;
+    } else {
+      console.log("Product #: " + i + " is hidden.");
+    }
+  }
+}
+// checkDisplayedProductsAmount();
+
+// function to block scrolling
+function noScroll() {
+  window.scrollTo(0, 0);
+};
+// add listener to disable scroll
+window.addEventListener("scroll", noScroll);
+
 // Football filter
 var footballDropdownValue = document.getElementById("football-products-filter-selection").value;
 var footballPagination = document.getElementsByClassName("football-pagination");
@@ -22,23 +65,6 @@ function footballFiltering() {
     paginationFocus();
   }
 };
-
-// function that checks if loading screen should continue being shown
-function loadScreenOnOff() {
-  console.log("If amount of products being displayed > 12 && (pagination.length > 2) THEN continue showing loading screen ELSE hide loading screen");
-}
-
-console.log(footballProducts.length);
-
-// function to block scrolling
-function noScroll() {
-  window.scrollTo(0, 0);
-}
-// add listener to disable scroll
-window.addEventListener("scroll", noScroll);
-
-// Remove listener to re-enable scroll
-// window.removeEventListener("scroll", noScroll);
 
 // function that only allows 5 pagination buttons to be shown at once
 function paginationFocus() {
