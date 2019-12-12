@@ -30,7 +30,7 @@ function footballFiltering() {
     paginationFocus();
   }
   function loadOnOff() {
-    var updateDoneLoadingInt = setInterval(updateDoneLoading, 200);
+    var updateDoneLoadingInt = setInterval(updateDoneLoading, 50);
     function updateDoneLoading() {
       if (footballProducts[12].style.display == "none") {
         doneLoading = true;
