@@ -7,11 +7,12 @@ function noScroll() {
 // add listener to disable scroll
 window.addEventListener("scroll", noScroll);
 
-var checkLoadingInt = setInterval(loadScreenOnOff, 300);
+var checkLoadingInt = setInterval(loadScreenOnOff, 3000);
 
 // function that checks if loading screen should continue being shown
 function loadScreenOnOff() {
   checkDisplayedProductsAmount();
+  console.log("displayedProductsAmountttt: " + displayedProductsAmount);
   if(displayedProductsAmount > 12) {
     console.log("Loading products...");
     console.log("Amount of products being displayed: " + displayedProductsAmount);
@@ -21,7 +22,21 @@ function loadScreenOnOff() {
     console.log("Stopping the interval now...")
     stopLoadingCheck();
   }
+  console.log("displayedProductsAmount: " + displayedProductsAmount);
 };
+
+// function that checks how many pagination numbers are being displayed
+var displayedPaginationAmount = 18;
+function checkDisplayedPagination() {
+  displayedPaginationAmount = 0;
+  for(i = 0; i < footballPagination.length; i++) {
+    if(footballPagination[i].style.display == "flex") {
+      displayedPaginationAmount = displayedPaginationAmount + 1;
+    } else {
+      console.log("Page: " + i + " is hidden.");
+    }
+  }
+}
 
 // function to stop interval
 function stopLoadingCheck() {
