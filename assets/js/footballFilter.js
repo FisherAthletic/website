@@ -1,25 +1,3 @@
-//---------------------------------------------------------------------------------------------------------------------
-
-// function to block scrolling
-function noScroll() {
-  window.scrollTo(0, 0);
-};
-// add listener to disable scroll
-window.addEventListener("scroll", noScroll);
-
-// var checkLoadingInt = setInterval(loadScreenOnOff, 100);
-
-// // function that checks if loading screen should continue being shown
-// function loadScreenOnOff() {
-  
-// };
-
-// // function to stop interval
-// function stopLoadingCheck() {
-//   clearInterval(checkLoadingInt);
-// };
-
-// --------------------------------------------------------------------------------------------
 // Football filter
 var footballDropdownValue = document.getElementById("football-products-filter-selection").value;
 var footballPagination = document.getElementsByClassName("football-pagination");
@@ -31,6 +9,13 @@ var footballNumberOfPagesNeeded = Math.ceil(footballFilteredProductsAmount / 12)
 var footballFilteredProducts = document.getElementsByClassName(footballDropdownValue);
 
 var doneLoading = null;
+
+// function to block scrolling
+function noScroll() {
+  document.getElementById("loading-page").scrollTo(0, 0);
+};
+// add listener to disable scroll
+document.getElementById("loading-page").addEventListener("scroll", noScroll);
 
 // main function that handles the filtering
 function footballFiltering() {
@@ -44,13 +29,12 @@ function footballFiltering() {
   if(footballDropdownValue == "All") {
     paginationFocus();
   }
-
   function loadOnOff() {
     var updateDoneLoadingInt = setInterval(updateDoneLoading, 100);
     function updateDoneLoading() {
       if (footballProducts[12].style.display == "none") {
         doneLoading = true;
-        window.removeEventListener("scroll", noScroll);
+        document.getElementById("loading-page").removeEventListener("scroll", noScroll);
         document.getElementById("loading-page").style.display = "none";
         stopLoadOnOffInt();
       } else {
@@ -61,9 +45,7 @@ function footballFiltering() {
       clearInterval(updateDoneLoadingInt);
     };
   }
-
   loadOnOff();
-
 };
 
 // function that only allows 5 pagination buttons to be shown at once
