@@ -12,10 +12,10 @@ var doneLoading = null;
 
 // function to block scrolling
 function noScroll() {
-  document.getElementById("loading-page").scrollTo(0, 0);
+  window.scrollTo(0, 0);
 };
 // add listener to disable scroll
-document.getElementById("loading-page").addEventListener("scroll", noScroll);
+window.addEventListener("scroll", noScroll);
 
 // main function that handles the filtering
 function footballFiltering() {
@@ -30,11 +30,11 @@ function footballFiltering() {
     paginationFocus();
   }
   function loadOnOff() {
-    var updateDoneLoadingInt = setInterval(updateDoneLoading, 100);
+    var updateDoneLoadingInt = setInterval(updateDoneLoading, 200);
     function updateDoneLoading() {
       if (footballProducts[12].style.display == "none") {
         doneLoading = true;
-        document.getElementById("loading-page").removeEventListener("scroll", noScroll);
+        window.removeEventListener("scroll", noScroll);
         document.getElementById("loading-page").style.display = "none";
         stopLoadOnOffInt();
       } else {
