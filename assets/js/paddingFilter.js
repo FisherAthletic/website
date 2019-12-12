@@ -9,6 +9,13 @@ var paddingFilteredProductsAmount = paddingFilteredProducts.length;
 var paddingNumberOfPagesNeeded = Math.ceil(paddingFilteredProductsAmount / 12);
 var paddingFilteredProducts = document.getElementsByClassName(paddingDropdownValue);
 
+// function to block scrolling
+function noScroll() {
+  window.scrollTo(0, 0);
+};
+// add listener to disable scroll
+window.addEventListener("scroll", noScroll);
+
 // main function that handles the filtering
 function paddingFiltering() {
   paddingDropdownValue = document.getElementById("padding-products-filter-selection").value;
@@ -18,6 +25,23 @@ function paddingFiltering() {
   paddingDisplayPagesNeeded();
   paddingDisplayProducts();
   paddingDisplayAmount();
+
+  function loadOnOff() {
+    var updateDoneLoadingInt = setInterval(updateDoneLoading, 50);
+    function updateDoneLoading() {
+      if (paddingProducts[12].style.display == "none") {
+        window.removeEventListener("scroll", noScroll);
+        document.getElementById("loading-page").style.display = "none";
+        stopLoadOnOffInt();
+      } else {
+        console.log("loading...")
+      }
+    };
+    function stopLoadOnOffInt() {
+      clearInterval(updateDoneLoadingInt);
+    };
+  }
+  loadOnOff();
 };
 
 // function checks how many pages are needed by checking the amount of products in the current filter selection and the product total by 12
