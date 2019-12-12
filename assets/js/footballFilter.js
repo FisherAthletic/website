@@ -8,8 +8,6 @@ var footballFilteredProductsAmount = footballFilteredProducts.length;
 var footballNumberOfPagesNeeded = Math.ceil(footballFilteredProductsAmount / 12);
 var footballFilteredProducts = document.getElementsByClassName(footballDropdownValue);
 
-var doneLoading = null;
-
 // function to block scrolling
 function noScroll() {
   window.scrollTo(0, 0);
@@ -33,12 +31,11 @@ function footballFiltering() {
     var updateDoneLoadingInt = setInterval(updateDoneLoading, 50);
     function updateDoneLoading() {
       if (footballProducts[12].style.display == "none") {
-        doneLoading = true;
         window.removeEventListener("scroll", noScroll);
         document.getElementById("loading-page").style.display = "none";
         stopLoadOnOffInt();
       } else {
-        doneLoading = false;
+        console.log("loading...")
       }
     };
     function stopLoadOnOffInt() {
