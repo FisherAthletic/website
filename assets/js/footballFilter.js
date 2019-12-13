@@ -12,10 +12,11 @@ var footballFilteredProducts = document.getElementsByClassName(footballDropdownV
 function noScroll() {
   window.scrollTo(0, 0);
 };
-// add listener to disable scroll
-window.addEventListener("scroll", noScroll);
-// add listener to disable scroll on touch screens
-window.addEventListener("touchmove", noScroll);
+// // add listener to disable scroll
+// window.addEventListener("scroll", noScroll);
+// // add listener to disable scroll on touch screens
+// window.addEventListener("touchmove", noScroll);
+document.body.classList.add("no-scroll");
 
 // main function that handles the filtering
 function footballFiltering() {
@@ -33,8 +34,9 @@ function footballFiltering() {
     var updateDoneLoadingInt = setInterval(updateDoneLoading, 50);
     function updateDoneLoading() {
       if (footballProducts[12].style.display == "none") {
-        window.removeEventListener("scroll", noScroll);
-        window.removeEventListener("touchmove", noScroll);
+        // window.removeEventListener("scroll", noScroll);
+        // window.removeEventListener("touchmove", noScroll);
+        document.body.classList.remove("no-scroll");
         document.getElementById("loading-page").style.display = "none";
         stopLoadOnOffInt();
       } else {

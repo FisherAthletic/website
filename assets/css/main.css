@@ -4,6 +4,10 @@ body {
     background-color: #1A1D22;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* SCROLLBAR --------------------------------------------------------- */
 /* width */
 ::-webkit-scrollbar {
@@ -512,7 +516,6 @@ body {
 .loading-page {
   display: flex;
   height: 100vh;
-  overflow: hidden;
   padding-top: 40vh;
   background-color: #1A1D22;
   color: white;
