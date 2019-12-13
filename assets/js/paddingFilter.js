@@ -13,8 +13,12 @@ var paddingFilteredProducts = document.getElementsByClassName(paddingDropdownVal
 function noScroll() {
   window.scrollTo(0, 0);
 };
-// add listener to disable scroll
-window.addEventListener("scroll", noScroll);
+// // add listener to disable scroll
+// window.addEventListener("scroll", noScroll);
+// add listener to disable scroll on touch screens
+window.addEventListener("touchmove", noScroll);
+// adds the class no-scroll to body in css
+document.body.classList.add("no-scroll");
 
 // main function that handles the filtering
 function paddingFiltering() {
@@ -30,7 +34,9 @@ function paddingFiltering() {
     var updateDoneLoadingInt = setInterval(updateDoneLoading, 50);
     function updateDoneLoading() {
       if (paddingProducts[12].style.display == "none") {
-        window.removeEventListener("scroll", noScroll);
+        // window.removeEventListener("scroll", noScroll);
+        window.removeEventListener("touchmove", noScroll);
+        document.body.classList.remove("no-scroll");
         document.getElementById("loading-page").style.display = "none";
         stopLoadOnOffInt();
       } else {
