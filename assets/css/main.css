@@ -8,27 +8,6 @@ body {
   overflow: hidden;
 }
 
-/* SCROLLBAR --------------------------------------------------------- */
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #3c414b; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #1A1D22; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(17, 19, 22);
-}
-
 /* GENERAL /////////////////////////////////////////////////////////// */
 /* NAVBAR------------------------------------------------------------- */
 .navbar {
