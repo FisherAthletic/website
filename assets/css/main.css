@@ -558,8 +558,8 @@ body {
   margin: 1rem 0 0 0;
 }
 
-.strength-pagination {
-  cursor: pointer;
+.football-pagination, .baseball-pagination, .track-field-pagination, .padding-pagination, .strength-pagination {
+  background-color: #1A1D22;
 }
 
 .btn {

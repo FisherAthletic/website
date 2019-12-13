@@ -14,6 +14,8 @@ function noScroll() {
 };
 // add listener to disable scroll
 window.addEventListener("scroll", noScroll);
+// add listener to disable scroll on touch screens
+window.addEventListener("touchmove", noScroll);
 
 // main function that handles the filtering
 function footballFiltering() {
@@ -32,12 +34,14 @@ function footballFiltering() {
     function updateDoneLoading() {
       if (footballProducts[12].style.display == "none") {
         window.removeEventListener("scroll", noScroll);
+        window.removeEventListener("touchmove", noScroll);
         document.getElementById("loading-page").style.display = "none";
         stopLoadOnOffInt();
       } else {
         console.log("loading...")
       }
     };
+    // function to stop interval that checks is product 13 is visible
     function stopLoadOnOffInt() {
       clearInterval(updateDoneLoadingInt);
     };
