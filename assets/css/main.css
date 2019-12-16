@@ -250,7 +250,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 90vh;
+    height: 95vh;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: white;
@@ -321,7 +321,6 @@ body {
   }
 
   .carousel-item {
-    max-height: 70vh;
     min-width: 100%;
     min-height: 100%;
   }
@@ -887,5 +886,10 @@ body {
   }
   .landingTextContainer h1 {
     font-size: 50px;
+  }
+  .landingDiv img {
+    min-width: 50%;
+    min-height: 50%;
+    /* animation: landingZoomOut 10s linear forwards; */
   }
 }

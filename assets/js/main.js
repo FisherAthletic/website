@@ -114,99 +114,10 @@ function filterDownloads() {
   }
 };
 
-// // This function will filter strength and conditioning products based on dropdown selection
-// function filterStrengthProductCards() {
-//   var strengthProductsFilterSelection = document.getElementById("strength-products-filter-selection").value;
-//   var productsList = document.getElementsByClassName("strength-products-list");
-//   var paginationObject = document.getElementsByClassName("strength-pagination");
-//   console.log("filterStrengthProductCards is being run...")
-//   console.log("Filter value: " + strengthProductsFilterSelection);
-//   // Loop through and find products that match the dropdown selection
-//   for(i = 0; i < productsList.length; i++) {
-//     var currentProductValue = productsList[i].attributes.value.value;
-//     console.log("Checking if product matches filter...")
-//     if(strengthProductsFilterSelection == currentProductValue) {
-//       console.log(productsList[i]);
-//       productsList[i].style.display = "flex";
-//     } else {
-//       console.log(productsList[i]);
-//       productsList[i].style.display = "none";
-//     }
-//   }
-//   // Loop through and make page1 "active", the rest get the "active" class removed
-//   console.log("Making page1 'active', removing 'active' from any other pagination options...")
-//   for(i = 0; i < paginationObject.length; i++) {
-//     if(paginationObject[i].classList.contains("page1")) {
-//       paginationObject[i].classList.add("active");
-//     } else {
-//       paginationObject[i].classList.remove("active");
-//     }
-//   }
-
-// }
-
-// // Runs whenever the filter selection is changed
-// // Shows and hides products and generates needed pages
-// function displayFilteredProducts() {
-//   var strengthProductsFilterSelection = document.getElementById("strength-products-filter-selection").value;
-//   var filteredProductsObject = document.getElementsByClassName(strengthProductsFilterSelection);
-//   var filteredProductsAmount = filteredProductsObject.length;
-//   var numberOfPagesNeeded = Math.ceil(filteredProductsAmount / 12);
-//   var paginationObject = document.getElementsByClassName("strength-pagination");
-//   console.log("displayFilteredProducts is being run...")
-
-//   // For loop will determine which page numbers need to be displayed
-//   console.log("Checking which pages need to be displayed...");
-//   console.log("Number of pages needed: " + numberOfPagesNeeded);
-//   for(i = 0; i < (paginationObject.length); i++) {
-//     var loopCurrentPageValue = paginationObject[i].attributes.value.value;
-//     // Loops through and checks if page number is within the needed range - then decides if it should be shown or hidden
-//     if(loopCurrentPageValue <= numberOfPagesNeeded) {
-//       paginationObject[i].style.display = "flex";
-//       console.log("Page: " + loopCurrentPageValue + "should be shown.")
-//     } else {
-//       paginationObject[i].style.display = "none";
-//       console.log("Page: " + loopCurrentPageValue + "is not needed.")
-//     }
-//   }
-
-//   // For loop will check which page is active and choose which items should be displayed
-//   for(i = 0; i < paginationObject.length; i++) {
-//     if(event.target.attributes.value.value == 1) {
-      
-//       for(x = 0; x < filteredProductsObject.length; x++) {
-//         if(x < 12) {
-//           filteredProductsObject[x].style.display = "flex";
-//           console.log("item " + x + " is loaded.");
-//         } else {
-//           filteredProductsObject[x].style.display = "none";
-//         }
-//       }
-
-//     } else if (event.target.attributes.value.value == 2) {
-      
-//       for(x = 0; x < filteredProductsObject.length; x++) {
-//         if(x > 11) {
-//           filteredProductsObject[x].style.display = "flex";
-//         } else {
-//           filteredProductsObject[x].style.display = "none";
-//         }
-//       }
-
-//   } else {
-//     console.log("no conditional was met...");
-    
-//   }
-// }
-
-// }
-
-// // Click event when the user clicks on a pagination button
-// document.getElementById("strength-pagination").addEventListener("click", displayFilteredProducts);
-// // Click event when the user changes the filter selection
-// document.getElementById("strength-products-filter-selection").addEventListener("onchange", displayFilteredProducts);
-// document.getElementById("strength-products-filter-selection").addEventListener("onchange", filterStrengthProductCards);
-
+function focusTackleWheels() {
+  location.href = "./pages/football.html";
+  localStorage.setItem("chosenItem", "tackleWheels");
+}
 
 //---------------------------------------------------------------------------------------------------------------------
 
