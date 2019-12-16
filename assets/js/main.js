@@ -114,10 +114,26 @@ function filterDownloads() {
   }
 };
 
+// This variable stores the localStorage item "chosenItem"
+var chosenItem = localStorage.getItem("chosenItem");
+
 function focusTackleWheels() {
   location.href = "./pages/football.html";
   localStorage.setItem("chosenItem", "tackleWheels");
+  chosenItem = localStorage.getItem("chosenItem");
 }
+
+// if(document.referrer = "")
+try {
+  if(chosenItem == "tackleWheels") {
+    document.getElementById("football-products-filter-selection").value = "tackleWheels";
+    footballFiltering();
+    console.log("this should be working...")
+  }
+} catch(err) {
+  console.log("this isn't working...")
+}
+console.log("Checking for localStorage: " + localStorage.getItem("chosenItem"));
 
 //---------------------------------------------------------------------------------------------------------------------
 

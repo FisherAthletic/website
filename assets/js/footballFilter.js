@@ -656,15 +656,3 @@ document.getElementById("football-products-filter-selection").addEventListener("
 //   document.getElementById("football-products-filter-selection").value = "blasters";
 //   footballFiltering();
 // }
-
-var chosenItem = localStorage.getItem("chosenItem");
-try {
-  if(chosenItem == "blasters") {
-    document.getElementById("football-products-filter-selection").value = "blasters";
-    footballFiltering();
-    console.log("this should be working...")
-  }
-} catch(err) {
-  console.log("this isn't working...")
-}
-console.log("Checking for localStorage: " + localStorage.getItem("chosenItem"));

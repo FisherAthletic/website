@@ -548,6 +548,19 @@ body {
   cursor: pointer;
 }
 
+.prev-btn {
+  margin-right: 1rem;
+}
+
+.next-btn {
+  margin-left: 1rem;
+}
+
+.disabled {
+  background-color: #2d323a !important;
+  cursor: not-allowed !important;
+}
+
 /* RECOMMENDED PRODUCTS TITLE ---------------------------------------- */
 .recommendedProductsTitle {
   color: white;
