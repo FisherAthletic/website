@@ -123,7 +123,7 @@ function focusTackleWheels() {
   chosenItem = localStorage.getItem("chosenItem");
 }
 
-// if(document.referrer = "")
+if(document.referrer = "https://fisherathletic.github.io/website/index.html") {
 try {
   if(chosenItem == "tackleWheels") {
     document.getElementById("football-products-filter-selection").value = "tackleWheels";
@@ -133,7 +133,12 @@ try {
 } catch(err) {
   console.log("this isn't working...")
 }
-console.log("Checking for localStorage: " + localStorage.getItem("chosenItem"));
+} else {
+  document.getElementById("football-products-filter-selection").value = "All";
+  footballFiltering();
+};
+
+console.log("Checking for referrer " + document.referrer);
 
 //---------------------------------------------------------------------------------------------------------------------
 
