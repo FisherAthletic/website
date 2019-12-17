@@ -406,13 +406,18 @@ body {
   background-color: #292f33;
 }
 
-#featured-product-grid-item-body:hover {
+/* #featured-product-grid-item-body:hover {
   background-color: rgba(25,30,35,.61);
-}
+} */
 
 #featured-product-grid-item-body li:hover {
   cursor: pointer;
-  color: #B5DCE2
+  color: #B5DCE2;
+  background-color: rgba(25,30,35,.61);
+}
+
+.media-body {
+  padding-top: 1rem;
 }
 
  /* CATEGORY GRID ---------------------------------------------------- */

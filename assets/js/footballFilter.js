@@ -656,3 +656,27 @@ document.getElementById("football-products-filter-selection").addEventListener("
 //   document.getElementById("football-products-filter-selection").value = "blasters";
 //   footballFiltering();
 // }
+
+// var chosenItem = localStorage.getItem("chosenItem");
+
+// if(chosenItem != null) {
+//   try {
+//     document.getElementById("football-products-filter-selection").value = chosenItem;
+//     footballFiltering();
+//   } catch(err) {
+//     console.log("Dropdown value was not changed")
+//   }
+// } else {
+//   console.log("chosenItem value is null")
+// };
+
+// try {
+//   if(chosenItem != "null") {
+//     document.getElementById("football-products-filter-selection").value = chosenItem;
+//     footballFiltering();
+//     console.log("this should be working...")
+//   }
+// } catch(err) {
+//   chosenItem = "All";
+//   footballFiltering();
+// };

@@ -1,37 +1,42 @@
 // Click functions that link to pages //
 function footballGridClick () {
   location.href = "./pages/football.html";
-}
-function footballGridClick2 () {
-  location.href = "./pages/football-two.html";
+  localStorage.setItem("chosenItem", "All");
 }
 
 function baseballGridClick () {
   location.href = "./pages/baseball.html";
+  localStorage.setItem("chosenItem", "All");
 }
 
 function trackGridClick () {
   location.href = "./pages/track-field.html";
+  localStorage.setItem("chosenItem", "All");
 }
 
 function chairsGridClick () {
   location.href = "./pages/chairs-stools.html";
+  localStorage.setItem("chosenItem", "All");
 }
 
 function paddingGridClick () {
   location.href = "./pages/padding.html";
+  localStorage.setItem("chosenItem", "All");
 }
 
 function windscreenGridClick () {
   location.href = "./pages/windscreen.html";
+  localStorage.setItem("chosenItem", "All");
 }
 
 function strengthGridClick () {
   location.href = "./pages/strength-conditioning.html";
+  localStorage.setItem("chosenItem", "All");
 }
 
 function gymGridClick () {
   location.href = "./pages/gym.html";
+  localStorage.setItem("chosenItem", "All");
 }
 
 // Rep locator selection and population
@@ -123,22 +128,52 @@ function focusTackleWheels() {
   chosenItem = localStorage.getItem("chosenItem");
 }
 
-if(document.referrer = "https://fisherathletic.github.io/website/index.html") {
+function focusFbShields() {
+  location.href = "./pages/football.html";
+  localStorage.setItem("chosenItem", "shields");
+  chosenItem = localStorage.getItem("chosenItem");
+}
+
+function focusFbPracticeItems() {
+  location.href = "./pages/football.html";
+  localStorage.setItem("chosenItem", "practiceItems");
+  chosenItem = localStorage.getItem("chosenItem");
+}
+
+function focusFbSidelineMarkersPylons() {
+  location.href = "./pages/football.html";
+  localStorage.setItem("chosenItem", "sidelineMarkersPylons");
+  chosenItem = localStorage.getItem("chosenItem");
+}
+
+function focusFbSleds() {
+  location.href = "./pages/football.html";
+  localStorage.setItem("chosenItem", "sleds");
+  chosenItem = localStorage.getItem("chosenItem");
+}
+
+function focusFbGoalPostPads() {
+  location.href = "./pages/football.html";
+  localStorage.setItem("chosenItem", "goalPostPads");
+  chosenItem = localStorage.getItem("chosenItem");
+}
+
+function focusFbDummies() {
+  location.href = "./pages/football.html";
+  localStorage.setItem("chosenItem", "dummies");
+  chosenItem = localStorage.getItem("chosenItem");
+}
+
 try {
-  if(chosenItem == "tackleWheels") {
-    document.getElementById("football-products-filter-selection").value = "tackleWheels";
-    footballFiltering();
+  if(chosenItem != null) {
+    document.getElementById("football-products-filter-selection").value = chosenItem;
     console.log("this should be working...")
   }
 } catch(err) {
-  console.log("this isn't working...")
-}
-} else {
-  document.getElementById("football-products-filter-selection").value = "All";
-  footballFiltering();
+  console.log("Tackle wheels are awesome!")
 };
 
-console.log("Checking for referrer " + document.referrer);
+document.getElementById("football-page-link").addEventListener("click", footballGridClick);
 
 //---------------------------------------------------------------------------------------------------------------------
 
