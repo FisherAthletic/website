@@ -391,7 +391,7 @@ body {
   color: white;
   background-color: #2d323a;
   border-radius: 0.3rem;
-  overflow-y: scroll !important;
+  /* overflow-y: scroll !important; */
   max-height: 600px !important;
   grid-area: featured-products;
 }
