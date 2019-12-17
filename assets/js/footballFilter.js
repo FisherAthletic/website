@@ -22,15 +22,6 @@ document.body.classList.add("no-scroll");
 // main function that handles the filtering
 function footballFiltering() {
   footballDropdownValue = document.getElementById("football-products-filter-selection").value;
-  footballUpdateDropdownValue();
-  footballUpdateNumberOfPagesNeeded();
-  footballUpdateSelectedPageValue();
-  footballDisplayPagesNeeded();
-  footballDisplayProducts();
-  footballDisplayAmount();
-  if(footballDropdownValue == "All") {
-    paginationFocus();
-  }
   function loadOnOff() {
     var updateDoneLoadingInt = setInterval(updateDoneLoading, 50);
     function updateDoneLoading() {
@@ -50,6 +41,15 @@ function footballFiltering() {
     };
   }
   loadOnOff();
+  footballUpdateDropdownValue();
+  footballUpdateNumberOfPagesNeeded();
+  footballUpdateSelectedPageValue();
+  footballDisplayPagesNeeded();
+  footballDisplayProducts();
+  footballDisplayAmount();
+  if(footballDropdownValue == "All") {
+    paginationFocus();
+  }
 };
 
 // function that only allows 5 pagination buttons to be shown at once
