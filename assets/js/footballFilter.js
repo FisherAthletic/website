@@ -31,8 +31,6 @@ function footballFiltering() {
         document.body.classList.remove("no-scroll");
         document.getElementById("loading-page").style.display = "none";
         stopLoadOnOffInt();
-      } else {
-        console.log("loading...")
       }
     };
     // function to stop interval that checks is product 13 is visible
@@ -657,26 +655,79 @@ document.getElementById("football-products-filter-selection").addEventListener("
 //   footballFiltering();
 // }
 
-// var chosenItem = localStorage.getItem("chosenItem");
+// pagination next
+function fbPaginationNext() {
+  footballSelectedPageValue = (Number(footballSelectedPageValue) + 1);
+  if(footballSelectedPageValue == 19) {
+    document.getElementById("paginationNextBtn").classList.add("disabled");
+    document.getElementById("paginationNextBtn").removeEventListener("click", fbPaginationNext);
+  }
+  for(i = 0; i < footballPagination.length; i++) {
+    if(footballPagination[i].attributes.value.value == footballSelectedPageValue) {
+      footballPagination[i].classList.add("active");
+    } else {
+      footballPagination[i].classList.remove("active");
+    }
+  }
+  footballFiltering();
+};
 
-// if(chosenItem != null) {
-//   try {
-//     document.getElementById("football-products-filter-selection").value = chosenItem;
-//     footballFiltering();
-//   } catch(err) {
-//     console.log("Dropdown value was not changed")
-//   }
-// } else {
-//   console.log("chosenItem value is null")
-// };
+function fbPagNextOnOff() {
+  if(footballSelectedPageValue != 19) {
+    document.getElementById("paginationNextBtn").classList.remove("disabled");
+    document.getElementById("paginationNextBtn").addEventListener("click", fbPaginationNext);
+  } else {
+    document.getElementById("paginationNextBtn").classList.add("disabled");
+    document.getElementById("paginationNextBtn").removeEventListener("click", fbPaginationNext);
+  }
+};
 
-// try {
-//   if(chosenItem != "null") {
-//     document.getElementById("football-products-filter-selection").value = chosenItem;
-//     footballFiltering();
-//     console.log("this should be working...")
+document.getElementById("paginationNextBtn").addEventListener("click", fbPaginationNext);
+document.getElementById("football-pagination").addEventListener("click", fbPagNextOnOff);
+
+// pagination previous
+if(footballSelectedPageValue == 1) {
+  document.getElementById("paginationPrevBtn").classList.add("disabled");
+}
+function fbPaginationPrev() {
+  footballSelectedPageValue = (Number(footballSelectedPageValue) - 1);
+  if(footballSelectedPageValue == 1) {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", fbPaginationPrev);
+  }
+  for(i = 0; i < footballPagination.length; i++) {
+    if(footballPagination[i].attributes.value.value == footballSelectedPageValue) {
+      footballPagination[i].classList.add("active");
+    } else {
+      footballPagination[i].classList.remove("active");
+    }
+  }
+  footballFiltering();
+};
+
+function fbPagPrevOnOff() {
+  if(footballSelectedPageValue != 1) {
+    document.getElementById("paginationPrevBtn").classList.remove("disabled");
+    document.getElementById("paginationPrevBtn").addEventListener("click", fbPaginationPrev);
+  } else {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", fbPaginationPrev);
+  }
+};
+
+document.getElementById("paginationPrevBtn").addEventListener("click", fbPaginationPrev);
+document.getElementById("football-pagination").addEventListener("click", fbPagPrevOnOff);
+
+
+// function footballResetPageSelection() { 
+//   console.log("Filter selection was changed. Reset function is now running...")
+//     for(i = 0; i < footballPagination.length; i++) {
+//     if(footballPagination[i].classList.contains("page1")) {
+//       footballPagination[i].classList.add("active");
+//       document.getElementById("page1").checked = true;
+//     } else {
+//       footballPagination[i].classList.remove("active");
+//     }
 //   }
-// } catch(err) {
-//   chosenItem = "All";
-//   footballFiltering();
+//   footballSelectedPageValue = 1;
 // };
