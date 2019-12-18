@@ -23,13 +23,6 @@ document.body.classList.add("no-scroll");
 // main function that handles the filtering
 function trackFieldFiltering() {
   trkDropdownValue = document.getElementById("track-field-products-filter-selection").value;
-  trkUpdateDropdownValue();
-  trkUpdateNumberOfPagesNeeded();
-  trkUpdateSelectedPageValue();
-  trkDisplayPagesNeeded();
-  trkDisplayProducts();
-  trkDisplayAmount();
-
   function loadOnOff() {
     var updateDoneLoadingInt = setInterval(updateDoneLoading, 50);
     function updateDoneLoading() {
@@ -39,8 +32,6 @@ function trackFieldFiltering() {
         document.body.classList.remove("no-scroll");
         document.getElementById("loading-page").style.display = "none";
         stopLoadOnOffInt();
-      } else {
-        console.log("loading...")
       }
     };
     function stopLoadOnOffInt() {
@@ -48,6 +39,12 @@ function trackFieldFiltering() {
     };
   }
   loadOnOff();
+  trkUpdateDropdownValue();
+  trkUpdateNumberOfPagesNeeded();
+  trkUpdateSelectedPageValue();
+  trkDisplayPagesNeeded();
+  trkDisplayProducts();
+  trkDisplayAmount();
 };
 
 // function checks how many pages are needed by checking the amount of products in the current filter selection and the product total by 12
@@ -212,3 +209,97 @@ function trkCheckPageOne() {
 
 document.getElementById("track-field-pagination").addEventListener("click", trackFieldFiltering);
 document.getElementById("track-field-products-filter-selection").addEventListener("onchange", trackFieldFiltering);
+
+// pagination next
+function trkPaginationNext() {
+  trkSelectedPageValue = (Number(trkSelectedPageValue) + 1);
+  if(trkSelectedPageValue == trkNumberOfPagesNeeded) {
+    document.getElementById("paginationNextBtn").classList.add("disabled");
+    document.getElementById("paginationNextBtn").removeEventListener("click", trkPaginationNext);
+  }
+  for(i = 0; i < trkPagination.length; i++) {
+    if(trkPagination[i].attributes.value.value == trkSelectedPageValue) {
+      trkPagination[i].classList.add("active");
+    } else {
+      trkPagination[i].classList.remove("active");
+    }
+  }
+  if(trkSelectedPageValue != 1) {
+    document.getElementById("paginationPrevBtn").classList.remove("disabled");
+    document.getElementById("paginationPrevBtn").addEventListener("click", trkPaginationPrev);
+  } else {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", trkPaginationPrev);
+  }
+  trackFieldFiltering();
+};
+
+function trkPagNextOnOff() {
+  if(trkSelectedPageValue != trkNumberOfPagesNeeded) {
+    document.getElementById("paginationNextBtn").classList.remove("disabled");
+    document.getElementById("paginationNextBtn").addEventListener("click", trkPaginationNext);
+  } else {
+    document.getElementById("paginationNextBtn").classList.add("disabled");
+    document.getElementById("paginationNextBtn").removeEventListener("click", trkPaginationNext);
+  }
+};
+
+document.getElementById("paginationNextBtn").addEventListener("click", trkPaginationNext);
+document.getElementById("track-field-pagination").addEventListener("click", trkPagNextOnOff);
+
+document.getElementById("paginationPrevBtn").addEventListener("click", trkPaginationPrev);
+document.getElementById("track-field-pagination").addEventListener("click", trkPagPrevOnOff);
+
+// pagination previous
+// This if statement disables the prev btn if page 1 is selected
+if(trkSelectedPageValue == 1) {
+  document.getElementById("paginationPrevBtn").classList.add("disabled");
+  document.getElementById("paginationPrevBtn").removeEventListener("click", trkPaginationPrev);
+};
+
+function trkPaginationPrev() {
+  trkSelectedPageValue = (Number(trkSelectedPageValue) - 1);
+  if(trkSelectedPageValue == 1) {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", trkPaginationPrev);
+  }
+  for(i = 0; i < trkPagination.length; i++) {
+    if(trkPagination[i].attributes.value.value == trkSelectedPageValue) {
+      trkPagination[i].classList.add("active");
+    } else {
+      trkPagination[i].classList.remove("active");
+    }
+    if(trkSelectedPageValue != trkNumberOfPagesNeeded) {
+      document.getElementById("paginationNextBtn").classList.remove("disabled");
+      document.getElementById("paginationNextBtn").addEventListener("click", trkPaginationNext);
+    }
+  }
+  trackFieldFiltering();
+};
+
+function trkPagPrevOnOff() {
+  if(trkSelectedPageValue != 1) {
+    document.getElementById("paginationPrevBtn").classList.remove("disabled");
+    document.getElementById("paginationPrevBtn").addEventListener("click", trkPaginationPrev);
+  } else {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", trkPaginationPrev);
+  }
+};
+
+function resetPagPrevNextBtn() {
+  document.getElementById("paginationNextBtn").addEventListener("click", trkPaginationNext);
+  document.getElementById("paginationNextBtn").classList.remove("disabled");
+
+  document.getElementById("paginationPrevBtn").removeEventListener("click", trkPaginationPrev);
+  document.getElementById("paginationPrevBtn").classList.add("disabled");
+
+  if(trkNumberOfPagesNeeded == 1) {
+    document.getElementById("paginationPrevBtn").style.display = "none";
+    document.getElementById("paginationNextBtn").style.display = "none";
+  } else {
+    document.getElementById("paginationPrevBtn").style.display = "flex";
+    document.getElementById("paginationNextBtn").style.display = "flex";
+  }
+};
+document.getElementById("track-field-products-filter-selection").addEventListener("change", resetPagPrevNextBtn);
