@@ -198,3 +198,97 @@ function strCheckPageOne() {
 
 document.getElementById("strength-pagination").addEventListener("click", strengthConditioningFiltering);
 document.getElementById("strength-products-filter-selection").addEventListener("onchange", strengthConditioningFiltering);
+
+// pagination next
+function strPaginationNext() {
+  strSelectedPageValue = (Number(strSelectedPageValue) + 1);
+  if(strSelectedPageValue == strNumberOfPagesNeeded) {
+    document.getElementById("paginationNextBtn").classList.add("disabled");
+    document.getElementById("paginationNextBtn").removeEventListener("click", strPaginationNext);
+  }
+  for(i = 0; i < strPagination.length; i++) {
+    if(strPagination[i].attributes.value.value == strSelectedPageValue) {
+      strPagination[i].classList.add("active");
+    } else {
+      strPagination[i].classList.remove("active");
+    }
+  }
+  if(strSelectedPageValue != 1) {
+    document.getElementById("paginationPrevBtn").classList.remove("disabled");
+    document.getElementById("paginationPrevBtn").addEventListener("click", strPaginationPrev);
+  } else {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", strPaginationPrev);
+  }
+  strengthConditioningFiltering();
+};
+
+function strPagNextOnOff() {
+  if(strSelectedPageValue != strNumberOfPagesNeeded) {
+    document.getElementById("paginationNextBtn").classList.remove("disabled");
+    document.getElementById("paginationNextBtn").addEventListener("click", strPaginationNext);
+  } else {
+    document.getElementById("paginationNextBtn").classList.add("disabled");
+    document.getElementById("paginationNextBtn").removeEventListener("click", strPaginationNext);
+  }
+};
+
+document.getElementById("paginationNextBtn").addEventListener("click", strPaginationNext);
+document.getElementById("strength-pagination").addEventListener("click", strPagNextOnOff);
+
+document.getElementById("paginationPrevBtn").addEventListener("click", strPaginationPrev);
+document.getElementById("strength-pagination").addEventListener("click", strPagPrevOnOff);
+
+// pagination previous
+// This if statement disables the prev btn if page 1 is selected
+if(strSelectedPageValue == 1) {
+  document.getElementById("paginationPrevBtn").classList.add("disabled");
+  document.getElementById("paginationPrevBtn").removeEventListener("click", strPaginationPrev);
+};
+
+function strPaginationPrev() {
+  strSelectedPageValue = (Number(strSelectedPageValue) - 1);
+  if(strSelectedPageValue == 1) {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", strPaginationPrev);
+  }
+  for(i = 0; i < strPagination.length; i++) {
+    if(strPagination[i].attributes.value.value == strSelectedPageValue) {
+      strPagination[i].classList.add("active");
+    } else {
+      strPagination[i].classList.remove("active");
+    }
+    if(strSelectedPageValue != strNumberOfPagesNeeded) {
+      document.getElementById("paginationNextBtn").classList.remove("disabled");
+      document.getElementById("paginationNextBtn").addEventListener("click", strPaginationNext);
+    }
+  }
+  strengthConditioningFiltering();
+};
+
+function strPagPrevOnOff() {
+  if(strSelectedPageValue != 1) {
+    document.getElementById("paginationPrevBtn").classList.remove("disabled");
+    document.getElementById("paginationPrevBtn").addEventListener("click", strPaginationPrev);
+  } else {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", strPaginationPrev);
+  }
+};
+
+function resetPagPrevNextBtn() {
+  document.getElementById("paginationNextBtn").addEventListener("click", strPaginationNext);
+  document.getElementById("paginationNextBtn").classList.remove("disabled");
+
+  document.getElementById("paginationPrevBtn").removeEventListener("click", strPaginationPrev);
+  document.getElementById("paginationPrevBtn").classList.add("disabled");
+
+  if(strNumberOfPagesNeeded == 1) {
+    document.getElementById("paginationPrevBtn").style.display = "none";
+    document.getElementById("paginationNextBtn").style.display = "none";
+  } else {
+    document.getElementById("paginationPrevBtn").style.display = "flex";
+    document.getElementById("paginationNextBtn").style.display = "flex";
+  }
+};
+document.getElementById("strength-products-filter-selection").addEventListener("change", resetPagPrevNextBtn);
