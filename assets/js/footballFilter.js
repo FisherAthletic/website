@@ -641,8 +641,13 @@ function footballShowPage19() {
 function footballCheckPageOne() {
     if(footballPagination[1].style.display == "none") {
       footballPagination[0].style.display = "none";
+      // remove prev and next buttons as well
+      document.getElementById("paginationNextBtn").style.display = "none";
+      document.getElementById("paginationPrevBtn").style.display = "none";
     } else {
       footballPagination[0].style.display = "flex";
+      document.getElementById("paginationNextBtn").style.display = "flex";
+      document.getElementById("paginationPrevBtn").style.display = "flex";
     }
   };
 
@@ -658,7 +663,7 @@ document.getElementById("football-products-filter-selection").addEventListener("
 // pagination next
 function fbPaginationNext() {
   footballSelectedPageValue = (Number(footballSelectedPageValue) + 1);
-  if(footballSelectedPageValue == 19) {
+  if(footballSelectedPageValue == footballNumberOfPagesNeeded) {
     document.getElementById("paginationNextBtn").classList.add("disabled");
     document.getElementById("paginationNextBtn").removeEventListener("click", fbPaginationNext);
   }
@@ -669,11 +674,18 @@ function fbPaginationNext() {
       footballPagination[i].classList.remove("active");
     }
   }
+  if(footballSelectedPageValue != 1) {
+    document.getElementById("paginationPrevBtn").classList.remove("disabled");
+    document.getElementById("paginationPrevBtn").addEventListener("click", fbPaginationPrev);
+  } else {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", fbPaginationPrev);
+  }
   footballFiltering();
 };
 
 function fbPagNextOnOff() {
-  if(footballSelectedPageValue != 19) {
+  if(footballSelectedPageValue != footballNumberOfPagesNeeded) {
     document.getElementById("paginationNextBtn").classList.remove("disabled");
     document.getElementById("paginationNextBtn").addEventListener("click", fbPaginationNext);
   } else {
@@ -685,10 +697,16 @@ function fbPagNextOnOff() {
 document.getElementById("paginationNextBtn").addEventListener("click", fbPaginationNext);
 document.getElementById("football-pagination").addEventListener("click", fbPagNextOnOff);
 
+document.getElementById("paginationPrevBtn").addEventListener("click", fbPaginationPrev);
+document.getElementById("football-pagination").addEventListener("click", fbPagPrevOnOff);
+
 // pagination previous
+// This if statement disables the prev btn if page 1 is selected
 if(footballSelectedPageValue == 1) {
   document.getElementById("paginationPrevBtn").classList.add("disabled");
-}
+  document.getElementById("paginationPrevBtn").removeEventListener("click", fbPaginationPrev);
+};
+
 function fbPaginationPrev() {
   footballSelectedPageValue = (Number(footballSelectedPageValue) - 1);
   if(footballSelectedPageValue == 1) {
@@ -701,7 +719,13 @@ function fbPaginationPrev() {
     } else {
       footballPagination[i].classList.remove("active");
     }
+    if(footballSelectedPageValue != footballNumberOfPagesNeeded) {
+      document.getElementById("paginationNextBtn").classList.remove("disabled");
+      document.getElementById("paginationNextBtn").addEventListener("click", fbPaginationNext);
+    }
   }
+  // document.getElementById("paginationNextBtn").classList.remove("disabled");
+  // document.getElementById("paginationPrevBtn").addEventListener("click", fbPaginationPrev);
   footballFiltering();
 };
 
@@ -715,8 +739,14 @@ function fbPagPrevOnOff() {
   }
 };
 
-document.getElementById("paginationPrevBtn").addEventListener("click", fbPaginationPrev);
-document.getElementById("football-pagination").addEventListener("click", fbPagPrevOnOff);
+function resetPagPrevNextBtn() {
+  document.getElementById("paginationNextBtn").addEventListener("click", fbPaginationNext);
+  document.getElementById("paginationNextBtn").classList.remove("disabled");
+
+  document.getElementById("paginationPrevBtn").removeEventListener("click", fbPaginationPrev);
+  document.getElementById("paginationPrevBtn").classList.add("disabled");
+}
+document.getElementById("football-products-filter-selection").addEventListener("change", resetPagPrevNextBtn);
 
 
 // function footballResetPageSelection() { 
