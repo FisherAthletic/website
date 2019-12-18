@@ -85,7 +85,6 @@
                 <option value="beamPadding">Beam Padding</option>
                 <option value="fieldPadding">Field Padding</option>
                 <option value="removablePadding">Removable Padding</option>
-                <option value="stagePadding">Stage Padding</option>
                 <option value="wallPadding">Wall Padding</option>
             </select>
           </div>
@@ -95,6 +94,8 @@
       <!-- Dynamic Pagination -->
       <div id="product-pagination">
         <div class="btn-group btn-group-toggle" id="padding-pagination" data-toggle="buttons">
+          <button type="button" class="btn btn-danger prev-btn" id="paginationPrevBtn"><</button>
+
           <label class="btn btn-danger padding-pagination active page1" value="1">
             <input type="radio" name="options" id="page1" autocomplete="off"> 1
           </label>
@@ -102,6 +103,8 @@
             <input type="radio" name="options" id="page2" autocomplete="off"> 2
           </label>
         </div>
+
+        <button type="button" class="btn btn-danger next-btn" id="paginationNextBtn">></button>
         </div>
 
         <!-- Track and field products -->

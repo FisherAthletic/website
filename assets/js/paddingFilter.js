@@ -23,13 +23,6 @@ document.body.classList.add("no-scroll");
 // main function that handles the filtering
 function paddingFiltering() {
   paddingDropdownValue = document.getElementById("padding-products-filter-selection").value;
-  paddingUpdateDropdownValue();
-  paddingUpdateNumberOfPagesNeeded();
-  paddingUpdateSelectedPageValue();
-  paddingDisplayPagesNeeded();
-  paddingDisplayProducts();
-  paddingDisplayAmount();
-
   function loadOnOff() {
     var updateDoneLoadingInt = setInterval(updateDoneLoading, 50);
     function updateDoneLoading() {
@@ -39,8 +32,6 @@ function paddingFiltering() {
         document.body.classList.remove("no-scroll");
         document.getElementById("loading-page").style.display = "none";
         stopLoadOnOffInt();
-      } else {
-        console.log("loading...")
       }
     };
     function stopLoadOnOffInt() {
@@ -48,6 +39,12 @@ function paddingFiltering() {
     };
   }
   loadOnOff();
+  paddingUpdateDropdownValue();
+  paddingUpdateNumberOfPagesNeeded();
+  paddingUpdateSelectedPageValue();
+  paddingDisplayPagesNeeded();
+  paddingDisplayProducts();
+  paddingDisplayAmount();
 };
 
 // function checks how many pages are needed by checking the amount of products in the current filter selection and the product total by 12
@@ -170,3 +167,97 @@ function paddingCheckPageOne() {
 
 document.getElementById("padding-pagination").addEventListener("click", paddingFiltering);
 document.getElementById("padding-products-filter-selection").addEventListener("onchange", paddingFiltering);
+
+// pagination next
+function paddingPaginationNext() {
+  paddingSelectedPageValue = (Number(paddingSelectedPageValue) + 1);
+  if(paddingSelectedPageValue == paddingNumberOfPagesNeeded) {
+    document.getElementById("paginationNextBtn").classList.add("disabled");
+    document.getElementById("paginationNextBtn").removeEventListener("click", paddingPaginationNext);
+  }
+  for(i = 0; i < paddingPagination.length; i++) {
+    if(paddingPagination[i].attributes.value.value == paddingSelectedPageValue) {
+      paddingPagination[i].classList.add("active");
+    } else {
+      paddingPagination[i].classList.remove("active");
+    }
+  }
+  if(paddingSelectedPageValue != 1) {
+    document.getElementById("paginationPrevBtn").classList.remove("disabled");
+    document.getElementById("paginationPrevBtn").addEventListener("click", paddingPaginationPrev);
+  } else {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", paddingPaginationPrev);
+  }
+  paddingFiltering();
+};
+
+function paddingPagNextOnOff() {
+  if(paddingSelectedPageValue != paddingNumberOfPagesNeeded) {
+    document.getElementById("paginationNextBtn").classList.remove("disabled");
+    document.getElementById("paginationNextBtn").addEventListener("click", paddingPaginationNext);
+  } else {
+    document.getElementById("paginationNextBtn").classList.add("disabled");
+    document.getElementById("paginationNextBtn").removeEventListener("click", paddingPaginationNext);
+  }
+};
+
+document.getElementById("paginationNextBtn").addEventListener("click", paddingPaginationNext);
+document.getElementById("padding-pagination").addEventListener("click", paddingPagNextOnOff);
+
+document.getElementById("paginationPrevBtn").addEventListener("click", paddingPaginationPrev);
+document.getElementById("padding-pagination").addEventListener("click", paddingPagPrevOnOff);
+
+// pagination previous
+// This if statement disables the prev btn if page 1 is selected
+if(paddingSelectedPageValue == 1) {
+  document.getElementById("paginationPrevBtn").classList.add("disabled");
+  document.getElementById("paginationPrevBtn").removeEventListener("click", paddingPaginationPrev);
+};
+
+function paddingPaginationPrev() {
+  paddingSelectedPageValue = (Number(paddingSelectedPageValue) - 1);
+  if(paddingSelectedPageValue == 1) {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", paddingPaginationPrev);
+  }
+  for(i = 0; i < paddingPagination.length; i++) {
+    if(paddingPagination[i].attributes.value.value == paddingSelectedPageValue) {
+      paddingPagination[i].classList.add("active");
+    } else {
+      paddingPagination[i].classList.remove("active");
+    }
+    if(paddingSelectedPageValue != paddingNumberOfPagesNeeded) {
+      document.getElementById("paginationNextBtn").classList.remove("disabled");
+      document.getElementById("paginationNextBtn").addEventListener("click", paddingPaginationNext);
+    }
+  }
+  paddingFiltering();
+};
+
+function paddingPagPrevOnOff() {
+  if(paddingSelectedPageValue != 1) {
+    document.getElementById("paginationPrevBtn").classList.remove("disabled");
+    document.getElementById("paginationPrevBtn").addEventListener("click", paddingPaginationPrev);
+  } else {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", paddingPaginationPrev);
+  }
+};
+
+function resetPagPrevNextBtn() {
+  document.getElementById("paginationNextBtn").addEventListener("click", paddingPaginationNext);
+  document.getElementById("paginationNextBtn").classList.remove("disabled");
+
+  document.getElementById("paginationPrevBtn").removeEventListener("click", paddingPaginationPrev);
+  document.getElementById("paginationPrevBtn").classList.add("disabled");
+
+  if(paddingNumberOfPagesNeeded == 1) {
+    document.getElementById("paginationPrevBtn").style.display = "none";
+    document.getElementById("paginationNextBtn").style.display = "none";
+  } else {
+    document.getElementById("paginationPrevBtn").style.display = "flex";
+    document.getElementById("paginationNextBtn").style.display = "flex";
+  }
+};
+document.getElementById("padding-products-filter-selection").addEventListener("change", resetPagPrevNextBtn);
