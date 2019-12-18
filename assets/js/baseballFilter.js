@@ -23,13 +23,6 @@ document.body.classList.add("no-scroll");
 // main function that handles the filtering
 function baseballFiltering() {
   baseballDropdownValue = document.getElementById("baseball-products-filter-selection").value;
-  baseballUpdateDropdownValue();
-  baseballUpdateNumberOfPagesNeeded();
-  baseballUpdateSelectedPageValue();
-  baseballDisplayPagesNeeded();
-  baseballDisplayProducts();
-  baseballDisplayAmount();
-
   function loadOnOff() {
     var updateDoneLoadingInt = setInterval(updateDoneLoading, 50);
     function updateDoneLoading() {
@@ -39,8 +32,6 @@ function baseballFiltering() {
         document.body.classList.remove("no-scroll");
         document.getElementById("loading-page").style.display = "none";
         stopLoadOnOffInt();
-      } else {
-        console.log("loading...")
       }
     };
     function stopLoadOnOffInt() {
@@ -48,6 +39,12 @@ function baseballFiltering() {
     };
   }
   loadOnOff();
+  baseballUpdateDropdownValue();
+  baseballUpdateNumberOfPagesNeeded();
+  baseballUpdateSelectedPageValue();
+  baseballDisplayPagesNeeded();
+  baseballDisplayProducts();
+  baseballDisplayAmount();
 };
 
 // function checks how many pages are needed by checking the amount of products in the current filter selection and the product total by 12
@@ -212,3 +209,97 @@ function baseballCheckPageOne() {
 
 document.getElementById("baseball-pagination").addEventListener("click", baseballFiltering);
 document.getElementById("baseball-products-filter-selection").addEventListener("onchange", baseballFiltering);
+
+// pagination next
+function bbPaginationNext() {
+  baseballSelectedPageValue = (Number(baseballSelectedPageValue) + 1);
+  if(baseballSelectedPageValue == baseballNumberOfPagesNeeded) {
+    document.getElementById("paginationNextBtn").classList.add("disabled");
+    document.getElementById("paginationNextBtn").removeEventListener("click", bbPaginationNext);
+  }
+  for(i = 0; i < baseballPagination.length; i++) {
+    if(baseballPagination[i].attributes.value.value == baseballSelectedPageValue) {
+      baseballPagination[i].classList.add("active");
+    } else {
+      baseballPagination[i].classList.remove("active");
+    }
+  }
+  if(baseballSelectedPageValue != 1) {
+    document.getElementById("paginationPrevBtn").classList.remove("disabled");
+    document.getElementById("paginationPrevBtn").addEventListener("click", bbPaginationPrev);
+  } else {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", bbPaginationPrev);
+  }
+  baseballFiltering();
+};
+
+function bbPagNextOnOff() {
+  if(baseballSelectedPageValue != baseballNumberOfPagesNeeded) {
+    document.getElementById("paginationNextBtn").classList.remove("disabled");
+    document.getElementById("paginationNextBtn").addEventListener("click", bbPaginationNext);
+  } else {
+    document.getElementById("paginationNextBtn").classList.add("disabled");
+    document.getElementById("paginationNextBtn").removeEventListener("click", bbPaginationNext);
+  }
+};
+
+document.getElementById("paginationNextBtn").addEventListener("click", bbPaginationNext);
+document.getElementById("baseball-pagination").addEventListener("click", bbPagNextOnOff);
+
+document.getElementById("paginationPrevBtn").addEventListener("click", bbPaginationPrev);
+document.getElementById("baseball-pagination").addEventListener("click", bbPagPrevOnOff);
+
+// pagination previous
+// This if statement disables the prev btn if page 1 is selected
+if(baseballSelectedPageValue == 1) {
+  document.getElementById("paginationPrevBtn").classList.add("disabled");
+  document.getElementById("paginationPrevBtn").removeEventListener("click", bbPaginationPrev);
+};
+
+function bbPaginationPrev() {
+  baseballSelectedPageValue = (Number(baseballSelectedPageValue) - 1);
+  if(baseballSelectedPageValue == 1) {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", bbPaginationPrev);
+  }
+  for(i = 0; i < baseballPagination.length; i++) {
+    if(baseballPagination[i].attributes.value.value == baseballSelectedPageValue) {
+      baseballPagination[i].classList.add("active");
+    } else {
+      baseballPagination[i].classList.remove("active");
+    }
+    if(baseballSelectedPageValue != baseballNumberOfPagesNeeded) {
+      document.getElementById("paginationNextBtn").classList.remove("disabled");
+      document.getElementById("paginationNextBtn").addEventListener("click", bbPaginationNext);
+    }
+  }
+  baseballFiltering();
+};
+
+function bbPagPrevOnOff() {
+  if(baseballSelectedPageValue != 1) {
+    document.getElementById("paginationPrevBtn").classList.remove("disabled");
+    document.getElementById("paginationPrevBtn").addEventListener("click", bbPaginationPrev);
+  } else {
+    document.getElementById("paginationPrevBtn").classList.add("disabled");
+    document.getElementById("paginationPrevBtn").removeEventListener("click", bbPaginationPrev);
+  }
+};
+
+function resetPagPrevNextBtn() {
+  document.getElementById("paginationNextBtn").addEventListener("click", bbPaginationNext);
+  document.getElementById("paginationNextBtn").classList.remove("disabled");
+
+  document.getElementById("paginationPrevBtn").removeEventListener("click", bbPaginationPrev);
+  document.getElementById("paginationPrevBtn").classList.add("disabled");
+
+  if(baseballNumberOfPagesNeeded == 1) {
+    document.getElementById("paginationPrevBtn").style.display = "none";
+    document.getElementById("paginationNextBtn").style.display = "none";
+  } else {
+    document.getElementById("paginationPrevBtn").style.display = "flex";
+    document.getElementById("paginationNextBtn").style.display = "flex";
+  }
+};
+document.getElementById("baseball-products-filter-selection").addEventListener("change", resetPagPrevNextBtn);

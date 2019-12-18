@@ -173,6 +173,7 @@ try {
   console.log("Tackle wheels are awesome!")
 };
 
+// run footballGridClick function anytime the football link from the navbar is clicked
 document.getElementById("football-page-link").addEventListener("click", footballGridClick);
 
 //---------------------------------------------------------------------------------------------------------------------

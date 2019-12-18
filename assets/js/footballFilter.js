@@ -654,12 +654,6 @@ function footballCheckPageOne() {
 document.getElementById("football-pagination").addEventListener("click", footballFiltering);
 document.getElementById("football-products-filter-selection").addEventListener("onchange", footballFiltering);
 
-// testing dropdown changer
-// function changeDropdown() {
-//   document.getElementById("football-products-filter-selection").value = "blasters";
-//   footballFiltering();
-// }
-
 // pagination next
 function fbPaginationNext() {
   footballSelectedPageValue = (Number(footballSelectedPageValue) + 1);
