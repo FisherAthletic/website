@@ -39,8 +39,6 @@ function strengthConditioningFiltering() {
         document.body.classList.remove("no-scroll");
         document.getElementById("loading-page").style.display = "none";
         stopLoadOnOffInt();
-      } else {
-        console.log("loading...")
       }
     };
     function stopLoadOnOffInt() {
