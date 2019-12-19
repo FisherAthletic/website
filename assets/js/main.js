@@ -177,8 +177,9 @@ try {
 document.getElementById("football-page-link").addEventListener("click", footballGridClick);
 
 // store the input search bar as a variable
-var searchInput = document.getElementById("searchInput");
-searchInput.addEventListener("keyup", function(event) {
+var searchInputBar = document.getElementById("searchInputBar");
+
+searchInputBar.addEventListener("keyup", function(event) {
   if(event.keyCode === 13) {
     event.preventDefault();
     searchSite();
@@ -187,7 +188,390 @@ searchInput.addEventListener("keyup", function(event) {
 
 // search button on navbar
 function searchSite() {
-  alert("Testing 123!!")
+  switch(searchInputBar.value.toUpperCase()) {
+    case "AD SIGNS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "adSigns");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "AGILITY BOXES":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "agilityBoxes");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "BENCHES":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "benches");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "BLASTERS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "blasters");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "CARTS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "carts");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "CHAIN SETS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "chainIndicatorSets");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "INDICATOR SETS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "chainIndicatorSets");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "CHUTES":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "chutes");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "DUMMIES":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "dummies");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "FIELD ACCESSORIES":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "fieldAccessories");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "BAGS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "bags");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "GOAL POSTS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "goalPostPads");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "GOAL POST PADS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "goalPostPads");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "KICKING CAGES":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "kickingCages");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "LADDERS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "ladders");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "NETTING":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "netting");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "PRACTICE ITEMS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "practiceItems");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "SHIELDS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "shields");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "SIDELINE CAPES":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "sidelineCapes");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "SIDELINE COVERS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "sidelineCovers");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "SIDELINE MARKERS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "sidelineMarkersPylons");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "SIDELINE PYLONS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "sidelineMarkersPylons");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "SLEDS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "sleds");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "STENCILS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "stencils");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "TACKLE WHEELS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "tackleWheels");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "THIRD HAND":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "thirdHand");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "WRISTBANDS":
+      location.href = "./pages/football.html";
+      localStorage.setItem("chosenItem", "wristbands");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    // case "BENCHES":
+    //   location.href = "./pages/football.html";
+    //   localStorage.setItem("chosenItem", "benches");
+    //   chosenItem = localStorage.getItem("chosenItem");
+    //   break;
+    default:
+      alert("Sorry, item could not be found. Please try a different search.");
+  }
 }
 //---------------------------------------------------------------------------------------------------------------------
 
