@@ -33,6 +33,7 @@ body {
 #nav-search-icon {
   padding-right: 1rem;
   color: white;
+  cursor: pointer;
 }
 
 input[type=text] {
