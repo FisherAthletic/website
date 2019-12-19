@@ -176,6 +176,19 @@ try {
 // run footballGridClick function anytime the football link from the navbar is clicked
 document.getElementById("football-page-link").addEventListener("click", footballGridClick);
 
+// store the input search bar as a variable
+var searchInput = document.getElementById("searchInput");
+searchInput.addEventListener("keyup", function(event) {
+  if(event.keyCode === 13) {
+    event.preventDefault();
+    searchSite();
+  }
+})
+
+// search button on navbar
+function searchSite() {
+  alert("Testing 123!!")
+}
 //---------------------------------------------------------------------------------------------------------------------
 
   // Click event function that displays caption
