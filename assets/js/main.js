@@ -241,7 +241,7 @@ function searchSite() {
       break;
     case "BAGS":
       location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "bags");
+      localStorage.setItem("chosenItem", "gearEquipmentBags");
       chosenItem = localStorage.getItem("chosenItem");
       break;
     case "GOAL POSTS":
