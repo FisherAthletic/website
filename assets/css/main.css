@@ -30,6 +30,23 @@ body {
   border: none;
 }
 
+#nav-search-icon {
+  padding-right: 1rem;
+  color: white;
+}
+
+input[type=text] {
+  width: 6rem;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  border-radius: 5px;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 35%;
+}
+
 /* DROPDOWNS --------------------------------------------------------- */
 .dropdown-menu.show {
   background-color: #2d323a;
