@@ -36,11 +36,19 @@ body {
   cursor: pointer;
 }
 
+#nav-search-icon:hover {
+  color: #ED1C24;
+}
+
 input[type=text] {
-  width: 6rem;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  width: 35%;
+  /* -webkit-transition: width 0.4s ease-in-out; */
+  /* transition: width 0.4s ease-in-out; */
   border-radius: 5px;
+  background-color: #1A1D22;
+  color: white;
+  border-color: #ED1C24;
+  padding-left: 0.5rem;
 }
 
 /* When the input field gets focus, change its width to 100% */

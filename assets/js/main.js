@@ -186,6 +186,8 @@ searchInputBar.addEventListener("keyup", function(event) {
   }
 })
 
+document.getElementById("nav-search-icon").addEventListener("click", searchSite);
+
 // search button on navbar
 function searchSite() {
   switch(searchInputBar.value.toUpperCase()) {
@@ -323,6 +325,9 @@ function searchSite() {
       location.href = "./pages/football.html";
       localStorage.setItem("chosenItem", "wristbands");
       chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "":
+      alert("Input what you're looking for in the search bar.")
       break;
     // case "BENCHES":
     //   location.href = "./pages/football.html";
