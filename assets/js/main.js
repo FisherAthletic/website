@@ -213,179 +213,389 @@ function searchSite() {
       }
       break;
     case "AGILITY BOXES":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "agilityBoxes");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "agilityBoxes");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+          location.href = "./football.html";
+          localStorage.setItem("chosenItem", "agilityBoxes");
+          chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "BATTING CAGES":
-      location.href = "./pages/baseball.html";
-      localStorage.setItem("chosenItem", "battingCages");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/baseball.html";
+        localStorage.setItem("chosenItem", "battingCages");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+          location.href = "./baseball.html";
+          localStorage.setItem("chosenItem", "battingCages");
+          chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "BENCHES":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "benches");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "benches");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+          location.href = "./football.html";
+          localStorage.setItem("chosenItem", "benches");
+          chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "BLASTERS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "blasters");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "blasters");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+          location.href = "./football.html";
+          localStorage.setItem("chosenItem", "blasters");
+          chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "CARTS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "carts");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "carts");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+          location.href = "./football.html";
+          localStorage.setItem("chosenItem", "carts");
+          chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "CHAIN SETS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "chainIndicatorSets");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "chainIndicatorSets");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "chainIndicatorSets");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "DISTANCE MARKERS":
-      location.href = "./pages/baseball.html";
-      localStorage.setItem("chosenItem", "distanceMarkers");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/baseball.html";
+        localStorage.setItem("chosenItem", "distanceMarkers");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./baseball.html";
+        localStorage.setItem("chosenItem", "distanceMarkers");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "INDICATOR SETS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "chainIndicatorSets");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "chainIndicatorSets");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "chainIndicatorSets");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "CHUTES":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "chutes");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "chutes");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "chutes");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "DUMMIES":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "dummies");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "dummies");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "dummies");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "FENCE TOPS":
-      location.href = "./pages/baseball.html";
-      localStorage.setItem("chosenItem", "fenceTops");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/baseball.html";
+        localStorage.setItem("chosenItem", "fenceTops");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./baseball.html";
+        localStorage.setItem("chosenItem", "fenceTops");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "FIELD ACCESSORIES":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "fieldAccessories");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "fieldAccessories");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "fieldAccessories");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "FIELD COVERS":
-      location.href = "./pages/baseball.html";
-      localStorage.setItem("chosenItem", "fieldCoversMats");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/baseball.html";
+        localStorage.setItem("chosenItem", "fieldCoversMats");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./baseball.html";
+        localStorage.setItem("chosenItem", "fieldCoversMats");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "FIELD MATS":
-      location.href = "./pages/baseball.html";
-      localStorage.setItem("chosenItem", "fieldCoversMats");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/baseball.html";
+        localStorage.setItem("chosenItem", "fieldCoversMats");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./baseball.html";
+        localStorage.setItem("chosenItem", "fieldCoversMats");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "FOUL POLES":
-      location.href = "./pages/baseball.html";
-      localStorage.setItem("chosenItem", "foulPoles");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/baseball.html";
+        localStorage.setItem("chosenItem", "foulPoles");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./baseball.html";
+        localStorage.setItem("chosenItem", "foulPoles");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "BAGS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "gearEquipmentBags");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "gearEquipmentBags");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "gearEquipmentBags");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "GOAL POSTS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "goalPostPads");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "goalPostPads");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "goalPostPads");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "GOAL POST PADS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "goalPostPads");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "goalPostPads");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "goalPostPads");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "INFIELD SCREENS":
-      location.href = "./pages/baseball.html";
-      localStorage.setItem("chosenItem", "infieldScreens");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/baseball.html";
+        localStorage.setItem("chosenItem", "infieldScreens");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./baseball.html";
+        localStorage.setItem("chosenItem", "infieldScreens");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "KICKING CAGES":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "kickingCages");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "kickingCages");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "kickingCages");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "LADDERS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "ladders");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "ladders");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "ladders");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "NETTING":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "netting");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "netting");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "netting");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "PITCHING AIDS":
-      location.href = "./pages/baseball.html";
-      localStorage.setItem("chosenItem", "pitchingAids");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/baseball.html";
+        localStorage.setItem("chosenItem", "pitchingAids");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./baseball.html";
+        localStorage.setItem("chosenItem", "pitchingAids");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "PRACTICE ITEMS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "practiceItems");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "practiceItems");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "practiceItems");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "SHIELDS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "shields");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "shields");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "shields");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "SIDELINE CAPES":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "sidelineCapes");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "sidelineCapes");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "sidelineCapes");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "SIDELINE COVERS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "sidelineCovers");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "sidelineCovers");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "sidelineCovers");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "SIDELINE MARKERS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "sidelineMarkersPylons");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "sidelineMarkersPylons");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "sidelineMarkersPylons");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "SIDELINE PYLONS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "sidelineMarkersPylons");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "sidelineMarkersPylons");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "sidelineMarkersPylons");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "SLEDS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "sleds");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "sleds");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "sleds");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "STENCILS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "stencils");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "stencils");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "stencils");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "TACKLE WHEELS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "tackleWheels");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "tackleWheels");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "tackleWheels");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "THIRD HAND":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "thirdHand");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "thirdHand");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "thirdHand");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "WINDSCREEN":
-      location.href = "./pages/baseball.html";
-      localStorage.setItem("chosenItem", "windscreen");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/baseball.html";
+        localStorage.setItem("chosenItem", "windscreen");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./baseball.html";
+        localStorage.setItem("chosenItem", "windscreen");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "WRISTBANDS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "wristbands");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "wristbands");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "wristbands");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "":
       alert("Input what you're looking for in the search bar.")
