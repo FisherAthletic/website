@@ -202,7 +202,7 @@ document.getElementById("nav-search-icon").addEventListener("click", searchSite)
 function searchSite() {
   switch(searchInputBar.value.toUpperCase()) {
     case "AD SIGNS":
-      if(document.location.href == "https://fisherathletic.github.io/website/") {
+      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "adSigns");
         chosenItem = localStorage.getItem("chosenItem");
