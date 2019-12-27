@@ -165,8 +165,11 @@ function focusFbDummies() {
 }
 
 try {
-  if(chosenItem != null) {
+  if(chosenItem != null && document.getElementById("footballPageTitle")) {
     document.getElementById("football-products-filter-selection").value = chosenItem;
+    console.log("this should be working...")
+  } else if(chosenItem != null && document.getElementById("baseballPageTitle")) {
+    document.getElementById("baseball-products-filter-selection").value = chosenItem;
     console.log("this should be working...")
   }
 } catch(err) {
@@ -175,6 +178,13 @@ try {
 
 // run footballGridClick function anytime the football link from the navbar is clicked
 document.getElementById("football-page-link").addEventListener("click", footballGridClick);
+document.getElementById("baseball-page-link").addEventListener("click", baseballGridClick);
+// document.getElementById("football-page-link").addEventListener("click", footballGridClick);
+// document.getElementById("football-page-link").addEventListener("click", footballGridClick);
+// document.getElementById("football-page-link").addEventListener("click", footballGridClick);
+// document.getElementById("football-page-link").addEventListener("click", footballGridClick);
+// document.getElementById("football-page-link").addEventListener("click", footballGridClick);
+// document.getElementById("football-page-link").addEventListener("click", footballGridClick);
 
 // store the input search bar as a variable
 var searchInputBar = document.getElementById("searchInputBar");
@@ -192,13 +202,24 @@ document.getElementById("nav-search-icon").addEventListener("click", searchSite)
 function searchSite() {
   switch(searchInputBar.value.toUpperCase()) {
     case "AD SIGNS":
-      location.href = "./pages/football.html";
-      localStorage.setItem("chosenItem", "adSigns");
-      chosenItem = localStorage.getItem("chosenItem");
+      if(document.location.href == "https://fisherathletic.github.io/website/") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "adSigns");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+          location.href = "./football.html";
+          localStorage.setItem("chosenItem", "adSigns");
+          chosenItem = localStorage.getItem("chosenItem");
+      }
       break;
     case "AGILITY BOXES":
       location.href = "./pages/football.html";
       localStorage.setItem("chosenItem", "agilityBoxes");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "BATTING CAGES":
+      location.href = "./pages/baseball.html";
+      localStorage.setItem("chosenItem", "battingCages");
       chosenItem = localStorage.getItem("chosenItem");
       break;
     case "BENCHES":
@@ -221,6 +242,11 @@ function searchSite() {
       localStorage.setItem("chosenItem", "chainIndicatorSets");
       chosenItem = localStorage.getItem("chosenItem");
       break;
+    case "DISTANCE MARKERS":
+      location.href = "./pages/baseball.html";
+      localStorage.setItem("chosenItem", "distanceMarkers");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
     case "INDICATOR SETS":
       location.href = "./pages/football.html";
       localStorage.setItem("chosenItem", "chainIndicatorSets");
@@ -236,9 +262,29 @@ function searchSite() {
       localStorage.setItem("chosenItem", "dummies");
       chosenItem = localStorage.getItem("chosenItem");
       break;
+    case "FENCE TOPS":
+      location.href = "./pages/baseball.html";
+      localStorage.setItem("chosenItem", "fenceTops");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
     case "FIELD ACCESSORIES":
       location.href = "./pages/football.html";
       localStorage.setItem("chosenItem", "fieldAccessories");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "FIELD COVERS":
+      location.href = "./pages/baseball.html";
+      localStorage.setItem("chosenItem", "fieldCoversMats");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "FIELD MATS":
+      location.href = "./pages/baseball.html";
+      localStorage.setItem("chosenItem", "fieldCoversMats");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "FOUL POLES":
+      location.href = "./pages/baseball.html";
+      localStorage.setItem("chosenItem", "foulPoles");
       chosenItem = localStorage.getItem("chosenItem");
       break;
     case "BAGS":
@@ -256,6 +302,11 @@ function searchSite() {
       localStorage.setItem("chosenItem", "goalPostPads");
       chosenItem = localStorage.getItem("chosenItem");
       break;
+    case "INFIELD SCREENS":
+      location.href = "./pages/baseball.html";
+      localStorage.setItem("chosenItem", "infieldScreens");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
     case "KICKING CAGES":
       location.href = "./pages/football.html";
       localStorage.setItem("chosenItem", "kickingCages");
@@ -269,6 +320,11 @@ function searchSite() {
     case "NETTING":
       location.href = "./pages/football.html";
       localStorage.setItem("chosenItem", "netting");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "PITCHING AIDS":
+      location.href = "./pages/baseball.html";
+      localStorage.setItem("chosenItem", "pitchingAids");
       chosenItem = localStorage.getItem("chosenItem");
       break;
     case "PRACTICE ITEMS":
@@ -319,6 +375,11 @@ function searchSite() {
     case "THIRD HAND":
       location.href = "./pages/football.html";
       localStorage.setItem("chosenItem", "thirdHand");
+      chosenItem = localStorage.getItem("chosenItem");
+      break;
+    case "WINDSCREEN":
+      location.href = "./pages/baseball.html";
+      localStorage.setItem("chosenItem", "windscreen");
       chosenItem = localStorage.getItem("chosenItem");
       break;
     case "WRISTBANDS":

@@ -741,17 +741,3 @@ function resetPagPrevNextBtn() {
   document.getElementById("paginationPrevBtn").classList.add("disabled");
 }
 document.getElementById("football-products-filter-selection").addEventListener("change", resetPagPrevNextBtn);
-
-
-// function footballResetPageSelection() { 
-//   console.log("Filter selection was changed. Reset function is now running...")
-//     for(i = 0; i < footballPagination.length; i++) {
-//     if(footballPagination[i].classList.contains("page1")) {
-//       footballPagination[i].classList.add("active");
-//       document.getElementById("page1").checked = true;
-//     } else {
-//       footballPagination[i].classList.remove("active");
-//     }
-//   }
-//   footballSelectedPageValue = 1;
-// };

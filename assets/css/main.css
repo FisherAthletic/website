@@ -49,12 +49,17 @@ input[type=text] {
   color: white;
   border-color: #ED1C24;
   padding-left: 0.5rem;
+  /* -webkit-transition: border-color 0.8s ease-in-out; */
+  /* transition: border-color 0.8s ease-in-out; */
 }
 
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
   width: 35%;
   outline: none;
+  /* border-color: #B5DCE2; */
+  /* -webkit-transition: border-color 0.8s ease-in-out; */
+  /* transition: border-color 0.8s ease-in-out; */
 }
 
 /* DROPDOWNS --------------------------------------------------------- */
