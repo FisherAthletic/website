@@ -200,9 +200,10 @@ document.getElementById("nav-search-icon").addEventListener("click", searchSite)
 
 // search button on navbar
 function searchSite() {
+  var siteURL = document.location.href
   switch(searchInputBar.value.toUpperCase()) {
     case "AD SIGNS":
-      if(document.location.href.contains("index.html")) {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "adSigns");
         chosenItem = localStorage.getItem("chosenItem");
@@ -213,7 +214,7 @@ function searchSite() {
       }
       break;
     case "AGILITY BOXES":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "agilityBoxes");
         chosenItem = localStorage.getItem("chosenItem");
@@ -224,7 +225,7 @@ function searchSite() {
       }
       break;
     case "BATTING CAGES":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/baseball.html";
         localStorage.setItem("chosenItem", "battingCages");
         chosenItem = localStorage.getItem("chosenItem");
@@ -235,7 +236,7 @@ function searchSite() {
       }
       break;
     case "BENCHES":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "benches");
         chosenItem = localStorage.getItem("chosenItem");
@@ -246,7 +247,7 @@ function searchSite() {
       }
       break;
     case "BLASTERS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "blasters");
         chosenItem = localStorage.getItem("chosenItem");
@@ -257,7 +258,7 @@ function searchSite() {
       }
       break;
     case "CARTS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "carts");
         chosenItem = localStorage.getItem("chosenItem");
@@ -268,7 +269,7 @@ function searchSite() {
       }
       break;
     case "CHAIN SETS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "chainIndicatorSets");
         chosenItem = localStorage.getItem("chosenItem");
@@ -279,7 +280,7 @@ function searchSite() {
       }
       break;
     case "DISTANCE MARKERS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/baseball.html";
         localStorage.setItem("chosenItem", "distanceMarkers");
         chosenItem = localStorage.getItem("chosenItem");
@@ -290,7 +291,7 @@ function searchSite() {
       }
       break;
     case "INDICATOR SETS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "chainIndicatorSets");
         chosenItem = localStorage.getItem("chosenItem");
@@ -301,7 +302,7 @@ function searchSite() {
       }
       break;
     case "CHUTES":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "chutes");
         chosenItem = localStorage.getItem("chosenItem");
@@ -312,7 +313,7 @@ function searchSite() {
       }
       break;
     case "DUMMIES":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "dummies");
         chosenItem = localStorage.getItem("chosenItem");
@@ -323,7 +324,7 @@ function searchSite() {
       }
       break;
     case "FENCE TOPS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/baseball.html";
         localStorage.setItem("chosenItem", "fenceTops");
         chosenItem = localStorage.getItem("chosenItem");
@@ -334,7 +335,7 @@ function searchSite() {
       }
       break;
     case "FIELD ACCESSORIES":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "fieldAccessories");
         chosenItem = localStorage.getItem("chosenItem");
@@ -345,7 +346,7 @@ function searchSite() {
       }
       break;
     case "FIELD COVERS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/baseball.html";
         localStorage.setItem("chosenItem", "fieldCoversMats");
         chosenItem = localStorage.getItem("chosenItem");
@@ -356,7 +357,7 @@ function searchSite() {
       }
       break;
     case "FIELD MATS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/baseball.html";
         localStorage.setItem("chosenItem", "fieldCoversMats");
         chosenItem = localStorage.getItem("chosenItem");
@@ -367,7 +368,7 @@ function searchSite() {
       }
       break;
     case "FOUL POLES":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/baseball.html";
         localStorage.setItem("chosenItem", "foulPoles");
         chosenItem = localStorage.getItem("chosenItem");
@@ -378,7 +379,7 @@ function searchSite() {
       }
       break;
     case "BAGS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "gearEquipmentBags");
         chosenItem = localStorage.getItem("chosenItem");
@@ -389,7 +390,7 @@ function searchSite() {
       }
       break;
     case "GOAL POSTS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "goalPostPads");
         chosenItem = localStorage.getItem("chosenItem");
@@ -400,7 +401,7 @@ function searchSite() {
       }
       break;
     case "GOAL POST PADS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "goalPostPads");
         chosenItem = localStorage.getItem("chosenItem");
@@ -411,7 +412,7 @@ function searchSite() {
       }
       break;
     case "INFIELD SCREENS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/baseball.html";
         localStorage.setItem("chosenItem", "infieldScreens");
         chosenItem = localStorage.getItem("chosenItem");
@@ -422,7 +423,7 @@ function searchSite() {
       }
       break;
     case "KICKING CAGES":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "kickingCages");
         chosenItem = localStorage.getItem("chosenItem");
@@ -433,7 +434,7 @@ function searchSite() {
       }
       break;
     case "LADDERS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "ladders");
         chosenItem = localStorage.getItem("chosenItem");
@@ -444,7 +445,7 @@ function searchSite() {
       }
       break;
     case "NETTING":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "netting");
         chosenItem = localStorage.getItem("chosenItem");
@@ -455,7 +456,7 @@ function searchSite() {
       }
       break;
     case "PITCHING AIDS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/baseball.html";
         localStorage.setItem("chosenItem", "pitchingAids");
         chosenItem = localStorage.getItem("chosenItem");
@@ -466,7 +467,7 @@ function searchSite() {
       }
       break;
     case "PRACTICE ITEMS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "practiceItems");
         chosenItem = localStorage.getItem("chosenItem");
@@ -477,7 +478,7 @@ function searchSite() {
       }
       break;
     case "SHIELDS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "shields");
         chosenItem = localStorage.getItem("chosenItem");
@@ -488,7 +489,7 @@ function searchSite() {
       }
       break;
     case "SIDELINE CAPES":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "sidelineCapes");
         chosenItem = localStorage.getItem("chosenItem");
@@ -499,7 +500,7 @@ function searchSite() {
       }
       break;
     case "SIDELINE COVERS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "sidelineCovers");
         chosenItem = localStorage.getItem("chosenItem");
@@ -510,7 +511,7 @@ function searchSite() {
       }
       break;
     case "SIDELINE MARKERS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "sidelineMarkersPylons");
         chosenItem = localStorage.getItem("chosenItem");
@@ -521,7 +522,7 @@ function searchSite() {
       }
       break;
     case "SIDELINE PYLONS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "sidelineMarkersPylons");
         chosenItem = localStorage.getItem("chosenItem");
@@ -532,7 +533,7 @@ function searchSite() {
       }
       break;
     case "SLEDS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "sleds");
         chosenItem = localStorage.getItem("chosenItem");
@@ -543,7 +544,7 @@ function searchSite() {
       }
       break;
     case "STENCILS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "stencils");
         chosenItem = localStorage.getItem("chosenItem");
@@ -554,7 +555,7 @@ function searchSite() {
       }
       break;
     case "TACKLE WHEELS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "tackleWheels");
         chosenItem = localStorage.getItem("chosenItem");
@@ -565,7 +566,7 @@ function searchSite() {
       }
       break;
     case "THIRD HAND":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "thirdHand");
         chosenItem = localStorage.getItem("chosenItem");
@@ -576,7 +577,7 @@ function searchSite() {
       }
       break;
     case "WINDSCREEN":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/baseball.html";
         localStorage.setItem("chosenItem", "windscreen");
         chosenItem = localStorage.getItem("chosenItem");
@@ -587,7 +588,7 @@ function searchSite() {
       }
       break;
     case "WRISTBANDS":
-      if(document.location.href == "https://fisherathletic.github.io/website/index.html") {
+      if(siteURL == "https://fisherathletic.github.io/website/index.html") {
         location.href = "./pages/football.html";
         localStorage.setItem("chosenItem", "wristbands");
         chosenItem = localStorage.getItem("chosenItem");
