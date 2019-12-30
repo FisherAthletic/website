@@ -26,13 +26,22 @@ function baseballFiltering() {
   function loadOnOff() {
     var updateDoneLoadingInt = setInterval(updateDoneLoading, 50);
     function updateDoneLoading() {
-      if (baseballProducts[12].style.display == "none") {
-        // window.removeEventListener("scroll", noScroll);
-        window.removeEventListener("touchmove", noScroll);
-        document.body.classList.remove("no-scroll");
-        document.getElementById("loading-page").style.display = "none";
-        stopLoadOnOffInt();
+      for(i = 0; i < baseballProducts.length; i++) {
+        if (baseballProducts[i].style.display == "none") {
+          // window.removeEventListener("scroll", noScroll);
+          window.removeEventListener("touchmove", noScroll);
+          document.body.classList.remove("no-scroll");
+          document.getElementById("loading-page").style.display = "none";
+          stopLoadOnOffInt();
+        }
       }
+      // if (baseballProducts[12].style.display == "none") {
+      //   // window.removeEventListener("scroll", noScroll);
+      //   window.removeEventListener("touchmove", noScroll);
+      //   document.body.classList.remove("no-scroll");
+      //   document.getElementById("loading-page").style.display = "none";
+      //   stopLoadOnOffInt();
+      // }
     };
     function stopLoadOnOffInt() {
       clearInterval(updateDoneLoadingInt);
