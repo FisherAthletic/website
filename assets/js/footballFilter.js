@@ -25,12 +25,14 @@ function footballFiltering() {
   function loadOnOff() {
     var updateDoneLoadingInt = setInterval(updateDoneLoading, 50);
     function updateDoneLoading() {
-      if (footballProducts[12].style.display == "none") {
-        // window.removeEventListener("scroll", noScroll);
-        window.removeEventListener("touchmove", noScroll);
-        document.body.classList.remove("no-scroll");
-        document.getElementById("loading-page").style.display = "none";
-        stopLoadOnOffInt();
+      for(i = 0; i < footballProducts.length; i++) {
+        if (footballProducts[12].style.display == "none") {
+          // window.removeEventListener("scroll", noScroll);
+          window.removeEventListener("touchmove", noScroll);
+          document.body.classList.remove("no-scroll");
+          document.getElementById("loading-page").style.display = "none";
+          stopLoadOnOffInt();
+        }
       }
     };
     // function to stop interval that checks is product 13 is visible

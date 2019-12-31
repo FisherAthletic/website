@@ -35,13 +35,6 @@ function baseballFiltering() {
           stopLoadOnOffInt();
         }
       }
-      // if (baseballProducts[12].style.display == "none") {
-      //   // window.removeEventListener("scroll", noScroll);
-      //   window.removeEventListener("touchmove", noScroll);
-      //   document.body.classList.remove("no-scroll");
-      //   document.getElementById("loading-page").style.display = "none";
-      //   stopLoadOnOffInt();
-      // }
     };
     function stopLoadOnOffInt() {
       clearInterval(updateDoneLoadingInt);

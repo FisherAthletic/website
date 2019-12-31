@@ -33,12 +33,14 @@ function strengthConditioningFiltering() {
   function loadOnOff() {
     var updateDoneLoadingInt = setInterval(updateDoneLoading, 50);
     function updateDoneLoading() {
-      if (strProducts[12].style.display == "none") {
-        // window.removeEventListener("scroll", noScroll);
-        window.removeEventListener("touchmove", noScroll);
-        document.body.classList.remove("no-scroll");
-        document.getElementById("loading-page").style.display = "none";
-        stopLoadOnOffInt();
+      for(i = 0; i < strProducts.length; i++) {
+        if (strProducts[i].style.display == "none") {
+          // window.removeEventListener("scroll", noScroll);
+          window.removeEventListener("touchmove", noScroll);
+          document.body.classList.remove("no-scroll");
+          document.getElementById("loading-page").style.display = "none";
+          stopLoadOnOffInt();
+        }
       }
     };
     function stopLoadOnOffInt() {
