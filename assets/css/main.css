@@ -45,12 +45,16 @@ input[type=text] {
   /* -webkit-transition: width 0.4s ease-in-out; */
   /* transition: width 0.4s ease-in-out; */
   border-radius: 5px;
-  background-color: #1A1D22;
+  background-color: #2d323a;
   color: white;
-  border-color: #ED1C24;
+  border: #505a64 solid 2px;
   padding-left: 0.5rem;
   /* -webkit-transition: border-color 0.8s ease-in-out; */
   /* transition: border-color 0.8s ease-in-out; */
+}
+
+input[type=text]:hover {
+  background-color: #1A1D22;
 }
 
 /* When the input field gets focus, change its width to 100% */
@@ -86,6 +90,23 @@ input[type=text]:focus {
   width: 80vw;
   max-width: 1000px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.filter-products-dropdown {
+  background-color: #2d323a;
+  cursor: pointer;
+  color: white;
+  border: #505a64 solid 2px;
+}
+
+.filter-products-dropdown:hover {
+  background-color: #1A1D22;
+}
+
+.filter-products-dropdown:focus {
+  background-color: #1A1D22;
+  outline: none;
+  color: white;
 }
 /* ACCORDION --------------------------------------------------------- */
 .accordionBody {
@@ -787,6 +808,31 @@ input[type=text]:focus {
 .repTable {
   background-color: #1A1D22 !important;
 }
+
+.rep-locator-dropdown {
+  background-color: #2d323a;
+  cursor: pointer;
+  color: white;
+  border: #505a64 solid 2px !important;
+}
+
+.rep-locator-dropdown:hover {
+  background-color: #1A1D22;
+}
+
+.rep-locator-dropdown:focus {
+  background-color: #1A1D22;
+  color: white;
+  outline: none !important;
+}
+
+.rep-locator-dropdown::-moz-focus-inner {
+  outline: none !important;
+  border: none;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
 
 #rep-locator-dropdown {
   color: white;
