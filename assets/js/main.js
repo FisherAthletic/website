@@ -760,6 +760,18 @@ function searchSite() {
         chosenItem = localStorage.getItem("chosenItem");
       }
       break;
+
+    case "PYLONS":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/football.html";
+        localStorage.setItem("chosenItem", "sidelineMarkersPylons");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./football.html";
+        localStorage.setItem("chosenItem", "sidelineMarkersPylons");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
     case "REMOVABLE PADDING":
       if(siteTitle == "Fisher Athletic | Get Equipped") {
         location.href = "./pages/padding.html";
@@ -1396,6 +1408,14 @@ function ab75bpcCaption () {
 };
 
 // Track & field captions p1 //
+function mhcCaption () {
+  document.getElementById("mhcCaption").innerHTML = document.getElementById("mhcImage").alt;
+};
+
+function ehcCaption () {
+  document.getElementById("ehcCaption").innerHTML = document.getElementById("ehcImage").alt;
+};
+
 function dc1300Caption () {
   document.getElementById("dc1300Caption").innerHTML = document.getElementById("dc1300Image").alt;
 };
@@ -2592,6 +2612,10 @@ function pybgCaption () {
 
 function py1dp4Caption () {
   document.getElementById("py1dp4Caption").innerHTML = document.getElementById("py1dp4Image").alt;
+};
+
+function py2dpCaption () {
+  document.getElementById("py2dpCaption").innerHTML = document.getElementById("py2dpImage").alt;
 };
 
 function ads3636Caption () {

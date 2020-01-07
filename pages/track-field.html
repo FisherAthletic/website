@@ -111,6 +111,7 @@
                 <option value="Pitching Aids">
                 <option value="Pole Vault Pits">
                 <option value="Practice Items">
+                <option value="Pylons">
                 <option value="Removable Padding">
                 <option value="Ropes">
                 <option value="Scorers Table">
@@ -204,6 +205,48 @@
 
         <!-- Track & field products -->
         <div class="productCardContainer">
+
+        <div value="hurdlesCart" class="card productCard track-field-products-list page1 hurdlesCart All" style="width: 24rem;">
+            <img id="mhcImage" src="../assets/images/products/hurdle-cart-mhc.jpg" class="card-img-top" alt="Hurdle Cart" data-toggle="modal" data-target=".mhcImageModal" onclick="mhcCaption()">
+                <div class="card-body productCardBody">
+                  <h5 class="card-title">Hurdle Cart</h5>
+                  <h6 class="card-text">SKU: MHC</h6>
+                  <p>
+                    <a class="btn btn-danger" data-toggle="collapse" href="#hurdleCart" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Description
+                    </a>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                      Get quote
+                    </button>
+                  </p>
+                  <div class="collapse" id="hurdleCart">
+                    <div class="card card-body productCardDescription">
+                      Holds up to 10 hurdles and is powder coated in black. 47 1/2" x 37 1/2" steel frame.
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+        <div value="hurdlesCart" class="card productCard track-field-products-list page1 hurdlesCart All" style="width: 24rem;">
+            <img id="ehcImage" src="../assets/images/products/economy-hurdle-cart-ehc.jpg" class="card-img-top" alt="Economy Hurdle Cart" data-toggle="modal" data-target=".ehcImageModal" onclick="ehcCaption()">
+                <div class="card-body productCardBody">
+                  <h5 class="card-title">Economy Hurdle Cart</h5>
+                  <h6 class="card-text">SKU: EHC</h6>
+                  <p>
+                    <a class="btn btn-danger" data-toggle="collapse" href="#economyHurdleCart" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Description
+                    </a>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                      Get quote
+                    </button>
+                  </p>
+                  <div class="collapse" id="economyHurdleCart">
+                    <div class="card card-body productCardDescription">
+                      Holds up to 10 hurdles and is powder coated in black. 47 1/2" x 37 1/2" steel frame.
+                    </div>
+                  </div>
+                </div>
+        </div>
 
         <div value="discusCage" class="card productCard track-field-products-list page1 discusCage All" style="width: 24rem;">
             <img id="dc1300Image" src="../assets/images/products/discus-cage-dc1300.jpg" class="card-img-top" alt="Aluminum Discus Cage" data-toggle="modal" data-target=".dc1300ImageModal" onclick="dc1300Caption()">
@@ -1623,8 +1666,7 @@
               <a href="mailto:customerservice@fisherathletic.com"><i class="fas fa-envelope mr-3"></i> customerservice@fisherathletic.com</a></p>
             <p>
               <i class="fas fa-phone mr-3"></i> 1-800-438-6028</p>
-            <p>
-              <i class="fas fa-print mr-3"></i> 1-800-272-4448</p>
+            
   
           </div>
   
@@ -2087,6 +2129,20 @@
     </div>
 
     <!-- Image Modals -->
+    <div class="modal fade imageModal mhcImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modalExpandImageBody">
+            <img id="mhcImage" src="../assets/images/products/hurdle-cart-mhc.jpg">
+            <div id="mhcCaption" class="imageModalCaption"></div>
+          </div>
+    </div>
+
+    <div class="modal fade imageModal ehcImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modalExpandImageBody">
+            <img id="ehcImage" src="../assets/images/products/economy-hurdle-cart-ehc.jpg">
+            <div id="ehcCaption" class="imageModalCaption"></div>
+          </div>
+    </div>
+
     <div class="modal fade imageModal dc1300ImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modalExpandImageBody">
               <img id="dc1300Image" src="../assets/images/products/discus-cage-dc1300.jpg">

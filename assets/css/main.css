@@ -30,6 +30,10 @@ body {
   border: none;
 }
 
+.navbar-toggler:focus {
+  outline-color: #505a64;
+}
+
 #nav-search-icon {
   padding-right: 1rem;
   color: white;
@@ -107,6 +111,7 @@ input[type=text]:focus {
   background-color: #1A1D22;
   outline: none;
   color: white;
+  border-color: #505a64;
 }
 /* ACCORDION --------------------------------------------------------- */
 .accordionBody {
