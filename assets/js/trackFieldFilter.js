@@ -133,6 +133,8 @@ function trkDisplayAmount() {
     trkShowPageFour();
   } else if(trkSelectedPageValue == 5) {
     trkShowPageFive();
+  } else if(trkSelectedPageValue == 6) {
+    trkShowPageSix();
   } else {
     console.log("Unknown page selection.");
   }
@@ -188,7 +190,7 @@ function trkShowPageFour() {
   }
 };
 
-// function used for trkDisplayAmount function, will only show products 37-48
+// function used for trkDisplayAmount function, will only show products 49-60
 function trkShowPageFive() {
     var pageFiveProducts = [48,49,50,51,52,53,54,55,56,57,58,59];
     try {
@@ -199,6 +201,18 @@ function trkShowPageFive() {
       console.log("Page5 has less than 12 products.");
     }
   };
+
+// function used for trkDisplayAmount function, will only show products 61-72
+function trkShowPageSix() {
+  var pageSixProducts = [60,61,62,63,64,65,66,67,68,69,70,71];
+  try {
+    for(i = 0; i < pageSixProducts.length; i++) {
+      trkFilteredProducts[pageSixProducts[i]].style.display = "flex";
+    }
+  } catch(err) {
+    console.log("Page5 has less than 12 products.");
+  }
+};
 
 // function used for trkShowPageOne function, hides page 1 if it is the only page needed
 function trkCheckPageOne() {

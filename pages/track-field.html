@@ -198,6 +198,9 @@
         <label class="btn btn-danger track-field-pagination page5" value="5">
           <input type="radio" name="options" id="page5" autocomplete="off"> 5
         </label>
+        <label class="btn btn-danger track-field-pagination page6" value="6">
+          <input type="radio" name="options" id="page6" autocomplete="off"> 6
+        </label>
       </div>
 
       <button type="button" class="btn btn-danger next-btn" id="paginationNextBtn">></button>
@@ -207,21 +210,42 @@
         <div class="productCardContainer">
 
         <div value="hurdlesCart" class="card productCard track-field-products-list page1 hurdlesCart All" style="width: 24rem;">
-            <img id="mhcImage" src="../assets/images/products/hurdle-cart-mhc.jpg" class="card-img-top" alt="Hurdle Cart" data-toggle="modal" data-target=".mhcImageModal" onclick="mhcCaption()">
+            <img id="hs1450saImage" src="../assets/images/products/aluminum-hurdle-square-hs1450sa.jpg" class="card-img-top" alt="Square Aluminum Hurdle" data-toggle="modal" data-target=".hs1450saImageModal" onclick="hs1450saCaption()">
                 <div class="card-body productCardBody">
-                  <h5 class="card-title">Hurdle Cart</h5>
-                  <h6 class="card-text">SKU: MHC</h6>
+                  <h5 class="card-title">Square Aluminum Hurdle</h5>
+                  <h6 class="card-text">SKU: HS1450SA</h6>
                   <p>
-                    <a class="btn btn-danger" data-toggle="collapse" href="#hurdleCart" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn btn-danger" data-toggle="collapse" href="#squareHurdle" role="button" aria-expanded="false" aria-controls="collapseExample">
                       Description
                     </a>
                     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
                       Get quote
                     </button>
                   </p>
-                  <div class="collapse" id="hurdleCart">
+                  <div class="collapse" id="squareHurdle">
                     <div class="card card-body productCardDescription">
-                      Holds up to 10 hurdles and is powder coated in black. 47 1/2" x 37 1/2" steel frame.
+                      Hurdle height adjusts from 30" to 42". Aluminum round tube construction. Push button adjustment every 3". Uprights available in 11 colors. Free screening on orders of 24 hurdles or more. Meets National Federation regulations. Lexan® gate board.
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+        <div value="hurdlesCart" class="card productCard track-field-products-list page1 hurdlesCart All" style="width: 24rem;">
+            <img id="hs1250raImage" src="../assets/images/products/aluminum-hurdle-round-hs1250ra.jpg" class="card-img-top" alt="Round Aluminum Hurdle" data-toggle="modal" data-target=".hs1250raImageModal" onclick="hs1250raCaption()">
+                <div class="card-body productCardBody">
+                  <h5 class="card-title">Round Aluminum Hurdle</h5>
+                  <h6 class="card-text">SKU: HS1250RA</h6>
+                  <p>
+                    <a class="btn btn-danger" data-toggle="collapse" href="#roundHurdle" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Description
+                    </a>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
+                      Get quote
+                    </button>
+                  </p>
+                  <div class="collapse" id="roundHurdle">
+                    <div class="card card-body productCardDescription">
+                      Hurdle height adjusts from 30" to 42". Aluminum round tube construction. Push button adjustment every 3". Uprights available in 11 colors. Free screening on orders of 24 hurdles or more. Meets National Federation regulations. Lexan® gate board.
                     </div>
                   </div>
                 </div>
@@ -242,7 +266,7 @@
                   </p>
                   <div class="collapse" id="economyHurdleCart">
                     <div class="card card-body productCardDescription">
-                      Holds up to 10 hurdles and is powder coated in black. 47 1/2" x 37 1/2" steel frame.
+                      Holds up to 10 hurdles and is powder coated in black. 47 1/2" x 37 1/2" aluminum frame.
                     </div>
                   </div>
                 </div>
@@ -2129,10 +2153,17 @@
     </div>
 
     <!-- Image Modals -->
-    <div class="modal fade imageModal mhcImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal fade imageModal hs1450saImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl modalExpandImageBody">
-            <img id="mhcImage" src="../assets/images/products/hurdle-cart-mhc.jpg">
-            <div id="mhcCaption" class="imageModalCaption"></div>
+            <img id="hs1450saImage" src="../assets/images/products/aluminum-hurdle-square-hs1450sa.jpg">
+            <div id="hs1450saCaption" class="imageModalCaption"></div>
+          </div>
+    </div>
+
+    <div class="modal fade imageModal hs1250raImageModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modalExpandImageBody">
+            <img id="hs1250raImage" src="../assets/images/products/aluminum-hurdle-round-hs1250ra.jpg">
+            <div id="hs1250raCaption" class="imageModalCaption"></div>
           </div>
     </div>
 

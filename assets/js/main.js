@@ -1408,8 +1408,12 @@ function ab75bpcCaption () {
 };
 
 // Track & field captions p1 //
-function mhcCaption () {
-  document.getElementById("mhcCaption").innerHTML = document.getElementById("mhcImage").alt;
+function hs1450saCaption () {
+  document.getElementById("hs1450saCaption").innerHTML = document.getElementById("hs1450saImage").alt;
+};
+
+function hs1250raCaption () {
+  document.getElementById("hs1250raCaption").innerHTML = document.getElementById("hs1250raImage").alt;
 };
 
 function ehcCaption () {
