@@ -2847,6 +2847,10 @@ function sku9601Caption () {
   document.getElementById("sku9601Caption").innerHTML = document.getElementById("sku9601Image").alt;
 };
 
+function hd3500Caption () {
+  document.getElementById("hd3500Caption").innerHTML = document.getElementById("hd3500Image").alt;
+};
+
 function hd100Caption () {
   document.getElementById("hd100Caption").innerHTML = document.getElementById("hd100Image").alt;
 };
@@ -2922,6 +2926,14 @@ function sku10003Caption () {
 
 function hr426Caption () {
   document.getElementById("hr426Caption").innerHTML = document.getElementById("hr426Image").alt;
+};
+
+function pur101rCaption () {
+  document.getElementById("pur101rCaption").innerHTML = document.getElementById("pur101rImage").alt;
+};
+
+function pur102sCaption () {
+  document.getElementById("pur102sCaption").innerHTML = document.getElementById("pur102sImage").alt;
 };
 
 function sd14Caption () {
