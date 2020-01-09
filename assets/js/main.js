@@ -1070,7 +1070,17 @@ function searchSite() {
       alert("Sorry, item could not be found. Please try a different search.");
   }
 }
-//---------------------------------------------------------------------------------------------------------------------
+
+// Downloads
+document.getElementById("downloads-list-1").addEventListener("click", openDealerForm)
+function openDealerForm() {
+  window.open("../assets/downloads/forms/new-dealer-credit-application.pdf");
+}
+
+document.getElementById("downloads-list-2").addEventListener("click", openWallPanelMeasure)
+function openWallPanelMeasure() {
+  window.open("../assets/downloads/forms/wall-panel-measuring.pdf");
+}
 
   // Click event function that displays caption
   // function showCardImageCaption(event) {

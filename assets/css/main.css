@@ -96,6 +96,10 @@ input[type=text]:focus {
   font-family: 'Montserrat', sans-serif;
 }
 
+.filter-bar:focus {
+  outline: none !important;
+}
+
 .filter-products-dropdown {
   background-color: #2d323a;
   cursor: pointer;
@@ -109,7 +113,7 @@ input[type=text]:focus {
 
 .filter-products-dropdown:focus {
   background-color: #1A1D22;
-  outline: none;
+  outline: none !important;
   color: white;
   border-color: #505a64;
 }
@@ -760,14 +764,26 @@ input[type=text]:focus {
 }
 
 /* DOWNLOADS PAGE ////////////////////////////////////////////////// */
-#downloads-media-list {
-  color: white;
-  padding: 0 10vw 0 10vw;
-  margin: 40px 0 40px 0;
+.downloads-list-group {
+  background-color: #1A1D22 !important;
+  margin: 10px 5rem 20px 5rem;
 }
 
-#downloads-media-list li {
-  margin-bottom: 30px;
+.downloads-list-item {
+  background-color: #2d323a;
+  color: white;
+  border: 2px #505a64 solid;
+}
+
+.downloads-list-item:hover {
+  background-color: #1A1D22;
+  color: white;
+}
+
+.downloads-list-item:focus {
+  background-color: #1A1D22;
+  color: white;
+  outline: none;
 }
 /* #contact-us-call-btn {
   margin: 0 0 10px 0;
