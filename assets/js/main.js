@@ -408,6 +408,17 @@ function searchSite() {
         chosenItem = localStorage.getItem("chosenItem");
       }
       break;
+    case "DOWNLOADS":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/download-center.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./download-center.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
     case "INDICATOR SETS":
       if(siteTitle == "Fisher Athletic | Get Equipped") {
         location.href = "./pages/football.html";
@@ -1061,11 +1072,6 @@ function searchSite() {
     case "":
       alert("Input what you're looking for in the search bar.")
       break;
-    // case "BENCHES":
-    //   location.href = "./pages/football.html";
-    //   localStorage.setItem("chosenItem", "benches");
-    //   chosenItem = localStorage.getItem("chosenItem");
-    //   break;
     default:
       alert("Sorry, item could not be found. Please try a different search.");
   }
@@ -1081,13 +1087,6 @@ document.getElementById("downloads-list-2").addEventListener("click", openWallPa
 function openWallPanelMeasure() {
   window.open("../assets/downloads/forms/wall-panel-measuring.pdf");
 }
-
-  // Click event function that displays caption
-  // function showCardImageCaption(event) {
-  //   var clickedImage = event.target;
-  //   document.getElementById("cardCaption").innerHTML = clickedImage.alt;
-  //   console.log(clickedImage.alt);
-  // }
 
 // Baseball captions p1 //
 function msdpCaption () {

@@ -720,8 +720,7 @@ function fbPaginationPrev() {
       document.getElementById("paginationNextBtn").addEventListener("click", fbPaginationNext);
     }
   }
-  // document.getElementById("paginationNextBtn").classList.remove("disabled");
-  // document.getElementById("paginationPrevBtn").addEventListener("click", fbPaginationPrev);
+
   footballFiltering();
 };
 
