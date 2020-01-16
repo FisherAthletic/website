@@ -3275,3 +3275,52 @@ function gfccfCaption () {
 function gfc14Caption () {
   document.getElementById("gfc14Caption").innerHTML = document.getElementById("gfc14Image").alt;
 };
+
+//Facility Branding captions
+function dpwallrCaption () {
+  document.getElementById("dpwallrCaption").innerHTML = document.getElementById("dpwallrImage").alt;
+};
+
+function dpwallsCaption () {
+  document.getElementById("dpwallsCaption").innerHTML = document.getElementById("dpwallsImage").alt;
+};
+
+function dpwinmeshCaption () {
+  document.getElementById("dpwinmeshCaption").innerHTML = document.getElementById("dpwinmeshImage").alt;
+};
+
+function dpaw100Caption () {
+  document.getElementById("dpaw100Caption").innerHTML = document.getElementById("dpaw100Image").alt;
+};
+
+function dpsmsoCaption () {
+  document.getElementById("dpsmsoCaption").innerHTML = document.getElementById("dpsmsoImage").alt;
+};
+
+function st25bCaption () {
+  document.getElementById("st25bCaption").innerHTML = document.getElementById("st25bImage").alt;
+};
+
+function st25fCaption () {
+  document.getElementById("st25fCaption").innerHTML = document.getElementById("st25fImage").alt;
+};
+
+function tempsignCaption () {
+  document.getElementById("tempsignCaption").innerHTML = document.getElementById("tempsignImage").alt;
+};
+
+function tempnameCaption () {
+  document.getElementById("tempnameCaption").innerHTML = document.getElementById("tempnameImage").alt;
+};
+
+function np28Caption () {
+  document.getElementById("np28Caption").innerHTML = document.getElementById("np28Image").alt;
+};
+
+function mb610Caption () {
+  document.getElementById("mb610Caption").innerHTML = document.getElementById("mb610Image").alt;
+};
+
+function banrtv46Caption () {
+  document.getElementById("banrtv46Caption").innerHTML = document.getElementById("banrtv46Image").alt;
+};
