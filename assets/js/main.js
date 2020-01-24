@@ -507,6 +507,17 @@ function searchSite() {
         chosenItem = localStorage.getItem("chosenItem");
       }
       break;
+    case "FACILITY BRANDING":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
     case "FENCE TOPS":
       if(siteTitle == "Fisher Athletic | Get Equipped") {
         location.href = "./pages/baseball.html";
@@ -805,6 +816,17 @@ function searchSite() {
         chosenItem = localStorage.getItem("chosenItem");
       }
       break;
+    case "ROUGH RAP":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/facility-branding.html";
+        localStorage.setItem("chosenItem", "all");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./facility-branding.html";
+        localStorage.setItem("chosenItem", "all");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
     case "SCORERS TABLE":
       if(siteTitle == "Fisher Athletic | Get Equipped") {
         location.href = "./pages/gym.html";
@@ -879,6 +901,17 @@ function searchSite() {
       } else {
         location.href = "./football.html";
         localStorage.setItem("chosenItem", "sleds");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
+    case "SMOOTH RAP":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
         chosenItem = localStorage.getItem("chosenItem");
       }
       break;
@@ -1044,6 +1077,28 @@ function searchSite() {
       } else {
         location.href = "./padding.html";
         localStorage.setItem("chosenItem", "wallPadding");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
+    case "WINDOW PERF":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
+    case "WINDOW MESH":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
         chosenItem = localStorage.getItem("chosenItem");
       }
       break;
