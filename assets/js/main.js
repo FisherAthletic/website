@@ -243,6 +243,17 @@ function searchSite() {
           chosenItem = localStorage.getItem("chosenItem");
       }
       break;
+    case "ARMOR WRAP":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+          location.href = "./facility-branding.html";
+          localStorage.setItem("chosenItem", "All");
+          chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
     case "BALL RACKS":
       if(siteTitle == "Fisher Athletic | Get Equipped") {
         location.href = "./pages/gym.html";
@@ -353,6 +364,17 @@ function searchSite() {
           chosenItem = localStorage.getItem("chosenItem");
       }
       break;
+    case "BLEACHER MOUNT TABLES":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+          location.href = "./facility-branding.html";
+          localStorage.setItem("chosenItem", "All");
+          chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
     case "CARTS":
       if(siteTitle == "Fisher Athletic | Get Equipped") {
         location.href = "./pages/football.html";
@@ -395,6 +417,17 @@ function searchSite() {
         location.href = "./chairs-stools.html";
         localStorage.setItem("chosenItem", "All");
         chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
+    case "CHAMPIONSHIP BANNERS":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+          location.href = "./facility-branding.html";
+          localStorage.setItem("chosenItem", "All");
+          chosenItem = localStorage.getItem("chosenItem");
       }
       break;
     case "DISTANCE MARKERS":
@@ -573,6 +606,17 @@ function searchSite() {
         chosenItem = localStorage.getItem("chosenItem");
       }
       break;
+    case "FLOOR MOUNT TABLES":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+          location.href = "./facility-branding.html";
+          localStorage.setItem("chosenItem", "All");
+          chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
     case "FOOTBALL":
       if(siteTitle == "Fisher Athletic | Get Equipped") {
         location.href = "./pages/football.html";
@@ -727,6 +771,17 @@ function searchSite() {
         chosenItem = localStorage.getItem("chosenItem");
       }
       break;
+    case "NAME PLATES":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+          location.href = "./facility-branding.html";
+          localStorage.setItem("chosenItem", "All");
+          chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
     case "NETTING":
       if(siteTitle == "Fisher Athletic | Get Equipped") {
         location.href = "./pages/football.html";
@@ -736,6 +791,17 @@ function searchSite() {
         location.href = "./football.html";
         localStorage.setItem("chosenItem", "netting");
         chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
+    case "MEDIA BANNERS":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+          location.href = "./facility-branding.html";
+          localStorage.setItem("chosenItem", "All");
+          chosenItem = localStorage.getItem("chosenItem");
       }
       break;
     case "MEDICINE BALLS":
@@ -981,6 +1047,17 @@ function searchSite() {
         chosenItem = localStorage.getItem("chosenItem");
       }
       break;
+    case "SWAG MAT":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
     case "TACKLE WHEELS":
       if(siteTitle == "Fisher Athletic | Get Equipped") {
         location.href = "./pages/football.html";
@@ -990,6 +1067,28 @@ function searchSite() {
         location.href = "./football.html";
         localStorage.setItem("chosenItem", "tackleWheels");
         chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
+    case "TEMPERAPLEX NAME PLATES":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+          location.href = "./facility-branding.html";
+          localStorage.setItem("chosenItem", "All");
+          chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
+    case "TEMPERAPLEX WALL SIGNS":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/facility-branding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+          location.href = "./facility-branding.html";
+          localStorage.setItem("chosenItem", "All");
+          chosenItem = localStorage.getItem("chosenItem");
       }
       break;
     case "THIRD HAND":
