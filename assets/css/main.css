@@ -489,6 +489,7 @@ input[type=text]:focus {
 #featured-product-grid-item-header {
   background-color: #292f33;
   border-bottom: #677680 1px solid;
+  z-index: 0;
 }
 
 #featured-product-grid-item-body {
