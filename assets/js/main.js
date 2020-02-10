@@ -839,6 +839,17 @@ function searchSite() {
         chosenItem = localStorage.getItem("chosenItem");
       }
       break;
+    case "PADDING":
+      if(siteTitle == "Fisher Athletic | Get Equipped") {
+        location.href = "./pages/padding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      } else {
+        location.href = "./padding.html";
+        localStorage.setItem("chosenItem", "All");
+        chosenItem = localStorage.getItem("chosenItem");
+      }
+      break;
     case "PITCHING AIDS":
       if(siteTitle == "Fisher Athletic | Get Equipped") {
         location.href = "./pages/baseball.html";
