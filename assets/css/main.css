@@ -318,7 +318,7 @@ input[type=text]:focus {
 }
 
 .footerSocial {
-  background-color: #ED1C24 !important;
+  background-color: #2f4d61 !important;
 }
 
 .fbIcon {
@@ -500,10 +500,16 @@ input[type=text]:focus {
   background-color: rgba(25,30,35,.61);
 } */
 
+#featured-product-grid-item-body li {
+  cursor: pointer;
+  color: white;
+  background-color: rgba(25,30,35,.61);
+}
+
 #featured-product-grid-item-body li:hover {
   cursor: pointer;
   color: #B5DCE2;
-  background-color: rgba(25,30,35,.61);
+  background-color: #1A1D22;
 }
 
 .media-body {
