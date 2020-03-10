@@ -987,6 +987,12 @@ body {
   height: 315px;
 }
 
+.blue-btn {
+  background-color: #2f4d61;
+  color: white;
+  border: none;
+}
+
 /* FAQ PAGE ////////////////////////////////////////////////////////// */
 /* FAQ ACCORDION ----------------------------------------------------- */
 .faqAccordion {
@@ -1136,6 +1142,9 @@ body {
   .tutorial-video {
     width: 330px;
     height: 157.5px;
+  }
+  #tutorial-btn {
+    margin: 0.5rem 2rem 0 0;
   }
 }
 }
