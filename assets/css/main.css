@@ -48,7 +48,7 @@ body {
   color: #ED1C24;
 }
 
-input[type=text] {
+#searchInputBar {
   width: 35%;
   /* -webkit-transition: width 0.4s ease-in-out; */
   /* transition: width 0.4s ease-in-out; */
@@ -61,12 +61,12 @@ input[type=text] {
   /* transition: border-color 0.8s ease-in-out; */
 }
 
-input[type=text]:hover {
+#searchInputBar:hover {
   background-color: #1A1D22;
 }
 
 /* When the input field gets focus, change its width to 100% */
-input[type=text]:focus {
+#searchInputBar:focus {
   width: 35%;
   outline: none;
   /* border-color: #B5DCE2; */
@@ -673,6 +673,9 @@ input[type=text]:focus {
   text-align: center;
 }
 
+/* GYM PAGE ////////////////////////////////////////////////////// */
+
+
 /* CATALOG PAGE ////////////////////////////////////////////////////// */
 /* CATALOG GRID ------------------------------------------------------ */
 .catalogCardContainer {
@@ -798,6 +801,22 @@ input[type=text]:focus {
   padding: 0 0 30px 0;
 }
 
+/* CONTACT PAGE ////////////////////////////////////////////////////// */
+.project-cards-container {
+  display: grid;
+  margin: 0 5% 0 5%;
+}
+
+.project-card {
+  max-width: 1000px;
+  color: white;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  background-color: #292f33 !important;
+}
+
 /* DOWNLOADS PAGE ////////////////////////////////////////////////// */
 .downloads-list-group {
   background-color: #1A1D22 !important;
@@ -916,6 +935,58 @@ input[type=text]:focus {
   outline: none;
 }
 
+/* DEALER LOCATOR PAGE ////////////////////////////////////////////////////////// */
+
+.search-bar-dark {
+  display: grid;
+  justify-items: right;
+  width: 50%;
+  border-radius: 5px;
+  background-color: #2d323a;
+  color: white;
+  border: #505a64 solid 3px;
+  transition: width 1s, border-color 2s;
+}
+
+.search-bar-dark:hover {
+  background-color: #1A1D22;
+  width: 75%;
+  transition: .5s;
+  border-color: #ED1C24;
+}
+
+.search-bar-dark:focus {
+  width: 75%;
+  outline: none;
+  border-color: #ED1C24;
+  /* border-color: #B5DCE2; */
+  /* -webkit-transition: border-color 0.8s ease-in-out; */
+  /* transition: border-color 0.8s ease-in-out; */
+}
+
+.dealer-search-div {
+  margin: 0 5% 20px 5%;
+  justify-content: center;
+}
+
+/* TUTORIAL VIDEOS ////////////////////////////////////////////////////////// */
+
+.tutVidModal {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tutVidModalContent {
+  background-color: none;
+  margin: 0 auto;
+  width: 660px;
+  height: 315px;
+}
+
+.tutorial-video {
+  width: 660px;
+  height: 315px;
+}
+
 /* FAQ PAGE ////////////////////////////////////////////////////////// */
 /* FAQ ACCORDION ----------------------------------------------------- */
 .faqAccordion {
@@ -981,6 +1052,15 @@ input[type=text]:focus {
 .landingTextContainer h1 {
   font-size: 90px;
 }
+.tutVidModalContent {
+  width: 495px;
+  height: 236.25px;
+}
+
+.tutorial-video {
+  width: 495px;
+  height: 236.25px;
+}
 }
 @media screen and (max-width: 840px) {
  .categoryGrid {
@@ -1013,11 +1093,6 @@ input[type=text]:focus {
   margin: 0 0 40px 0;
   max-width: 2000px;
   justify-items: center;
-}
-#social-media-grid-item1 {
-}
-#social-media-grid-item2 {
-}
 }
 @media screen and (max-width: 550px) {
  .categoryGrid {
@@ -1053,4 +1128,14 @@ input[type=text]:focus {
     opacity: 1;
     padding: 16px;
   }
+  .tutVidModalContent {
+    width: 330px;
+    height: 157.5px;
+  }
+  
+  .tutorial-video {
+    width: 330px;
+    height: 157.5px;
+  }
+}
 }

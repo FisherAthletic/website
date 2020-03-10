@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fisher Athletic | Rep Locator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/navbar/fisher_logo_nav-01.svg">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google Geo Chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css">
+</head>
+<body>
+    <div class="landingContainer">
+
+        <!-- Top navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/images/navbar/fisher_logo_nav-01.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown" id="navDropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                  </a>
+                  <div class="dropdown-menu" id="navDropdownMenu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./football.html" id="football-page-link">Football</a>
+                    <a class="dropdown-item" href="./baseball.html" id="baseball-page-link">Baseball</a>
+                    <a class="dropdown-item" href="./track-field.html" id="track-field-page-link">Track & Field</a>
+                    <a class="dropdown-item" href="./chairs-stools.html" id="chairs-stools-page-link">Chairs & Stools</a>
+                    <a class="dropdown-item" href="../pages/facility-branding.html" id="facility-page-link">Facility Branding</a>
+                    <a class="dropdown-item" href="./padding.html" id="padding-page-link">Padding</a>
+                    <a class="dropdown-item" href="./windscreen.html" id="windscreen-page-link">Windscreen</a>
+                    <a class="dropdown-item" href="./strength-conditioning.html" id="strength-page-link">Strength & Conditioning</a>
+                    <a class="dropdown-item" href="./gym.html" id="gym-page-link">Gym</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/catalogs.html">Catalogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contact-us.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../pages/rep-locator.html">Rep Locator</a>
+                </li>
+              </ul>
+          <i class="fas fa-search" id="nav-search-icon"></i><input type="text" name="search" autocomplete="off" list="search-items-list" id="searchInputBar" placeholder="search">
+              </nav>
+
+              <datalist id="search-items-list">
+                <option value="Ad Signs">
+                <option value="Agility Boxes">
+                <option value="Armor Wrap">
+                <option value="Bags">
+                <option value="Ball Racks">
+                <option value="Bands">
+                <option value="Baseball">
+                <option value="Basketball">
+                <option value="Batting Cages">
+                <option value="Beam Padding">
+                <option value="Belts">
+                <option value="Benches">
+                <option value="Blasters">
+                <option value="Bleacher End Closures">
+                <option value="Bleacher Mount Table">
+                <option value="Carts">
+                <option value="Chain Sets">
+                <option value="Chairs">
+                <option value="Chair Carts">
+                <option value="Championship Banners">
+                <option value="Chutes">
+                <option value="Conditioning">
+                <option value="Cones">
+                <option value="Crossbars">
+                <option value="Discus">
+                <option value="Discus Cage">
+                <option value="Distance Markers">
+                <option value="Dummies">
+                <option value="Facility Branding">
+                <option value="Fence Tops">
+                <option value="Field Accessories">
+                <option value="Field Covers">
+                <option value="Field Mats">
+                <option value="Field Padding">
+                <option value="Floor Mount Table">
+                <option value="Football">
+                <option value="Foul Poles">
+                <option value="Glute Hams">
+                <option value="Goal Posts">
+                <option value="Goal Post Pads">
+                <option value="Gym">
+                <option value="Gym Floor Cover">
+                <option value="High Jump Pits">
+                <option value="Hurdles">
+                <option value="Hurdle Cart">
+                <option value="Indicator Sets">
+                <option value="Infield Screens">
+                <option value="Kicking Cages">
+                <option value="Ladders">
+                <option value="Name Plates">
+                <option value="Netting">
+                <option value="Media Banners">
+                <option value="Medicine Balls">
+                <option value="Padding">
+                <option value="Pitching Aids">
+                <option value="Pole Vault Pits">
+                <option value="Practice Items">
+                <option value="Pylons">
+                <option value="Removable Padding">
+                <option value="Ropes">
+                <option value="Rough Rap">
+                <option value="Scorers Table">
+                <option value="Shields">
+                <option value="Sideline Capes">
+                <option value="Sideline Covers">
+                <option value="Sideline Markers">
+                <option value="Sideline Pylons">
+                <option value="Sleds">
+                <option value="Smooth Rap">
+                <option value="Standards">
+                <option value="Standard Pads">
+                <option value="Starter Blocks">
+                <option value="Stencils">
+                <option value="Strength">
+                <option value="Stools">
+                <option value="Swag Mat">
+                <option value="Tackle Wheels">
+                <option value="Temperaplex Name Plates">
+                <option value="Temperaplex Wall Sign">
+                <option value="Third Hand">
+                <option value="Toe Boards">
+                <option value="Track">
+                <option value="Track Accessories">
+                <option value="Trainers">
+                <option value="Vault Box">
+                <option value="Vault Pads">
+                <option value="Wall Padding">
+                <option value="Window Perf">
+                <option value="Windscreen">
+                <option value="Wristbands">
+            </datalist>
+
+        <!-- Dealer locator header -->
+        <div class="pageTitle" id="catalogsPageTitle">
+            <h2>Find the nearest dealer</h2>
+        </div>
+
+        <!-- Dealer search input and output -->
+        <div class="dealer-search-div">
+            <!-- Input form to find nearest dealer -->
+            <input class="search-bar-dark" type="text" name="search" autocomplete="off" id="dealer-search" placeholder=" zipcode">
+
+        </div>
+
+
+
+    <!-- Scroll button -->
+    <button onclick="topFunction()" id="scroll-button" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+      <div class="footerSocial">
+        <div class="container">
+  
+          <!-- Grid row-->
+          <div class="row py-2 d-flex align-items-center">
+  
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0">Get connected with us on social networks!</h6>
+            </div>
+  
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+  
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/fisherathletic" class="fbIcon" target="_blank">
+                <i class="fab fa-facebook-f white-text mr-4"> </i>
+              </a>
+              <!-- Twitter -->
+              <a href="https://twitter.com/fisher_athletic" class="twIcon" target="_blank">
+                <i class="fab fa-twitter white-text mr-4"> </i>
+              </a>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-5">
+  
+        <!-- Grid row -->
+        <div class="row mt-3">
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Support</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="./contact-us.html">Contact us</a>
+          </p>
+          <p>
+            <a href="./download-center.html">Downloads</a>
+          </p>
+          <p>
+            <a href="./faq.html">FAQ</a>
+          </p>
+  
+          </div>
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="./shipping-policy.html">Shipping Policy</a>
+          </p>
+          <p>
+            <a href="./return-policy.html">Return Policy</a>
+          </p>
+          <p>
+            <a href="./privacy-policy.html">Privacy Policy</a>
+          </p>
+  
+          </div>
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 col-xl-4 mx-auto mb-md-0 mb-4">
+  
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <i class="fas fa-home mr-3"></i> 2060 Cauble Rd, Salisbury, NC 28144</p>
+            <p>
+              <a href="mailto:customerservice@fisherathletic.com"><i class="fas fa-envelope mr-3"></i> customerservice@fisherathletic.com</a></p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> 1-800-438-6028</p>
+            
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+  
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright: Fisher Athletic Equipment</div>
+  
+    </footer>
+
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Google Maps API
+    <script src="https://maps.googleapis.com/maps/api/js?key=KEYGOESHERE&callback=initMap" async defer></script> -->
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
