@@ -265,7 +265,7 @@ body {
 }
 
 .productCardBody {
-  background-color: #2d323a;
+  background-color: #292f33;
   color: white;
   border-radius: 0 0 10px 10px;
 }
@@ -969,6 +969,12 @@ body {
   justify-content: center;
 }
 
+#dealer-search {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 15rem;
+}
+
 /* TUTORIAL VIDEOS ////////////////////////////////////////////////////////// */
 
 .tutVidModal {
@@ -1067,6 +1073,11 @@ body {
   width: 495px;
   height: 236.25px;
 }
+}
+@media screen and (max-width: 991px) {
+  #searchInputBar {
+    margin-top: 1rem;
+  }
 }
 @media screen and (max-width: 840px) {
  .categoryGrid {
