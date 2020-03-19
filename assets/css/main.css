@@ -458,9 +458,9 @@ body {
 /* SOCIAL MEDIA GRID ---------------------------------------------------- */
 .social-media-grid {
   display: grid;
-  grid-template-columns: 2fr 4fr;
+  grid-template-columns: 4fr 2fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "twitter-feed featured-products";
+  grid-template-areas: "featured-products twitter-feed";
   grid-gap: 1rem;
   padding: 0 5vw 40px 5vw;
   margin: auto;
