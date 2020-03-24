@@ -415,6 +415,10 @@ body {
     min-height: 100%;
   }
 
+  #covid-alert {
+    margin: 80px 1rem 0 1rem;
+  }
+
  /* CATEGORIES GRID ---------------------------------------------------- */
 .categories-grid {
   display: grid;
@@ -1103,8 +1107,8 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-  "twitter-feed"
-  "featured-products";
+  "featured-products"
+  "twitter-feed";
   grid-gap: 1rem;
   padding: 0 5vw 0 5vw;
   margin: 0 0 40px 0;
