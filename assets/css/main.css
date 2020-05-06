@@ -6,6 +6,7 @@ body {
     margin: 0 auto;
     height: 100%;
     background-color: #1A1D22;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .no-scroll {
@@ -171,6 +172,15 @@ body {
   background-color: #B5DCE2;
   color: #1A1D22;
   border-color: #B5DCE2;
+}
+
+/* BREADCRUMBS ----------------------------------------------------*/
+.dark-breadcrumb {
+  background-color: #3c414b !important;
+}
+
+.dark-breadcrumb a {
+  color: white;
 }
 
 /* MODALS ---------------------------------------------------------*/
@@ -672,6 +682,69 @@ body {
   cursor: not-allowed !important;
 }
 
+/* FOOTBALL2 --------------------------------------------------------- */
+.fb-category {
+  background-color: #292f33;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+}
+
+.fb-category:hover {
+  cursor: pointer;
+  /* border-left: 5px #ED1C24 solid;
+  border-right: 5px #ED1C24 solid; */
+  background-color: #1A1D22;
+}
+
+.fb-categories-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  max-width: 80vw;
+  margin: auto;
+  padding: 0 0 10vh 0;
+  color: white;
+}
+
+.prod-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #3c414b;
+}
+
+.prod-card h2 {
+  font-size: 30px;
+  padding: 1rem 0;
+  background-color: #292f33;
+}
+
+.prod-card-price {
+  color: #00aced;
+  font-size: 22px;
+}
+
+.prod-card p {
+  padding: 0 1.5rem 0 1.5rem;
+  text-align: left;
+}
+
+.prod-card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #586d8b;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.prod-card button:hover {
+  opacity: 0.7;
+  background-color: #00aced;
+}
 /* RECOMMENDED PRODUCTS TITLE ---------------------------------------- */
 .recommendedProductsTitle {
   color: white;
