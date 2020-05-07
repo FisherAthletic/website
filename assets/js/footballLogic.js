@@ -25,12 +25,12 @@ prodList.map(item => {
     var quoteBtn = document.createElement("button")
     quoteBtn.innerHTML = "Get Quote"
 
+    div.appendChild(prodImage)
+    div.appendChild(prodTitle)
+    div.appendChild(prodPrice)
+    div.appendChild(paragraph)
+    div.appendChild(quoteBtn)
     prodDiv.appendChild(div)
-    document.querySelector(".prod-card").appendChild(prodImage)
-    document.querySelector(".prod-card").appendChild(prodTitle)
-    document.querySelector(".prod-card").appendChild(prodPrice)
-    document.querySelector(".prod-card").appendChild(paragraph)
-    document.querySelector(".prod-card").appendChild(quoteBtn)
 })
 
 console.log(document.querySelector(".prod-card"))
