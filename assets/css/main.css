@@ -697,9 +697,9 @@ body {
   background-color: #1A1D22;
 }
 
-.fb-categories-grid {
+.prod-card-grid {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   max-width: 80vw;
   margin: auto;
@@ -710,18 +710,22 @@ body {
 .prod-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
-  background-color: #3c414b;
-}
-
-.prod-card h2 {
-  font-size: 30px;
-  padding: 1rem 0;
   background-color: #292f33;
 }
 
+.prod-card h2 {
+  font-size: 24px;
+  padding: 1rem 0.5rem;
+  background-color: #292f33;
+  border-bottom: 2px #586d8b solid;
+  margin: 0 0 1rem 0;
+}
+
 .prod-card-price {
-  color: #00aced;
-  font-size: 22px;
+  color: #586d8b;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding: 3rem 0 1rem 0;
 }
 
 .prod-card p {
@@ -729,22 +733,41 @@ body {
   text-align: left;
 }
 
-.prod-card button {
+.prod-quote-btn, .prod-images-btn {
   border: none;
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #586d8b;
+  background: #292f33;
   text-align: center;
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  /* border-top: 2px #586d8b solid; */
 }
 
-.prod-card button:hover {
-  opacity: 0.7;
-  background-color: #00aced;
+.prod-images-btn {
+  background: #292f33 !important;
+  border-top: none !important;
+  color: rgb(255,127,0) !important;
 }
+
+.prod-quote-btn {
+  background: rgb(255,127,0);
+  transition: background 1s;
+}
+
+.prod-quote-btn:hover {
+  /* opacity: 0.7; */
+  background: rgb(255, 60, 0);
+  color: white;
+  transition: 0.5s;
+}
+
+.prod-images-btn:hover {
+  color: white !important;
+}
+
 /* RECOMMENDED PRODUCTS TITLE ---------------------------------------- */
 .recommendedProductsTitle {
   color: white;

@@ -55,9 +55,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../pages/contact-us.html">Contact us</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/dealer-locator.html">Dealer Locator</a>
-              </li>
               </ul>
           <i class="fas fa-search" id="nav-search-icon"></i><input type="text" name="search" autocomplete="off" list="search-items-list" id="searchInputBar" placeholder="search">
               </nav>
@@ -164,21 +161,46 @@
         <div class="productCardContainer">
 
           <div class="card productCard" style="width: 24rem;">
-              <img id="ch100Image" src="https://lh3.googleusercontent.com/hZzyc1rHrJUJjnkBM8URGDl6QxbHXgrLswQwKU1bENYomx7C1maWC6U9RHwYLoz5z8BHNunNO2ARjbSObM2hrUP9h0iQo1RVrrRxGUWaqaJI26MslvQv_RRx7kv-9G4jiRDPHLwFHqR91eVt9k-8TVmm4GNdIusBYwYqzfjtosykRSLabR8P296GtFsr48x563qBwDdwUuxB5pa_WmIfmXP7t0ZhRqK6qL5VSAprWWWAb3-38tFB96Wsrxdz5sTj0OPCKZGnXmEbNbBiXTTOYXT4JfLACNcciYrINLqkcIeZxSa-96HmjDNgsbBup1VDgYUZyPUpE1mGEg8lbwdEefViKdefBjhrwwDvsS9vdZvPW7CdTX8BHVfOnYCrTmcTEDqxHN-XOP6SUrsZlWsEx8cjK0BCe_hwDAdhtWbNrj4x3bwLM1rxezydgDiOD0gluXjs5Kqcd9TRrK6HZMMSFjcBILAm8qaXgpKvBvKMZ8jUlWyqcyEwMi9BTVRlUGQjVOb2RpLyg-TQ2wf3bYQX_vkcqYoOFFYBhYgt7qnflDu667jjHb6N29djRcMwl8Uwnh7wPzFxb3EROPOxsINv2xpia8g8-ALZyXiG9UIQG0suHHWNy4_HJ_VXgso2599YuHY_ghgrEXryPJqk2XPyc1x57pIzpxrE1LcRUd28vldi163T-KDc9XvKQIOsisW2AqBkfjnFOr4Upu4tWEAVBspHUVa5ExbRvpupCKz2XHSlJMI=w600-h300-no" class="card-img-top" alt="Next Level Chair" data-toggle="modal" data-target=".ch100ImageModal" onclick="ch100Caption()">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://lh3.googleusercontent.com/hZzyc1rHrJUJjnkBM8URGDl6QxbHXgrLswQwKU1bENYomx7C1maWC6U9RHwYLoz5z8BHNunNO2ARjbSObM2hrUP9h0iQo1RVrrRxGUWaqaJI26MslvQv_RRx7kv-9G4jiRDPHLwFHqR91eVt9k-8TVmm4GNdIusBYwYqzfjtosykRSLabR8P296GtFsr48x563qBwDdwUuxB5pa_WmIfmXP7t0ZhRqK6qL5VSAprWWWAb3-38tFB96Wsrxdz5sTj0OPCKZGnXmEbNbBiXTTOYXT4JfLACNcciYrINLqkcIeZxSa-96HmjDNgsbBup1VDgYUZyPUpE1mGEg8lbwdEefViKdefBjhrwwDvsS9vdZvPW7CdTX8BHVfOnYCrTmcTEDqxHN-XOP6SUrsZlWsEx8cjK0BCe_hwDAdhtWbNrj4x3bwLM1rxezydgDiOD0gluXjs5Kqcd9TRrK6HZMMSFjcBILAm8qaXgpKvBvKMZ8jUlWyqcyEwMi9BTVRlUGQjVOb2RpLyg-TQ2wf3bYQX_vkcqYoOFFYBhYgt7qnflDu667jjHb6N29djRcMwl8Uwnh7wPzFxb3EROPOxsINv2xpia8g8-ALZyXiG9UIQG0suHHWNy4_HJ_VXgso2599YuHY_ghgrEXryPJqk2XPyc1x57pIzpxrE1LcRUd28vldi163T-KDc9XvKQIOsisW2AqBkfjnFOr4Upu4tWEAVBspHUVa5ExbRvpupCKz2XHSlJMI=w600-h300-no" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/hZzyc1rHrJUJjnkBM8URGDl6QxbHXgrLswQwKU1bENYomx7C1maWC6U9RHwYLoz5z8BHNunNO2ARjbSObM2hrUP9h0iQo1RVrrRxGUWaqaJI26MslvQv_RRx7kv-9G4jiRDPHLwFHqR91eVt9k-8TVmm4GNdIusBYwYqzfjtosykRSLabR8P296GtFsr48x563qBwDdwUuxB5pa_WmIfmXP7t0ZhRqK6qL5VSAprWWWAb3-38tFB96Wsrxdz5sTj0OPCKZGnXmEbNbBiXTTOYXT4JfLACNcciYrINLqkcIeZxSa-96HmjDNgsbBup1VDgYUZyPUpE1mGEg8lbwdEefViKdefBjhrwwDvsS9vdZvPW7CdTX8BHVfOnYCrTmcTEDqxHN-XOP6SUrsZlWsEx8cjK0BCe_hwDAdhtWbNrj4x3bwLM1rxezydgDiOD0gluXjs5Kqcd9TRrK6HZMMSFjcBILAm8qaXgpKvBvKMZ8jUlWyqcyEwMi9BTVRlUGQjVOb2RpLyg-TQ2wf3bYQX_vkcqYoOFFYBhYgt7qnflDu667jjHb6N29djRcMwl8Uwnh7wPzFxb3EROPOxsINv2xpia8g8-ALZyXiG9UIQG0suHHWNy4_HJ_VXgso2599YuHY_ghgrEXryPJqk2XPyc1x57pIzpxrE1LcRUd28vldi163T-KDc9XvKQIOsisW2AqBkfjnFOr4Upu4tWEAVBspHUVa5ExbRvpupCKz2XHSlJMI=w600-h300-no" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/hZzyc1rHrJUJjnkBM8URGDl6QxbHXgrLswQwKU1bENYomx7C1maWC6U9RHwYLoz5z8BHNunNO2ARjbSObM2hrUP9h0iQo1RVrrRxGUWaqaJI26MslvQv_RRx7kv-9G4jiRDPHLwFHqR91eVt9k-8TVmm4GNdIusBYwYqzfjtosykRSLabR8P296GtFsr48x563qBwDdwUuxB5pa_WmIfmXP7t0ZhRqK6qL5VSAprWWWAb3-38tFB96Wsrxdz5sTj0OPCKZGnXmEbNbBiXTTOYXT4JfLACNcciYrINLqkcIeZxSa-96HmjDNgsbBup1VDgYUZyPUpE1mGEg8lbwdEefViKdefBjhrwwDvsS9vdZvPW7CdTX8BHVfOnYCrTmcTEDqxHN-XOP6SUrsZlWsEx8cjK0BCe_hwDAdhtWbNrj4x3bwLM1rxezydgDiOD0gluXjs5Kqcd9TRrK6HZMMSFjcBILAm8qaXgpKvBvKMZ8jUlWyqcyEwMi9BTVRlUGQjVOb2RpLyg-TQ2wf3bYQX_vkcqYoOFFYBhYgt7qnflDu667jjHb6N29djRcMwl8Uwnh7wPzFxb3EROPOxsINv2xpia8g8-ALZyXiG9UIQG0suHHWNy4_HJ_VXgso2599YuHY_ghgrEXryPJqk2XPyc1x57pIzpxrE1LcRUd28vldi163T-KDc9XvKQIOsisW2AqBkfjnFOr4Upu4tWEAVBspHUVa5ExbRvpupCKz2XHSlJMI=w600-h300-no" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
                   <div class="card-body productCardBody">
                     <h5 class="card-title">Folding 2' Rebond Mat</h5>
                     <h6 class="card-text">SKU: FM3240632</h6>
                     <p>
-                      <a class="btn btn-danger" data-toggle="collapse" href="#nextLevelChair" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <a class="btn btn-danger" data-toggle="collapse" href="#foldingRebondFoamMats" role="button" aria-expanded="false" aria-controls="collapseExample">
                         Description
                       </a>
                       <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#getQuoteModal">
                         Get quote
                       </button>
                     </p>
-                    <div class="collapse" id="nextLevelChair">
+                    <div class="collapse" id="foldingRebondFoamMats">
                       <div class="card card-body productCardDescription">
-                          Each chair is padded with 2-1/2" thick, 6lb. rebond foam covered in 30 oz. vinyl and a wooden smartboard bottom. Maximum artwork size for chair seat is 14" wide x 15" high. Each chair leg has a rubber cap end to protect floors from being scratched. An additional plastic insert is also included for extra floor protection. The chair backrest is 1" closed-celled covered in 30oz. vinyl. Included in the cost of the chair is a 2 color screen print of your school name, mascot, or logo. Maximum screen dimension is 5" high x 13" wide. Two color logo in two locations included with purchase of chair. Artwork locations include chair back, chair bottom, and chair bottom front. Chair front print size is 2" x 10".
+                          All rebond foam mats are manufactured using 2" thick, 6 pound density bonded foam and rugged 18oz coated vinyl. These mats are manufactured with Velcro® on 2 ends.
                       </div>
                     </div>
                   </div>
