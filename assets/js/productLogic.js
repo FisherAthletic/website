@@ -9,6 +9,7 @@ over400 = (item) => {
     return item.price >= 400
 }
 
+// creates new array with only elements that return true according to the over400 function
 let prodOver400 = prodList.filter(over400)
 
 // map through the prodList array and for each item, run the following function
@@ -34,7 +35,6 @@ prodOver400.map(item => {
     var quoteBtn = document.createElement("button")
     quoteBtn.innerHTML = "Get Quote"
     quoteBtn.setAttribute("class", "prod-quote-btn")
-
     div.appendChild(prodImage)
     div.appendChild(prodTitle)
     div.appendChild(prodPrice)

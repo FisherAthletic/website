@@ -53,17 +53,5 @@ let products = [
         price: 700,
         isAvailable: true,
         image: "https://lh3.googleusercontent.com/NAA0W6Kq72zhMUZn4BLRMf5E3kL2pDpWryXKr2slACvwf-H_Zqv4cjQ4evSxjCuIelJPXIEoEFuxgk3s01HUM1shWvHihdGzOxxjuSKbYySmTto3KfPul5vdBn6a2R2hTA1drTMweg=w600-h300-no"
-    },{
-        id: 'FM3240632',
-        name: '2ft Folding Rebond Foam Mats',
-        description: 'Tackle wheel teaches players to adjust their angle in pursuit. Teach open field tackling without bodies. Reduce injuries by eliminating repetitions. Teaches players to wrap up in open field. Made of 9lb. re-bond foam. 22 oz. coated vinyl in center and outside. 19 oz coated vinyl on faces of wheel.',
-        category: 'football',
-        subcategory: 'training',
-        price: 700,
-        isAvailable: true,
-        weight: 33,
-        length: `4'`,
-        width: `6'`,
-        image: "https://lh3.googleusercontent.com/NAA0W6Kq72zhMUZn4BLRMf5E3kL2pDpWryXKr2slACvwf-H_Zqv4cjQ4evSxjCuIelJPXIEoEFuxgk3s01HUM1shWvHihdGzOxxjuSKbYySmTto3KfPul5vdBn6a2R2hTA1drTMweg=w600-h300-no"
     }
 ]
