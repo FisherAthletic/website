@@ -59,7 +59,7 @@ let products = [
         description: 'One inch polyfoam covered with 18oz vinyl is used for this mat. The nonfolding design features a carrying handle on one long side. Stock color is royal. Additional colors available with orders of 6 or more.',
         category: 'mats',
         subcategory: 'personal',
-        price: 1125.00,
+        price: 25.00,
         isAvailable: true,
         image: "../assets/images/navbar/exm124-economy-personal-exercise-mat2.jpg"
     },{
@@ -68,7 +68,7 @@ let products = [
         description: 'Two inch, high quality polyfoam is covered with easy-to-clean, long wearing, 18oz vinyl. Convenient carrying handles on one long side. Stock color is royal. Additional colors available with orders of 6 or more.',
         category: 'mats',
         subcategory: 'personal',
-        price: 1118.00,
+        price: 18.00,
         isAvailable: true,
         image: "../assets/images/navbar/Mats-DEM24-Non-Folding-Personal-Exercise-Mats.jpg"
     },{
@@ -77,7 +77,7 @@ let products = [
         description: 'All rebond foam mats are manufactured using 2" thick, 6lb density bonded foam and rugged 18oz coated vinyl. The 2" bonded foam filler gives more support than our urethane mats, but is slightly less firm than our polyethylene mats. This mat is a good choice for elementary school age children, seniors and for rehabilitation exercises. Specify color choice when ordering.',
         category: 'mats',
         subcategory: 'rebond',
-        price: 700.00,
+        price: 199.00,
         isAvailable: true,
         image: "https://lh3.googleusercontent.com/NAA0W6Kq72zhMUZn4BLRMf5E3kL2pDpWryXKr2slACvwf-H_Zqv4cjQ4evSxjCuIelJPXIEoEFuxgk3s01HUM1shWvHihdGzOxxjuSKbYySmTto3KfPul5vdBn6a2R2hTA1drTMweg=w600-h300-no"
     }
